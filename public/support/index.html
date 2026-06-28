@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support – Mamio</title>
+    <meta name="description" content="Get help with the Mamio baby care tracker app." />
+    <link rel="icon" type="image/png" href="/assets/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      :root {
+        --bg: #071224;
+        --surface: rgba(255,255,255,0.04);
+        --border: rgba(255,255,255,0.08);
+        --text: #f4f8ff;
+        --muted: rgba(255,255,255,0.52);
+        --accent: #45c8f2;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.7 Inter, ui-sans-serif, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      .page { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+      .back {
+        display: inline-flex; align-items: center; gap: 0.4rem;
+        color: var(--muted); font-size: 0.875rem; font-weight: 600;
+        margin-bottom: 2.5rem; transition: color 0.18s;
+      }
+      .back:hover { color: var(--text); text-decoration: none; }
+      .brand { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2.5rem; }
+      .brand img { width: 44px; height: 44px; border-radius: 12px; }
+      .brand span { font-size: 1.125rem; font-weight: 800; }
+      h1 { font-size: 2rem; font-weight: 800; margin: 0 0 1rem; line-height: 1.2; }
+      h2 {
+        font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em;
+        text-transform: uppercase; color: var(--accent); margin: 2rem 0 0.75rem;
+      }
+      p { margin: 0 0 0.875rem; color: var(--muted); line-height: 1.75; }
+      .contact-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.5rem 1.75rem;
+        margin-bottom: 2rem;
+      }
+      .contact-card p { color: var(--text); margin: 0 0 0.25rem; }
+      .contact-card a { font-size: 1.05rem; font-weight: 700; }
+      .faq-item {
+        border-bottom: 1px solid var(--border);
+        padding: 1.125rem 0;
+      }
+      .faq-item:first-child { padding-top: 0; }
+      .faq-item:last-child { border-bottom: none; }
+      .faq-q { font-weight: 700; color: var(--text); margin-bottom: 0.375rem; }
+      .faq-a { color: var(--muted); margin: 0; font-size: 0.9375rem; }
+      footer {
+        margin-top: 3.5rem; padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.8125rem; color: var(--muted);
+      }
+      footer a { margin-right: 1rem; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <a class="back" href="/">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12 6 8l4-4"/></svg>
+        Back to Mamio
+      </a>
+
+      <div class="brand">
+        <img src="/assets/icon-192.png" alt="Mamio" />
+        <span>Mamio</span>
+      </div>
+
+      <h1>Support</h1>
+      <p>Need help with Mamio? We're happy to assist.</p>
+
+      <div class="contact-card">
+        <p>Send us an email</p>
+        <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I track left and right side?</p>
+        <p class="faq-a">Tap the left or right button on the home screen to start and stop a feeding session. The app remembers which side is next.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Where do I see the last feeding time?</p>
+        <p class="faq-a">The home screen always shows how long it has been since the last session and which side was used.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Can I add notes to a session?</p>
+        <p class="faq-a">Yes. After a session ends, you can add a short note. Notes are stored locally on your device.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I export a report?</p>
+        <p class="faq-a">Go to the Stats or History screen and use the export option to generate a report you can share with a doctor or consultant.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Does the app work without internet?</p>
+        <p class="faq-a">Yes. Mamio works fully offline. All data is stored on your device and no internet connection is required.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I delete my data?</p>
+        <p class="faq-a">All data is stored locally. Clear it by going to your device settings and clearing the app's data, or uninstall the app.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">What languages does the app support?</p>
+        <p class="faq-a">Mamio supports 14 languages: English, Deutsch, Español, Français, हिन्दी, Italiano, Português, Русский, Türkçe, Українська, العربية, עברית, 日本語, and 한국어.</p>
+      </div>
+
+      <h2>Delete data</h2>
+      <p>
+        All data is stored locally on your device. To erase it, clear the app data in your device
+        settings or uninstall the app. We have no copy of your data.
+      </p>
+
+      <footer>
+        <a href="/">Mamio</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/impressum/">Impressum</a>
+      </footer>
+    </div>
+  </body>
+</html>
