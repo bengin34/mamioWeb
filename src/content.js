@@ -224,6 +224,11 @@ export const locales = {
       title: 'Für mehrsprachige Familien',
       body: 'Die App unterstützt English, Deutsch, Español, Français, हिन्दी, Italiano, Português, Русский, Türkçe, Українська, العربية, עברית, 日本語 und 한국어.',
     },
+    seoLinks: {
+      eyebrow: 'Guides',
+      title: 'Mamio-Tracker im Detail entdecken',
+      body: 'Starte mit dem Pflegemoment, den du am besten tracken möchtest, und halte alles in einer ruhigen Zeitlinie zusammen.',
+    },
     download: {
       eyebrow: 'Mamio laden',
       title: 'Starte heute mit ruhigem Babycare-Tracking.',
@@ -351,13 +356,14 @@ export const locales = {
   },
 };
 
-export const seoPageLangs = ['en', 'tr'];
+export const seoPageLangs = ['en', 'de', 'tr'];
 
 export const seoFeaturePages = {
   breastfeeding: {
     image: '05-device-top',
     slugs: {
       en: 'breastfeeding-tracker',
+      de: 'still-tracker',
       tr: 'emzirme-takip-uygulamasi',
     },
     locales: {
@@ -398,6 +404,46 @@ export const seoFeaturePages = {
           {
             question: 'Can I track bottles too?',
             answer: 'Yes. Breastfeeding, bottles, pumping, diapers, sleep, solids, and health records can live in the same timeline.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Still-Tracker',
+        metaTitle: 'Still-Tracker App | Mamio',
+        metaDescription:
+          'Stillsessions nach Seite tracken, verpasste Mahlzeiten ergänzen, Seitenbalance prüfen und die Stillgeschichte offline führen mit Mamio.',
+        eyebrow: 'Still-Tracker',
+        title: 'Stillen tracken für müde, echte Nächte.',
+        lead:
+          'Mamio hilft dir, einen Still-Timer zu starten, die linke oder rechte Seite zu wählen, Mahlzeiten nachzutragen und die Stillgeschichte ruhig im Blick zu behalten – ohne die Nacht in eine Tabelle zu verwandeln.',
+        imageAlt: 'Mamio Still-Tracker-Screen mit letzten Mahlzeiten und Seitenbalance.',
+        bullets: ['Linke und rechte Seite tracken', 'Timer und manuelle Eingaben', 'Letzte Mahlzeiten und Seitenbalance'],
+        sections: [
+          {
+            title: 'Schnell mit dem Stillen starten',
+            body: 'Mamio öffnen, Timer starten und die genutzte Seite eingeben. Wenn die Mahlzeit schon stattgefunden hat, kannst du sie manuell mit Uhrzeit und Dauer ergänzen.',
+          },
+          {
+            title: 'Seitenbalance im Blick behalten',
+            body: 'Letzte Einträge helfen dir, die Seite vom letzten Mal zu erinnern, ohne dich bei nächtlichen Mahlzeiten auf dein müdes Gedächtnis verlassen zu müssen.',
+          },
+          {
+            title: 'Stillen mit dem Tag verbinden',
+            body: 'Stilleinträge liegen neben Fläschchen, Windeln, Schlaf, Abpumpen und Notizen – die gesamte Routine bleibt leicht überschaubar.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich eine Stillsession nachträglich eintragen?',
+            answer: 'Ja. Du kannst verpasste Sessions manuell ergänzen und die Timeline genau halten, auch wenn du vergessen hast, den Timer zu starten.',
+          },
+          {
+            question: 'Braucht Mamio ein Konto?',
+            answer: 'Nein. Mamio ist offline-first, braucht kein Konto und speichert Einträge lokal auf deinem Gerät.',
+          },
+          {
+            question: 'Kann ich auch Fläschchen tracken?',
+            answer: 'Ja. Stillen, Fläschchen, Abpumpen, Windeln, Schlaf, Beikost und Gesundheitsdaten können in derselben Timeline geführt werden.',
           },
         ],
       },
@@ -447,6 +493,7 @@ export const seoFeaturePages = {
     image: '03-device-top',
     slugs: {
       en: 'baby-feeding-tracker',
+      de: 'baby-ernaehrungs-tracker',
       tr: 'bebek-beslenme-takibi',
     },
     locales: {
@@ -487,6 +534,46 @@ export const seoFeaturePages = {
           {
             question: 'Are feeding records stored online?',
             answer: 'No. Mamio is offline-first and keeps records locally on your device.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Baby-Ernährungs-Tracker',
+        metaTitle: 'Baby-Ernährungs-Tracker App | Mamio',
+        metaDescription:
+          'Stillen, Fläschchen, Beikost, Abpumpen und letzte Mahlzeiten offline in einem Baby-Ernährungs-Tracker führen mit Mamio.',
+        eyebrow: 'Baby-Ernährungs-Tracker',
+        title: 'Ein ruhiger Platz für Stillen, Fläschchen, Beikost und Abpumpen.',
+        lead:
+          'Mamio hält Fütterungseinträge zusammen, damit du siehst, was heute passiert ist, was zuletzt war und was als Nächstes kommen könnte – ohne Zettelchaos.',
+        imageAlt: 'Mamio Baby-Ernährungs-Tracker-Screen mit Fütterungs- und Tagespflegeeinträgen.',
+        bullets: ['Still- und Fläschcheneinträge', 'Beikost und Abpumpprotokolle', 'Tagesübersichten in einer Timeline'],
+        sections: [
+          {
+            title: 'Jeden Fütterungstyp erfassen',
+            body: 'Stillsessions, Fläschcenmengen, Milchquelle, Beikost und Abpumpsessions aus demselben Babypflege-Ablauf tracken.',
+          },
+          {
+            title: 'Den Tag auf einen Blick',
+            body: 'Letzte Einträge und Tagesübersichten helfen dir, den Fütterungsrhythmus zu verstehen, ohne alles im Kopf zu berechnen.',
+          },
+          {
+            title: 'Klareren Kontext teilen',
+            body: 'Wenn du mit Partner, Berater oder Arzt sprechen musst, sind deine letzten Fütterungsnotizen leichter nachzulesen.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann Mamio gemischtes Stillen tracken?',
+            answer: 'Ja. Du kannst Stillen, Fläschchen, Beikost und Abpumpen in einer Timeline führen.',
+          },
+          {
+            question: 'Kann ich Mamio für Neugeborenen-Mahlzeiten nutzen?',
+            answer: 'Ja. Mamio ist für schnelles, einhändiges Protokollieren bei häufigen Neugeborenenroutinen gebaut.',
+          },
+          {
+            question: 'Werden Fütterungseinträge online gespeichert?',
+            answer: 'Nein. Mamio ist offline-first und speichert Einträge lokal auf deinem Gerät.',
           },
         ],
       },
@@ -536,6 +623,7 @@ export const seoFeaturePages = {
     image: '07-device-top',
     slugs: {
       en: 'diaper-tracker',
+      de: 'windel-tracker',
       tr: 'bez-takip-uygulamasi',
     },
     locales: {
@@ -576,6 +664,46 @@ export const seoFeaturePages = {
           {
             question: 'Can diapers be viewed with feeds and sleep?',
             answer: 'Yes. Diapers, feeds, sleep, pumping, and health notes appear in one daily timeline.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Windel-Tracker',
+        metaTitle: 'Windel-Tracker App | Mamio',
+        metaDescription:
+          'Nasse und schmutzige Windeln, Windel-Notizen, private Fotos und tägliche Windelmuster offline tracken mit Mamio.',
+        eyebrow: 'Windel-Tracker',
+        title: 'Windeln tracken, schnell genug für busy Wechsel.',
+        lead:
+          'Mamio macht es einfach, nasse und schmutzige Windeln zu protokollieren, Notizen hinzuzufügen, wenn etwas ungewöhnlich aussieht, und die Windelgeschichte neben der restlichen Babypflege zu überblicken.',
+        imageAlt: 'Mamio Windel-Tracker-Screen mit Windeleinträgen und Tageszeitlinie.',
+        bullets: ['Nasse und schmutzige Windeleinträge', 'Private Notizen und Fotos', 'Tägliche Muster neben Fütterung und Schlaf'],
+        sections: [
+          {
+            title: 'Wechsel in Sekunden protokollieren',
+            body: 'Winkeltyp schnell erfassen und den Eintrag in derselben Tageszeitlinie wie Fütterung, Schlaf und Gesundheitsnotizen behalten.',
+          },
+          {
+            title: 'Kontext bei Bedarf ergänzen',
+            body: 'Notizen und private Fotos können helfen, sich zu erinnern, was du gesehen hast, bevor du Bedenken mit einem Arzt besprichst.',
+          },
+          {
+            title: 'Aktuelle Muster verfolgen',
+            body: 'Eine klare Verlaufsansicht macht es leichter, Routineänderungen zu bemerken, ohne Windelverfolgung zur Extraarbeit werden zu lassen.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich Fotos zu Windeleinträgen hinzufügen?',
+            answer: 'Ja. Mamio unterstützt private Windelfotos für Einträge, die du später überprüfen möchtest.',
+          },
+          {
+            question: 'Gibt Mamio medizinischen Rat?',
+            answer: 'Nein. Mamio hilft dir, Beobachtungen aufzuzeichnen, und ersetzt nicht den Rat eines qualifizierten Mediziners.',
+          },
+          {
+            question: 'Können Windeln zusammen mit Mahlzeiten und Schlaf angezeigt werden?',
+            answer: 'Ja. Windeln, Mahlzeiten, Schlaf, Abpumpen und Gesundheitsnotizen erscheinen in einer Tageszeitlinie.',
           },
         ],
       },
@@ -625,6 +753,7 @@ export const seoFeaturePages = {
     image: '08-device-top',
     slugs: {
       en: 'baby-sleep-tracker',
+      de: 'baby-schlaf-tracker',
       tr: 'bebek-uyku-takibi',
     },
     locales: {
@@ -665,6 +794,46 @@ export const seoFeaturePages = {
           {
             question: 'Does Mamio need internet for sleep tracking?',
             answer: 'No. Sleep records work offline and stay on your device.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Baby-Schlaf-Tracker',
+        metaTitle: 'Baby-Schlaf-Tracker App | Mamio',
+        metaDescription:
+          'Babyschlafphasen, Nickerchen, Fütterungskontext und tägliche Pflegegeschichte offline tracken mit dem Mamio Baby-Schlaf-Tracker.',
+        eyebrow: 'Baby-Schlaf-Tracker',
+        title: 'Nickerchen und Nächte tracken, ohne den Rest des Tages zu verlieren.',
+        lead:
+          'Mamio hält Schlafphasen nah an Mahlzeiten, Windeln und Notizen, damit du den Tag als Ganzes verstehst, statt Schlaf isoliert zu tracken.',
+        imageAlt: 'Mamio Baby-Schlaf-Tracker-Screen mit Schlaf- und Pflegezeitlinie.',
+        bullets: ['Nickerchen- und Schlafphasenprotokolle', 'Tägliche Schlafhistorie', 'Schlaf neben Mahlzeiten, Windeln und Notizen'],
+        sections: [
+          {
+            title: 'Schlaf protokollieren, wenn er passiert',
+            body: 'Schlafphasen starten und speichern oder später ergänzen, wenn der Tag hektisch war.',
+          },
+          {
+            title: 'Die gesamte Routine überblicken',
+            body: 'Schlaf macht zusammen mit Fütterungs-, Windel-, Abpump- und Gesundheitseinträgen in derselben Zeitlinie mehr Sinn.',
+          },
+          {
+            title: 'Das Tracken sanft halten',
+            body: 'Mamio ist für praktische Pflegeeinträge gebaut, nicht für Druck. Nutze es, um den Tag zu erinnern und nützliche Muster zu entdecken.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich ein Nickerchen nachträglich eintragen?',
+            answer: 'Ja. Du kannst Schlafphasen manuell hinzufügen, wenn du nicht getrackt hast, als das Nickerchen begann.',
+          },
+          {
+            question: 'Kann ich Schlaf mit Fütterung vergleichen?',
+            answer: 'Ja. Schlaf, Fütterung, Windeln, Abpumpen und Notizen werden zusammen in der Tageszeitlinie gezeigt.',
+          },
+          {
+            question: 'Braucht Mamio Internet für Schlaf-Tracking?',
+            answer: 'Nein. Schlafeinträge funktionieren offline und bleiben auf deinem Gerät.',
           },
         ],
       },
@@ -714,6 +883,7 @@ export const seoFeaturePages = {
     image: '09-device-bottom',
     slugs: {
       en: 'baby-health-records',
+      de: 'baby-gesundheitsakte',
       tr: 'bebek-saglik-kayitlari',
     },
     locales: {
@@ -757,6 +927,46 @@ export const seoFeaturePages = {
           },
         ],
       },
+      de: {
+        shortTitle: 'Baby-Gesundheitsakte',
+        metaTitle: 'Baby-Gesundheitsakte App | Mamio',
+        metaDescription:
+          'Babywachstum, Symptome, Temperatur, Medikamente, Impfungen, Arztbesuche und Notizen offline organisiert halten mit Mamio.',
+        eyebrow: 'Baby-Gesundheitsakte',
+        title: 'Gesundheitsnotizen griffbereit, wenn Termine kommen.',
+        lead:
+          'Mamio hilft dir, Wachstum, Symptome, Temperatur, Medikamente, Impfungen, Arztbesuche und Notizen zu organisieren, damit wichtiger Kontext leichter zu finden ist.',
+        imageAlt: 'Mamio Baby-Gesundheitsakte-Screen mit Wachstums- und Gesundheitsnotizen.',
+        bullets: ['Wachstum, Symptome und Temperatur', 'Medikamenten- und Impfnotizen', 'Arztbesuchskontext und Exporte'],
+        sections: [
+          {
+            title: 'Praktische Einträge zusammenhalten',
+            body: 'Wachstumseinträge, Gesundheitsnotizen, Erinnerungen und Pflegehistorie bleiben nah an der Tagesroutine, statt über Apps verstreut zu sein.',
+          },
+          {
+            title: 'Gespräche vorbereiten',
+            body: 'Aktuelle Einträge können es einfacher machen, zu beschreiben, was sich geändert hat, wann es passiert ist und was du getrackt hast.',
+          },
+          {
+            title: 'Einträge als Unterstützung nutzen, nicht als Diagnose',
+            body: 'Mamio hilft dir, Beobachtungen zu organisieren. Es liefert keine medizinische Diagnose und sollte professionelle Versorgung nicht ersetzen.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich Impfungen und Arztbesuche tracken?',
+            answer: 'Ja. Mamio enthält Gesundheitseinträge für Impfungen, Arztbesuche, Symptome, Temperatur, Medikamente, Wachstum und Notizen.',
+          },
+          {
+            question: 'Kann ich Einträge exportieren?',
+            answer: 'Mamio unterstützt Berichtsexporte für ausgewählte Datumsbereiche, nützlich wenn du Kontext teilen möchtest.',
+          },
+          {
+            question: 'Ist Mamio eine medizinische App?',
+            answer: 'Mamio ist eine Pflegetracking-App. Sie hilft dabei, Einträge zu organisieren, und ersetzt keine medizinische Beratung oder Diagnose.',
+          },
+        ],
+      },
       tr: {
         shortTitle: 'Bebek sağlık kayıtları',
         metaTitle: 'Bebek Sağlık Kayıtları Uygulaması | Mamio',
@@ -794,6 +1004,136 @@ export const seoFeaturePages = {
           {
             question: 'Mamio tıbbi uygulama mı?',
             answer: 'Mamio bir bakım takip uygulamasıdır. Kayıtları düzenlemeye yardımcı olur; tıbbi tavsiye veya tanının yerine geçmez.',
+          },
+        ],
+      },
+    },
+  },
+  careTimeline: {
+    image: '01-hero',
+    slugs: {
+      en: 'baby-care-timeline',
+      de: 'baby-pflege-app',
+      tr: 'bebek-bakim-takibi',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Baby care timeline',
+        metaTitle: 'Baby Care Timeline App | Mamio',
+        metaDescription:
+          'Track feeds, diapers, sleep, pumping, solids, and care events together in one calm baby care timeline with Mamio.',
+        eyebrow: 'Baby care timeline',
+        title: 'One calm timeline for every feed, diaper, sleep, and care event.',
+        lead:
+          'Mamio keeps breastfeeding, bottles, diapers, solids, sleep, pumping, and health notes in a single daily view so nothing slips through the cracks.',
+        imageAlt: 'Mamio baby care timeline showing feeds, diapers, sleep, and daily care records.',
+        bullets: ['Feeds, diapers, and sleep together', 'Pumping, solids, and health notes', 'One view for the whole day'],
+        sections: [
+          {
+            title: 'See the whole day in one place',
+            body: 'Every care event — breastfeeding, bottles, diapers, solids, sleep, tummy time, and pumping — appears in one calm daily timeline instead of scattered notes.',
+          },
+          {
+            title: 'Spot patterns without effort',
+            body: 'When feeding, sleep, and diaper records are side by side, routine shifts and useful patterns become easier to notice.',
+          },
+          {
+            title: 'Add quickly and move on',
+            body: 'Mamio is designed for fast one-handed logging during busy care moments. Start a timer, tap an entry, or add it later when the moment has passed.',
+          },
+        ],
+        faq: [
+          {
+            question: 'What events can I track in the timeline?',
+            answer: 'Breastfeeding, bottles, solids, pumping, diapers, sleep, tummy time, growth, health notes, vaccines, and doctor visits all appear in the timeline.',
+          },
+          {
+            question: 'Can I add a missed entry later?',
+            answer: 'Yes. You can add any care event manually with the correct time and duration if you forgot to log it in the moment.',
+          },
+          {
+            question: 'Does the timeline work without internet?',
+            answer: 'Yes. All records are stored locally on your device and work offline.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Baby Pflege App',
+        metaTitle: 'Baby Pflege App | Mamio',
+        metaDescription:
+          'Mahlzeiten, Windeln, Schlaf, Abpumpen, Beikost und Pflegeeinträge zusammen in einer ruhigen Baby-Pflege-App tracken mit Mamio.',
+        eyebrow: 'Baby Pflege App',
+        title: 'Eine ruhige Zeitlinie für jede Mahlzeit, Windel, Schlaf und jeden Pflegemoment.',
+        lead:
+          'Mamio hält Stillen, Fläschchen, Windeln, Beikost, Schlaf, Abpumpen und Gesundheitsnotizen in einer einzigen Tagesübersicht, damit nichts durch die Lücken fällt.',
+        imageAlt: 'Mamio Baby-Pflege-App zeigt Mahlzeiten, Windeln, Schlaf und tägliche Pflegeeinträge.',
+        bullets: ['Mahlzeiten, Windeln und Schlaf zusammen', 'Abpumpen, Beikost und Gesundheitsnotizen', 'Eine Ansicht für den ganzen Tag'],
+        sections: [
+          {
+            title: 'Den ganzen Tag an einem Ort sehen',
+            body: 'Jeder Pflegemoment – Stillen, Fläschchen, Windeln, Beikost, Schlaf, Tummy Time und Abpumpen – erscheint in einer ruhigen Tageszeitlinie statt in verstreuten Notizen.',
+          },
+          {
+            title: 'Muster mühelos erkennen',
+            body: 'Wenn Fütterungs-, Schlaf- und Windeleinträge nebeneinander liegen, werden Routineverschiebungen und nützliche Muster leichter erkennbar.',
+          },
+          {
+            title: 'Schnell hinzufügen und weitermachen',
+            body: 'Mamio ist für schnelles, einhändiges Protokollieren in bewegten Pflegemomenten gebaut. Timer starten, Eintrag tippen oder später ergänzen.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Was kann ich in der Zeitlinie tracken?',
+            answer: 'Stillen, Fläschchen, Beikost, Abpumpen, Windeln, Schlaf, Tummy Time, Wachstum, Gesundheitsnotizen, Impfungen und Arztbesuche erscheinen alle in der Zeitlinie.',
+          },
+          {
+            question: 'Kann ich einen verpassten Eintrag nachträglich hinzufügen?',
+            answer: 'Ja. Du kannst jeden Pflegemoment manuell mit der richtigen Uhrzeit und Dauer ergänzen, wenn du ihn im Moment vergessen hast.',
+          },
+          {
+            question: 'Funktioniert die Zeitlinie ohne Internet?',
+            answer: 'Ja. Alle Einträge werden lokal auf deinem Gerät gespeichert und funktionieren offline.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Bebek bakım takibi',
+        metaTitle: 'Bebek Bakım Takibi Uygulaması | Mamio',
+        metaDescription:
+          'Mamio ile beslenme, bez, uyku, sağım, ek gıda ve tüm bakım kayıtlarını tek sakin günlük akışta takip et.',
+        eyebrow: 'Bebek bakım takibi',
+        title: 'Her beslenme, bez, uyku ve bakım için tek sakin akış.',
+        lead:
+          'Mamio emzirme, biberon, bez, ek gıda, uyku, sağım ve sağlık notlarını tek bir günlük görünümde tutar; hiçbir şey gözden kaçmaz.',
+        imageAlt: 'Mamio bebek bakım takip uygulaması beslenme, bez, uyku ve günlük bakım kayıtlarını gösteriyor.',
+        bullets: ['Beslenme, bez ve uyku birlikte', 'Sağım, ek gıda ve sağlık notları', 'Tüm gün için tek görünüm'],
+        sections: [
+          {
+            title: 'Tüm günü tek yerde gör',
+            body: 'Her bakım anı — emzirme, biberon, bez, ek gıda, uyku, tummy time ve sağım — dağınık notlar yerine tek sakin günlük akışta görünür.',
+          },
+          {
+            title: 'Rutinleri zahmetsizce fark et',
+            body: 'Beslenme, uyku ve bez kayıtları yan yana olunca rutin değişimler ve işe yarayan düzenler daha kolay fark edilir.',
+          },
+          {
+            title: 'Hızlı kaydet ve devam et',
+            body: 'Mamio yoğun bakım anlarında hızlı tek elle kayıt için tasarlandı. Zamanlayıcıyı başlat, bir kayıt ekle ya da an geçtikten sonra sonradan ekle.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Akışta neleri takip edebilirim?',
+            answer: 'Emzirme, biberon, ek gıda, sağım, bez, uyku, tummy time, büyüme, sağlık notları, aşılar ve doktor ziyaretleri akışta görünür.',
+          },
+          {
+            question: 'Kaçan kaydı sonradan ekleyebilir miyim?',
+            answer: 'Evet. Anında kaydedemediysen herhangi bir bakım kaydını doğru saat ve süreyle manuel ekleyebilirsin.',
+          },
+          {
+            question: 'Akış internetsiz çalışır mı?',
+            answer: 'Evet. Tüm kayıtlar cihazında yerel olarak saklanır ve çevrimdışı çalışır.',
           },
         ],
       },
