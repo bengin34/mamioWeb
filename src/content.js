@@ -126,7 +126,7 @@ export const locales = {
     download: {
       eyebrow: 'Get Mamio',
       title: 'Start tracking baby care with Mamio today.',
-      body: 'Download Mamio from the App Store and keep feeding, diapers, sleep, pumping, growth, health records, and reminders close at hand.',
+      body: 'Download Mamio on iOS or Android and keep feeding, diapers, sleep, pumping, growth, health records, and reminders close at hand.',
       cta: 'Download on the App Store',
     },
     footer: {
@@ -248,7 +248,7 @@ export const locales = {
     download: {
       eyebrow: 'Mamio laden',
       title: 'Starte heute mit ruhigem Babycare-Tracking.',
-      body: 'Lade Mamio im App Store und halte Füttern, Windeln, Schlaf, Abpumpen, Wachstum, Gesundheitsdaten und Erinnerungen griffbereit.',
+      body: 'Lade Mamio für iOS oder Android und halte Füttern, Windeln, Schlaf, Abpumpen, Wachstum, Gesundheitsdaten und Erinnerungen griffbereit.',
       cta: 'Im App Store laden',
     },
     footer: {
@@ -370,7 +370,7 @@ export const locales = {
     download: {
       eyebrow: 'Mamio indir',
       title: 'Bebek bakımını Mamio ile bugün takip etmeye başla.',
-      body: "Mamio'yu App Store'dan indir; emzirme, biberon, bez, uyku, sağım, büyüme, sağlık kayıtları ve hatırlatmalar elinin altında kalsın.",
+      body: "Mamio'yu iOS veya Android için indir; emzirme, biberon, bez, uyku, sağım, büyüme, sağlık kayıtları ve hatırlatmalar elinin altında kalsın.",
       cta: "App Store'dan indir",
     },
     footer: {

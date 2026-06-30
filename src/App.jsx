@@ -124,8 +124,8 @@ function createStructuredData(route, title, description, canonical) {
     description,
     url: canonical,
     image: `${DOMAIN}/assets/og-mamio.png`,
-    sameAs: [APP_STORE_URL],
-    installUrl: APP_STORE_URL,
+    sameAs: [APP_STORE_URL, GOOGLE_PLAY_URL],
+    installUrl: [APP_STORE_URL, GOOGLE_PLAY_URL],
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     inLanguage,
   };
@@ -609,8 +609,14 @@ function FeaturePage({ homeContent, currentLang, pageId }) {
                 {homeContent.download.cta}
                 <ChevronRight aria-hidden="true" size={18} />
               </a>
-              <a className="button-secondary" href="#details">
-                {homeContent.nav.features}
+              <a
+                className="button-secondary"
+                href={GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Play
+                <ChevronRight aria-hidden="true" size={18} />
               </a>
             </div>
           </div>

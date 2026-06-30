@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import {
   APP_STORE_URL,
+  GOOGLE_PLAY_URL,
   DOMAIN,
   getRouteAlternates,
   getRouteCanonical,
@@ -64,8 +65,8 @@ function createStructuredData(route, meta, canonical) {
     description: meta.description,
     url: canonical,
     image: `${DOMAIN}/assets/og-mamio.png`,
-    sameAs: [APP_STORE_URL],
-    installUrl: APP_STORE_URL,
+    sameAs: [APP_STORE_URL, GOOGLE_PLAY_URL],
+    installUrl: [APP_STORE_URL, GOOGLE_PLAY_URL],
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -347,6 +348,8 @@ function renderBlogHtml(postId, lang) {
     : lang === 'tr'
       ? 'Bu makale yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiyenin yerini tutmaz.'
       : 'This article is for informational purposes only and does not constitute medical advice.';
+  const appStoreLabel = 'App Store';
+  const googlePlayLabel = 'Google Play';
   const trackerHeading = lang === 'de' ? 'Passender Mamio-Tracker' : lang === 'tr' ? 'İlgili Mamio takip sayfası' : 'Related Mamio tracker';
   const trackerCopy = lang === 'de'
     ? 'Diesen Guide mit der passenden Mamio-Seite verbinden:'
@@ -401,8 +404,10 @@ ${alternates}
     a:hover { text-decoration: underline; }
     .site-header { border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
     .site-logo { font-size: 1.2rem; font-weight: 800; color: var(--text); }
+    .store-links { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .btn { display: inline-block; background: var(--accent); color: #071224; font-weight: 700; font-size: 0.875rem; padding: 10px 20px; border-radius: 8px; white-space: nowrap; }
     .btn:hover { text-decoration: none; opacity: 0.9; }
+    .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
     main { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
     .back-link { font-size: 0.875rem; color: var(--muted); display: inline-block; margin-bottom: 32px; }
     .back-link:hover { color: var(--accent); text-decoration: none; }
@@ -423,6 +428,7 @@ ${alternates}
     .tracker-link p { margin: 0 0 18px; color: var(--muted); }
     .cta-block { margin-top: 56px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; text-align: center; }
     .cta-block p { margin: 0 0 20px; color: var(--muted); }
+    .cta-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
     footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; font-size: 0.8rem; color: var(--muted); }
     footer a { color: var(--muted); }
   </style>
@@ -430,7 +436,10 @@ ${alternates}
 <body>
   <header class="site-header">
     <a class="site-logo" href="/${lang}/">Mamio</a>
-    <a class="btn" href="${escapeAttribute(APP_STORE_URL)}" target="_blank" rel="noopener">${escapeHtml(siteLocale.download.cta)}</a>
+    <div class="store-links">
+      <a class="btn" href="${escapeAttribute(APP_STORE_URL)}" target="_blank" rel="noopener">${escapeHtml(appStoreLabel)}</a>
+      <a class="btn btn-secondary" href="${escapeAttribute(GOOGLE_PLAY_URL)}" target="_blank" rel="noopener">${escapeHtml(googlePlayLabel)}</a>
+    </div>
   </header>
   <main>
     <a class="back-link" href="/${lang}/">${escapeHtml(backLabel)}</a>
@@ -445,7 +454,10 @@ ${faqHtml}
     <p class="disclaimer">${escapeHtml(disclaimer)}</p>
     <div class="cta-block">
       <p>${escapeHtml(locale.ctaText)}</p>
-      <a class="btn" href="${escapeAttribute(APP_STORE_URL)}" target="_blank" rel="noopener">${escapeHtml(siteLocale.download.cta)}</a>
+      <div class="cta-actions">
+        <a class="btn" href="${escapeAttribute(APP_STORE_URL)}" target="_blank" rel="noopener">${escapeHtml(appStoreLabel)}</a>
+        <a class="btn btn-secondary" href="${escapeAttribute(GOOGLE_PLAY_URL)}" target="_blank" rel="noopener">${escapeHtml(googlePlayLabel)}</a>
+      </div>
     </div>
   </main>
   <footer>
