@@ -347,6 +347,23 @@ function renderBlogHtml(postId, lang) {
     : lang === 'tr'
       ? 'Bu makale yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiyenin yerini tutmaz.'
       : 'This article is for informational purposes only and does not constitute medical advice.';
+  const trackerHeading = lang === 'de' ? 'Passender Mamio-Tracker' : lang === 'tr' ? 'İlgili Mamio takip sayfası' : 'Related Mamio tracker';
+  const trackerCopy = lang === 'de'
+    ? 'Diesen Guide mit der passenden Mamio-Seite verbinden:'
+    : lang === 'tr'
+      ? 'Bu rehberi ilgili Mamio sayfasıyla bağla:'
+      : 'Connect this guide with the matching Mamio page:';
+  const relatedTrackerPath = post.relatedPageId ? getSeoPagePath(post.relatedPageId, lang) : null;
+  const relatedTracker = post.relatedPageId
+    ? seoFeaturePages[post.relatedPageId]?.locales?.[lang]
+    : null;
+  const relatedTrackerHtml = relatedTracker && relatedTrackerPath
+    ? `    <aside class="tracker-link">
+      <h2>${escapeHtml(trackerHeading)}</h2>
+      <p>${escapeHtml(trackerCopy)}</p>
+      <a class="btn" href="${escapeAttribute(relatedTrackerPath)}">${escapeHtml(relatedTracker.shortTitle)}</a>
+    </aside>`
+    : '';
 
   return `<!doctype html>
 <html lang="${escapeAttribute(siteLocale.htmlLang)}">
@@ -401,6 +418,9 @@ ${alternates}
     .faq-item summary::-webkit-details-marker { display: none; }
     .faq-item p { margin: 12px 0 0; color: var(--muted); }
     .disclaimer { margin-top: 40px; padding: 16px 20px; background: var(--surface); border-radius: 10px; font-size: 0.85rem; color: var(--muted); border-left: 3px solid var(--accent); }
+    .tracker-link { margin: 44px 0 0; padding: 24px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+    .tracker-link h2 { margin: 0 0 8px; font-size: 1.05rem; }
+    .tracker-link p { margin: 0 0 18px; color: var(--muted); }
     .cta-block { margin-top: 56px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; text-align: center; }
     .cta-block p { margin: 0 0 20px; color: var(--muted); }
     footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; font-size: 0.8rem; color: var(--muted); }
@@ -417,6 +437,7 @@ ${alternates}
     <h1>${escapeHtml(locale.title)}</h1>
     <p class="article-intro">${escapeHtml(locale.intro)}</p>
 ${sectionsHtml}
+${relatedTrackerHtml}
     <div class="faq-block">
       <h2>${escapeHtml(faqHeading)}</h2>
 ${faqHtml}

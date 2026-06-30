@@ -643,6 +643,786 @@ export const seoFeaturePages = {
       },
     },
   },
+  bottleFeeding: {
+    image: '03-device-top',
+    slugs: {
+      en: 'bottle-feeding-tracker',
+      de: 'flaeschchen-tracker',
+      tr: 'biberon-takibi',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Bottle feeding tracker',
+        metaTitle: 'Bottle Feeding Tracker App | Mamio',
+        metaDescription:
+          'Track bottle feeds, amounts, milk source, missed entries, and daily feeding history offline with Mamio.',
+        eyebrow: 'Bottle feeding tracker',
+        title: 'Track bottle feeds clearly, even on busy days.',
+        lead:
+          'Mamio helps you record bottle amounts, feeding times, milk source, and notes in the same calm timeline as breastfeeding, pumping, diapers, and sleep.',
+        imageAlt: 'Mamio bottle feeding tracker screen with feeding amounts and recent care records.',
+        bullets: ['Bottle amounts and times', 'Milk source and notes', 'Feeds beside diapers and sleep'],
+        sections: [
+          {
+            title: 'Record the details that matter',
+            body: 'Save the time, amount, and milk source for each bottle so you can answer basic intake questions without searching through messages or paper notes.',
+          },
+          {
+            title: 'Add missed bottles later',
+            body: 'If a feed happened before you opened the app, add it manually with the correct time and amount so the day still stays accurate.',
+          },
+          {
+            title: 'Keep bottles connected to the routine',
+            body: 'Bottle feeds appear beside nursing, pumping, diapers, sleep, and health notes, making the full day easier to scan.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Can I track formula and expressed milk bottles?',
+            answer: 'Yes. Mamio lets you keep bottle feeds and milk source notes together with the rest of baby care.',
+          },
+          {
+            question: 'Can I add a bottle feed after it happened?',
+            answer: 'Yes. You can manually add missed bottle feeds with the right time and amount.',
+          },
+          {
+            question: 'Does bottle tracking work offline?',
+            answer: 'Yes. Mamio stores records locally on your device and works without an internet connection.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Fläschchen-Tracker',
+        metaTitle: 'Fläschchen-Tracker App | Mamio',
+        metaDescription:
+          'Fläschchen, Mengen, Milchquelle, verpasste Einträge und tägliche Fütterungshistorie offline mit Mamio tracken.',
+        eyebrow: 'Fläschchen-Tracker',
+        title: 'Fläschchen klar tracken, auch an vollen Tagen.',
+        lead:
+          'Mamio hilft dir, Fläschchenmengen, Zeiten, Milchquelle und Notizen in derselben ruhigen Timeline wie Stillen, Abpumpen, Windeln und Schlaf zu erfassen.',
+        imageAlt: 'Mamio Fläschchen-Tracker-Screen mit Trinkmengen und letzten Pflegeeinträgen.',
+        bullets: ['Mengen und Uhrzeiten', 'Milchquelle und Notizen', 'Mahlzeiten neben Windeln und Schlaf'],
+        sections: [
+          {
+            title: 'Die wichtigen Details erfassen',
+            body: 'Speichere Zeit, Menge und Milchquelle für jedes Fläschchen, damit grundlegende Fragen zur Trinkmenge ohne Zettel oder Chatverlauf beantwortbar bleiben.',
+          },
+          {
+            title: 'Verpasste Fläschchen ergänzen',
+            body: 'Wenn eine Mahlzeit schon passiert ist, kannst du sie manuell mit richtiger Uhrzeit und Menge hinzufügen.',
+          },
+          {
+            title: 'Fläschchen mit der Routine verbinden',
+            body: 'Fläschcheneinträge stehen neben Stillen, Abpumpen, Windeln, Schlaf und Gesundheitsnotizen, sodass der ganze Tag leichter lesbar wird.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich Pre-Nahrung und abgepumpte Milch tracken?',
+            answer: 'Ja. Mamio hält Fläschcheneinträge und Notizen zur Milchquelle zusammen mit der restlichen Babypflege.',
+          },
+          {
+            question: 'Kann ich ein Fläschchen nachträglich eintragen?',
+            answer: 'Ja. Du kannst verpasste Fläschchen manuell mit Uhrzeit und Menge ergänzen.',
+          },
+          {
+            question: 'Funktioniert Fläschchen-Tracking offline?',
+            answer: 'Ja. Mamio speichert Einträge lokal auf deinem Gerät und funktioniert ohne Internet.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Biberon takibi',
+        metaTitle: 'Biberon Takibi Uygulaması | Mamio',
+        metaDescription:
+          'Mamio ile biberon beslenmelerini, miktarları, süt kaynağını, kaçan kayıtları ve günlük beslenme geçmişini çevrimdışı takip et.',
+        eyebrow: 'Biberon takibi',
+        title: 'Yoğun günlerde bile biberonları net takip et.',
+        lead:
+          'Mamio biberon miktarını, beslenme saatini, süt kaynağını ve notları emzirme, sağım, bez ve uyku ile aynı sakin akışta tutar.',
+        imageAlt: 'Mamio biberon takip ekranında beslenme miktarları ve yakın bakım kayıtları.',
+        bullets: ['Biberon miktarı ve saati', 'Süt kaynağı ve notlar', 'Bez ve uyku yanında beslenme'],
+        sections: [
+          {
+            title: 'Önemli detayları kaydet',
+            body: 'Her biberon için saat, miktar ve süt kaynağını kaydet; günlük alım sorularını not aramadan yanıtlamak kolaylaşsın.',
+          },
+          {
+            title: 'Kaçan biberonu sonradan ekle',
+            body: 'Beslenme uygulamayı açmadan önce olduysa doğru saat ve miktarla manuel ekleyebilir, günü doğru tutabilirsin.',
+          },
+          {
+            title: 'Biberonu tüm rutinle birlikte gör',
+            body: 'Biberon kayıtları emzirme, sağım, bez, uyku ve sağlık notlarının yanında görünür; tüm gün hızlıca taranır.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Mama ve sağılmış süt biberonlarını takip edebilir miyim?',
+            answer: 'Evet. Mamio biberon kayıtlarını ve süt kaynağı notlarını diğer bakım kayıtlarıyla birlikte tutar.',
+          },
+          {
+            question: 'Biberonu sonradan ekleyebilir miyim?',
+            answer: 'Evet. Kaçan biberon beslenmelerini doğru saat ve miktarla manuel ekleyebilirsin.',
+          },
+          {
+            question: 'Biberon takibi çevrimdışı çalışır mı?',
+            answer: 'Evet. Mamio kayıtları cihazında yerel olarak saklar ve internet olmadan çalışır.',
+          },
+        ],
+      },
+    },
+  },
+  pumping: {
+    image: '06-device-bottom',
+    slugs: {
+      en: 'pumping-tracker',
+      de: 'abpump-tracker',
+      tr: 'sagim-takibi',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Pumping tracker',
+        metaTitle: 'Pumping Tracker App | Mamio',
+        metaDescription:
+          'Track pumping sessions, duration, output, reminders, and feeding context offline with Mamio.',
+        eyebrow: 'Pumping tracker',
+        title: 'A simple pumping log that fits around real life.',
+        lead:
+          'Mamio keeps pumping sessions, output notes, bottle feeds, breastfeeding, and reminders together so your milk routine is easier to follow.',
+        imageAlt: 'Mamio pumping tracker screen with pumping records and daily care timeline.',
+        bullets: ['Pump session history', 'Output and notes', 'Pumping reminders and feeding context'],
+        sections: [
+          {
+            title: 'Log sessions without fuss',
+            body: 'Record when you pumped, how long it lasted, and how much you collected when that information is useful.',
+          },
+          {
+            title: 'Connect pumping with feeds',
+            body: 'Pumping makes more sense beside bottles, nursing, and daily care events, especially when different caregivers are involved.',
+          },
+          {
+            title: 'Use reminders gently',
+            body: 'Set pumping reminders when you want a nudge, while keeping your records private and available offline.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Can I track pumping output?',
+            answer: 'Yes. You can log pumping sessions with output notes and keep them in your baby care timeline.',
+          },
+          {
+            question: 'Can pumping appear with bottle feeds?',
+            answer: 'Yes. Pumping, bottles, breastfeeding, diapers, and sleep can all be reviewed together.',
+          },
+          {
+            question: 'Can Mamio remind me to pump?',
+            answer: 'Yes. Mamio supports gentle reminders for pumping and other care routines.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Abpump-Tracker',
+        metaTitle: 'Abpump-Tracker App | Mamio',
+        metaDescription:
+          'Abpumpsessions, Dauer, Menge, Erinnerungen und Fütterungskontext offline mit Mamio tracken.',
+        eyebrow: 'Abpump-Tracker',
+        title: 'Ein einfaches Abpump-Protokoll für echten Alltag.',
+        lead:
+          'Mamio hält Abpumpsessions, Mengen-Notizen, Fläschchen, Stillen und Erinnerungen zusammen, damit deine Milchroutine leichter überschaubar bleibt.',
+        imageAlt: 'Mamio Abpump-Tracker-Screen mit Abpump-Einträgen und täglicher Pflegetimeline.',
+        bullets: ['Abpump-Historie', 'Mengen und Notizen', 'Erinnerungen und Fütterungskontext'],
+        sections: [
+          {
+            title: 'Sessions unkompliziert erfassen',
+            body: 'Halte fest, wann du abgepumpt hast, wie lange es gedauert hat und welche Menge zusammenkam, wenn diese Info hilfreich ist.',
+          },
+          {
+            title: 'Abpumpen mit Mahlzeiten verbinden',
+            body: 'Abpumpen ist leichter einzuordnen, wenn es neben Fläschchen, Stillen und den übrigen Pflegeeinträgen steht.',
+          },
+          {
+            title: 'Erinnerungen sanft nutzen',
+            body: 'Setze Abpump-Erinnerungen, wenn du einen Hinweis möchtest, während deine Einträge privat und offline verfügbar bleiben.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich abgepumpte Menge tracken?',
+            answer: 'Ja. Du kannst Abpumpsessions mit Mengen-Notizen erfassen und in der Babypflege-Timeline behalten.',
+          },
+          {
+            question: 'Erscheint Abpumpen neben Fläschchen?',
+            answer: 'Ja. Abpumpen, Fläschchen, Stillen, Windeln und Schlaf können zusammen geprüft werden.',
+          },
+          {
+            question: 'Kann Mamio mich ans Abpumpen erinnern?',
+            answer: 'Ja. Mamio unterstützt sanfte Erinnerungen für Abpumpen und andere Pflegeroutinen.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Sağım takibi',
+        metaTitle: 'Sağım Takibi Uygulaması | Mamio',
+        metaDescription:
+          'Mamio ile sağım seanslarını, süreyi, miktarı, hatırlatmaları ve beslenme bağlamını çevrimdışı takip et.',
+        eyebrow: 'Sağım takibi',
+        title: 'Gerçek hayata uyan sade sağım günlüğü.',
+        lead:
+          'Mamio sağım seanslarını, miktar notlarını, biberonları, emzirmeyi ve hatırlatmaları bir arada tutar; süt rutinin daha kolay izlenir.',
+        imageAlt: 'Mamio sağım takip ekranında sağım kayıtları ve günlük bakım akışı.',
+        bullets: ['Sağım seansı geçmişi', 'Miktar ve notlar', 'Sağım hatırlatmaları ve beslenme bağlamı'],
+        sections: [
+          {
+            title: 'Seansları uğraştırmadan kaydet',
+            body: 'Ne zaman sağım yaptığını, ne kadar sürdüğünü ve gerekiyorsa ne kadar süt çıktığını kaydet.',
+          },
+          {
+            title: 'Sağımı beslenmeyle bağla',
+            body: 'Sağım kayıtları biberon, emzirme ve diğer bakım anlarının yanında durduğunda rutin daha anlaşılır olur.',
+          },
+          {
+            title: 'Hatırlatmaları yumuşak kullan',
+            body: 'İhtiyaç duyduğunda sağım hatırlatması kurabilir, kayıtlarını özel ve çevrimdışı tutabilirsin.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Sağılan süt miktarını takip edebilir miyim?',
+            answer: 'Evet. Sağım seanslarını miktar notlarıyla kaydedip bebek bakım akışında tutabilirsin.',
+          },
+          {
+            question: 'Sağım biberonlarla birlikte görünür mü?',
+            answer: 'Evet. Sağım, biberon, emzirme, bez ve uyku kayıtları birlikte incelenebilir.',
+          },
+          {
+            question: 'Mamio sağım hatırlatması yapar mı?',
+            answer: 'Evet. Mamio sağım ve diğer bakım rutinleri için yumuşak hatırlatmaları destekler.',
+          },
+        ],
+      },
+    },
+  },
+  mixedFeeding: {
+    image: '01-hero',
+    slugs: {
+      en: 'mixed-feeding-tracker',
+      de: 'kombinierte-fuetterung-tracker',
+      tr: 'karma-beslenme-takibi',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Mixed feeding tracker',
+        metaTitle: 'Mixed Feeding Tracker App | Mamio',
+        metaDescription:
+          'Track breastfeeding, bottle feeds, pumping, milk source, and daily feeding history in one offline mixed feeding tracker.',
+        eyebrow: 'Mixed feeding tracker',
+        title: 'Breast, bottle, and pumping records in one place.',
+        lead:
+          'Mamio is built for families whose feeding routine changes across the day, keeping nursing, bottles, pumping, solids, and notes in one timeline.',
+        imageAlt: 'Mamio mixed feeding tracker with breastfeeding, bottle, and care history.',
+        bullets: ['Breastfeeding and bottles', 'Pumping and milk source notes', 'One feeding timeline'],
+        sections: [
+          {
+            title: 'Track every feeding mode',
+            body: 'Record nursing sessions, bottle amounts, milk source, pumping, and solids without splitting the day across separate logs.',
+          },
+          {
+            title: 'Understand recent rhythm',
+            body: 'Seeing mixed feeds in sequence helps you answer what happened last, how much baby took, and what might be next.',
+          },
+          {
+            title: 'Share a clearer picture',
+            body: 'A mixed feeding history can help partners, consultants, and clinicians understand the routine without relying on memory.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Can Mamio track breastfeeding and bottles together?',
+            answer: 'Yes. Mamio supports breastfeeding, bottles, pumping, solids, and care notes in the same daily timeline.',
+          },
+          {
+            question: 'Can I note milk source?',
+            answer: 'Yes. Bottle entries can include context such as milk source and amount.',
+          },
+          {
+            question: 'Is mixed feeding data stored online?',
+            answer: 'No. Mamio is offline-first and keeps records locally on your device.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Kombinierte Fütterung',
+        metaTitle: 'Tracker für kombinierte Fütterung | Mamio',
+        metaDescription:
+          'Stillen, Fläschchen, Abpumpen, Milchquelle und tägliche Fütterungshistorie in einem Offline-Tracker mit Mamio führen.',
+        eyebrow: 'Kombinierte Fütterung',
+        title: 'Stillen, Fläschchen und Abpumpen an einem Ort.',
+        lead:
+          'Mamio ist für Familien gemacht, deren Fütterungsroutine sich über den Tag verändert: Stillen, Fläschchen, Abpumpen, Beikost und Notizen bleiben in einer Timeline.',
+        imageAlt: 'Mamio Tracker für kombinierte Fütterung mit Stillen, Fläschchen und Pflegehistorie.',
+        bullets: ['Stillen und Fläschchen', 'Abpumpen und Milchquelle', 'Eine Fütterungs-Timeline'],
+        sections: [
+          {
+            title: 'Jede Fütterungsart tracken',
+            body: 'Erfasse Stillen, Fläschchenmengen, Milchquelle, Abpumpen und Beikost, ohne den Tag auf mehrere Protokolle aufzuteilen.',
+          },
+          {
+            title: 'Den letzten Rhythmus verstehen',
+            body: 'Gemischte Mahlzeiten in Reihenfolge zu sehen hilft zu beantworten, was zuletzt war, wie viel Baby getrunken hat und was als Nächstes kommen könnte.',
+          },
+          {
+            title: 'Ein klareres Bild teilen',
+            body: 'Eine Historie zur kombinierten Fütterung hilft Partnern, Beraterinnen und Ärzten, die Routine ohne Erinnerungslücken zu verstehen.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann Mamio Stillen und Fläschchen zusammen tracken?',
+            answer: 'Ja. Mamio unterstützt Stillen, Fläschchen, Abpumpen, Beikost und Pflegenotizen in einer Tageszeitlinie.',
+          },
+          {
+            question: 'Kann ich die Milchquelle notieren?',
+            answer: 'Ja. Fläschcheneinträge können Kontext wie Milchquelle und Menge enthalten.',
+          },
+          {
+            question: 'Werden Daten zur kombinierten Fütterung online gespeichert?',
+            answer: 'Nein. Mamio ist offline-first und speichert Einträge lokal auf deinem Gerät.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Karma beslenme takibi',
+        metaTitle: 'Karma Beslenme Takibi Uygulaması | Mamio',
+        metaDescription:
+          'Mamio ile emzirme, biberon, sağım, süt kaynağı ve günlük beslenme geçmişini tek çevrimdışı karma beslenme takibinde tut.',
+        eyebrow: 'Karma beslenme takibi',
+        title: 'Emzirme, biberon ve sağım tek yerde.',
+        lead:
+          'Mamio gün içinde beslenme rutini değişen aileler için tasarlandı; emzirme, biberon, sağım, ek gıda ve notlar tek akışta kalır.',
+        imageAlt: 'Mamio karma beslenme takip ekranında emzirme, biberon ve bakım geçmişi.',
+        bullets: ['Emzirme ve biberon', 'Sağım ve süt kaynağı notları', 'Tek beslenme akışı'],
+        sections: [
+          {
+            title: 'Her beslenme türünü takip et',
+            body: 'Emzirme seanslarını, biberon miktarını, süt kaynağını, sağımı ve ek gıdayı ayrı ayrı günlükler açmadan kaydet.',
+          },
+          {
+            title: 'Yakın ritmi anla',
+            body: 'Karma beslenmeleri sırayla görmek en son ne olduğunu, bebeğin ne kadar aldığını ve sırada ne olabileceğini anlamayı kolaylaştırır.',
+          },
+          {
+            title: 'Daha net bir tablo paylaş',
+            body: 'Karma beslenme geçmişi partnerlerin, danışmanların ve doktorların rutini hafızaya bağlı kalmadan görmesine yardımcı olur.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Mamio emzirme ve biberonu birlikte takip eder mi?',
+            answer: 'Evet. Mamio emzirme, biberon, sağım, ek gıda ve bakım notlarını aynı günlük akışta destekler.',
+          },
+          {
+            question: 'Süt kaynağını not edebilir miyim?',
+            answer: 'Evet. Biberon kayıtlarına süt kaynağı ve miktar gibi bağlamlar ekleyebilirsin.',
+          },
+          {
+            question: 'Karma beslenme verileri internette saklanır mı?',
+            answer: 'Hayır. Mamio çevrimdışı önceliklidir ve kayıtları cihazında yerel olarak tutar.',
+          },
+        ],
+      },
+    },
+  },
+  tummyTime: {
+    image: '10-device-bottom',
+    slugs: {
+      en: 'tummy-time-tracker',
+      de: 'tummy-time-tracker',
+      tr: 'tummy-time-takibi',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Tummy time tracker',
+        metaTitle: 'Tummy Time Tracker App | Mamio',
+        metaDescription:
+          'Track supervised tummy time sessions, duration, positions, daily progress, and age-based goals offline with Mamio.',
+        eyebrow: 'Tummy time tracker',
+        title: 'Track short tummy time sessions without making them a project.',
+        lead:
+          'Mamio helps you record supervised tummy time sessions, duration, positions, and progress beside the rest of your baby care routine.',
+        imageAlt: 'Mamio tummy time tracker screen with progress and daily care records.',
+        bullets: ['Supervised session logs', 'Duration and positions', 'Daily progress with care history'],
+        sections: [
+          {
+            title: 'Capture small sessions',
+            body: 'Tummy time often happens in short bursts. Record the session quickly, then build a gentle picture of daily progress over time.',
+          },
+          {
+            title: 'Keep position notes',
+            body: 'Add simple context such as position, mood, or what helped the session go well, without turning tracking into extra work.',
+          },
+          {
+            title: 'See it with the whole day',
+            body: 'Tummy time sits beside feeds, diapers, sleep, and notes, so you can understand where it naturally fits in the routine.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Can I track short tummy time sessions?',
+            answer: 'Yes. Mamio is designed for quick entries, including short supervised tummy time sessions.',
+          },
+          {
+            question: 'Can I add positions or notes?',
+            answer: 'Yes. You can keep simple notes with tummy time records when context is helpful.',
+          },
+          {
+            question: 'Does Mamio give developmental advice?',
+            answer: 'No. Mamio helps you record care events. Ask your pediatrician for guidance about your baby.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Tummy-Time-Tracker',
+        metaTitle: 'Tummy-Time-Tracker App | Mamio',
+        metaDescription:
+          'Beaufsichtigte Tummy-Time-Sessions, Dauer, Positionen, Tagesfortschritt und altersgerechte Ziele offline mit Mamio tracken.',
+        eyebrow: 'Tummy-Time-Tracker',
+        title: 'Kurze Tummy-Time-Sessions tracken, ohne daraus ein Projekt zu machen.',
+        lead:
+          'Mamio hilft dir, beaufsichtigte Tummy-Time-Sessions, Dauer, Positionen und Fortschritt neben der restlichen Babypflege zu erfassen.',
+        imageAlt: 'Mamio Tummy-Time-Tracker-Screen mit Fortschritt und täglichen Pflegeeinträgen.',
+        bullets: ['Beaufsichtigte Sessions', 'Dauer und Positionen', 'Tagesfortschritt mit Pflegehistorie'],
+        sections: [
+          {
+            title: 'Kleine Sessions festhalten',
+            body: 'Tummy Time passiert oft in kurzen Momenten. Erfasse die Session schnell und baue mit der Zeit ein sanftes Bild des Fortschritts auf.',
+          },
+          {
+            title: 'Positionsnotizen behalten',
+            body: 'Ergänze einfachen Kontext wie Position, Stimmung oder was gut geholfen hat, ohne das Tracking zur Zusatzaufgabe zu machen.',
+          },
+          {
+            title: 'Im ganzen Tag sehen',
+            body: 'Tummy Time steht neben Mahlzeiten, Windeln, Schlaf und Notizen, damit du erkennst, wo sie natürlich in die Routine passt.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann ich kurze Tummy-Time-Sessions tracken?',
+            answer: 'Ja. Mamio ist für schnelle Einträge gemacht, auch für kurze beaufsichtigte Tummy-Time-Sessions.',
+          },
+          {
+            question: 'Kann ich Positionen oder Notizen ergänzen?',
+            answer: 'Ja. Du kannst einfache Notizen zu Tummy-Time-Einträgen behalten, wenn Kontext hilfreich ist.',
+          },
+          {
+            question: 'Gibt Mamio Entwicklungsberatung?',
+            answer: 'Nein. Mamio hilft beim Aufzeichnen von Pflegemomenten. Für die Entwicklung deines Babys frage deinen Kinderarzt.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Tummy time takibi',
+        metaTitle: 'Tummy Time Takibi Uygulaması | Mamio',
+        metaDescription:
+          'Mamio ile gözetimli tummy time seanslarını, süreyi, pozisyonları, günlük ilerlemeyi ve yaşa göre hedefleri çevrimdışı takip et.',
+        eyebrow: 'Tummy time takibi',
+        title: 'Kısa tummy time seanslarını projeye çevirmeden takip et.',
+        lead:
+          'Mamio gözetimli tummy time seanslarını, süreyi, pozisyonları ve ilerlemeyi diğer bebek bakım kayıtlarının yanında tutar.',
+        imageAlt: 'Mamio tummy time takip ekranında ilerleme ve günlük bakım kayıtları.',
+        bullets: ['Gözetimli seans kayıtları', 'Süre ve pozisyonlar', 'Bakım geçmişiyle günlük ilerleme'],
+        sections: [
+          {
+            title: 'Küçük seansları yakala',
+            body: 'Tummy time çoğu zaman kısa anlarla ilerler. Seansı hızlıca kaydet, zamanla günlük gelişimi hafifçe gör.',
+          },
+          {
+            title: 'Pozisyon notlarını sakla',
+            body: 'Pozisyon, ruh hali veya işe yarayan küçük detayları not edebilir; takibi ekstra işe çevirmeden bağlam tutabilirsin.',
+          },
+          {
+            title: 'Tüm günle birlikte gör',
+            body: 'Tummy time beslenme, bez, uyku ve notların yanında durur; rutinde doğal yerini görmek kolaylaşır.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kısa tummy time seanslarını takip edebilir miyim?',
+            answer: 'Evet. Mamio kısa ve gözetimli tummy time seansları dahil hızlı kayıt için tasarlandı.',
+          },
+          {
+            question: 'Pozisyon veya not ekleyebilir miyim?',
+            answer: 'Evet. Bağlam faydalı olduğunda tummy time kayıtlarına basit notlar ekleyebilirsin.',
+          },
+          {
+            question: 'Mamio gelişim tavsiyesi verir mi?',
+            answer: 'Hayır. Mamio bakım anlarını kaydetmeye yardımcı olur. Bebeğinle ilgili gelişim sorularında pediatristine danış.',
+          },
+        ],
+      },
+    },
+  },
+  reminders: {
+    image: '04-device-bottom',
+    slugs: {
+      en: 'baby-vaccine-medication-reminders',
+      de: 'baby-impfung-medikament-erinnerungen',
+      tr: 'bebek-asi-ilac-hatirlatici',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Vaccine and medication reminders',
+        metaTitle: 'Baby Vaccine and Medication Reminders | Mamio',
+        metaDescription:
+          'Set gentle baby vaccine, medication, feeding, and pumping reminders while keeping care records organized offline with Mamio.',
+        eyebrow: 'Vaccine and medication reminders',
+        title: 'Gentle reminders for the care moments you do not want to miss.',
+        lead:
+          'Mamio helps you keep vaccine notes, medication records, feeding reminders, and pumping reminders close to the daily care timeline.',
+        imageAlt: 'Mamio reminders screen with baby care, vaccine, and medication context.',
+        bullets: ['Medication and vaccine notes', 'Feeding and pumping reminders', 'Offline care history'],
+        sections: [
+          {
+            title: 'Keep records and reminders close',
+            body: 'Medication, vaccine, feeding, and pumping reminders work best when they sit beside the records they relate to.',
+          },
+          {
+            title: 'Reduce memory load',
+            body: 'A gentle nudge can help on busy days, especially when more than one caregiver is involved.',
+          },
+          {
+            title: 'Record what happened',
+            body: 'After a reminder, keep the actual care record in the timeline so future doctor visits have clearer context.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Can Mamio remind me about medication?',
+            answer: 'Yes. Mamio supports reminders for medication and other care routines.',
+          },
+          {
+            question: 'Can I track vaccines too?',
+            answer: 'Yes. Mamio includes health records for vaccines, doctor visits, medication, symptoms, temperature, and growth.',
+          },
+          {
+            question: 'Is this a substitute for medical instructions?',
+            answer: 'No. Use Mamio to organize records and reminders, and always follow guidance from qualified healthcare professionals.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Impf- und Medikamenten-Erinnerungen',
+        metaTitle: 'Baby Impf- und Medikamenten-Erinnerungen | Mamio',
+        metaDescription:
+          'Sanfte Erinnerungen für Impfung, Medikamente, Füttern und Abpumpen setzen und Pflegeeinträge offline mit Mamio organisieren.',
+        eyebrow: 'Impf- und Medikamenten-Erinnerungen',
+        title: 'Sanfte Erinnerungen für Pflegemomente, die nicht untergehen sollen.',
+        lead:
+          'Mamio hält Impfnotizen, Medikamenteneinträge, Fütterungs- und Abpump-Erinnerungen nah an der täglichen Pflegetimeline.',
+        imageAlt: 'Mamio Erinnerungs-Screen mit Babycare-, Impf- und Medikamentenkontext.',
+        bullets: ['Medikamenten- und Impfnotizen', 'Fütter- und Abpump-Erinnerungen', 'Offline-Pflegehistorie'],
+        sections: [
+          {
+            title: 'Einträge und Erinnerungen nah halten',
+            body: 'Medikamenten-, Impf-, Fütter- und Abpump-Erinnerungen sind am hilfreichsten, wenn sie neben den passenden Einträgen stehen.',
+          },
+          {
+            title: 'Gedächtnis entlasten',
+            body: 'Ein sanfter Hinweis hilft an vollen Tagen, besonders wenn mehrere Betreuungspersonen beteiligt sind.',
+          },
+          {
+            title: 'Festhalten, was passiert ist',
+            body: 'Nach einer Erinnerung bleibt der tatsächliche Pflegeeintrag in der Timeline, damit Arzttermine später klareren Kontext haben.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann Mamio an Medikamente erinnern?',
+            answer: 'Ja. Mamio unterstützt Erinnerungen für Medikamente und andere Pflegeroutinen.',
+          },
+          {
+            question: 'Kann ich auch Impfungen tracken?',
+            answer: 'Ja. Mamio enthält Gesundheitsdaten für Impfungen, Arztbesuche, Medikamente, Symptome, Temperatur und Wachstum.',
+          },
+          {
+            question: 'Ersetzt das medizinische Anweisungen?',
+            answer: 'Nein. Nutze Mamio zum Organisieren von Einträgen und Erinnerungen und folge immer dem Rat qualifizierter Fachkräfte.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Aşı ve ilaç hatırlatıcı',
+        metaTitle: 'Bebek Aşı ve İlaç Hatırlatıcı | Mamio',
+        metaDescription:
+          'Mamio ile aşı, ilaç, beslenme ve sağım hatırlatmaları kur; bakım kayıtlarını çevrimdışı ve düzenli tut.',
+        eyebrow: 'Aşı ve ilaç hatırlatıcı',
+        title: 'Kaçırmak istemediğin bakım anları için yumuşak hatırlatmalar.',
+        lead:
+          'Mamio aşı notlarını, ilaç kayıtlarını, beslenme ve sağım hatırlatmalarını günlük bakım akışına yakın tutar.',
+        imageAlt: 'Mamio hatırlatıcı ekranında bebek bakımı, aşı ve ilaç bağlamı.',
+        bullets: ['İlaç ve aşı notları', 'Beslenme ve sağım hatırlatmaları', 'Çevrimdışı bakım geçmişi'],
+        sections: [
+          {
+            title: 'Kayıt ve hatırlatmaları yakın tut',
+            body: 'İlaç, aşı, beslenme ve sağım hatırlatmaları ilgili kayıtlarla aynı yerde olduğunda daha işe yarar.',
+          },
+          {
+            title: 'Hafıza yükünü azalt',
+            body: 'Yoğun günlerde, özellikle birden fazla bakım veren varsa, yumuşak bir hatırlatma rutini rahatlatır.',
+          },
+          {
+            title: 'Ne olduğunu kaydet',
+            body: 'Hatırlatmadan sonra gerçek bakım kaydı akışta kalır; sonraki doktor ziyaretlerinde daha net bağlam sağlar.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Mamio ilaç için hatırlatma yapar mı?',
+            answer: 'Evet. Mamio ilaç ve diğer bakım rutinleri için hatırlatmaları destekler.',
+          },
+          {
+            question: 'Aşıları da takip edebilir miyim?',
+            answer: 'Evet. Mamio aşı, doktor ziyareti, ilaç, semptom, ateş ve büyüme için sağlık kayıtları içerir.',
+          },
+          {
+            question: 'Bu tıbbi talimatların yerine geçer mi?',
+            answer: 'Hayır. Mamio kayıt ve hatırlatmaları düzenlemeye yardımcı olur; her zaman nitelikli sağlık profesyonellerinin yönlendirmesini izleyin.',
+          },
+        ],
+      },
+    },
+  },
+  reports: {
+    image: '09-device-bottom',
+    slugs: {
+      en: 'baby-growth-doctor-visit-report',
+      de: 'baby-wachstum-arztbesuch-bericht',
+      tr: 'bebek-buyume-doktor-ziyareti-raporu',
+    },
+    locales: {
+      en: {
+        shortTitle: 'Growth and doctor visit reports',
+        metaTitle: 'Baby Growth and Doctor Visit Reports | Mamio',
+        metaDescription:
+          'Prepare baby growth, health, feeding, medication, vaccine, and doctor visit reports from offline Mamio records.',
+        eyebrow: 'Growth and doctor visit reports',
+        title: 'Turn daily records into clearer doctor visit context.',
+        lead:
+          'Mamio helps you keep growth entries, health notes, feeding history, medication, vaccines, and doctor visits organized for reports and conversations.',
+        imageAlt: 'Mamio health records screen with growth, reports, and doctor visit context.',
+        bullets: ['Growth and health records', 'PDF reports for date ranges', 'Doctor visit context'],
+        sections: [
+          {
+            title: 'Bring recent history together',
+            body: 'Growth, feeding, sleep, symptoms, medication, vaccines, and notes are easier to review when they come from one timeline.',
+          },
+          {
+            title: 'Prepare reports faster',
+            body: 'Mamio Pro supports PDF exports for selected date ranges, useful before check-ups, consultations, or shared caregiving conversations.',
+          },
+          {
+            title: 'Use reports as communication support',
+            body: 'Reports help you describe what you observed. They do not diagnose or replace medical advice from qualified professionals.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Can Mamio export a baby care report?',
+            answer: 'Mamio Pro supports PDF report exports for selected date ranges.',
+          },
+          {
+            question: 'What can be included in health context?',
+            answer: 'Growth, feeding, sleep, medication, vaccines, symptoms, temperature, doctor visits, and notes can be kept together.',
+          },
+          {
+            question: 'Can I use reports at doctor visits?',
+            answer: 'Yes. Reports can help share context, but they do not replace medical assessment or advice.',
+          },
+        ],
+      },
+      de: {
+        shortTitle: 'Wachstums- und Arztberichte',
+        metaTitle: 'Baby Wachstums- und Arztbesuch-Berichte | Mamio',
+        metaDescription:
+          'Babywachstum, Gesundheit, Fütterung, Medikamente, Impfungen und Arztbesuch-Berichte aus Offline-Mamio-Einträgen vorbereiten.',
+        eyebrow: 'Wachstums- und Arztberichte',
+        title: 'Tägliche Einträge in klareren Arztbesuch-Kontext verwandeln.',
+        lead:
+          'Mamio hilft dir, Wachstum, Gesundheitsnotizen, Fütterungshistorie, Medikamente, Impfungen und Arztbesuche für Berichte und Gespräche zu organisieren.',
+        imageAlt: 'Mamio Gesundheitsdaten-Screen mit Wachstum, Berichten und Arztbesuch-Kontext.',
+        bullets: ['Wachstum und Gesundheitsdaten', 'PDF-Berichte für Zeiträume', 'Kontext für Arztbesuche'],
+        sections: [
+          {
+            title: 'Aktuelle Historie zusammenbringen',
+            body: 'Wachstum, Fütterung, Schlaf, Symptome, Medikamente, Impfungen und Notizen sind leichter prüfbar, wenn sie aus einer Timeline kommen.',
+          },
+          {
+            title: 'Berichte schneller vorbereiten',
+            body: 'Mamio Pro unterstützt PDF-Exporte für ausgewählte Zeiträume, nützlich vor Vorsorgeuntersuchungen, Beratungen oder Betreuungsabsprachen.',
+          },
+          {
+            title: 'Berichte als Kommunikationshilfe nutzen',
+            body: 'Berichte helfen, Beobachtungen zu beschreiben. Sie diagnostizieren nicht und ersetzen keinen medizinischen Rat.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Kann Mamio einen Babycare-Bericht exportieren?',
+            answer: 'Mamio Pro unterstützt PDF-Berichtsexporte für ausgewählte Datumsbereiche.',
+          },
+          {
+            question: 'Was kann im Gesundheitskontext enthalten sein?',
+            answer: 'Wachstum, Fütterung, Schlaf, Medikamente, Impfungen, Symptome, Temperatur, Arztbesuche und Notizen können zusammengeführt werden.',
+          },
+          {
+            question: 'Kann ich Berichte bei Arztbesuchen nutzen?',
+            answer: 'Ja. Berichte können Kontext teilen, ersetzen aber keine medizinische Beurteilung oder Beratung.',
+          },
+        ],
+      },
+      tr: {
+        shortTitle: 'Büyüme ve doktor raporları',
+        metaTitle: 'Bebek Büyüme ve Doktor Ziyareti Raporları | Mamio',
+        metaDescription:
+          'Mamio kayıtlarından bebek büyüme, sağlık, beslenme, ilaç, aşı ve doktor ziyareti raporlarını çevrimdışı hazırlamaya yardımcı olur.',
+        eyebrow: 'Büyüme ve doktor raporları',
+        title: 'Günlük kayıtları doktor ziyareti için daha net bağlama dönüştür.',
+        lead:
+          'Mamio büyüme girişlerini, sağlık notlarını, beslenme geçmişini, ilaçları, aşıları ve doktor ziyaretlerini raporlar ve görüşmeler için düzenli tutar.',
+        imageAlt: 'Mamio sağlık kayıtları ekranında büyüme, raporlar ve doktor ziyareti bağlamı.',
+        bullets: ['Büyüme ve sağlık kayıtları', 'Tarih aralığına göre PDF raporlar', 'Doktor ziyareti bağlamı'],
+        sections: [
+          {
+            title: 'Yakın geçmişi bir araya getir',
+            body: 'Büyüme, beslenme, uyku, semptom, ilaç, aşı ve notlar tek akıştan geldiğinde gözden geçirmek daha kolaydır.',
+          },
+          {
+            title: 'Raporları daha hızlı hazırla',
+            body: 'Mamio Pro seçilen tarih aralıkları için PDF dışa aktarımını destekler; kontroller, danışmalar veya bakım paylaşımı öncesinde işe yarar.',
+          },
+          {
+            title: 'Raporları iletişim desteği olarak kullan',
+            body: 'Raporlar gözlemlerini anlatmana yardımcı olur. Tanı koymaz ve nitelikli sağlık profesyoneli tavsiyesinin yerini tutmaz.',
+          },
+        ],
+        faq: [
+          {
+            question: 'Mamio bebek bakım raporu dışa aktarır mı?',
+            answer: 'Mamio Pro seçilen tarih aralıkları için PDF rapor dışa aktarımını destekler.',
+          },
+          {
+            question: 'Sağlık bağlamına neler dahil olabilir?',
+            answer: 'Büyüme, beslenme, uyku, ilaç, aşı, semptom, ateş, doktor ziyaretleri ve notlar birlikte tutulabilir.',
+          },
+          {
+            question: 'Raporları doktor ziyaretinde kullanabilir miyim?',
+            answer: 'Evet. Raporlar bağlam paylaşmaya yardımcı olur ama tıbbi değerlendirme veya tavsiyenin yerine geçmez.',
+          },
+        ],
+      },
+    },
+  },
   diaper: {
     image: '07-device-top',
     slugs: {

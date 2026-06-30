@@ -15,6 +15,18 @@
 - Added postbuild static fallback internal links so generated home and feature HTML exposes tracker, guide, and support links before JavaScript runs.
 - Verified with `npm run build` and `npm run lint`.
 
+## Sprint 3 implemented
+
+- Added localized EN/DE/TR landing pages for the next high-intent growth clusters: bottle feeding tracker, pumping tracker, mixed feeding tracker, tummy time tracker, vaccine/medication reminders, and growth/doctor visit reports.
+- Connected the new cluster pages to the existing static generation flow so each gets canonical tags, reciprocal hreflang tags, structured data, fallback links, and sitemap entries.
+- Linked the new tracker pages to the closest existing parent guides while leaving room for dedicated cluster articles.
+
+## Sprint 4 implemented
+
+- Added dedicated EN/DE/TR blog guides for bottle feeding logs, pumping output, mixed feeding routines, tummy time progress, vaccine/medication reminders, and growth/doctor visit reports.
+- Updated feature-to-guide relationships so the new landing pages surface their matching articles and broad feeding/health/care pages expose stronger cluster coverage.
+- Added static guide-to-tracker links in generated blog HTML, creating crawlable internal links from every new article back to its matching landing page.
+
 ## Next SEO priorities
 
 1. Submit and monitor Search Console
@@ -27,9 +39,9 @@
    - After each language is added, update `locales`, screenshots, `hreflang`, sitemap generation, and the browser-language redirect allowlist.
 
 3. Build keyword-focused content clusters
-   - Feeding cluster: newborn feeds, breastfeeding timer, bottle feeding, pumping, mixed feeding.
-   - Care cluster: diaper tracker, diaper color notes, sleep logs, tummy time, daily baby care timeline.
-   - Health cluster: growth, vaccines, medication reminders, doctor visit reports, offline baby records.
+   - Add secondary long-tail guides for breastfeeding timer, bottle amounts by age intent, pumping schedule support, medication log exports, and doctor visit checklist queries.
+   - Add more cross-links between sibling guides inside the same cluster once article volume grows.
+   - Keep medical/developmental language careful: Mamio records observations and reminders; clinicians provide advice.
 
 4. Improve conversion signals
    - Add store badges or platform-specific download sections once both App Store and Google Play pages are final.
