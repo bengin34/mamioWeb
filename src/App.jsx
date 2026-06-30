@@ -31,6 +31,12 @@ import {
   seoPageLangs,
   screenshotFiles,
 } from './content';
+import {
+  blogPostIds,
+  blogPosts,
+  featureBlogPostIds,
+  getBlogPostPath,
+} from './blog-content';
 
 const featureIcons = [Milk, Clock, HeartPulse, Bell, ChartColumn, ShieldCheck];
 const proofIcons = [Moon, Timer, LockKeyhole, Languages];
@@ -490,11 +496,65 @@ function SeoFeatureLinks({ content, currentLang }) {
   );
 }
 
+function getBlogLinks(lang, postIds = blogPostIds) {
+  return postIds
+    .map((postId) => ({
+      id: postId,
+      path: getBlogPostPath(postId, lang),
+      post: blogPosts[postId]?.locales?.[lang],
+    }))
+    .filter((item) => item.path && item.post);
+}
+
+function BlogGuideCards({ content, links }) {
+  return links.map(({ id, path, post }, index) => (
+    <a
+      key={id}
+      href={path}
+      className={`guide-link-card anim anim-d${Math.min(index + 1, 5)}`}
+    >
+      <span className="guide-card-kicker">Mamio Blog</span>
+      <span className="text-sm font-black leading-5 text-ink">
+        {post.title}
+      </span>
+      <span className="mt-3 block text-xs font-bold leading-5 text-ink/54">
+        {post.metaDescription}
+      </span>
+      <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-black text-cyan-deep">
+        {content.guides.readMore}
+        <ChevronRight aria-hidden="true" size={15} />
+      </span>
+    </a>
+  ));
+}
+
+function BlogGuideLinks({ content, currentLang }) {
+  const ref = useRef(null);
+  useReveal(ref);
+  const links = getBlogLinks(currentLang);
+
+  if (!content.guides || !links.length) return null;
+
+  return (
+    <section ref={ref} className="bg-paper px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-7xl">
+        <div className="anim">
+          <SectionIntro align="center" {...content.guides} />
+        </div>
+        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          <BlogGuideCards content={content} links={links} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function FeaturePage({ homeContent, currentLang, pageId }) {
   const ref = useRef(null);
   useReveal(ref);
   const page = seoFeaturePages[pageId].locales[currentLang];
   const feature = seoFeaturePages[pageId];
+  const relatedGuides = getBlogLinks(currentLang, featureBlogPostIds[pageId] ?? []);
   const related = seoPageIds
     .filter((id) => id !== pageId)
     .map((id) => ({
@@ -617,6 +677,24 @@ function FeaturePage({ homeContent, currentLang, pageId }) {
           </div>
         </div>
       </section>
+
+      {relatedGuides.length ? (
+        <section className="bg-paper px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="anim">
+              <SectionIntro
+                align="center"
+                eyebrow={homeContent.guides.eyebrow}
+                title={homeContent.guides.relatedTitle}
+                body={homeContent.guides.relatedBody}
+              />
+            </div>
+            <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <BlogGuideCards content={homeContent} links={relatedGuides} />
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="bg-paper px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
@@ -967,6 +1045,8 @@ function DownloadBlock({ content }) {
 ───────────────────────────────────────── */
 function Footer({ content }) {
   const year = new Date().getFullYear();
+  const showGermanLegal = content.htmlLang === 'de';
+
   return (
     <footer className="bg-ink px-4 pb-10 pt-14 text-white sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
@@ -984,10 +1064,16 @@ function Footer({ content }) {
                 <p className="text-sm text-white/48">{content.footer.tagline}</p>
               </div>
             </div>
-            <p className="mt-6 text-sm leading-7 text-white/32">
-              &copy; {year} Mendi Tekstilwaren<br />
-              Fauststrasse 44a · 81827 München
-            </p>
+            {showGermanLegal ? (
+              <p className="mt-6 text-sm leading-7 text-white/32">
+                &copy; {year} Mendi Tekstilwaren<br />
+                Fauststrasse 44a · 81827 München
+              </p>
+            ) : (
+              <p className="mt-6 text-sm leading-7 text-white/32">
+                &copy; {year} Mamio
+              </p>
+            )}
           </div>
 
           {/* App */}
@@ -1036,7 +1122,9 @@ function Footer({ content }) {
               <a href="/privacy/" className="footer-link">Privacy Policy</a>
               <a href="/terms/" className="footer-link">Terms of Use</a>
               <a href="/support/" className="footer-link">Support</a>
-              <a href="/impressum/" className="footer-link">Impressum</a>
+              {showGermanLegal ? (
+                <a href="/impressum/" className="footer-link">Impressum</a>
+              ) : null}
             </div>
           </div>
         </div>
@@ -1044,7 +1132,9 @@ function Footer({ content }) {
         <div className="footer-divider" />
 
         <p className="text-[0.8rem] text-white/28">
-          Simple. Quiet. Trustworthy. — Made with care in Munich.
+          {showGermanLegal
+            ? 'Simple. Quiet. Trustworthy. — Made with care in Munich.'
+            : content.footer.tagline}
         </p>
       </div>
     </footer>
@@ -1095,6 +1185,7 @@ export default function App() {
           <ProofStrip content={content} />
           <Features content={content} />
           <SeoFeatureLinks content={content} currentLang={currentLang} />
+          <BlogGuideLinks content={content} currentLang={currentLang} />
           <Screens content={content} />
           <Privacy content={content} />
           <Plans content={content} />

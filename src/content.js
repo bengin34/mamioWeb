@@ -115,6 +115,14 @@ export const locales = {
       title: 'Explore focused Mamio trackers',
       body: 'Start with the care moment you want to track best, then keep everything connected in one quiet timeline.',
     },
+    guides: {
+      eyebrow: 'Parent guides',
+      title: 'Practical baby care guides',
+      body: 'Read calm, useful articles about feeds, diapers, sleep, and health records without turning care into pressure.',
+      relatedTitle: 'Related baby care guides',
+      relatedBody: 'A few practical reads connected to this tracker.',
+      readMore: 'Read guide',
+    },
     download: {
       eyebrow: 'Get Mamio',
       title: 'Start tracking baby care with Mamio today.',
@@ -229,6 +237,14 @@ export const locales = {
       title: 'Mamio-Tracker im Detail entdecken',
       body: 'Starte mit dem Pflegemoment, den du am besten tracken möchtest, und halte alles in einer ruhigen Zeitlinie zusammen.',
     },
+    guides: {
+      eyebrow: 'Elternratgeber',
+      title: 'Praktische Babycare-Guides',
+      body: 'Lies ruhige, nützliche Artikel zu Mahlzeiten, Windeln, Schlaf und Gesundheitsnotizen, ohne Pflege in Druck zu verwandeln.',
+      relatedTitle: 'Passende Babycare-Guides',
+      relatedBody: 'Ein paar praktische Artikel, die zu diesem Tracker passen.',
+      readMore: 'Guide lesen',
+    },
     download: {
       eyebrow: 'Mamio laden',
       title: 'Starte heute mit ruhigem Babycare-Tracking.',
@@ -342,6 +358,14 @@ export const locales = {
       eyebrow: 'Rehberler',
       title: 'Mamio takip sayfalarını keşfet',
       body: 'En çok takip etmek istediğin bakım anından başla; kayıtlar tek ve sakin bir günlük akışta birleşsin.',
+    },
+    guides: {
+      eyebrow: 'Ebeveyn rehberleri',
+      title: 'Pratik bebek bakım rehberleri',
+      body: 'Beslenme, bez, uyku ve sağlık kayıtları hakkında baskı yaratmayan, işe yarar yazıları oku.',
+      relatedTitle: 'İlgili bebek bakım rehberleri',
+      relatedBody: 'Bu takip sayfasıyla bağlantılı birkaç pratik yazı.',
+      readMore: 'Rehberi oku',
     },
     download: {
       eyebrow: 'Mamio indir',

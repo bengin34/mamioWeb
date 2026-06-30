@@ -16,6 +16,7 @@ import {
   blogLangs,
   blogPostIds,
   blogPosts,
+  featureBlogPostIds,
   getBlogPostAlternates,
   getBlogPostPath,
 } from '../src/blog-content.js';
@@ -111,6 +112,101 @@ function renderAlternates(route) {
     .join('\n    ');
 }
 
+const fallbackLabels = {
+  en: {
+    homes: 'Localized home pages',
+    trackers: 'Mamio trackers',
+    guides: 'Baby care guides',
+    legal: 'Support and legal',
+  },
+  de: {
+    homes: 'Lokalisierte Startseiten',
+    trackers: 'Mamio-Tracker',
+    guides: 'Babycare-Guides',
+    legal: 'Support und Rechtliches',
+  },
+  tr: {
+    homes: 'Yerelleştirilmiş ana sayfalar',
+    trackers: 'Mamio takip sayfaları',
+    guides: 'Bebek bakım rehberleri',
+    legal: 'Destek ve yasal sayfalar',
+  },
+};
+
+const legalLinks = {
+  en: [
+    { href: '/privacy/', label: 'Privacy Policy' },
+    { href: '/terms/', label: 'Terms of Use' },
+    { href: '/support/', label: 'Support' },
+  ],
+  de: [
+    { href: '/privacy/', label: 'Datenschutz' },
+    { href: '/terms/', label: 'Nutzungsbedingungen' },
+    { href: '/support/', label: 'Support' },
+    { href: '/impressum/', label: 'Impressum' },
+  ],
+  tr: [
+    { href: '/privacy/', label: 'Gizlilik Politikası' },
+    { href: '/terms/', label: 'Kullanım Şartları' },
+    { href: '/support/', label: 'Destek' },
+  ],
+};
+
+function renderFallbackSection(title, links) {
+  if (!links.length) return '';
+
+  const items = links
+    .map((link) => `          <li><a href="${escapeAttribute(link.href)}">${escapeHtml(link.label)}</a></li>`)
+    .join('\n');
+
+  return `        <section>
+          <h2>${escapeHtml(title)}</h2>
+          <ul>
+${items}
+          </ul>
+        </section>`;
+}
+
+function renderFallbackLinks(route) {
+  const lang = route.lang ?? 'en';
+  const content = locales[lang] ?? locales.en;
+  const labels = fallbackLabels[lang] ?? fallbackLabels.en;
+  const title = route.kind === 'seoPage'
+    ? seoFeaturePages[route.pageId].locales[lang].title
+    : content.metaTitle;
+  const homeLinks = route.isRoot
+    ? localeKeys.map((locale) => ({
+      href: locales[locale].path,
+      label: locales[locale].label,
+    }))
+    : [{ href: content.path, label: content.label }];
+  const trackerLinks = seoPageIds
+    .map((pageId) => ({
+      href: getSeoPagePath(pageId, lang),
+      label: seoFeaturePages[pageId].locales[lang]?.shortTitle,
+    }))
+    .filter((link) => link.href && link.label);
+  const guidePostIds = route.kind === 'seoPage'
+    ? featureBlogPostIds[route.pageId] ?? blogPostIds
+    : blogPostIds;
+  const guideLinks = guidePostIds
+    .map((postId) => ({
+      href: getBlogPostPath(postId, lang),
+      label: blogPosts[postId].locales[lang]?.title,
+    }))
+    .filter((link) => link.href && link.label);
+
+  return `
+    <nav class="seo-fallback" aria-label="Mamio internal links">
+      <h1>${escapeHtml(title)}</h1>
+${renderFallbackSection(labels.homes, homeLinks)}
+${renderFallbackSection(labels.trackers, trackerLinks)}
+${renderFallbackSection(labels.guides, guideLinks)}
+${renderFallbackSection(labels.legal, legalLinks[lang] ?? legalLinks.en)}
+    </nav>
+  `;
+}
+
 function localizeHtml(html, route) {
   const meta = getRouteMeta(route);
   const canonical = getRouteCanonical(route);
@@ -133,6 +229,7 @@ function localizeHtml(html, route) {
   next = setTag(next, /<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${escapeAttribute(meta.title)}" />`);
   next = setTag(next, /<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${escapeAttribute(meta.description)}" />`);
   next = setTag(next, /<script type="application\/ld\+json" id="structured-data">[\s\S]*?<\/script>/, `<script type="application/ld+json" id="structured-data">\n      ${jsonLd}\n    </script>`);
+  next = setTag(next, /<div id="root">\s*<\/div>/, `<div id="root">${renderFallbackLinks(route)}</div>`);
 
   return next;
 }

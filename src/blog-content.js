@@ -1,5 +1,14 @@
 export const blogLangs = ['en', 'de', 'tr'];
 
+export const featureBlogPostIds = {
+  breastfeeding: ['breastfeeding-side-balance', 'newborn-feeds'],
+  feeding: ['newborn-feeds', 'breastfeeding-side-balance'],
+  diaper: ['diaper-color'],
+  sleep: ['baby-sleep-first-months'],
+  health: ['health-report-doctor', 'diaper-color'],
+  careTimeline: ['newborn-feeds', 'baby-sleep-first-months', 'diaper-color', 'health-report-doctor'],
+};
+
 export const blogPosts = {
   'newborn-feeds': {
     slugs: {
