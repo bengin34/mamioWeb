@@ -465,7 +465,7 @@ for (const [code, data] of Object.entries(extraLocales)) {
     assetLocale: meta.assetLocale ?? 'en-US',
     dir: meta.dir,
     path: `/${code}/`,
-    ...data.home,
+    ...structuredClone(data.home),
   };
 }
 
