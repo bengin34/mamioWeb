@@ -122,6 +122,7 @@ export const locales = {
       relatedTitle: 'Related baby care guides',
       relatedBody: 'A few practical reads connected to this tracker.',
       readMore: 'Read guide',
+      allGuides: 'View all guides',
     },
     download: {
       eyebrow: 'Get Mamio',
@@ -244,6 +245,7 @@ export const locales = {
       relatedTitle: 'Passende Babycare-Guides',
       relatedBody: 'Ein paar praktische Artikel, die zu diesem Tracker passen.',
       readMore: 'Guide lesen',
+      allGuides: 'Alle Guides ansehen',
     },
     download: {
       eyebrow: 'Mamio laden',
@@ -366,6 +368,7 @@ export const locales = {
       relatedTitle: 'İlgili bebek bakım rehberleri',
       relatedBody: 'Bu takip sayfasıyla bağlantılı birkaç pratik yazı.',
       readMore: 'Rehberi oku',
+      allGuides: 'Tüm rehberleri gör',
     },
     download: {
       eyebrow: 'Mamio indir',

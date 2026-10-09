@@ -33,6 +33,8 @@ import {
 } from './content';
 import {
   blogPostIds,
+  blogPostIdsByDate,
+  getBlogIndexPath,
   blogPosts,
   featureBlogPostIds,
   getBlogPostPath,
@@ -496,6 +498,8 @@ function SeoFeatureLinks({ content, currentLang }) {
   );
 }
 
+const HOME_GUIDE_COUNT = 6;
+
 function getBlogLinks(lang, postIds = blogPostIds) {
   return postIds
     .map((postId) => ({
@@ -531,7 +535,7 @@ function BlogGuideCards({ content, links }) {
 function BlogGuideLinks({ content, currentLang }) {
   const ref = useRef(null);
   useReveal(ref);
-  const links = getBlogLinks(currentLang);
+  const links = getBlogLinks(currentLang, blogPostIdsByDate.slice(0, HOME_GUIDE_COUNT));
 
   if (!content.guides || !links.length) return null;
 
@@ -541,8 +545,17 @@ function BlogGuideLinks({ content, currentLang }) {
         <div className="anim">
           <SectionIntro align="center" {...content.guides} />
         </div>
-        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           <BlogGuideCards content={content} links={links} />
+        </div>
+        <div className="mt-8 text-center">
+          <a
+            href={getBlogIndexPath(currentLang)}
+            className="inline-flex items-center gap-1.5 text-sm font-black text-cyan-deep"
+          >
+            {content.guides.allGuides}
+            <ChevronRight aria-hidden="true" size={16} />
+          </a>
         </div>
       </div>
     </section>
