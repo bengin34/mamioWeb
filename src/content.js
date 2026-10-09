@@ -1,3 +1,6 @@
+import { extraLocales } from './locales/index.js';
+import { getLocaleMeta, localeCodes, localeLabelList } from './locale-registry.js';
+
 export const DOMAIN = 'https://mamio-baby-tracker.com';
 export const APP_STORE_URL = 'https://apps.apple.com/us/app/mamio-breastfeeding-tracker/id6757083259';
 export const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.mamio.app';
@@ -41,7 +44,7 @@ export const locales = {
       { value: '3:00 AM', label: 'built for sleepy feeds' },
       { value: '1 timeline', label: 'for the whole day' },
       { value: '0 accounts', label: 'needed to start' },
-      { value: '14 languages', label: 'inside the app' },
+      { value: '28 languages', label: 'inside the app' },
     ],
     intro: {
       eyebrow: 'Designed for real nights',
@@ -108,7 +111,7 @@ export const locales = {
     },
     languages: {
       title: 'Made for multilingual families',
-      body: 'The app supports English, Deutsch, Español, Français, हिन्दी, Italiano, Português, Русский, Türkçe, Українська, العربية, עברית, 日本語, and 한국어.',
+      body: 'The app supports {languages}.',
     },
     seoLinks: {
       eyebrow: 'Guides',
@@ -129,6 +132,26 @@ export const locales = {
       title: 'Start tracking baby care with Mamio today.',
       body: 'Download Mamio on iOS or Android and keep feeding, diapers, sleep, pumping, growth, health records, and reminders close at hand.',
       cta: 'Download on the App Store',
+    },
+    ui: {
+      blogLabel: 'Guides',
+      relatedPosts: 'Keep reading',
+      faqHeading: 'Frequently Asked Questions',
+      backHome: '← Back to home',
+      disclaimer: 'This article is for informational purposes only and does not constitute medical advice.',
+      trackerHeading: 'Related Mamio tracker',
+      trackerCopy: 'Connect this guide with the matching Mamio page:',
+      hubTitle: 'Baby Care Guides | Mamio Blog',
+      hubHeading: 'Baby care guides',
+      hubDescription: 'Calm, practical guides on newborn feeding, breastfeeding, bottles, diapers, sleep, solids, and baby health records from the Mamio baby tracker.',
+      hubIntro: 'Practical, low-pressure reads for tired parents: how to track feeds, diapers, sleep, and health records without turning care into paperwork.',
+      fallbackHomes: 'Localized home pages',
+      fallbackTrackers: 'Mamio trackers',
+      fallbackGuides: 'Baby care guides',
+      fallbackLegal: 'Support and legal',
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Use',
+      support: 'Support',
     },
     footer: {
       tagline: 'Simple. Quiet. Trustworthy.',
@@ -164,7 +187,7 @@ export const locales = {
       { value: '3:00 Uhr', label: 'für müde Nächte' },
       { value: '1 Timeline', label: 'für den ganzen Tag' },
       { value: '0 Konten', label: 'zum Starten nötig' },
-      { value: '14 Sprachen', label: 'in der App' },
+      { value: '28 Sprachen', label: 'in der App' },
     ],
     intro: {
       eyebrow: 'Für echte Nächte gemacht',
@@ -231,7 +254,7 @@ export const locales = {
     },
     languages: {
       title: 'Für mehrsprachige Familien',
-      body: 'Die App unterstützt English, Deutsch, Español, Français, हिन्दी, Italiano, Português, Русский, Türkçe, Українська, العربية, עברית, 日本語 und 한국어.',
+      body: 'Die App unterstützt {languages}.',
     },
     seoLinks: {
       eyebrow: 'Guides',
@@ -252,6 +275,26 @@ export const locales = {
       title: 'Starte heute mit ruhigem Babycare-Tracking.',
       body: 'Lade Mamio für iOS oder Android und halte Füttern, Windeln, Schlaf, Abpumpen, Wachstum, Gesundheitsdaten und Erinnerungen griffbereit.',
       cta: 'Im App Store laden',
+    },
+    ui: {
+      blogLabel: 'Guides',
+      relatedPosts: 'Weiterlesen',
+      faqHeading: 'Häufige Fragen',
+      backHome: '← Zurück zur Startseite',
+      disclaimer: 'Dieser Artikel dient nur zu Informationszwecken und ersetzt keinen medizinischen Rat.',
+      trackerHeading: 'Passender Mamio-Tracker',
+      trackerCopy: 'Diesen Guide mit der passenden Mamio-Seite verbinden:',
+      hubTitle: 'Babycare-Guides | Mamio Blog',
+      hubHeading: 'Babycare-Guides',
+      hubDescription: 'Ruhige, praktische Guides zu Neugeborenen-Mahlzeiten, Stillen, Fläschchen, Windeln, Schlaf, Beikost und Gesundheitsnotizen vom Mamio Baby Tracker.',
+      hubIntro: 'Praktische, entspannte Artikel für müde Eltern: wie du Mahlzeiten, Windeln, Schlaf und Gesundheitsnotizen trackst, ohne Pflege in Papierkram zu verwandeln.',
+      fallbackHomes: 'Lokalisierte Startseiten',
+      fallbackTrackers: 'Mamio-Tracker',
+      fallbackGuides: 'Babycare-Guides',
+      fallbackLegal: 'Support und Rechtliches',
+      privacy: 'Datenschutz',
+      terms: 'Nutzungsbedingungen',
+      support: 'Support',
     },
     footer: {
       tagline: 'Einfach. Ruhig. Vertrauenswürdig.',
@@ -287,7 +330,7 @@ export const locales = {
       { value: '03:00', label: 'uykusuz beslenmeler için' },
       { value: '1 akış', label: 'tüm gün için' },
       { value: '0 hesap', label: 'başlamak için yeterli' },
-      { value: '14 dil', label: 'uygulama içinde' },
+      { value: '28 dil', label: 'uygulama içinde' },
     ],
     intro: {
       eyebrow: 'Gerçek geceler için tasarlandı',
@@ -354,7 +397,7 @@ export const locales = {
     },
     languages: {
       title: 'Çok dilli aileler için',
-      body: 'Uygulama English, Deutsch, Español, Français, हिन्दी, Italiano, Português, Русский, Türkçe, Українська, العربية, עברית, 日本語 ve 한국어 destekler.',
+      body: 'Uygulama şu dilleri destekler: {languages}.',
     },
     seoLinks: {
       eyebrow: 'Rehberler',
@@ -376,6 +419,26 @@ export const locales = {
       body: "Mamio'yu iOS veya Android için indir; emzirme, biberon, bez, uyku, sağım, büyüme, sağlık kayıtları ve hatırlatmalar elinin altında kalsın.",
       cta: "App Store'dan indir",
     },
+    ui: {
+      blogLabel: 'Rehberler',
+      relatedPosts: 'Okumaya devam et',
+      faqHeading: 'Sık Sorulan Sorular',
+      backHome: '← Ana sayfaya dön',
+      disclaimer: 'Bu makale yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiyenin yerini tutmaz.',
+      trackerHeading: 'İlgili Mamio takip sayfası',
+      trackerCopy: 'Bu rehberi ilgili Mamio sayfasıyla bağla:',
+      hubTitle: 'Bebek Bakım Rehberleri | Mamio Blog',
+      hubHeading: 'Bebek bakım rehberleri',
+      hubDescription: 'Mamio bebek takip uygulamasından yenidoğan beslenmesi, emzirme, biberon, bez, uyku, ek gıda ve bebek sağlık kayıtları hakkında sakin, pratik rehberler.',
+      hubIntro: 'Yorgun ebeveynler için baskı yaratmayan, pratik yazılar: beslenme, bez, uyku ve sağlık kayıtlarını bakımı evrak işine çevirmeden nasıl takip edersin.',
+      fallbackHomes: 'Yerelleştirilmiş ana sayfalar',
+      fallbackTrackers: 'Mamio takip sayfaları',
+      fallbackGuides: 'Bebek bakım rehberleri',
+      fallbackLegal: 'Destek ve yasal sayfalar',
+      privacy: 'Gizlilik Politikası',
+      terms: 'Kullanım Şartları',
+      support: 'Destek',
+    },
     footer: {
       tagline: 'Sade. Sakin. Güvenilir.',
       eula: 'Apple standart EULA',
@@ -383,7 +446,35 @@ export const locales = {
   },
 };
 
-export const seoPageLangs = ['en', 'de', 'tr'];
+const baseLocaleKeys = Object.keys(locales);
+
+for (const code of baseLocaleKeys) {
+  const meta = getLocaleMeta(code);
+  locales[code].dir = meta.dir;
+  locales[code].hreflang = meta.hreflang;
+}
+
+for (const [code, data] of Object.entries(extraLocales)) {
+  const meta = getLocaleMeta(code);
+  locales[code] = {
+    label: meta.label,
+    shortLabel: meta.shortLabel,
+    htmlLang: meta.hreflang,
+    hreflang: meta.hreflang,
+    ogLocale: meta.ogLocale,
+    assetLocale: meta.assetLocale ?? 'en-US',
+    dir: meta.dir,
+    path: `/${code}/`,
+    ...data.home,
+  };
+}
+
+// "{languages}" in languages.body expands to the full native-name list.
+for (const content of Object.values(locales)) {
+  content.languages.body = content.languages.body.replace('{languages}', localeLabelList.join(', '));
+}
+
+export const seoPageLangs = localeCodes.filter((code) => locales[code]);
 
 export const seoFeaturePages = {
   breastfeeding: {
@@ -1948,7 +2039,15 @@ export const seoFeaturePages = {
   },
 };
 
-export const localeKeys = Object.keys(locales);
+for (const [code, data] of Object.entries(extraLocales)) {
+  for (const [pageId, page] of Object.entries(data.seo)) {
+    const { slug, ...fields } = page;
+    seoFeaturePages[pageId].slugs[code] = slug;
+    seoFeaturePages[pageId].locales[code] = fields;
+  }
+}
+
+export const localeKeys = seoPageLangs;
 export const seoPageIds = Object.keys(seoFeaturePages);
 
 export function getLocaleFromPath(pathname = '/') {
@@ -1993,7 +2092,7 @@ export function getRouteAlternates(route) {
   if (route.kind === 'seoPage') {
     return [
       ...seoPageLangs.map((lang) => ({
-        lang,
+        lang: locales[lang].hreflang,
         href: `${DOMAIN}${getSeoPagePath(route.pageId, lang)}`,
       })),
       {
@@ -2005,7 +2104,7 @@ export function getRouteAlternates(route) {
 
   return [
     ...localeKeys.map((lang) => ({
-      lang,
+      lang: locales[lang].hreflang,
       href: `${DOMAIN}${locales[lang].path}`,
     })),
     {

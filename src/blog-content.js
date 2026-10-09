@@ -1,6 +1,10 @@
 import { extraBlogPosts } from './blog-content-extra.js';
+import { extraLocales } from './locales/index.js';
+import { getLocaleMeta, localeCodes } from './locale-registry.js';
 
-export const blogLangs = ['en', 'de', 'tr'];
+export const blogLangs = localeCodes.filter(
+  (code) => ['en', 'de', 'tr'].includes(code) || extraLocales[code],
+);
 
 export const featureBlogPostIds = {
   breastfeeding: ['breastfeeding-side-balance', 'newborn-feeds', 'breastfeeding-schedule', 'cluster-feeding'],
@@ -1523,6 +1527,14 @@ const baseBlogPosts = {
 
 export const blogPosts = { ...baseBlogPosts, ...extraBlogPosts };
 
+for (const [code, data] of Object.entries(extraLocales)) {
+  for (const [postId, entry] of Object.entries(data.blog)) {
+    const { slug, ...fields } = entry;
+    blogPosts[postId].slugs[code] = slug;
+    blogPosts[postId].locales[code] = fields;
+  }
+}
+
 export const blogPostIds = Object.keys(blogPosts);
 
 // Newest first, so hubs and the homepage surface fresh guides.
@@ -1537,7 +1549,7 @@ export function getBlogIndexPath(lang) {
 export function getBlogIndexAlternates() {
   return [
     ...blogLangs.map((lang) => ({
-      lang,
+      lang: getLocaleMeta(lang).hreflang,
       href: `https://mamio-baby-tracker.com${getBlogIndexPath(lang)}`,
     })),
     { lang: 'x-default', href: `https://mamio-baby-tracker.com${getBlogIndexPath('en')}` },
@@ -1567,10 +1579,12 @@ export function getBlogPostPath(postId, lang) {
 
 export function getBlogPostAlternates(postId) {
   return [
-    ...blogLangs.map((lang) => ({
-      lang,
-      href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, lang)}`,
-    })),
+    ...blogLangs
+      .filter((lang) => getBlogPostPath(postId, lang))
+      .map((lang) => ({
+        lang: getLocaleMeta(lang).hreflang,
+        href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, lang)}`,
+      })),
     {
       lang: 'x-default',
       href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, 'en')}`,

@@ -95,6 +95,7 @@ function updateHead(route) {
   const description = page?.metaDescription ?? content.metaDescription;
   const canonical = getRouteCanonical(route);
   document.documentElement.lang = content.htmlLang;
+  document.documentElement.dir = content.dir;
   document.title = title;
   upsertMeta('meta[name="description"]', 'content', description);
   upsertMeta('link[rel="canonical"]', 'href', canonical);
@@ -200,35 +201,16 @@ function Header({ content, currentLang, isHome, languageOptions, onLanguageChang
           <a href={sectionHref('pro')} className="nav-link">{content.nav.pro}</a>
         </nav>
 
-        {/* Language switcher (desktop) */}
-        <div className="hidden h-9 items-center overflow-hidden rounded-lg border border-white/12 bg-white/6 p-0.5 sm:flex">
-          {languageOptions.map((lang) => (
-            <button
-              key={lang}
-              type="button"
-              className={`h-8 min-w-[2.4rem] rounded-md px-2 text-xs font-black transition ${
-                currentLang === lang
-                  ? 'bg-cyan text-ink shadow-sm'
-                  : 'text-white/60 hover:bg-white/10 hover:text-white'
-              }`}
-              onClick={() => onLanguageChange(lang)}
-              aria-pressed={currentLang === lang}
-            >
-              {locales[lang].shortLabel}
-            </button>
-          ))}
-        </div>
-
-        {/* Language switcher (mobile) */}
+        {/* Language switcher */}
         <select
-          className="fixed left-32 top-[1.125rem] z-[60] h-9 w-20 rounded-lg border border-white/12 bg-ink px-2 text-sm font-black text-white outline-none sm:hidden"
+          className="h-9 max-w-[9rem] rounded-lg border border-white/12 bg-ink px-2 text-sm font-black text-white outline-none"
           value={currentLang}
           onChange={(e) => onLanguageChange(e.target.value)}
           aria-label="Language"
         >
           {languageOptions.map((lang) => (
             <option key={lang} value={lang}>
-              {locales[lang].shortLabel}
+              {locales[lang].label}
             </option>
           ))}
         </select>
