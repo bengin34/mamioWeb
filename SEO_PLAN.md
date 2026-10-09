@@ -27,6 +27,14 @@
 - Updated feature-to-guide relationships so the new landing pages surface their matching articles and broad feeding/health/care pages expose stronger cluster coverage.
 - Added static guide-to-tracker links in generated blog HTML, creating crawlable internal links from every new article back to its matching landing page.
 
+## Sprint 5 implemented
+
+- Added six long-tail EN/DE/TR guides: cluster feeding, how often to breastfeed a newborn, wet/dirty diaper counts, baby wake windows, starting solids and allergen logging, and a pediatrician visit checklist (`src/blog-content-extra.js`). The blog now has 17 guides x 3 languages.
+- Added a crawlable guides hub per language (`/en/blog/`, `/de/blog/`, `/tr/blog/`) with `CollectionPage`/`ItemList`/`BreadcrumbList` structured data.
+- Articles now carry `BreadcrumbList`, `author`, `image`, `dateModified`, a "keep reading" block of related guides, and a link back to the hub.
+- Blog and hub sitemap entries now include reciprocal `hreflang` alternates.
+- The homepage shows the six newest guides plus a "View all guides" link instead of dumping every article.
+
 ## Next SEO priorities
 
 1. Submit and monitor Search Console
@@ -39,7 +47,7 @@
    - After each language is added, update `locales`, screenshots, `hreflang`, sitemap generation, and the browser-language redirect allowlist.
 
 3. Build keyword-focused content clusters
-   - Add secondary long-tail guides for breastfeeding timer, bottle amounts by age intent, pumping schedule support, medication log exports, and doctor visit checklist queries.
+   - Add secondary long-tail guides for breastfeeding timer, bottle amounts by age intent, pumping schedule support, and medication log exports (cluster feeding, wake windows, wet diapers, solids, and doctor visit checklist are done).
    - Add more cross-links between sibling guides inside the same cluster once article volume grows.
    - Keep medical/developmental language careful: Mamio records observations and reminders; clinicians provide advice.
 

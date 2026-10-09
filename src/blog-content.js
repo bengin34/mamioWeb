@@ -1,21 +1,23 @@
+import { extraBlogPosts } from './blog-content-extra.js';
+
 export const blogLangs = ['en', 'de', 'tr'];
 
 export const featureBlogPostIds = {
-  breastfeeding: ['breastfeeding-side-balance', 'newborn-feeds'],
-  feeding: ['newborn-feeds', 'bottle-feeding-log', 'pumping-output-log', 'mixed-feeding-routine', 'breastfeeding-side-balance'],
+  breastfeeding: ['breastfeeding-side-balance', 'newborn-feeds', 'breastfeeding-schedule', 'cluster-feeding'],
+  feeding: ['newborn-feeds', 'bottle-feeding-log', 'pumping-output-log', 'mixed-feeding-routine', 'breastfeeding-side-balance', 'starting-solids-log'],
   bottleFeeding: ['bottle-feeding-log', 'newborn-feeds'],
   pumping: ['pumping-output-log', 'newborn-feeds'],
   mixedFeeding: ['mixed-feeding-routine', 'newborn-feeds', 'breastfeeding-side-balance'],
-  diaper: ['diaper-color'],
-  sleep: ['baby-sleep-first-months'],
+  diaper: ['diaper-color', 'wet-dirty-diapers'],
+  sleep: ['baby-sleep-first-months', 'wake-windows'],
   tummyTime: ['tummy-time-progress', 'baby-sleep-first-months'],
-  health: ['health-report-doctor', 'vaccine-medication-reminders', 'growth-doctor-report', 'diaper-color'],
+  health: ['health-report-doctor', 'vaccine-medication-reminders', 'growth-doctor-report', 'diaper-color', 'doctor-visit-checklist'],
   reminders: ['vaccine-medication-reminders', 'health-report-doctor'],
-  reports: ['growth-doctor-report', 'health-report-doctor'],
+  reports: ['growth-doctor-report', 'health-report-doctor', 'doctor-visit-checklist'],
   careTimeline: ['newborn-feeds', 'bottle-feeding-log', 'tummy-time-progress', 'baby-sleep-first-months', 'diaper-color', 'health-report-doctor'],
 };
 
-export const blogPosts = {
+const baseBlogPosts = {
   'newborn-feeds': {
     slugs: {
       en: 'track-newborn-feeds',
@@ -1519,7 +1521,44 @@ export const blogPosts = {
   },
 };
 
+export const blogPosts = { ...baseBlogPosts, ...extraBlogPosts };
+
 export const blogPostIds = Object.keys(blogPosts);
+
+// Newest first, so hubs and the homepage surface fresh guides.
+export const blogPostIdsByDate = [...blogPostIds].sort((a, b) =>
+  blogPosts[b].locales.en.date.localeCompare(blogPosts[a].locales.en.date),
+);
+
+export function getBlogIndexPath(lang) {
+  return `/${lang}/blog/`;
+}
+
+export function getBlogIndexAlternates() {
+  return [
+    ...blogLangs.map((lang) => ({
+      lang,
+      href: `https://mamio-baby-tracker.com${getBlogIndexPath(lang)}`,
+    })),
+    { lang: 'x-default', href: `https://mamio-baby-tracker.com${getBlogIndexPath('en')}` },
+  ];
+}
+
+// Same-cluster siblings first (shared tracker page), then newest, never the post itself.
+export function getRelatedPostIds(postId, limit = 3) {
+  const related = blogPosts[postId]?.relatedPageId;
+  const scored = blogPostIdsByDate
+    .filter((id) => id !== postId)
+    .map((id) => {
+      const clusterHit = Object.values(featureBlogPostIds).some(
+        (ids) => ids.includes(id) && ids.includes(postId),
+      );
+      const sameTracker = related && blogPosts[id].relatedPageId === related;
+      return { id, score: (sameTracker ? 2 : 0) + (clusterHit ? 1 : 0) };
+    })
+    .sort((a, b) => b.score - a.score);
+  return scored.slice(0, limit).map((item) => item.id);
+}
 
 export function getBlogPostPath(postId, lang) {
   const slug = blogPosts[postId]?.slugs?.[lang];
