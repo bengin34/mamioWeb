@@ -35,6 +35,15 @@
 - Blog and hub sitemap entries now include reciprocal `hreflang` alternates.
 - The homepage shows the six newest guides plus a "View all guides" link instead of dumping every article.
 
+## Sprint 6 implemented
+
+- Site now ships in all 28 app languages (en, de, tr plus es, fr, it, pt, pt-br, nl, sv, pl, cs, ro, el, ru, uk, ar, he, hi, bn, th, vi, id, sw, ja, ko, zh-hans, zh-hant). Every language has the homepage, 12 tracker landing pages, the guides hub, and all 17 guides: 872 sitemap URLs with reciprocal `hreflang`.
+- `src/locale-registry.js` is the single source of truth (URL code, `hreflang`, `og:locale`, `dir`). Translations live in `src/locales/<code>/` and are wired in `src/locales/index.js`.
+- `node scripts/validate-locales.mjs` checks every language against the English source (shape, slugs, date, title/description length). `node scripts/export-i18n-source.mjs <dir>` exports the English source for translators.
+- Arabic and Hebrew render right-to-left (`dir="rtl"` on generated pages and in the app); the header uses a language dropdown; the root redirect maps browser tags (zh-TW, zh-CN, pt-BR, iw) to the right URL.
+- Translations are model-written transcreations. Have a native speaker review at least the top markets before relying on them for rankings.
+- Known gaps: screenshots fall back to the English set for new languages; `/privacy/`, `/terms/`, `/support/` stay English-only.
+
 ## Next SEO priorities
 
 1. Submit and monitor Search Console
@@ -42,9 +51,9 @@
    - Submit `https://mamio-baby-tracker.com/sitemap.xml`.
    - Check indexing, crawl errors, Core Web Vitals, and top queries weekly during launch.
 
-2. Expand localized landing pages
-   - Add Spanish, French, Italian, Portuguese, Arabic, Hebrew, Japanese, Korean, Hindi, Russian, and Ukrainian only when the website content is translated with the same quality as the app.
-   - After each language is added, update `locales`, screenshots, `hreflang`, sitemap generation, and the browser-language redirect allowlist.
+2. Improve localized landing pages
+   - Native-speaker review of the machine-written translations, starting with es, fr, pt-br, ja, ko, ar.
+   - Localized App Store screenshots per language (currently English fallback).
 
 3. Build keyword-focused content clusters
    - Add secondary long-tail guides for breastfeeding timer, bottle amounts by age intent, pumping schedule support, and medication log exports (cluster feeding, wake windows, wet diapers, solids, and doctor visit checklist are done).

@@ -13,6 +13,7 @@ import {
   seoPageIds,
   seoPageLangs,
 } from '../src/content.js';
+import { getLocaleMeta } from '../src/locale-registry.js';
 import {
   blogLangs,
   blogPostIds,
@@ -53,6 +54,7 @@ function getRouteMeta(route) {
 
   return {
     htmlLang: content.htmlLang,
+    dir: content.dir,
     ogLocale: content.ogLocale,
     title: page?.metaTitle ?? content.metaTitle,
     description: page?.metaDescription ?? content.metaDescription,
@@ -60,7 +62,7 @@ function getRouteMeta(route) {
 }
 
 function createStructuredData(route, meta, canonical) {
-  const inLanguage = route.kind === 'seoPage' ? seoPageLangs : localeKeys;
+  const inLanguage = (route.kind === 'seoPage' ? seoPageLangs : localeKeys).map((code) => getLocaleMeta(code).hreflang);
   const software = {
     '@type': 'SoftwareApplication',
     name: 'Mamio',
@@ -105,7 +107,7 @@ function createStructuredData(route, meta, canonical) {
           name: 'Mamio',
           applicationCategory: 'HealthApplication',
         },
-        inLanguage: route.lang,
+        inLanguage: getLocaleMeta(route.lang).hreflang,
       },
     ],
   };
@@ -117,45 +119,16 @@ function renderAlternates(route) {
     .join('\n    ');
 }
 
-const fallbackLabels = {
-  en: {
-    homes: 'Localized home pages',
-    trackers: 'Mamio trackers',
-    guides: 'Baby care guides',
-    legal: 'Support and legal',
-  },
-  de: {
-    homes: 'Lokalisierte Startseiten',
-    trackers: 'Mamio-Tracker',
-    guides: 'Babycare-Guides',
-    legal: 'Support und Rechtliches',
-  },
-  tr: {
-    homes: 'Yerelleştirilmiş ana sayfalar',
-    trackers: 'Mamio takip sayfaları',
-    guides: 'Bebek bakım rehberleri',
-    legal: 'Destek ve yasal sayfalar',
-  },
-};
-
-const legalLinks = {
-  en: [
-    { href: '/privacy/', label: 'Privacy Policy' },
-    { href: '/terms/', label: 'Terms of Use' },
-    { href: '/support/', label: 'Support' },
-  ],
-  de: [
-    { href: '/privacy/', label: 'Datenschutz' },
-    { href: '/terms/', label: 'Nutzungsbedingungen' },
-    { href: '/support/', label: 'Support' },
-    { href: '/impressum/', label: 'Impressum' },
-  ],
-  tr: [
-    { href: '/privacy/', label: 'Gizlilik Politikası' },
-    { href: '/terms/', label: 'Kullanım Şartları' },
-    { href: '/support/', label: 'Destek' },
-  ],
-};
+function getLegalLinks(lang) {
+  const { ui } = locales[lang];
+  const links = [
+    { href: '/privacy/', label: ui.privacy },
+    { href: '/terms/', label: ui.terms },
+    { href: '/support/', label: ui.support },
+  ];
+  if (lang === 'de') links.push({ href: '/impressum/', label: 'Impressum' });
+  return links;
+}
 
 function renderFallbackSection(title, links) {
   if (!links.length) return '';
@@ -175,7 +148,12 @@ ${items}
 function renderFallbackLinks(route) {
   const lang = route.lang ?? 'en';
   const content = locales[lang] ?? locales.en;
-  const labels = fallbackLabels[lang] ?? fallbackLabels.en;
+  const labels = {
+    homes: content.ui.fallbackHomes,
+    trackers: content.ui.fallbackTrackers,
+    guides: content.ui.fallbackGuides,
+    legal: content.ui.fallbackLegal,
+  };
   const title = route.kind === 'seoPage'
     ? seoFeaturePages[route.pageId].locales[lang].title
     : content.metaTitle;
@@ -208,9 +186,16 @@ function renderFallbackLinks(route) {
 ${renderFallbackSection(labels.homes, homeLinks)}
 ${renderFallbackSection(labels.trackers, trackerLinks)}
 ${renderFallbackSection(labels.guides, guideLinks)}
-${renderFallbackSection(labels.legal, legalLinks[lang] ?? legalLinks.en)}
+${renderFallbackSection(labels.legal, getLegalLinks(lang))}
     </nav>
   `;
+}
+
+function renderLanguageRedirect() {
+  // Browser tags that don't match a URL code one-to-one.
+  const aliases = { 'zh-tw': 'zh-hant', 'zh-hk': 'zh-hant', 'zh-mo': 'zh-hant', 'zh-hant': 'zh-hant', 'zh-cn': 'zh-hans', 'zh-sg': 'zh-hans', 'zh-hans': 'zh-hans', zh: 'zh-hans', iw: 'he', nb: null, 'pt-br': 'pt-br' };
+  return `var supportedLocales = ${JSON.stringify(localeKeys)};
+        var aliases = ${JSON.stringify(Object.fromEntries(Object.entries(aliases).filter(([, v]) => v && localeKeys.includes(v))))};`;
 }
 
 function localizeHtml(html, route) {
@@ -223,7 +208,8 @@ function localizeHtml(html, route) {
   );
 
   let next = html;
-  next = setTag(next, /<html lang="[^"]*">/, `<html lang="${meta.htmlLang}">`);
+  next = setTag(next, /var supportedLocales = [^;]*;[\s\S]*?var fallbackLocale/, `${renderLanguageRedirect()}\n        var fallbackLocale`);
+  next = setTag(next, /<html lang="[^"]*"[^>]*>/, `<html lang="${meta.htmlLang}" dir="${meta.dir}">`);
   next = setTag(next, /<title>.*?<\/title>/, `<title>${escapeHtml(meta.title)}</title>`);
   next = setTag(next, /<meta\s+name="description"[\s\S]*?\/>/, `<meta name="description" content="${escapeAttribute(meta.description)}" />`);
   next = setTag(next, /<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${canonical}" />`);
@@ -300,32 +286,9 @@ await Promise.all(
   }),
 );
 
-const blogLabels = {
-  en: {
-    blog: 'Guides',
-    related: 'Keep reading',
-    hubTitle: 'Baby Care Guides | Mamio Blog',
-    hubHeading: 'Baby care guides',
-    hubDescription: 'Calm, practical guides on newborn feeding, breastfeeding, bottles, diapers, sleep, solids, and baby health records from the Mamio baby tracker.',
-    hubIntro: 'Practical, low-pressure reads for tired parents: how to track feeds, diapers, sleep, and health records without turning care into paperwork.',
-  },
-  de: {
-    blog: 'Guides',
-    related: 'Weiterlesen',
-    hubTitle: 'Babycare-Guides | Mamio Blog',
-    hubHeading: 'Babycare-Guides',
-    hubDescription: 'Ruhige, praktische Guides zu Neugeborenen-Mahlzeiten, Stillen, Fläschchen, Windeln, Schlaf, Beikost und Gesundheitsnotizen vom Mamio Baby Tracker.',
-    hubIntro: 'Praktische, entspannte Artikel für müde Eltern: wie du Mahlzeiten, Windeln, Schlaf und Gesundheitsnotizen trackst, ohne Pflege in Papierkram zu verwandeln.',
-  },
-  tr: {
-    blog: 'Rehberler',
-    related: 'Okumaya devam et',
-    hubTitle: 'Bebek Bakım Rehberleri | Mamio Blog',
-    hubHeading: 'Bebek bakım rehberleri',
-    hubDescription: 'Mamio bebek takip uygulamasından yenidoğan beslenmesi, emzirme, biberon, bez, uyku, ek gıda ve bebek sağlık kayıtları hakkında sakin, pratik rehberler.',
-    hubIntro: 'Yorgun ebeveynler için baskı yaratmayan, pratik yazılar: beslenme, bez, uyku ve sağlık kayıtlarını bakımı evrak işine çevirmeden nasıl takip edersin.',
-  },
-};
+const blogLabels = new Proxy({}, {
+  get: (_, lang) => ({ blog: locales[lang].ui.blogLabel, related: locales[lang].ui.relatedPosts, hubTitle: locales[lang].ui.hubTitle, hubHeading: locales[lang].ui.hubHeading, hubDescription: locales[lang].ui.hubDescription, hubIntro: locales[lang].ui.hubIntro }),
+});
 
 function createBreadcrumbLd(lang, title, canonical) {
   return {
@@ -362,7 +325,7 @@ function renderBlogShell({ lang, siteLocale, title, description, canonical, alte
   const googlePlayLabel = 'Google Play';
 
   return `<!doctype html>
-<html lang="${escapeAttribute(siteLocale.htmlLang)}">
+<html lang="${escapeAttribute(siteLocale.htmlLang)}" dir="${siteLocale.dir}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -404,7 +367,7 @@ ${jsonLdTags}
     .back-link { font-size: 0.875rem; color: var(--muted); display: inline-block; margin-bottom: 32px; }
     .back-link:hover { color: var(--accent); text-decoration: none; }
     h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin: 0 0 20px; }
-    .article-intro { font-size: 1.1rem; color: rgba(244,248,255,0.8); margin-bottom: 40px; border-left: 3px solid var(--accent); padding-left: 20px; }
+    .article-intro { font-size: 1.1rem; color: rgba(244,248,255,0.8); margin-bottom: 40px; border-inline-start: 3px solid var(--accent); padding-inline-start: 20px; }
     .article-section { margin-bottom: 36px; }
     .article-section h2 { font-size: 1.25rem; font-weight: 700; margin: 0 0 10px; color: var(--text); }
     .article-section p { margin: 0; color: rgba(244,248,255,0.85); }
@@ -414,7 +377,7 @@ ${jsonLdTags}
     .faq-item summary { font-weight: 600; cursor: pointer; list-style: none; }
     .faq-item summary::-webkit-details-marker { display: none; }
     .faq-item p { margin: 12px 0 0; color: var(--muted); }
-    .disclaimer { margin-top: 40px; padding: 16px 20px; background: var(--surface); border-radius: 10px; font-size: 0.85rem; color: var(--muted); border-left: 3px solid var(--accent); }
+    .disclaimer { margin-top: 40px; padding: 16px 20px; background: var(--surface); border-radius: 10px; font-size: 0.85rem; color: var(--muted); border-inline-start: 3px solid var(--accent); }
     .tracker-link { margin: 44px 0 0; padding: 24px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
     .tracker-link h2 { margin: 0 0 8px; font-size: 1.05rem; }
     .tracker-link p { margin: 0 0 18px; color: var(--muted); }
@@ -476,7 +439,7 @@ function renderBlogIndexHtml(lang) {
         name: labels.hubTitle,
         description: labels.hubDescription,
         url: canonical,
-        inLanguage: lang,
+        inLanguage: getLocaleMeta(lang).hreflang,
         isPartOf: { '@type': 'WebSite', name: 'Mamio', url: DOMAIN },
       },
       {
@@ -515,7 +478,7 @@ function renderBlogIndexHtml(lang) {
     alternates,
     ogType: 'website',
     jsonLd: listLd,
-    body: `    <a class="back-link" href="/${lang}/">${escapeHtml(lang === 'de' ? '← Zurück zur Startseite' : lang === 'tr' ? '← Ana sayfaya dön' : '← Back to home')}</a>
+    body: `    <a class="back-link" href="/${lang}/">${escapeHtml(locales[lang].ui.backHome)}</a>
     <h1>${escapeHtml(labels.hubHeading)}</h1>
     <p class="article-intro">${escapeHtml(labels.hubIntro)}</p>
     <ul class="post-grid">
@@ -545,7 +508,7 @@ function renderBlogHtml(postId, lang) {
     image: `${DOMAIN}/assets/og-mamio.png`,
     mainEntityOfPage: canonical,
     author: { '@type': 'Organization', name: 'Mamio', url: DOMAIN },
-    inLanguage: lang,
+    inLanguage: getLocaleMeta(lang).hreflang,
     publisher: {
       '@type': 'Organization',
       name: 'Mamio',
@@ -584,21 +547,14 @@ function renderBlogHtml(postId, lang) {
       </details>`)
     .join('\n');
 
-  const faqHeading = lang === 'de' ? 'Häufige Fragen' : lang === 'tr' ? 'Sık Sorulan Sorular' : 'Frequently Asked Questions';
-  const backLabel = lang === 'de' ? '← Zurück zur Startseite' : lang === 'tr' ? '← Ana sayfaya dön' : '← Back to home';
-  const disclaimer = lang === 'de'
-    ? 'Dieser Artikel dient nur zu Informationszwecken und ersetzt keinen medizinischen Rat.'
-    : lang === 'tr'
-      ? 'Bu makale yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiyenin yerini tutmaz.'
-      : 'This article is for informational purposes only and does not constitute medical advice.';
+  const { ui } = siteLocale;
+  const faqHeading = ui.faqHeading;
+  const backLabel = ui.backHome;
+  const disclaimer = ui.disclaimer;
+  const trackerHeading = ui.trackerHeading;
+  const trackerCopy = ui.trackerCopy;
   const appStoreLabel = 'App Store';
   const googlePlayLabel = 'Google Play';
-  const trackerHeading = lang === 'de' ? 'Passender Mamio-Tracker' : lang === 'tr' ? 'İlgili Mamio takip sayfası' : 'Related Mamio tracker';
-  const trackerCopy = lang === 'de'
-    ? 'Diesen Guide mit der passenden Mamio-Seite verbinden:'
-    : lang === 'tr'
-      ? 'Bu rehberi ilgili Mamio sayfasıyla bağla:'
-      : 'Connect this guide with the matching Mamio page:';
   const relatedTrackerPath = post.relatedPageId ? getSeoPagePath(post.relatedPageId, lang) : null;
   const relatedTracker = post.relatedPageId
     ? seoFeaturePages[post.relatedPageId]?.locales?.[lang]

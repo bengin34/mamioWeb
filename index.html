@@ -21,6 +21,7 @@
     <script>
       (function () {
         var supportedLocales = ["en", "de", "tr"];
+        var aliases = {};
         var fallbackLocale = "en";
 
         if (window.location.pathname !== "/") return;
@@ -32,8 +33,13 @@
         var detectedLocale = fallbackLocale;
 
         for (var i = 0; i < browserLocales.length; i += 1) {
-          var locale = String(browserLocales[i]).toLowerCase().split("-")[0];
-          if (supportedLocales.indexOf(locale) !== -1) {
+          var tag = String(browserLocales[i]).toLowerCase();
+          var locale = aliases[tag] || (supportedLocales.indexOf(tag) !== -1 ? tag : "");
+          if (!locale) {
+            var base = tag.split("-")[0];
+            locale = aliases[base] || (supportedLocales.indexOf(base) !== -1 ? base : "");
+          }
+          if (locale) {
             detectedLocale = locale;
             break;
           }
