@@ -124,4 +124,143 @@ export const beikostPosts = {
       },
     },
   },
+
+  'beikost-erstickungsgefahr': {
+    relatedPageId: 'feeding',
+    ymyl: true,
+    slugs: {
+      de: 'erstickungsgefahr-beikost',
+    },
+    locales: {
+      de: {
+        metaTitle: `Erstickungsgefahr bei Beikost: Was Babys nicht essen | Mamio`,
+        metaDescription: `Nüsse, Trauben, Rosinen, Körnerbrot: Welche Lebensmittel laut BIÖG und BfR im ersten Lebensjahr nicht auf den Teller gehören — und was im Notfall zu tun ist.`,
+        title: `Erstickungsgefahr bei der Beikost: Was im ersten Jahr nicht auf den Teller gehört`,
+        date: `2026-10-23`,
+        lastVerified: `2026-10-23`,
+        reviewedBy: ``,
+        reviewerCredentials: ``,
+        keyFactsHeading: `Das Wichtigste in Kürze`,
+        keyFacts: [
+          `Kleine, harte Lebensmittel wie Erdnüsse, Johannisbeeren, Heidelbeeren, kleine Trauben oder Rosinen gehören im ersten Lebensjahr nicht auf den Speiseplan [3].`,
+          `Auch Brot und Gebäck mit Körnern, Sonnenblumenkernen oder Nüssen zählen dazu [3].`,
+          `Nüsse gelangen wegen ihrer Form, ihrer geringen Größe und ihrer öligen Oberfläche leichter in die Luftröhre als andere Lebensmittel [1].`,
+          `Gerät ein Nussteil in die Atemwege und entstehen anhaltender Husten oder Atemprobleme, ist der Notarzt zu rufen [1].`,
+        ],
+        intro: `Im ersten Lebensjahr sollen kleine, harte Lebensmittel nicht auf dem Speiseplan stehen — das Bundesinstitut für Öffentliche Gesundheit nennt ausdrücklich Erdnüsse, Johannisbeeren, Heidelbeeren, kleine Trauben und Rosinen sowie Brot und Gebäck mit Körnern, Sonnenblumenkernen oder Nüssen [3]. Das BfR hält fest, dass Nüsse, insbesondere Erdnüsse, nicht in die Reichweite jüngerer Kinder gehören [1]. Auch bei sehr klein geschnittenem festem Obst und Gemüse besteht die Gefahr, dass es beim Verschlucken in die Luftröhre gelangt [3].`,
+        sections: [
+          {
+            title: `Was im ersten Lebensjahr nicht auf den Teller gehört`,
+            body: `Die deutsche Liste ist kurz und konkret. Nicht auf den Speiseplan im ersten Lebensjahr gehören „kleine, und harte Lebensmittel wie Erdnüsse, Johannisbeeren, Heidelbeeren, kleine Trauben oder Rosinen" sowie „Brot sowie Gebäck mit Körnern, Sonnenblumenkernen, Nüssen und Ähnlichem" [3]. Dazu kommt ein Hinweis, der oft überlesen wird: auch bei sehr klein geschnittenem festem Obst und Gemüse besteht die Gefahr, dass es beim Verschlucken in die Luftröhre gelangt [3]. Kleiner schneiden ist also nicht die Lösung, auf die diese Empfehlung hinausläuft.`,
+          },
+          {
+            title: `Warum gerade Nüsse`,
+            body: `Nüsse können „aufgrund ihrer Form und geringen Größe sowie öligen Oberfläche leichter in die Luftröhre und die tiefen Bereiche der Luftwege gelangen als andere Lebensmittel" [1]. Das BfR geht weiter: Für Kleinkinder ist das Risiko, Nüsse oder Nussteile zu verschlucken, die dann in die Atemwege gelangen, signifikant höher als das Risiko, Kleinteile von Spielzeug zu verschlucken [1]. Spielzeug unterliegt dafür einer Kennzeichnungspflicht, Nüsse bislang nicht — das BfR empfiehlt deshalb einen Verbraucherhinweis auf Nussverpackungen, insbesondere bei Erdnüssen [1][2].`,
+          },
+          {
+            title: `Was „Fremdkörperaspiration" bedeutet`,
+            body: `Der Fachbegriff beschreibt „das ungewollte Eindringen fester Gegenstände in die Atemwege (sich verschlucken)" [2]. Bei Kleinkindern kommt das am häufigsten vor, weil sie generell dazu neigen, Gegenstände in den Mund zu nehmen [2] — Kinder unter vier Jahren tun das laut BfR grundsätzlich gern [1]. Durch die möglicherweise irreversible Behinderung der Atemwege ist die Fremdkörperaspiration ein erhebliches Risiko für die Gesundheit bis hin zum Tod durch Ersticken [2]. Aspirationsunfälle können zu schweren Gesundheitsschäden oder in seltenen Fällen zum Erstickungstod führen [1].`,
+          },
+          {
+            title: `Was die Zahlen hergeben — und was nicht`,
+            body: `Aspirationsunfälle werden in Deutschland nicht systematisch erfasst [1]. Die vom BfR angeführten Zahlen stammen von der Deutschen Gesellschaft für Pädiatrische Pneumonologie: Im Zeitraum von 2004 bis 2005 wurden an sechs Kliniken 98 Fremdkörperaspirationen dokumentiert, in mehr als der Hälfte der Fälle (50 Meldungen) hatten Kinder eine ganze Nuss oder Teile davon verschluckt, in 29 dieser Fälle Erdnüsse [1]. In 16 Fällen waren es andere Nahrungsbestandteile wie Karottenstückchen, in zehn Fällen Spielzeugteile [1]. Zur Einordnung: diese Fallserie ist von 2004/2005, umfasst sechs Kliniken und betrifft Kleinkinder — eine eigene Zahl für Säuglinge unter einem Jahr nennt die Quelle nicht.`,
+          },
+          {
+            title: `Nach dem ersten Geburtstag ändert sich weniger als gedacht`,
+            body: `Das Netzwerk Gesund ins Leben schreibt für Kleinkinder von einem bis drei Jahren: Das Kind könne fast alles mitessen, aber keine Nüsse — „ganz oder in Stücken" — und auch keine anderen harten Lebensmittelstücke, genannt werden rohe Möhren, sehr kleine Früchte wie Heidelbeeren, Trauben mit Kernen oder Rosinen sowie Fisch mit Gräten; das Kind könne sich daran verschlucken [4]. Die Einschränkung endet also nicht am ersten Geburtstag. Ein Freigabealter, ab dem ganze Nüsse unproblematisch wären, nennt keine der hier zitierten Quellen.`,
+          },
+          {
+            title: `Wie Nüsse trotzdem auf den Tisch kommen`,
+            body: `Für Kleinkinder nennt das Netzwerk Gesund ins Leben zwei Formen: „Damit Kleinkinder sich an den Nüssen nicht verschlucken, können Eltern sie entweder in Form von Nussmus oder fein gemahlen anbieten" [4]. Wichtig ist der Zusatz: unverarbeitet sollten Kleinkinder keine gemahlenen Nüsse bekommen, weil sie das feine, trockene Mehl einatmen und sich verschlucken können [4] — gemahlene Nüsse also eingerührt, zum Beispiel in Joghurt oder Haferbrei, nicht pur vom Löffel. Diese Angaben beziehen sich auf Kleinkinder ab einem Jahr; für das erste Lebensjahr gilt die Liste weiter oben [3].`,
+          },
+          {
+            title: `Ruhig essen, unter Aufsicht`,
+            body: `Die einzige Situationsregel, die das BfR ausspricht, betrifft Nüsse: Sie „sollten Nüsse ausschließlich in ruhigen Essenssituationen unter Aufsicht von Erwachsenen verzehren" [1], und Nüsse, insbesondere Erdnüsse, gehören nicht in die Reichweite jüngerer Kinder [1]. Beides zielt auf die Alltagssituation, in der es passiert — nebenbei, im Vorbeigehen, ohne dass jemand hinsieht. Wer die Beikost mitschreibt, sieht auch leichter, welche neuen Lebensmittel in welcher Form schon angeboten wurden; in Mamio lassen sich erste Lebensmittel mit Datum festhalten.`,
+          },
+          {
+            title: `Wenn etwas in die Atemwege gerät`,
+            body: `Das BfR nennt dafür genau einen Handlungsschritt: „Sollte dennoch ein Nussteil in die Atemwege gelangen und anhaltender Husten oder Atemprobleme entstehen, ist der Notarzt zu rufen" [1]. Erste-Hilfe-Maßnahmen beschreiben die hier zitierten Quellen nicht; wer sie lernen möchte, ist in einem Erste-Hilfe-Kurs für Säuglinge und Kleinkinder richtig. In Deutschland ist der Rettungsdienst über 112 erreichbar.`,
+          },
+          {
+            title: `Was die Empfehlungen offenlassen`,
+            body: `Zwei Dinge sagen die deutschen Quellen bewusst nicht. Erstens geben sie keine Schneideregeln — keine Vorgabe, wie Trauben zu halbieren oder Obst zu stückeln wären; die Linie ist der Verzicht im ersten Lebensjahr, und selbst sehr klein geschnittenes festes Obst und Gemüse wird als Risiko benannt [3]. Zweitens nennen sie kein Alter, ab dem harte, kleine Lebensmittel unbedenklich sind. International bleibt es beim Grundsatz: Betreuungspersonen sollen zur sicheren Zubereitung und Fütterung der Beikost beraten werden, auch im Hinblick auf das Verschlucken an großen Nahrungsstücken [5]. Eine Lebensmittelliste gibt die ESPGHAN-Stellungnahme dazu nicht.`,
+          },
+        ],
+        faqHeading: `Häufige Fragen`,
+        faq: [
+          {
+            question: `Welche Lebensmittel sind im ersten Lebensjahr wegen Erstickungsgefahr tabu?`,
+            answer: `Kleine, harte Lebensmittel wie Erdnüsse, Johannisbeeren, Heidelbeeren, kleine Trauben oder Rosinen sowie Brot und Gebäck mit Körnern, Sonnenblumenkernen oder Nüssen [3].`,
+          },
+          {
+            question: `Darf mein Baby Weintrauben essen, wenn ich sie klein schneide?`,
+            answer: `Kleine Trauben stehen auf der Liste der Lebensmittel, die im ersten Lebensjahr nicht auf den Speiseplan gehören [3]. Auch bei sehr klein geschnittenem festem Obst besteht laut derselben Quelle die Gefahr, dass es in die Luftröhre gelangt [3]. Eine Schneideregel, die das Risiko aufhebt, nennen die deutschen Empfehlungen nicht.`,
+          },
+          {
+            question: `Ab wann darf mein Kind ganze Nüsse essen?`,
+            answer: `Keine der hier zitierten Quellen nennt ein Freigabealter. Für Kleinkinder von einem bis drei Jahren gilt weiterhin: keine Nüsse ganz oder in Stücken [4]. Als Nussmus oder fein gemahlen und eingerührt sind Nüsse für diese Altersgruppe vorgesehen [4].`,
+          },
+          {
+            question: `Warum sind Nüsse riskanter als Spielzeug-Kleinteile?`,
+            answer: `Wegen ihrer Form, geringen Größe und öligen Oberfläche gelangen sie leichter in die Luftröhre und die tiefen Luftwege [1]. Das BfR bewertet das Risiko für Kleinkinder als signifikant höher als bei Spielzeug-Kleinteilen [1].`,
+          },
+          {
+            question: `Mein Baby hat sich verschluckt — wann muss ich den Notarzt rufen?`,
+            answer: `Gerät ein Nussteil in die Atemwege und entstehen anhaltender Husten oder Atemprobleme, ist der Notarzt zu rufen [1]. Der Rettungsdienst ist in Deutschland über 112 erreichbar.`,
+          },
+        ],
+        sourcesHeading: `Quellen`,
+        sources: [
+          {
+            id: 1,
+            title: `Erstickungsgefahr von Kleinkindern durch Nüsse — BfR empfiehlt Verbraucherhinweis auf Verpackungen`,
+            publisher: `BfR — Bundesinstitut für Risikobewertung, Presseinformation Nr. 37/2009`,
+            year: `2009`,
+            url: `https://www.bfr.bund.de/presseinformation/erstickungsgefahr-von-kleinkindern-durch-nuesse/`,
+            accessed: `2026-10-23`,
+            note: `22.12.2009`,
+          },
+          {
+            id: 2,
+            title: `Risiko Erstickungstod bei Kleinkindern durch Nüsse`,
+            publisher: `BfR — Bundesinstitut für Risikobewertung, Stellungnahme Nr. 050/2009`,
+            year: `2009`,
+            url: `https://www.bfr.bund.de/cm/343/risiko_erstickungstod_bei_kleinkindern_durch_nuesse.pdf`,
+            accessed: `2026-10-23`,
+            note: `10.08.2009`,
+          },
+          {
+            id: 3,
+            title: `Empfehlungen zur Säuglingsernährung`,
+            publisher: `BIÖG — Bundesinstitut für Öffentliche Gesundheit (kindergesundheit-info.de)`,
+            year: `2025`,
+            url: `https://www.kindergesundheit-info.de/index.php?id=8924`,
+            accessed: `2026-10-23`,
+            note: `Stand: 30.11.2025`,
+          },
+          {
+            id: 4,
+            title: `Sicher Essen mit Kleinkindern (Stand 27.06.2022) und Nüsse für Kleinkinder (Stand 10.10.2025)`,
+            publisher: `BLE / Netzwerk Gesund ins Leben`,
+            year: `2025`,
+            url: `https://www.gesund-ins-leben.de/fuer-familien/fuer-sie-und-ihr-kleinkind/sicher-essen-mit-kleinkindern/`,
+            accessed: `2026-10-23`,
+            note: `gilt für Kleinkinder von 1 bis 3 Jahren`,
+          },
+          {
+            id: 5,
+            title: `Complementary Feeding: A Position Paper by the ESPGHAN Committee on Nutrition`,
+            publisher: `Fewtrell M. et al., Journal of Pediatric Gastroenterology and Nutrition 64(1):119–141`,
+            year: `2017`,
+            url: `https://www.espghan.org/dam/jcr:3d960daa-e2f3-499f-9df9-2da682976cec/2017%20Complementary_Feeding__A_Position_Paper_by_the.21.pdf`,
+            accessed: `2026-10-23`,
+            note: `international, nicht deutschlandspezifisch; keine Lebensmittelliste`,
+          },
+        ],
+        openQuestions: [],
+        disclaimer: `Dieser Artikel ersetzt keine ärztliche Beratung. Die Empfehlungen basieren auf den Leitlinien der genannten Institutionen (Stand: Oktober 2026). Bei Fragen zur Ernährung deines Babys sprich mit deiner Kinderärztin, deinem Kinderarzt oder deiner Hebamme.`,
+        ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
+      },
+    },
+  },
 };
