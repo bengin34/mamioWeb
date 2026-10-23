@@ -263,4 +263,138 @@ export const beikostPosts = {
       },
     },
   },
+
+  'beikost-allergene': {
+    relatedPageId: 'feeding',
+    ymyl: true,
+    slugs: {
+      de: 'allergene-einfuehren-beikost',
+    },
+    locales: {
+      de: {
+        metaTitle: `Allergene in der Beikost einführen: was gilt | Mamio`,
+        metaDescription: `Nicht meiden, sondern einführen: Was die S3-Leitlinie Allergieprävention zu Hühnerei, Erdnuss, Fisch und Milch in der Beikost sagt — und wo sie international abweicht.`,
+        title: `Allergene in der Beikost einführen: Was die deutschen Empfehlungen sagen`,
+        date: `2026-10-23`,
+        lastVerified: `2026-10-23`,
+        reviewedBy: ``,
+        reviewerCredentials: ``,
+        keyFactsHeading: `Das Wichtigste in Kürze`,
+        keyFacts: [
+          `Potente Nahrungsmittelallergene im ersten Lebensjahr zu meiden, soll nicht erfolgen — für einen präventiven Effekt gibt es keine Belege [1].`,
+          `Hühnerei gehört durcherhitzt in die Beikost: verbacken oder hartgekocht, nicht roh und auch kein Rührei [1].`,
+          `Erdnuss ist die zurückhaltendste Empfehlung der Leitlinie: erwägbar nur bei Säuglingen mit atopischer Dermatitis in Familien, die ohnehin regelmäßig Erdnüsse essen — und erst nach Ausschluss einer Erdnussallergie [1].`,
+          `Beikoststart: frühestens ab Beginn des 5., spätestens ab Beginn des 7. Lebensmonats — auch bei erhöhtem Allergierisiko [1][3].`,
+        ],
+        intro: `Die deutsche Leitlinie dreht die alte Logik um: „Für einen präventiven Effekt einer diätetischen Restriktion durch Meidung potenter Nahrungsmittelallergene im ersten Lebensjahr gibt es keine Belege. Sie soll deshalb nicht erfolgen" — mit dem höchsten Empfehlungsgrad A [1]. Das Bundesinstitut für Öffentliche Gesundheit formuliert es für Eltern knapper: potenziell allergene Lebensmittel im ersten Lebensjahr auszuschließen ist nicht sinnvoll [2]. Stattdessen gilt Vielfalt als das Schutzprinzip [1].`,
+        sections: [
+          {
+            title: `Nicht meiden, sondern einführen`,
+            body: `Die S3-Leitlinie Allergieprävention hält als Statement fest: „Es gibt Hinweise darauf, dass die Vielfalt der Ernährung des Kindes im ersten Lebensjahr einen protektiven Effekt auf die Entwicklung atopischer Erkrankungen hat" [1]. Konkret gehört dazu, „dass Fisch und eine begrenzte Menge (bis zu 200 ml pro Tag) Milch bzw. Naturjoghurt sowie Hühnerei im Rahmen der Beikost eingeführt werden" [1]. Das BIÖG übersetzt das in den Alltag: ab und zu Fisch oder Hühnerei und bis zu 200 ml Milch — in Form des Milch-Getreide-Breis — oder Joghurt am Tag [2]. Die Beikost-Empfehlungen der Leitlinie wurden im starken Konsens verabschiedet [1].`,
+          },
+          {
+            title: `Wann die Beikost anfangen soll`,
+            body: `„Abhängig von der Bereitschaft des Säuglings" soll mit der Beikost „frühestens ab Beginn des fünften und spätestens ab Beginn des siebten Lebensmonats" begonnen werden — Empfehlungsgrad B [1]. Das Netzwerk Gesund ins Leben nennt dasselbe Fenster und rechnet es um: nicht vor dem Alter von 17 Wochen und nicht später als mit 26 Wochen [3]. Wichtig für Familien mit Allergien in der Verwandtschaft: Auch bei Kindern mit erhöhtem Allergierisiko soll Beikost je nach individueller Bereitschaft in genau diesem Zeitfenster eingeführt werden [3] — ein Aufschieben ist also nicht vorgesehen.`,
+          },
+          {
+            title: `Hühnerei: durcherhitzt, nicht roh`,
+            body: `Die Empfehlung ist eindeutig und an die Zubereitung gebunden: Zur Prävention der Hühnereiallergie soll „durcherhitztes (zum Beispiel verbackenes oder hartgekochtes), aber nicht „rohes" Hühnerei (auch kein Rührei)" mit der Beikost eingeführt und regelmäßig gegeben werden — Empfehlungsgrad B [1]. Als durcherhitzte Form nennt die Leitlinie ausreichend durchgebackene eihaltige Backwaren wie Hartkekse, Brot- und Brötchenspezialitäten, Muffins und Kuchen [1]. Nicht geeignet sind rohes beziehungsweise nicht durcherhitztes Ei und ausdrücklich auch Rührei, weichgekochtes Ei, Schaumküsse und Makronen [1]. Die Begründung: nicht ausreichend erhitztes Ei war nicht mit einem Nutzen, aber mit Risiken hinsichtlich schwerer allergischer Reaktionen verbunden [1]. Nach erfolgreicher Einführung soll Ei in ausreichend erhitzter Form regelmäßig gegeben werden [1].`,
+          },
+          {
+            title: `Erdnuss: die zurückhaltendste Empfehlung`,
+            body: `Hier geht die Leitlinie bewusst nicht weit. Erdnuss ist eine „kann"-Empfehlung mit Grad C. Sie gilt für Säuglinge mit atopischer Dermatitis „in Familien mit regelmäßigem Erdnusskonsum": dort kann im Zuge der Beikost-Einführung erwogen werden, Erdnussprodukte „in altersgerechter Form (zum Beispiel Erdnussbutter)" einzuführen und regelmäßig weiter zu geben [1]. Davor steht eine Bedingung mit Grad A: „Insbesondere bei Säuglingen mit moderater bis schwerer AD soll zunächst eine Erdnuss-Allergie ausgeschlossen werden" [1]. Das BIÖG nennt dafür den negativen Erdnuss-Allergie-Test und bittet Eltern, solche Maßnahmen unbedingt vorher in der kinderärztlichen Praxis zu besprechen [2]. Und „altersgerechte Form" ist kein Stilmittel: die Leitlinie schreibt wegen der Aspirationsgefahr ausdrücklich keine ganzen Erdnüsse und keine Stücke [1].`,
+          },
+          {
+            title: `Wo Deutschland international abweicht`,
+            body: `Die Leitlinie sagt selbst, dass die Erdnuss-Empfehlung „für den deutschsprachigen Raum zurückhaltend formuliert" wurde [1], und nennt den Grund: „Die Empfehlung zur gezielten Einführung von Erdnussprodukten für Länder mit hoher Erdnussallergie-Prävalenz wird dagegen nicht übernommen, da Deutschland nicht als solches einzuordnen ist" [1]. International sieht es anders aus. Die ESPGHAN-Stellungnahme hält fest, dass allergene Lebensmittel eingeführt werden können, sobald die Beikost beginnt — jederzeit nach vier Monaten [4]. Für Säuglinge mit hohem Erdnussallergie-Risiko, dort definiert als schweres Ekzem, Hühnereiallergie oder beides, empfiehlt sie die Einführung von Erdnuss zwischen 4 und 11 Monaten nach Beurteilung durch entsprechend geschulte Fachpersonen [4]. Der Auslöser und die Stärke unterscheiden sich also: in Deutschland atopische Dermatitis plus Erdnusskonsum in der Familie und ein „kann erwogen werden", international ein Risikoprofil und ein „should" [1][4].`,
+          },
+          {
+            title: `Stillen, Schwangerschaft und die erste Woche`,
+            body: `Für den Zeitraum der ersten 4 bis 6 Monate soll nach Möglichkeit ausschließlich gestillt werden, und auch mit Einführung von Beikost soll weitergestillt werden — beides Grad A [1]. Diätetische Restriktionen, also das Meiden potenter Nahrungsmittelallergene, sollen während Schwangerschaft oder Stillzeit aus Gründen der Allergieprävention nicht erfolgen, ebenfalls Grad A [1]; für eine solche Empfehlung gibt es laut BIÖG keinen wissenschaftlichen Beleg [2]. Eine eigene Empfehlung gilt für die ersten Lebenstage: „Ein Zufüttern von kuhmilchbasierter Formulanahrung in den ersten Lebenstagen sollte bei Stillwunsch der Mutter vermieden werden", Grad B [1].`,
+          },
+          {
+            title: `Was zur Allergieprävention nichts bringt`,
+            body: `Die Leitlinie ist auch bei dem deutlich, was nicht hilft: Sojabasierte Säuglingsnahrungen sind zum Zweck der Allergieprävention nicht geeignet und sollen folglich nicht zu diesem Zweck gegeben werden, Grad A [1]. Für andere Tiermilchen — Ziegenmilch, auch nicht als Basis von Säuglingsnahrungen, Schafs- oder Stutenmilch — gibt es keine Belege für eine allergiepräventive Wirkung; sie sollten dafür ebenfalls nicht gegeben werden, Grad B [1]. Diese Aussagen beziehen sich ausdrücklich auf den Zweck der Allergieprävention, nicht auf jede andere Frage zur Säuglingsernährung.`,
+          },
+          {
+            title: `Was die Empfehlungen offenlassen`,
+            body: `Drei Dinge findet man in den deutschen Quellen nicht. Es gibt kein Einführungsschema — keine Reihenfolge der Allergene, keine Wartezeit zwischen zwei neuen Lebensmitteln. Es gibt keine Mengenangaben für Ei oder Erdnussbutter; die Leitlinie sagt „regelmäßig", ohne Gramm oder Löffel zu nennen [1]. Und Gluten kommt in den hier zitierten deutschen Allergie-Empfehlungen nicht als eigener Punkt vor; international wird ein Fenster zwischen 4 und 12 Monaten genannt, wobei große Mengen in den ersten Wochen nach der Einführung und später im Säuglingsalter vermieden werden sollten [4]. Wer festhält, welches neue Lebensmittel wann und in welcher Form angeboten wurde, hat beim nächsten Termin eine Grundlage statt einer Erinnerung — in Mamio lassen sich erste Lebensmittel mit Datum notieren.`,
+          },
+          {
+            title: `Stand der Leitlinie`,
+            body: `Die zitierten Empfehlungen stammen aus der S3-Leitlinie Allergieprävention, AWMF-Registernummer 061-016; das Dokument trägt den Stand 28. November 2021 und erschien 2022 in der Zeitschrift Allergologie [1]. Das BIÖG führt sie als „Update 2022" mit der Angabe „gültig bis 1.1.2026" [2]. Wer sich auf eine Einzelempfehlung stützt, sollte deshalb prüfen, ob im AWMF-Register inzwischen eine neuere oder verlängerte Fassung steht — und Fragen zum eigenen Kind ohnehin in der kinderärztlichen Praxis klären [2].`,
+          },
+        ],
+        faqHeading: `Häufige Fragen`,
+        faq: [
+          {
+            question: `Soll ich Allergene im ersten Lebensjahr weglassen?`,
+            answer: `Nein. Die S3-Leitlinie sagt mit Empfehlungsgrad A, dass eine Meidung potenter Nahrungsmittelallergene im ersten Lebensjahr nicht erfolgen soll, weil es für einen präventiven Effekt keine Belege gibt [1]. Das BIÖG formuliert es als „nicht sinnvoll" [2].`,
+          },
+          {
+            question: `Wie soll ich Hühnerei anbieten?`,
+            answer: `Durcherhitzt — zum Beispiel verbacken oder hartgekocht — und dann regelmäßig [1]. Rohes oder nicht durcherhitztes Ei wird zur Prävention nicht empfohlen, einschließlich Rührei, weichgekochtem Ei, Schaumküssen und Makronen [1].`,
+          },
+          {
+            question: `Soll mein Baby Erdnussbutter bekommen?`,
+            answer: `Die Leitlinie nennt das nur für Säuglinge mit atopischer Dermatitis in Familien mit regelmäßigem Erdnusskonsum, als „kann erwogen werden" mit Grad C [1]. Insbesondere bei moderater bis schwerer atopischer Dermatitis soll vorher eine Erdnussallergie ausgeschlossen werden [1]; das BIÖG nennt dafür einen negativen Erdnuss-Allergie-Test und das Gespräch in der kinderärztlichen Praxis [2].`,
+          },
+          {
+            question: `Ganze Erdnüsse oder Nussstücke — geht das?`,
+            answer: `Nein. Die Leitlinie schreibt „altersgerechte Form" und nennt wegen der Aspirationsgefahr ausdrücklich keine ganzen Erdnüsse und keine Stücke [1].`,
+          },
+          {
+            question: `Soll ich die Beikost später anfangen, wenn es in der Familie Allergien gibt?`,
+            answer: `Nein. Auch bei Kindern mit erhöhtem Allergierisiko soll Beikost je nach individueller Bereitschaft frühestens mit Beginn des 5. und spätestens mit Beginn des 7. Monats eingeführt werden [3].`,
+          },
+          {
+            question: `In welcher Reihenfolge soll ich die Allergene einführen?`,
+            answer: `Dazu gibt es in den hier zitierten deutschen Empfehlungen kein Schema — keine Reihenfolge und keine Wartezeiten zwischen neuen Lebensmitteln. Genannt wird das Prinzip Vielfalt im ersten Lebensjahr [1][2].`,
+          },
+        ],
+        sourcesHeading: `Quellen`,
+        sources: [
+          {
+            id: 1,
+            title: `S3-Leitlinie Allergieprävention (Kopp M.V., Muche-Borowski C., Abou-Dakn M. et al.)`,
+            publisher: `DGAKI/DGKJ u. a.; Allergologie 45(3):153–194, Dustri-Verlag; AWMF-Registernr. 061-016`,
+            year: `2022`,
+            url: `https://archiv.dgaki.de/wp-content/uploads/2023/08/Kopp-22-S3-Leitlinie-Allergiepraevention.pdf`,
+            accessed: `2026-10-23`,
+            note: `Dokument-Stand: 28. November 2021`,
+          },
+          {
+            id: 2,
+            title: `Allergien bei Kindern vorbeugen`,
+            publisher: `BIÖG — Bundesinstitut für Öffentliche Gesundheit (kindergesundheit-info.de)`,
+            year: `2025`,
+            url: `https://www.kindergesundheit-info.de/themen/risiken-vorbeugen/allergievorbeugung/`,
+            accessed: `2026-10-23`,
+            note: `führt die S3-Leitlinie als Update 2022, gültig bis 1.1.2026`,
+          },
+          {
+            id: 3,
+            title: `Beikosteinführung — Ernährung und Bewegung von Säuglingen und stillenden Frauen, Handlungsempfehlungen`,
+            publisher: `BLE / Netzwerk Gesund ins Leben`,
+            year: `2024`,
+            url: `https://www.gesund-ins-leben.de/fuer-fachkreise/bestens-unterstuetzt-durchs-1-lebensjahr/handlungsempfehlungen/beikost/beikosteinfuehrung/`,
+            accessed: `2026-10-23`,
+            note: `Stand 19.08.2016, Teilaktualisierung 2024`,
+          },
+          {
+            id: 4,
+            title: `Complementary Feeding: A Position Paper by the ESPGHAN Committee on Nutrition`,
+            publisher: `Fewtrell M. et al., Journal of Pediatric Gastroenterology and Nutrition 64(1):119–141`,
+            year: `2017`,
+            url: `https://www.espghan.org/dam/jcr:3d960daa-e2f3-499f-9df9-2da682976cec/2017%20Complementary_Feeding__A_Position_Paper_by_the.21.pdf`,
+            accessed: `2026-10-23`,
+            note: `international, nicht deutschlandspezifisch`,
+          },
+        ],
+        openQuestions: [],
+        disclaimer: `Dieser Artikel ersetzt keine ärztliche Beratung. Die Empfehlungen basieren auf den Leitlinien der genannten Institutionen (Stand: Oktober 2026). Bei Fragen zur Ernährung deines Babys sprich mit deiner Kinderärztin, deinem Kinderarzt oder deiner Hebamme.`,
+        ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
+      },
+    },
+  },
 };
