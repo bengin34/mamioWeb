@@ -517,7 +517,9 @@ function BlogGuideCards({ content, links }) {
 function BlogGuideLinks({ content, currentLang }) {
   const ref = useRef(null);
   useReveal(ref);
-  const links = getBlogLinks(currentLang, blogPostIdsByDate.slice(0, HOME_GUIDE_COUNT));
+  // Filter to this language first: country-specific Beikost guides exist in only
+  // one language and must not take up a slot the other languages then render empty.
+  const links = getBlogLinks(currentLang, blogPostIdsByDate).slice(0, HOME_GUIDE_COUNT);
 
   if (!content.guides || !links.length) return null;
 

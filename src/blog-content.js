@@ -1,4 +1,5 @@
 import { extraBlogPosts } from './blog-content-extra.js';
+import { beikostPosts } from './beikost-content.js';
 import { extraLocales } from './locales/index.js';
 import { getLocaleMeta, localeCodes } from './locale-registry.js';
 
@@ -1525,7 +1526,7 @@ const baseBlogPosts = {
   },
 };
 
-export const blogPosts = { ...baseBlogPosts, ...extraBlogPosts };
+export const blogPosts = { ...baseBlogPosts, ...extraBlogPosts, ...beikostPosts };
 
 for (const [code, data] of Object.entries(extraLocales)) {
   for (const [postId, entry] of Object.entries(data.blog)) {
@@ -1537,10 +1538,27 @@ for (const [code, data] of Object.entries(extraLocales)) {
 
 export const blogPostIds = Object.keys(blogPosts);
 
+// A post exists in a language only when it has both a slug and a localized body.
+// Evidence-based Beikost guides cite one country's health authorities, so they are
+// published per country and never auto-translated into the other 27 languages.
+export function getBlogPostLangs(postId) {
+  const post = blogPosts[postId];
+  if (!post) return [];
+  return blogLangs.filter((lang) => post.slugs?.[lang] && post.locales?.[lang]);
+}
+
+// English where it exists, otherwise the post's own first language.
+export function getBlogPostPrimaryLang(postId) {
+  const langs = getBlogPostLangs(postId);
+  return langs.includes('en') ? 'en' : langs[0];
+}
+
 // Newest first, so hubs and the homepage surface fresh guides.
-export const blogPostIdsByDate = [...blogPostIds].sort((a, b) =>
-  blogPosts[b].locales.en.date.localeCompare(blogPosts[a].locales.en.date),
-);
+export const blogPostIdsByDate = [...blogPostIds].sort((a, b) => {
+  const dateB = blogPosts[b].locales[getBlogPostPrimaryLang(b)]?.date ?? '';
+  const dateA = blogPosts[a].locales[getBlogPostPrimaryLang(a)]?.date ?? '';
+  return dateB.localeCompare(dateA);
+});
 
 export function getBlogIndexPath(lang) {
   return `/${lang}/blog/`;
@@ -1557,10 +1575,11 @@ export function getBlogIndexAlternates() {
 }
 
 // Same-cluster siblings first (shared tracker page), then newest, never the post itself.
-export function getRelatedPostIds(postId, limit = 3) {
+export function getRelatedPostIds(postId, limit = 3, lang = null) {
   const related = blogPosts[postId]?.relatedPageId;
   const scored = blogPostIdsByDate
     .filter((id) => id !== postId)
+    .filter((id) => !lang || getBlogPostLangs(id).includes(lang))
     .map((id) => {
       const clusterHit = Object.values(featureBlogPostIds).some(
         (ids) => ids.includes(id) && ids.includes(postId),
@@ -1578,16 +1597,18 @@ export function getBlogPostPath(postId, lang) {
 }
 
 export function getBlogPostAlternates(postId) {
+  const langs = getBlogPostLangs(postId);
+  const primary = getBlogPostPrimaryLang(postId);
   return [
-    ...blogLangs
-      .filter((lang) => getBlogPostPath(postId, lang))
-      .map((lang) => ({
-        lang: getLocaleMeta(lang).hreflang,
-        href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, lang)}`,
-      })),
-    {
-      lang: 'x-default',
-      href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, 'en')}`,
-    },
+    ...langs.map((lang) => ({
+      lang: getLocaleMeta(lang).hreflang,
+      href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, lang)}`,
+    })),
+    ...(primary
+      ? [{
+          lang: 'x-default',
+          href: `https://mamio-baby-tracker.com${getBlogPostPath(postId, primary)}`,
+        }]
+      : []),
   ];
 }
