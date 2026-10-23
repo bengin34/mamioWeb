@@ -90,6 +90,9 @@ async function validate(code) {
   for (const id of Object.keys(seo)) if (!seoFeaturePages[id]) err(`seo.${id} is not a known page`);
 
   for (const [id, post] of Object.entries(blogPosts)) {
+    // Beikost/YMYL guides cite one country's health authorities and are published
+    // per country, so they are deliberately not present in every language.
+    if (!post.locales.en) continue;
     const expected = { slug: post.slugs.en, ...post.locales.en };
     const actual = blog[id];
     if (!actual) { err(`blog.${id} missing`); continue; }

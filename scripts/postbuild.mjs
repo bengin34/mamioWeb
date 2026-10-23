@@ -25,6 +25,7 @@ import {
   getBlogPostPath,
   getRelatedPostIds,
   blogPostIdsByDate,
+  getBlogPostLangs,
 } from '../src/blog-content.js';
 
 const distDir = 'dist';
@@ -303,7 +304,7 @@ function createBreadcrumbLd(lang, title, canonical) {
 }
 
 function renderRelatedPosts(postId, lang) {
-  const items = getRelatedPostIds(postId, 3)
+  const items = getRelatedPostIds(postId, 3, lang)
     .map((id) => ({ path: getBlogPostPath(id, lang), post: blogPosts[id].locales[lang] }))
     .filter((item) => item.path && item.post)
     .map((item) => `        <li><a href="${escapeAttribute(item.path)}">${escapeHtml(item.post.title)}</a></li>`)
@@ -377,6 +378,17 @@ ${jsonLdTags}
     .faq-item summary { font-weight: 600; cursor: pointer; list-style: none; }
     .faq-item summary::-webkit-details-marker { display: none; }
     .faq-item p { margin: 12px 0 0; color: var(--muted); }
+    .review-line { margin: 0 0 20px; font-size: 0.85rem; color: var(--muted); }
+    .review-line.review-pending { font-style: italic; }
+    .key-facts { margin: 0 0 32px; padding: 20px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+    .key-facts h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 12px; }
+    .key-facts ul { margin: 0; padding-inline-start: 20px; }
+    .key-facts li { margin-bottom: 8px; color: var(--muted); }
+    .citation a { text-decoration: none; color: var(--accent); font-weight: 600; }
+    .sources-block { margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .sources-block h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; }
+    .sources-block ol { margin: 0; padding-inline-start: 22px; }
+    .sources-block li { margin-bottom: 12px; font-size: 0.85rem; color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
     .disclaimer { margin-top: 40px; padding: 16px 20px; background: var(--surface); border-radius: 10px; font-size: 0.85rem; color: var(--muted); border-inline-start: 3px solid var(--accent); }
     .tracker-link { margin: 44px 0 0; padding: 24px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
     .tracker-link h2 { margin: 0 0 8px; font-size: 1.05rem; }
@@ -488,6 +500,55 @@ ${items}
   });
 }
 
+
+// --- Beikost / YMYL rendering -------------------------------------------------
+// Turns the inline [n] markers in the copy into links down to the source list.
+function renderCitations(text) {
+  return escapeHtml(text).replace(
+    /\[(\d+)\]/g,
+    (_, n) => `<sup class="citation"><a href="#quelle-${n}">[${n}]</a></sup>`,
+  );
+}
+
+function renderKeyFacts(locale) {
+  if (!locale.keyFacts?.length) return '';
+  const items = locale.keyFacts
+    .map((fact) => `        <li>${renderCitations(fact)}</li>`)
+    .join('\n');
+  return `    <aside class="key-facts">
+      <h2>${escapeHtml(locale.keyFactsHeading ?? '')}</h2>
+      <ul>
+${items}
+      </ul>
+    </aside>`;
+}
+
+function renderReviewLine(locale) {
+  if (locale.reviewedBy) {
+    const credentials = locale.reviewerCredentials
+      ? ` — ${escapeHtml(locale.reviewerCredentials)}`
+      : '';
+    return `    <p class="review-line">Fachlich geprüft von ${escapeHtml(locale.reviewedBy)}${credentials}</p>`;
+  }
+  return '    <p class="review-line review-pending">Dieser Artikel ist noch in fachlicher Prüfung.</p>';
+}
+
+function renderSources(locale) {
+  if (!locale.sources?.length) return '';
+  const items = locale.sources
+    .map((source) => {
+      const note = source.note ? ` (${escapeHtml(source.note)})` : '';
+      return `        <li id="quelle-${source.id}">${escapeHtml(source.title)} — ${escapeHtml(source.publisher)}, ${escapeHtml(String(source.year))}. <a href="${escapeAttribute(source.url)}" rel="nofollow noopener" target="_blank">${escapeHtml(source.url)}</a>${note} Abgerufen am ${escapeHtml(source.accessed)}.</li>`;
+    })
+    .join('\n');
+  return `    <section class="sources-block">
+      <h2>${escapeHtml(locale.sourcesHeading ?? 'Quellen')}</h2>
+      <ol>
+${items}
+      </ol>
+    </section>`;
+}
+
 function renderBlogHtml(postId, lang) {
   const post = blogPosts[postId];
   const locale = post.locales[lang];
@@ -504,10 +565,15 @@ function renderBlogHtml(postId, lang) {
     description: locale.metaDescription,
     url: canonical,
     datePublished: locale.date,
-    dateModified: locale.date,
+    dateModified: locale.lastVerified ?? locale.date,
     image: `${DOMAIN}/assets/og-mamio.png`,
     mainEntityOfPage: canonical,
-    author: { '@type': 'Organization', name: 'Mamio', url: DOMAIN },
+    author: locale.reviewedBy
+      ? { '@type': 'Person', name: locale.reviewedBy, jobTitle: locale.reviewerCredentials }
+      : { '@type': 'Organization', name: 'Mamio', url: DOMAIN },
+    ...(locale.sources?.length
+      ? { citation: locale.sources.map((source) => ({ '@type': 'CreativeWork', name: source.title, publisher: source.publisher, url: source.url })) }
+      : {}),
     inLanguage: getLocaleMeta(lang).hreflang,
     publisher: {
       '@type': 'Organization',
@@ -533,24 +599,26 @@ function renderBlogHtml(postId, lang) {
     })),
   }, null, 2);
 
+  const renderBody = post.ymyl ? renderCitations : escapeHtml;
+
   const sectionsHtml = locale.sections
     .map((s) => `    <section class="article-section">
       <h2>${escapeHtml(s.title)}</h2>
-      <p>${escapeHtml(s.body)}</p>
+      <p>${renderBody(s.body)}</p>
     </section>`)
     .join('\n');
 
   const faqHtml = locale.faq
     .map((item) => `      <details class="faq-item">
         <summary>${escapeHtml(item.question)}</summary>
-        <p>${escapeHtml(item.answer)}</p>
+        <p>${renderBody(item.answer)}</p>
       </details>`)
     .join('\n');
 
   const { ui } = siteLocale;
-  const faqHeading = ui.faqHeading;
+  const faqHeading = locale.faqHeading ?? ui.faqHeading;
   const backLabel = ui.backHome;
-  const disclaimer = ui.disclaimer;
+  const disclaimer = locale.disclaimer ?? ui.disclaimer;
   const trackerHeading = ui.trackerHeading;
   const trackerCopy = ui.trackerCopy;
   const appStoreLabel = 'App Store';
@@ -579,7 +647,9 @@ function renderBlogHtml(postId, lang) {
     body: `    <a class="back-link" href="/${lang}/">${escapeHtml(backLabel)}</a>
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/${lang}/">Mamio</a> › <a href="${getBlogIndexPath(lang)}">${escapeHtml(blogLabels[lang].blog)}</a></nav>
     <h1>${escapeHtml(locale.title)}</h1>
-    <p class="article-intro">${escapeHtml(locale.intro)}</p>
+${post.ymyl ? renderReviewLine(locale) : ''}
+${post.ymyl ? renderKeyFacts(locale) : ''}
+    <p class="article-intro">${renderBody(locale.intro)}</p>
 ${sectionsHtml}
 ${relatedTrackerHtml}
 ${renderRelatedPosts(postId, lang)}
@@ -587,6 +657,7 @@ ${renderRelatedPosts(postId, lang)}
       <h2>${escapeHtml(faqHeading)}</h2>
 ${faqHtml}
     </div>
+${post.ymyl ? renderSources(locale) : ''}
     <p class="disclaimer">${escapeHtml(disclaimer)}</p>
     <div class="cta-block">
       <p>${escapeHtml(locale.ctaText)}</p>
@@ -599,7 +670,11 @@ ${faqHtml}
 }
 
 const blogRoutes = blogPostIds.flatMap((postId) =>
-  blogLangs.map((lang) => ({ postId, lang, loc: `${DOMAIN}${getBlogPostPath(postId, lang)}` })),
+  getBlogPostLangs(postId).map((lang) => ({
+    postId,
+    lang,
+    loc: `${DOMAIN}${getBlogPostPath(postId, lang)}`,
+  })),
 );
 
 await Promise.all(
