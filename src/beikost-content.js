@@ -408,4 +408,294 @@ export const beikostPosts = {
       },
     },
   },
+
+  'beikost-salz-zucker': {
+    relatedPageId: 'feeding',
+    ymyl: true,
+    slugs: {
+      de: 'salz-und-zucker-in-der-beikost',
+    },
+    locales: {
+      de: {
+        metaTitle: `Salz und Zucker in der Beikost: was gilt | Mamio`,
+        metaDescription: `Kein Salzzusatz, kein starker Süßgeschmack, keine süßen Getränke: Was die Handlungsempfehlungen zu Salz und Zucker im ersten Lebensjahr sagen — und was sie offenlassen.`,
+        title: `Salz und Zucker in der Beikost: Was die Empfehlungen sagen`,
+        date: `2026-10-23`,
+        lastVerified: `2026-10-23`,
+        reviewedBy: ``,
+        reviewerCredentials: ``,
+        keyFactsHeading: `Das Wichtigste in Kürze`,
+        keyFacts: [
+          `Bei Fertigbreien sollten „ein Zusatz von Salz und ein starker Süßgeschmack" vermieden werden [1].`,
+          `Süße Getränke sollten vermieden werden; das beste Getränk für Säuglinge ist Wasser [2].`,
+          `Gesüßte Tees und Fruchtsäfte in der Flasche: davon wird dringend abgeraten, wegen des Kariesrisikos [2].`,
+          `Das amtliche Rezept für den ersten Brei enthält weder Salz noch Zucker [4]; international gilt, dass Salz- und Zuckerzusatz in der Beikost nicht empfohlen wird [6].`,
+        ],
+        intro: `Die deutschen Handlungsempfehlungen nennen Salz und Zucker nicht als Verbotsliste, sondern an drei Stellen: bei der Auswahl von Fertigprodukten sollen „ein Zusatz von Salz und ein starker Süßgeschmack" vermieden werden [1], bei Getränken gilt „Süße Getränke sollten vermieden werden" [2], und das amtliche Rezept für den ersten Brei kommt ohne beides aus [4]. Die ESPGHAN-Stellungnahme formuliert es als Grundsatz: Salz- und Zuckerzusatz in der Beikost solle unterbleiben [6].`,
+        sections: [
+          {
+            title: `Was bei Fertigbrei im Glas zählt`,
+            body: `Die Handlungsempfehlungen geben für gekaufte Beikost konkrete Auswahlkriterien. Erstens: „Produkte mit Lebensmittelzutaten, die den Empfehlungen für die Selbstzubereitung entsprechen, sollten bevorzugt werden" [1]. Zweitens: „Ein Zusatz von Salz und ein starker Süßgeschmack sollten vermieden werden" [1]. Das ist die klarste deutsche Aussage zu Salz und Zucker in der Beikost — sie steht als Einkaufskriterium da, nicht als Verbot, und sie betrifft beides gleichzeitig.`,
+          },
+          {
+            title: `Das amtliche Rezept enthält nichts davon`,
+            body: `Wie wenig vorgesehen ist, zeigt der Blick auf den Gemüse-Kartoffel-Fleisch-Brei, den das Netzwerk Gesund ins Leben als ersten Brei empfiehlt. Die vollständige Zutatenliste lautet: 100 g geputztes Gemüse, 50 g Kartoffeln ohne Schale (oder Nudeln, Reis, anderes Getreide, gekocht), 30 g Fleisch oder Fisch, 1,5 EL Fruchtsaft oder Obstpüree als Nachtisch und 1 EL Öl [4]. Salz und Zucker kommen darin nicht vor — auch nicht als optionale Zutat. Das ist eine Beobachtung über das Rezept, keine Verbotsaussage der Quelle.`,
+          },
+          {
+            title: `Getränke: hier ist die Empfehlung am deutlichsten`,
+            body: `„Süße Getränke sollten vermieden werden", heißt es in den Handlungsempfehlungen zu Getränken [2]. Und: „Das beste Getränk für Säuglinge ist Wasser" [2]. Angeboten werden sollen Getränke mit der Einführung des dritten Beikostbreis, zusätzlich zu Muttermilch oder Säuglings(milch)nahrung [2]. Deutlich wird die Quelle beim Dauernuckeln: „Vom Dauergebrauch der Flasche und der Flasche zum Einschlafen sowie von zuckerhaltigen Getränken (gesüßte Tees, Fruchtsäfte) wird daher dringend abgeraten" [2].`,
+          },
+          {
+            title: `Warum Zucker beim Trinken besonders zählt`,
+            body: `Der Grund ist der Dauerkontakt mit den Zähnen: „Ein ständiges Umspülen der Zähne mit zuckerhaltigen Getränken, einschließlich Muttermilch und Säuglings(milch)nahrung, erhöht das Risiko für Zahnkaries (insbesondere Frontzahnkaries)" [2] — die Quelle nennt hier ausdrücklich auch Muttermilch und Säuglingsnahrung, es geht um das ständige Umspülen, nicht um die Mahlzeit. Daneben steht ein zweiter Befund: „Der regelmäßige Verzehr von zuckerhaltigen Getränken im Säuglingsalter war in Beobachtungsstudien mit einem erhöhten Risiko für Übergewicht und Adipositas im Schulalter assoziiert" [2]. Assoziiert, in Beobachtungsstudien — so steht es dort, und so ist es zu lesen.`,
+          },
+          {
+            title: `Gezuckerte Milchprodukte im ersten Jahr`,
+            body: `Das Bundesinstitut für Öffentliche Gesundheit führt unter den Lebensmitteln, die im ersten Lebensjahr noch nicht auf den Speiseplan gehören, auch „zusätzliche Milchprodukte wie zum Beispiel Joghurts, Dickmilch oder Fruchtquark" [5]. Die Begründung ist doppelt: „Sie sind meist mit Zucker versetzt und fördern die Entwicklung von Karies", und sie erhöhen ungünstig die Eiweißaufnahme und verdrängen andere Lebensmittel wie Obst und Gemüse aus der Ernährung [5].`,
+          },
+          {
+            title: `Nach dem ersten Geburtstag: sparsam`,
+            body: `Für Kleinkinder von einem bis drei Jahren wird Salz und Zucker nicht verboten, sondern eingeordnet. In der empfohlenen Kleinkind- und Familienernährung stehen „sparsam: Zucker und Süßigkeiten, (Jod)Salz, Fette mit hohem Anteil gesättigter Fettsäuren sowie Snackprodukte" [3], bei den Getränken „am besten Wasser oder andere ungesüßte/zuckerfreie Getränke" [3]. Interessant für Eltern, die Saft für harmloser halten als Süßigkeiten: „Der Zuckeranteil naturbelassener (z. B. in Fruchtsäften, Honig) und industriell erzeugter Nahrungsmittel stellt zudem für die Zähne des Kleinkindes ein Kariesrisiko dar" [3] — für Honig gilt im ersten Lebensjahr ohnehin eine eigene Einschränkung.`,
+          },
+          {
+            title: `Was Geschmack damit zu tun hat`,
+            body: `Die ESPGHAN-Stellungnahme hält nicht nur fest, dass Salz- und Zuckerzusatz in der Beikost nicht empfohlen wird [6], sondern berichtet auch, woran das hängt. In einer zitierten Untersuchung bevorzugten im Alter von sechs Monaten nur jene Säuglinge salzige Lösungen, die vorher stärkehaltige Tischkost bekommen hatten, und dieselben Kinder leckten im Vorschulalter häufiger Salz von der Oberfläche von Lebensmitteln [6]. Dazu passt ein praktischer Hinweis derselben Quelle: ein Säugling braucht einen neuen Geschmack manchmal acht bis zehn Mal, bevor er ihn annimmt [6] — Geschmack ohne Salz und Zucker ist also eher eine Frage der Wiederholung als der Würze.`,
+          },
+          {
+            title: `Was die Empfehlungen offenlassen`,
+            body: `Zwei Lücken sind wichtig. Erstens gibt es in den hier geöffneten deutschen Quellen keinen Satz, der wörtlich sagt, selbst gekochte Beikost dürfe im ersten Lebensjahr kein Salz enthalten — es gibt das Fertigprodukt-Kriterium [1], das salzfreie Rezept [4], die Kleinkind-Einordnung „sparsam" [3] und den internationalen Grundsatz [6]. Zweitens nennt keine der geöffneten Quellen Mengen: keine Milligramm Natrium, kein Gramm Zucker, keine Tagesobergrenze für Säuglinge. Wer wissen will, wie viel in einem Produkt steckt, bleibt bei der Zutatenliste und dem Nährwertfeld. Wer die eingeführten Lebensmittel mitschreibt, sieht leichter, wo gesüßte Produkte sich eingeschlichen haben — in Mamio lassen sich erste Lebensmittel mit Datum festhalten.`,
+          },
+        ],
+        faqHeading: `Häufige Fragen`,
+        faq: [
+          {
+            question: `Darf ich den Babybrei salzen?`,
+            answer: `Die Handlungsempfehlungen nennen „ein Zusatz von Salz" als etwas, das bei Fertigprodukten vermieden werden sollte [1], und das amtliche Rezept für den ersten Brei enthält kein Salz [4]. International wird vom Salzzusatz in der Beikost abgeraten [6]. Eine deutsche Vorgabe, die den Salzzusatz im selbst gekochten Brei wörtlich verbietet, findet sich in den hier zitierten Quellen nicht.`,
+          },
+          {
+            question: `Darf mein Baby Saft trinken?`,
+            answer: `Fruchtsäfte werden unter den zuckerhaltigen Getränken genannt, von denen in der Flasche dringend abgeraten wird [2]. Das beste Getränk für Säuglinge ist Wasser [2]. Im Rezept für den ersten Brei sind 1,5 EL Fruchtsaft oder Obstpüree als Nachtisch vorgesehen [4] — das ist eine Breizutat, kein Getränk.`,
+          },
+          {
+            question: `Warum ist Zucker in Getränken schlimmer als im Essen?`,
+            answer: `Weil die Zähne ständig umspült werden: Das erhöht laut Handlungsempfehlungen das Risiko für Zahnkaries, insbesondere Frontzahnkaries — ausdrücklich auch bei Muttermilch und Säuglingsnahrung aus der Dauerflasche [2].`,
+          },
+          {
+            question: `Wie viel Salz oder Zucker darf ein Säugling am Tag?`,
+            answer: `Keine der hier zitierten Quellen nennt eine Menge für Säuglinge. Die Empfehlungen sind qualitativ formuliert: Zusatz vermeiden [1], süße Getränke vermeiden [2], im Kleinkindalter sparsam [3].`,
+          },
+          {
+            question: `Schmeckt dem Baby ungesalzenes Essen überhaupt?`,
+            answer: `Die ESPGHAN-Stellungnahme weist darauf hin, dass ein Säugling einen neuen Geschmack manchmal acht bis zehn Mal braucht, bevor er ihn annimmt [6]. Eine Vorliebe für Salziges zeigte sich in einer dort zitierten Untersuchung vor allem bei Säuglingen, die bereits stärkehaltige Tischkost bekommen hatten [6].`,
+          },
+        ],
+        sourcesHeading: `Quellen`,
+        sources: [
+          { id: 1, title: `Abfolge und Auswahl der Beikost — Handlungsempfehlungen`, publisher: `BLE / Netzwerk Gesund ins Leben`, year: `2024`, url: `https://www.gesund-ins-leben.de/fuer-fachkreise/bestens-unterstuetzt-durchs-1-lebensjahr/handlungsempfehlungen/beikost/abfolge-und-auswahl-der-beikost/`, accessed: `2026-10-23`, note: `Stand 19.08.2016, Teilaktualisierung 2024` },
+          { id: 2, title: `Getränke (ergänzende Flüssigkeitszufuhr) — Handlungsempfehlungen`, publisher: `BLE / Netzwerk Gesund ins Leben`, year: `2016`, url: `https://www.gesund-ins-leben.de/fuer-fachkreise/bestens-unterstuetzt-durchs-1-lebensjahr/handlungsempfehlungen/beikost/getraenke-ergaenzende-fluessigkeitszufuhr/`, accessed: `2026-10-23`, note: `Stand 19.08.2016` },
+          { id: 3, title: `Ernährungsweise — Handlungsempfehlungen Kleinkindalter`, publisher: `BLE / Netzwerk Gesund ins Leben`, year: `2022`, url: `https://www.gesund-ins-leben.de/fuer-fachkreise/ernaehrung-und-bewegung-fuer-kleinkinder/handlungsempfehlungen/ernaehrung/ernaehrungsweise/`, accessed: `2026-10-23`, note: `gilt für Kleinkinder von 1 bis 3 Jahren` },
+          { id: 4, title: `Gemüse-Kartoffel-Fleisch-Brei — Rezept und Zubereitung`, publisher: `BLE / Netzwerk Gesund ins Leben`, year: `2026`, url: `https://www.gesund-ins-leben.de/fuer-familien/das-1-lebensjahr/brei-selbst-kochen/gemuese-kartoffel-fleisch-brei/`, accessed: `2026-10-23`, note: `Zutatenliste ohne Salz und Zucker` },
+          { id: 5, title: `Empfehlungen zur Säuglingsernährung`, publisher: `BIÖG — Bundesinstitut für Öffentliche Gesundheit (kindergesundheit-info.de)`, year: `2025`, url: `https://www.kindergesundheit-info.de/index.php?id=8924`, accessed: `2026-10-23`, note: `Stand: 30.11.2025` },
+          { id: 6, title: `Complementary Feeding: A Position Paper by the ESPGHAN Committee on Nutrition`, publisher: `Fewtrell M. et al., Journal of Pediatric Gastroenterology and Nutrition 64(1):119–141`, year: `2017`, url: `https://www.espghan.org/dam/jcr:3d960daa-e2f3-499f-9df9-2da682976cec/2017%20Complementary_Feeding__A_Position_Paper_by_the.21.pdf`, accessed: `2026-10-23`, note: `international, nicht deutschlandspezifisch` },
+        ],
+        openQuestions: [],
+        disclaimer: DE_MEDICAL_DISCLAIMER,
+        ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
+      },
+    },
+  },
+
+  'beikost-nitrat': {
+    relatedPageId: 'feeding',
+    ymyl: true,
+    slugs: {
+      de: 'nitrat-in-der-beikost',
+    },
+    locales: {
+      de: {
+        metaTitle: `Nitrat in der Beikost: Spinat, Rote Bete & Co | Mamio`,
+        metaDescription: `Warum nitratreiches Gemüse für Säuglinge ein Thema ist, was Wärme damit zu tun hat und was das BfR zu Spinat, Lagerung und Methämoglobinämie sagt.`,
+        title: `Nitrat in der Beikost: Was bei Spinat und anderem Gemüse gilt`,
+        date: `2026-10-23`,
+        lastVerified: `2026-10-23`,
+        reviewedBy: ``,
+        reviewerCredentials: ``,
+        keyFactsHeading: `Das Wichtigste in Kürze`,
+        keyFacts: [
+          `Die höchsten Nitratgehalte stecken in Blattgemüse: Rucola, Feldsalat, andere Blattsalate und Spinat [1].`,
+          `Problematisch ist nicht das Nitrat selbst, sondern Nitrit — und die Umwandlung wird durch Wärme gefördert [1].`,
+          `Zubereitetes Gemüse, insbesondere Spinat, sollte nicht längere Zeit warmgehalten werden; Reste schnell kühlen und im Kühlschrank aufbewahren [1].`,
+          `Nitrit kann Hämoglobin in Methämoglobin umwandeln, das keinen Sauerstoff transportiert; Säuglinge in den ersten Lebensmonaten sind besonders gefährdet [1].`,
+        ],
+        intro: `Nitrat selbst gilt als gesundheitlich relativ unbedenklich — zum Thema wird es, weil Bakterien es in Nitrit umwandeln können, und diese Umwandlung wird durch Wärme gefördert [1]. Nitrit kann den roten Blutfarbstoff Hämoglobin in Methämoglobin umwandeln, das keinen Sauerstoff transportieren kann [1]. Deshalb dreht sich die Nitrat-Frage in der Beikost weniger um ein Gemüseverbot als um Auswahl, Abwechslung und Umgang mit Resten [1][3].`,
+        sections: [
+          {
+            title: `Welches Gemüse viel Nitrat enthält`,
+            body: `„Die höchsten Gehalte werden in Blattgemüse wie Rucola, Feldsalat und anderen Blattsalaten sowie Spinat gemessen", schreibt das BfR [1]. „Auch Radieschen, frische Küchenkräuter und Kohlrabi weisen häufig hohe Nitratgehalte auf" [1]. Zur Einordnung die Gegenseite: „Im Vergleich dazu sind die Gehalte in Frucht- und Knollengemüsen wie Tomaten oder Kartoffeln sowie in Getreideprodukten niedriger" [1]. Generell weisen pflanzliche Lebensmittel höhere Nitratgehalte auf als tierische [1]. Rote Bete gehört zu dem Gemüse, das Eltern in diesem Zusammenhang oft nennen — in der hier geöffneten BfR-Liste wird sie nicht eigens aufgeführt; genannt werden Blattgemüse, Radieschen, Küchenkräuter und Kohlrabi [1].`,
+          },
+          {
+            title: `Warum Wärme das Problem ist`,
+            body: `Der Mechanismus steht in zwei Sätzen: „Mikroorganismen können Nitrat im Lebensmittel zu Nitrit umwandeln. Diese Umwandlung wird durch Wärme gefördert" [1]. Daraus folgen die praktischen Hinweise des BfR: „Nitratreiche Lebensmittel sollten daher gekühlt gelagert werden. Zubereitetes Gemüse, insbesondere z. B. Spinat, sollte nicht längere Zeit warmgehalten werden" [1], und „Reste sollten schnell gekühlt und bis zum Verzehr im Kühlschrank aufbewahrt werden" [1]. Beachte die genaue Formulierung: es geht um längeres Warmhalten und um Lagerung. Ein Satz, der das Aufwärmen von Babybrei grundsätzlich verbietet, steht in der Quelle nicht.`,
+          },
+          {
+            title: `Was Nitrit im Körper macht`,
+            body: `„Nitrit kann den roten Blutfarbstoff Hämoglobin in Methämoglobin umwandeln, das im Gegensatz zu Hämoglobin keinen Sauerstoff transportieren kann (Methämoglobinämie)" [1]. Die Folge: „Die dadurch verminderte Kapazität zum Sauerstofftransport im Blut kann zu einer Sauerstoffunterversorgung (Hypoxie) von Körpergeweben führen" [1]. Je nach Anteil des Methämoglobins nennt das BfR zunächst Müdigkeit und Kopfschmerzen, bei höherem Anteil eine bläuliche Verfärbung der Haut und der sichtbaren Schleimhäute (Zyanose) [1]. Die Umwandlung von Nitrat zu Nitrit passiert auch im Körper selbst, vor allem in der Mundhöhle und im Magen, durch bakterielle Enzyme [1].`,
+          },
+          {
+            title: `Warum Säuglinge empfindlicher sind`,
+            body: `Das BfR nennt zwei Gründe. Erstens haben Säuglinge eine niedrige Aktivität des Enzyms, „das Methämoglobin wieder in Hämoglobin umwandelt" [1]. Zweitens haben sie ein erhöhtes Risiko für bakterielle Darminfektionen, „die wiederum zu einer vermehrten Nitritbildung führen können" [1]. Besonders gefährdet sind „Säuglinge in den ersten Lebensmonaten, in denen sie aber üblicherweise mit Milch (Muttermilch bzw. Säuglingsmilchnahrung) ernährt werden" [1] — in der Zeit also, in der Gemüse ohnehin noch nicht auf dem Teller liegt.`,
+          },
+          {
+            title: `Wie viel Spinat an einem Tag`,
+            body: `Hier ist die Quelle präzise und die Altersangabe wichtig: „Säuglinge und Kleinkinder im Alter von 1 bis 3 Jahren, die an einem Tag mehr als eine Spinatmahlzeit mit hohem Nitratgehalt verzehren, können manchmal eine Aufnahmemenge erreichen, bei der ein erhöhtes Risiko für eine Methämoglobinämie nicht ausgeschlossen werden kann" [1]. Das bezieht sich auf die EFSA-Bewertung von 2010, nach der die Nitratgehalte der genannten Gemüsearten „für die meisten Kinder gesundheitlich unbedenklich" sind, für Kinder mit mehr als einer Portion Spinat am Tag aber ein gesundheitliches Risiko bestehen könnte [1].`,
+          },
+          {
+            title: `Bei Magen-Darm-Infekt kein Spinat`,
+            body: `Diese Einschränkung ist konkret und wird oft überlesen: „Kinder, die an bakteriellen Magen-Darm-Infektionen leiden, sollen dem EFSA-Gutachten zufolge daher keinen Spinat essen" [1]. Der Grund steht weiter oben im Mechanismus: bakterielle Darminfektionen können zu vermehrter Nitritbildung führen [1].`,
+          },
+          {
+            title: `Höchstgehalte und was sie abdecken`,
+            body: `„In der Verordnung (EU) 2023/915 über Höchstgehalte für bestimmte Kontaminanten in Lebensmitteln sind Höchstgehalte für Nitrate in bestimmten Arten von Blattgemüsen festgelegt" [1]. Dabei werden Einflüsse wie Erntezeitpunkt und Anbauart berücksichtigt, indem unterschiedliche Werte gelten [1]. Konkrete Zahlenwerte nennt dieser Artikel nicht — aus den hier geöffneten Quellen ließ sich kein Milligramm-Wert belastbar zitieren, und ein eigener Grenzwert für Säuglings- und Kleinkindernahrung war darin nicht enthalten.`,
+          },
+          {
+            title: `Was daraus für die Beikost folgt`,
+            body: `Die deutschen Beikost-Empfehlungen beantworten das nicht über eine Verbotsliste, sondern über Abwechslung: „Es sollte eine Variation der verwendeten Beikostzutaten erfolgen (z. B. verschiedene Gemüse- und Obstarten …)" [3], und Kartoffeln können durch Nudeln, Reis oder andere Getreidearten ersetzt werden [3]. Wer verschiedene Gemüsesorten durchwechselt, landet selten mehrfach am Tag beim nitratreichsten davon. Wer notiert, welches Gemüse es wann gab, sieht solche Muster schneller — in Mamio lassen sich erste Lebensmittel mit Datum festhalten.`,
+          },
+        ],
+        faqHeading: `Häufige Fragen`,
+        faq: [
+          {
+            question: `Darf mein Baby Spinat essen?`,
+            answer: `Die hier zitierten Quellen sprechen kein Verbot aus. Sie nennen Spinat als nitratreich [1] und beziffern das Risiko für Kinder von 1 bis 3 Jahren, die an einem Tag mehr als eine Spinatmahlzeit mit hohem Nitratgehalt essen [1]. Bei bakteriellen Magen-Darm-Infektionen sollen Kinder dem EFSA-Gutachten zufolge keinen Spinat essen [1].`,
+          },
+          {
+            question: `Darf ich Babybrei mit Spinat aufwärmen?`,
+            answer: `Die BfR-Hinweise lauten: nitratreiche Lebensmittel gekühlt lagern, zubereitetes Gemüse — insbesondere Spinat — nicht längere Zeit warmhalten, Reste schnell kühlen und im Kühlschrank aufbewahren [1]. Ein generelles Verbot des Aufwärmens steht dort nicht.`,
+          },
+          {
+            question: `Warum ist Nitrat für Säuglinge gefährlicher als für Erwachsene?`,
+            answer: `Weil Säuglinge eine niedrige Aktivität des Enzyms haben, das Methämoglobin wieder in Hämoglobin umwandelt, und weil sie ein erhöhtes Risiko für bakterielle Darminfektionen haben, die zu vermehrter Nitritbildung führen können [1].`,
+          },
+          {
+            question: `Welches Gemüse hat wenig Nitrat?`,
+            answer: `Das BfR nennt niedrigere Gehalte für Frucht- und Knollengemüse wie Tomaten oder Kartoffeln sowie für Getreideprodukte [1]. Eine vollständige Rangliste geben die hier zitierten Quellen nicht.`,
+          },
+          {
+            question: `Ist Rote Bete für Babys ein Problem?`,
+            answer: `In der hier geöffneten BfR-Aufzählung nitratreicher Lebensmittel wird Rote Bete nicht eigens genannt; aufgeführt sind Blattgemüse wie Rucola, Feldsalat, Blattsalate und Spinat sowie Radieschen, frische Küchenkräuter und Kohlrabi [1]. Eine eigene Aussage zu Rote Bete liegt uns aus diesen Quellen nicht vor.`,
+          },
+        ],
+        sourcesHeading: `Quellen`,
+        sources: [
+          { id: 1, title: `Fragen und Antworten zu Nitrat und Nitrit in Lebensmitteln`, publisher: `BfR — Bundesinstitut für Risikobewertung`, year: `2026`, url: `https://www.bfr.bund.de/de/fragen_und_antworten_zu_nitrat_und_nitrit_in_lebensmitteln-187056.html`, accessed: `2026-10-23`, note: `Seitendatum 12.10.2026; bezieht sich u. a. auf die EFSA-Stellungnahme 2010` },
+          { id: 2, title: `Empfehlungen zur Säuglingsernährung`, publisher: `BIÖG — Bundesinstitut für Öffentliche Gesundheit (kindergesundheit-info.de)`, year: `2025`, url: `https://www.kindergesundheit-info.de/index.php?id=8924`, accessed: `2026-10-23`, note: `Stand: 30.11.2025` },
+          { id: 3, title: `Abfolge und Auswahl der Beikost — Handlungsempfehlungen`, publisher: `BLE / Netzwerk Gesund ins Leben`, year: `2024`, url: `https://www.gesund-ins-leben.de/fuer-fachkreise/bestens-unterstuetzt-durchs-1-lebensjahr/handlungsempfehlungen/beikost/abfolge-und-auswahl-der-beikost/`, accessed: `2026-10-23`, note: `Stand 19.08.2016, Teilaktualisierung 2024` },
+        ],
+        openQuestions: [],
+        disclaimer: DE_MEDICAL_DISCLAIMER,
+        ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
+      },
+    },
+  },
+
+  'beikost-reis-arsen': {
+    relatedPageId: 'feeding',
+    ymyl: true,
+    slugs: {
+      de: 'reis-und-arsen-beikost',
+    },
+    locales: {
+      de: {
+        metaTitle: `Reis und Arsen in der Beikost: Reiswaffeln & Co | Mamio`,
+        metaDescription: `Reiswaffeln, Reisbrei, Reisdrinks: Warum Reis mehr anorganisches Arsen enthält als andere Getreide und was das BfR Eltern von Säuglingen empfiehlt.`,
+        title: `Reis und Arsen in der Beikost: Was das BfR empfiehlt`,
+        date: `2026-10-23`,
+        lastVerified: `2026-10-23`,
+        reviewedBy: ``,
+        reviewerCredentials: ``,
+        keyFactsHeading: `Das Wichtigste in Kürze`,
+        keyFacts: [
+          `Reis und Reisprodukte wie Reiswaffeln, Reissnacks und Reisflocken für Reisbrei können relativ hohe Gehalte an anorganischem Arsen aufweisen [1].`,
+          `Anorganisches Arsen ist als krebserzeugend für den Menschen klassifiziert; eine unbedenkliche Aufnahmemenge konnte bislang nicht abgeleitet werden [1].`,
+          `Eltern wird empfohlen, Säuglinge und Kleinkinder nicht ausschließlich mit reisbasierten Getränken oder Beikost wie Reisbrei zu ernähren [1].`,
+          `Reiswaffeln und Reisflocken nur in Maßen und mit Produkten aus anderen Getreidearten wie Mais oder Weizen abwechseln [1].`,
+        ],
+        intro: `Reis kann mehr Arsen in anorganischer Form enthalten als andere pflanzliche Lebensmittel [1]. Weil anorganisches Arsen als krebserzeugend für den Menschen klassifiziert ist und sich bislang keine gesundheitlich unbedenkliche Aufnahmemenge ableiten ließ [1], empfiehlt das BfR Maßnahmen zur Reduktion — besonders in Produkten, die vor allem von Säuglingen, Kleinkindern und Kindern verzehrt werden [1]. Für Eltern läuft das nicht auf ein Reisverbot hinaus, sondern auf Abwechslung [1].`,
+        sections: [
+          {
+            title: `Wie Arsen in den Reis kommt`,
+            body: `„Wie andere Getreidearten auch, nimmt die Reispflanze Arsenverbindungen über die Wurzeln auf" [1]. Der Unterschied liegt im Anbau: „Reis wird oft unter anaeroben (unter Ausschluss von Sauerstoff) Bedingungen im Boden angebaut, indem die Felder geflutet werden, was zu einer erhöhten Verfügbarkeit des Arsens im Boden führt" [1]. Deshalb ist bekannt, dass Reis mehr Arsen in anorganischer Form enthalten kann als andere pflanzliche Lebensmittel [1].`,
+          },
+          {
+            title: `Warum anorganisches Arsen bewertet wird`,
+            body: `„Anorganisches Arsen ist als für den Menschen krebserzeugend klassifiziert, eine gesundheitlich unbedenkliche Aufnahmemenge konnte bislang nicht abgeleitet werden" [1]. Daraus folgt eine Formulierung, die man nicht oft liest: „Das Vorkommen von anorganischem Arsen in Lebensmitteln ist daher in jeder Menge unerwünscht, lässt sich aber nicht vollständig vermeiden" [1]. Zur Einordnung gehört aber auch der zweite Teil der Bewertung: „Eine akute Gesundheitsbeeinträchtigung ist bei den gemessen Gehalten in Reis und Reisprodukten für alle Bevölkerungsgruppen in Deutschland … unwahrscheinlich" [1]. Es geht also um langfristige Aufnahme, nicht um eine akute Gefahr durch eine Reiswaffel.`,
+          },
+          {
+            title: `Welche Produkte das BfR besonders nennt`,
+            body: `Genannt werden „Reis und Produkte auf Reisbasis, wie Reiswaffeln, Reissnacks und Reisflocken für Reisbrei" [1] — also genau die Dinge, die im ersten Lebensjahr häufig zum Einsatz kommen. Das BfR sieht hier zusätzlich Forschungsbedarf, „um insbesondere abzuklären, weshalb Reisprodukte, wie zum Beispiel Reiswaffeln oder Reisflocken bzw. Reisbrei, teilweise wesentlich höhere Gehalte an Arsenverbindungen aufweisen können als weißer Reis" [1]. Und es benennt, was Eltern im Laden nicht leisten können: „Verbraucherinnen und Verbraucher können die jeweilige Höhe der Gehalte an anorganischem Arsen im Reis oder in den Reisprodukten nicht erkennen" [1].`,
+          },
+          {
+            title: `Die Empfehlung für Säuglinge und Kleinkinder`,
+            body: `Sie ist in einem Satz zusammengefasst: „Eltern wird empfohlen, ihre Säuglinge und Kleinkinder nicht ausschließlich mit reisbasierten Getränken oder Beikost wie Reisbrei zu ernähren" [1]. Dazu kommt der Punkt zu Snacks: „Auch bei Zwischenmahlzeiten sollten sie Produkte wie Reiswaffeln mit reisfreien Zwischenmahlzeiten variieren" [1]. Allgemeiner formuliert das BfR: „Produkte wie Reiswaffeln oder Reisflocken/Reisbrei nur in Maßen zu konsumieren und mit Produkten, die auf anderen Getreidearten wie Mais oder Weizen basieren, zu variieren" [1]. Das Wort, auf das es ankommt, ist „ausschließlich" beziehungsweise „in Maßen" — nicht „nie".`,
+          },
+          {
+            title: `Reisdrinks sind etwas anderes`,
+            body: `Bei Getränken auf Reisbasis, der sogenannten Reismilch, ist die Aussage schärfer. Das BfR weist auf Empfehlungen nationaler und internationaler Gremien hin, die diese Ernährungsform ablehnen — „nicht nur wegen der hohen Gehalte an Arsen in den Produkten …, sondern insbesondere wegen der ungeeigneten Nährstoffzusammensetzung, die nicht den Bedürfnissen von Säuglingen entspricht" [1]. Für Säuglinge ist ein Reisdrink also nicht nur eine Arsenfrage, sondern vor allem kein geeignetes Lebensmittel.`,
+          },
+          {
+            title: `Was Höchstgehalte abdecken`,
+            body: `Die EU hat Höchstgehalte für anorganisches Arsen für folgende Kategorien beschlossen: „Geschliffener Reis, nicht parboiled (polierter und weißer Reis); parboiled-Reis und geschälter Reis; Reiskekse, Reiswaffeln, Reiskräcker und Reiskuchen; Reis für die Herstellung von Lebensmitteln für Säuglinge und Kleinkinder" [1]. Eingeführt wurden sie „mit Wirkung zum 01. Januar 2016" [1]. Zahlenwerte nennt dieser Artikel nicht — aus den hier geöffneten Quellen ließ sich kein Grenzwert in Milligramm je Kilogramm belastbar zitieren.`,
+          },
+          {
+            title: `Was beim Kochen passiert`,
+            body: `Für den Haushalt nennt das BfR einen Ansatz: „Arsenverbindungen können beim Waschen und Kochen von Reis in reichlich Wasser mit geringen Arsengehalten teilweise aus dem Reis in das Wasser übergehen" [1]. Mehr steht dort nicht — keine Wassermenge, kein Verhältnis, keine Kochzeit. Wer also liest, man solle Reis in viel Wasser kochen und es weggießen, findet dafür in dieser Quelle die Richtung, aber keine Anleitung. Für Reisbrei aus Reisflocken greift dieser Weg ohnehin nicht.`,
+          },
+          {
+            title: `Wie das in die Beikost passt`,
+            body: `Die deutschen Beikost-Empfehlungen machen Abwechslung ohnehin zum Prinzip: „Es sollte eine Variation der verwendeten Beikostzutaten erfolgen" [2], und ausdrücklich „Kartoffeln können durch Nudeln, Reis oder andere Getreidearten ersetzt werden" [2] — Reis steht dort als eine Option unter mehreren, nicht als Standard. Dieselbe Logik nennt das BfR: Verbraucher sollten „die generelle Empfehlung zu Abwechslung und Vielfalt berücksichtigen und die verzehrten Getreidearten nach Möglichkeit variieren" [1]. Wer mitschreibt, welches Getreide wann im Brei war, sieht leichter, ob es über Wochen immer dasselbe war — in Mamio lassen sich erste Lebensmittel mit Datum festhalten.`,
+          },
+          {
+            title: `Stand der Daten`,
+            body: `Die hier zitierte BfR-Seite trägt das Datum 22.12.2020 [1]. Die darin genannten Messungen in Reiswaffeln und reisbasierter Säuglings- und Kleinkindernahrung stammen aus dem Lebensmittelmonitoring 2014 von Bund und Ländern, das auf Antrag des BfR erfolgte; die Gehalte lagen dort niedriger als in den Produkten, die der früheren Stellungnahme zugrunde lagen [1]. Wer sich auf Zahlen stützen möchte, sollte deshalb prüfen, ob das BfR inzwischen neuere Daten veröffentlicht hat.`,
+          },
+        ],
+        faqHeading: `Häufige Fragen`,
+        faq: [
+          {
+            question: `Darf mein Baby Reiswaffeln essen?`,
+            answer: `Das BfR spricht kein Verbot aus. Es empfiehlt, Produkte wie Reiswaffeln nur in Maßen zu konsumieren und mit Produkten aus anderen Getreidearten wie Mais oder Weizen zu variieren [1], und bei Zwischenmahlzeiten mit reisfreien Zwischenmahlzeiten abzuwechseln [1].`,
+          },
+          {
+            question: `Ist Reisbrei für Säuglinge geeignet?`,
+            answer: `Eltern wird empfohlen, Säuglinge und Kleinkinder nicht ausschließlich mit reisbasierten Getränken oder Beikost wie Reisbrei zu ernähren [1]. In den Beikost-Empfehlungen ist Reis eine Option neben Nudeln, Kartoffeln und anderen Getreidearten [2].`,
+          },
+          {
+            question: `Darf mein Baby Reismilch trinken?`,
+            answer: `Das BfR verweist auf Empfehlungen nationaler und internationaler Gremien, die diese Ernährungsform für Säuglinge ablehnen — nicht nur wegen der Arsengehalte, sondern insbesondere wegen der Nährstoffzusammensetzung, die nicht den Bedürfnissen von Säuglingen entspricht [1].`,
+          },
+          {
+            question: `Hilft es, den Reis zu waschen oder in viel Wasser zu kochen?`,
+            answer: `Arsenverbindungen können beim Waschen und Kochen in reichlich Wasser mit geringen Arsengehalten teilweise aus dem Reis in das Wasser übergehen [1]. Eine konkrete Anleitung mit Wassermengen oder Kochzeiten nennt die Quelle nicht.`,
+          },
+          {
+            question: `Ist Vollkornreis besser oder schlechter?`,
+            answer: `Dazu liegt uns aus den hier zitierten Quellen keine Aussage vor. Das BfR nennt die EU-Kategorien für Höchstgehalte — geschliffener Reis, parboiled und geschälter Reis, Reisgebäck, Reis für Säuglings- und Kleinkindernahrung [1] — ohne einen Vergleich der Sorten für Säuglinge zu ziehen.`,
+          },
+          {
+            question: `Muss ich mir Sorgen machen, wenn mein Kind schon viele Reiswaffeln gegessen hat?`,
+            answer: `Eine akute Gesundheitsbeeinträchtigung hält das BfR bei den gemessenen Gehalten für alle Bevölkerungsgruppen in Deutschland für unwahrscheinlich [1]. Die Empfehlungen zielen auf die langfristige Aufnahme, also auf Abwechslung ab jetzt [1].`,
+          },
+        ],
+        sourcesHeading: `Quellen`,
+        sources: [
+          { id: 1, title: `Fragen und Antworten zu Arsengehalten in Reis und Reisprodukten`, publisher: `BfR — Bundesinstitut für Risikobewertung`, year: `2020`, url: `https://www.bfr.bund.de/de/fragen_und_antworten_zu_arsengehalten_in_reis_und_reisprodukten-194346.html`, accessed: `2026-10-23`, note: `Seitendatum 22.12.2020; Messdaten aus dem Lebensmittelmonitoring 2014` },
+          { id: 2, title: `Abfolge und Auswahl der Beikost — Handlungsempfehlungen`, publisher: `BLE / Netzwerk Gesund ins Leben`, year: `2024`, url: `https://www.gesund-ins-leben.de/fuer-fachkreise/bestens-unterstuetzt-durchs-1-lebensjahr/handlungsempfehlungen/beikost/abfolge-und-auswahl-der-beikost/`, accessed: `2026-10-23`, note: `Stand 19.08.2016, Teilaktualisierung 2024` },
+          { id: 3, title: `Empfehlungen zur Säuglingsernährung`, publisher: `BIÖG — Bundesinstitut für Öffentliche Gesundheit (kindergesundheit-info.de)`, year: `2025`, url: `https://www.kindergesundheit-info.de/index.php?id=8924`, accessed: `2026-10-23`, note: `Stand: 30.11.2025` },
+        ],
+        openQuestions: [],
+        disclaimer: DE_MEDICAL_DISCLAIMER,
+        ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
+      },
+    },
+  },
 };
