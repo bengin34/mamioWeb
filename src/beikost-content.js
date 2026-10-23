@@ -8,8 +8,19 @@
 // authorities (BfR, BIOEG) and may not be reused for another market. A post is
 // live only in the languages that have both a slug and a locale body here.
 //
-// `reviewedBy` stays empty until a clinician licensed in that country signs off.
-// Until then the page renders with a visible "noch in fachlicher Prüfung" note.
+// There is no clinician review step for these pages. They are written by the Mamio
+// editorial team and report what the named institutions publish, nothing else, so
+// every page carries an editorial byline plus DE_MEDICAL_DISCLAIMER below: no medical
+// advice, infant feeding is individual, and a liability exclusion written the way
+// German law allows one - the carve-out for intent, gross negligence and harm to
+// life, body or health is what keeps such a clause enforceable rather than void
+// (BGB 276(3), 309 Nr. 7). `reviewedBy` stays in the schema for the day a clinician
+// does sign off; filling it switches the byline to a named reviewer.
+
+// Appended to every German Beikost article. Not legal advice from this repo's side:
+// modelled on what German health publishers use, and the Impressum/disclaimer pairing
+// should be checked once by a lawyer.
+const DE_MEDICAL_DISCLAIMER = `Wichtiger Hinweis: Dieser Artikel wurde redaktionell vom Mamio-Team erstellt. Er gibt wieder, was die unten genannten Institutionen in ihren Leitlinien und Stellungnahmen veröffentlichen, und dient ausschließlich der allgemeinen Information. Er stellt keine medizinische Beratung dar und ersetzt nicht das Gespräch mit einer Kinderärztin, einem Kinderarzt, einer Hebamme oder einer Ernährungsfachkraft. Das Mamio-Team ist keine ärztliche Einrichtung, erstellt keine Diagnosen und erbringt keine Heilbehandlung. Die Ernährung eines Säuglings ist immer eine Einzelfallentscheidung: Alter, Entwicklung, Gewicht, Vorerkrankungen, Allergien und Medikamente können dazu führen, dass die hier beschriebenen allgemeinen Empfehlungen für dein Kind nicht gelten oder von deiner kinderärztlichen Praxis anders gewichtet werden. Entscheidungen über die Ernährung deines Kindes solltest du deshalb nur gemeinsam mit ihr treffen. Leitlinien werden regelmäßig überarbeitet; maßgeblich ist stets die jeweils aktuelle Fassung der genannten Quelle, das angegebene Datum bezieht sich auf den Stand unserer Prüfung. Eine Haftung für Schäden, die aus der Anwendung dieser allgemeinen Informationen entstehen, wird nicht übernommen. Unberührt bleibt die Haftung für Vorsatz und grobe Fahrlässigkeit sowie für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Bei akuten Beschwerden wende dich an deine kinderärztliche Praxis, den ärztlichen Bereitschaftsdienst (116 117) oder in Notfällen an den Rettungsdienst (112).`
 
 export const beikostPosts = {
   'beikost-honig': {
@@ -119,7 +130,7 @@ export const beikostPosts = {
           },
         ],
         openQuestions: [],
-        disclaimer: `Dieser Artikel ersetzt keine ärztliche Beratung. Die Empfehlungen basieren auf den Leitlinien der genannten Institutionen (Stand: Oktober 2026). Bei Fragen zur Ernährung deines Babys sprich mit deiner Kinderärztin, deinem Kinderarzt oder deiner Hebamme.`,
+        disclaimer: DE_MEDICAL_DISCLAIMER,
         ctaText: `Beikost-Start und erste Lebensmittel mit Mamio festhalten`,
       },
     },
@@ -258,7 +269,7 @@ export const beikostPosts = {
           },
         ],
         openQuestions: [],
-        disclaimer: `Dieser Artikel ersetzt keine ärztliche Beratung. Die Empfehlungen basieren auf den Leitlinien der genannten Institutionen (Stand: Oktober 2026). Bei Fragen zur Ernährung deines Babys sprich mit deiner Kinderärztin, deinem Kinderarzt oder deiner Hebamme.`,
+        disclaimer: DE_MEDICAL_DISCLAIMER,
         ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
       },
     },
@@ -392,7 +403,7 @@ export const beikostPosts = {
           },
         ],
         openQuestions: [],
-        disclaimer: `Dieser Artikel ersetzt keine ärztliche Beratung. Die Empfehlungen basieren auf den Leitlinien der genannten Institutionen (Stand: Oktober 2026). Bei Fragen zur Ernährung deines Babys sprich mit deiner Kinderärztin, deinem Kinderarzt oder deiner Hebamme.`,
+        disclaimer: DE_MEDICAL_DISCLAIMER,
         ctaText: `Erste Lebensmittel und Reaktionen mit Mamio festhalten`,
       },
     },

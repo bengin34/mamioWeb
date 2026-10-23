@@ -379,7 +379,6 @@ ${jsonLdTags}
     .faq-item summary::-webkit-details-marker { display: none; }
     .faq-item p { margin: 12px 0 0; color: var(--muted); }
     .review-line { margin: 0 0 20px; font-size: 0.85rem; color: var(--muted); }
-    .review-line.review-pending { font-style: italic; }
     .key-facts { margin: 0 0 32px; padding: 20px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
     .key-facts h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 12px; }
     .key-facts ul { margin: 0; padding-inline-start: 20px; }
@@ -389,7 +388,7 @@ ${jsonLdTags}
     .sources-block h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; }
     .sources-block ol { margin: 0; padding-inline-start: 22px; }
     .sources-block li { margin-bottom: 12px; font-size: 0.85rem; color: var(--muted); line-height: 1.6; overflow-wrap: anywhere; }
-    .disclaimer { margin-top: 40px; padding: 16px 20px; background: var(--surface); border-radius: 10px; font-size: 0.85rem; color: var(--muted); border-inline-start: 3px solid var(--accent); }
+    .disclaimer { margin-top: 40px; padding: 16px 20px; background: var(--surface); border-radius: 10px; font-size: 0.85rem; color: var(--muted); border-inline-start: 3px solid var(--accent); line-height: 1.7; }
     .tracker-link { margin: 44px 0 0; padding: 24px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
     .tracker-link h2 { margin: 0 0 8px; font-size: 1.05rem; }
     .tracker-link p { margin: 0 0 18px; color: var(--muted); }
@@ -530,7 +529,14 @@ function renderReviewLine(locale) {
       : '';
     return `    <p class="review-line">Fachlich geprüft von ${escapeHtml(locale.reviewedBy)}${credentials}</p>`;
   }
-  return '    <p class="review-line review-pending">Dieser Artikel ist noch in fachlicher Prüfung.</p>';
+  // No clinician review step: say who wrote it and on what basis, rather than
+  // promising a review that is not coming.
+  const sourceCount = locale.sources?.length ?? 0;
+  const basis = sourceCount
+    ? `auf Basis von ${sourceCount} ${sourceCount === 1 ? 'Quelle' : 'Quellen'} (siehe unten)`
+    : 'auf Basis der unten genannten Quellen';
+  const asOf = locale.lastVerified ?? locale.date;
+  return `    <p class="review-line">Redaktion: Mamio-Team · ${escapeHtml(basis)} · Stand der Prüfung: ${escapeHtml(asOf)} · keine ärztliche Beratung</p>`;
 }
 
 function renderSources(locale) {
