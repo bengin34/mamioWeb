@@ -29,7 +29,8 @@ import {
   seoFeaturePages,
   seoPageIds,
   seoPageLangs,
-  screenshotFiles,
+  getScreens,
+  getFeatureScreen,
 } from './content';
 import {
   blogPostIds,
@@ -165,10 +166,6 @@ function createStructuredData(route, title, description, canonical) {
   };
 }
 
-function screenshotPath(content, file) {
-  return `/assets/screenshots/${content.assetLocale}/${file}.jpg`;
-}
-
 /* ─────────────────────────────────────────
    HEADER
 ───────────────────────────────────────── */
@@ -222,18 +219,19 @@ function Header({ content, currentLang, isHome, languageOptions, onLanguageChang
 /* ─────────────────────────────────────────
    HERO
 ───────────────────────────────────────── */
-function Hero({ content }) {
+function Hero({ content, currentLang }) {
   const [heroActive, setHeroActive] = useState(0);
+  const screens = getScreens(currentLang);
   const ref = useRef(null);
   useReveal(ref);
 
   useEffect(() => {
     const id = setInterval(
-      () => setHeroActive((p) => (p + 1) % screenshotFiles.length),
+      () => setHeroActive((p) => (p + 1) % screens.length),
       3000,
     );
     return () => clearInterval(id);
-  }, []);
+  }, [screens.length]);
 
   return (
     <section
@@ -297,19 +295,19 @@ function Hero({ content }) {
 
         {/* 3D coverflow — auto-cycling screenshots */}
         <div className="hero-cflow-stage hidden lg:flex anim anim-d2">
-          {screenshotFiles.map((file, index) => {
-            const offset = wrappedOffset(index, heroActive, screenshotFiles.length);
+          {screens.map((screen, index) => {
+            const offset = wrappedOffset(index, heroActive, screens.length);
             if (Math.abs(offset) > 1) return null;
             return (
               <div
-                key={file}
+                key={screen.file}
                 className={`hero-cflow-item${offset === 0 ? ' is-active' : ''}`}
                 style={heroCflowStyle(offset)}
               >
                 <div className="hero-cflow-phone">
                   <img
-                    src={screenshotPath(content, file)}
-                    alt={offset === 0 ? content.hero.imageAlt : ''}
+                    src={screen.src}
+                    alt={offset === 0 ? screen.alt : ''}
                     width="736"
                     height="1600"
                     loading={index === 0 ? 'eager' : 'lazy'}
@@ -548,7 +546,7 @@ function FeaturePage({ homeContent, currentLang, pageId }) {
   const ref = useRef(null);
   useReveal(ref);
   const page = seoFeaturePages[pageId].locales[currentLang];
-  const feature = seoFeaturePages[pageId];
+  const featureScreen = getFeatureScreen(pageId, currentLang);
   const relatedGuides = getBlogLinks(currentLang, featureBlogPostIds[pageId] ?? []);
   const related = seoPageIds
     .filter((id) => id !== pageId)
@@ -619,8 +617,8 @@ function FeaturePage({ homeContent, currentLang, pageId }) {
           <div className="phone-frame-wrap hidden lg:flex anim anim-d2">
             <div className="phone-frame">
               <img
-                src={screenshotPath(homeContent, feature.image)}
-                alt={page.imageAlt}
+                src={featureScreen.src}
+                alt={featureScreen.alt}
                 width="736"
                 height="1600"
                 loading="eager"
@@ -743,9 +741,10 @@ function heroCflowStyle(offset) {
   };
 }
 
-function Screens({ content }) {
+function Screens({ content, currentLang }) {
   const [active, setActive] = useState(0);
-  const count = screenshotFiles.length;
+  const screens = getScreens(currentLang);
+  const count = screens.length;
   const ref = useRef(null);
   const resumeTimer = useRef(null);
   const [paused, setPaused] = useState(false);
@@ -766,7 +765,7 @@ function Screens({ content }) {
     resumeTimer.current = setTimeout(() => setPaused(false), 8000);
   }
 
-  const currentScreen = content.screens[active];
+  const currentScreen = screens[active] ?? screens[0];
 
   return (
     <section
@@ -786,18 +785,17 @@ function Screens({ content }) {
       {/* Sliding track */}
       <div className="screens-viewport mt-12">
         <div className="screens-track" style={{ '--active': active }}>
-          {screenshotFiles.map((file, index) => {
-            const screen = content.screens[index];
+          {screens.map((screen, index) => {
             return (
               <div
-                key={file}
+                key={screen.file}
                 className={`screen-slide${index === active ? ' is-active' : ''}`}
                 onClick={() => index !== active && goTo(index)}
                 aria-label={screen.title}
               >
                 <img
-                  src={screenshotPath(content, file)}
-                  alt={`${screen.title}. ${screen.body}`}
+                  src={screen.src}
+                  alt={screen.alt}
                   width="736"
                   height="1600"
                   loading={index < 2 ? 'eager' : 'lazy'}
@@ -821,13 +819,13 @@ function Screens({ content }) {
 
       {/* Dot indicators */}
       <div className="mt-6 flex justify-center gap-2">
-        {screenshotFiles.map((_, i) => (
+        {screens.map((screen, i) => (
           <button
             key={i}
             type="button"
             className={`carousel-dot${i === active ? ' is-active' : ''}`}
             onClick={() => goTo(i)}
-            aria-label={content.screens[i].title}
+            aria-label={screen.title}
           />
         ))}
       </div>
@@ -1182,12 +1180,12 @@ export default function App() {
       />
       {isHome ? (
         <main>
-          <Hero content={content} />
+          <Hero content={content} currentLang={currentLang} />
           <ProofStrip content={content} />
           <Features content={content} />
           <SeoFeatureLinks content={content} currentLang={currentLang} />
           <BlogGuideLinks content={content} currentLang={currentLang} />
-          <Screens content={content} />
+          <Screens content={content} currentLang={currentLang} />
           <Privacy content={content} />
           <Plans content={content} />
           <LanguagesBlock

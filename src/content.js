@@ -1,6 +1,8 @@
 import { extraLocales } from './locales/index.js';
 import { getLocaleMeta, localeCodes, localeLabelList } from './locale-registry.js';
 import { newSeoFeaturePages } from './seo-pages-new.js';
+import appScreens from './app-screens.js';
+import appScreensCopy from './app-screens-copy.js';
 
 export const DOMAIN = 'https://mamio-baby-tracker.com';
 export const APP_STORE_URL = 'https://apps.apple.com/us/app/mamio-breastfeeding-tracker/id6757083259';
@@ -2048,6 +2050,71 @@ for (const [code, data] of Object.entries(extraLocales)) {
     seoFeaturePages[pageId].slugs[code] = slug;
     seoFeaturePages[pageId].locales[code] = fields;
   }
+}
+
+// Current App Store screenshots (scripts/import-app-screenshots.sh) replace the
+// original site set for every language that has them. Captions come from the
+// store copy (scripts/import-screen-copy.mjs), one entry per numbered frame.
+const appScreenOrder = ['01_home', '03_quickadd', '02_leap', '04_sleep', '06_growth', '07_doctor', '09_teeth'];
+
+const featureAppScreens = {
+  breastfeeding: '01_home',
+  feeding: '03_quickadd',
+  bottleFeeding: '03_quickadd',
+  pumping: '03_quickadd',
+  mixedFeeding: '01_home',
+  diaper: '03_quickadd',
+  sleep: '04_sleep',
+  health: '07_doctor',
+  reports: '07_doctor',
+  careTimeline: '10_history',
+  development: '02_leap',
+  growthPercentiles: '06_growth',
+  teething: '09_teeth',
+  watchWidget: '01_home',
+  multipleBabies: '01_home',
+};
+
+function hasAppScreen(lang, file) {
+  return appScreens.locales.includes(lang) && appScreens.files.includes(file) && Boolean(appScreensCopy[lang]);
+}
+
+function appScreen(lang, file) {
+  const frame = appScreensCopy[lang][Number(file.slice(0, 2)) - 1];
+  return {
+    file,
+    src: `/assets/app-screens/${lang}/${file}.jpg`,
+    title: frame.head,
+    body: frame.lead,
+    alt: `${frame.eyebrow}: ${frame.lead} ${frame.head}`,
+  };
+}
+
+// Screens for the home carousel and gallery: [{ file, src, title, body, alt }].
+export function getScreens(lang) {
+  const content = locales[lang];
+  const current = appScreenOrder.filter((file) => hasAppScreen(lang, file));
+  if (current.length) return current.map((file) => appScreen(lang, file));
+  return screenshotFiles.map((file, index) => ({
+    file,
+    src: `/assets/screenshots/${content.assetLocale}/${file}.jpg`,
+    title: content.screens[index].title,
+    body: content.screens[index].body,
+    alt: `${content.screens[index].title}. ${content.screens[index].body}`,
+  }));
+}
+
+// The phone image on a landing page: { src, alt }.
+export function getFeatureScreen(pageId, lang) {
+  const file = featureAppScreens[pageId];
+  if (file && hasAppScreen(lang, file)) {
+    const { src, alt } = appScreen(lang, file);
+    return { src, alt };
+  }
+  return {
+    src: `/assets/screenshots/${locales[lang].assetLocale}/${seoFeaturePages[pageId].image}.jpg`,
+    alt: seoFeaturePages[pageId].locales[lang].imageAlt,
+  };
 }
 
 export const localeKeys = seoPageLangs;
