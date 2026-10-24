@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Programu ya kufuatilia ulishaji na malezi ya mtoto`,
-    metaDescription: `Mamio ni programu tulivu isiyohitaji intaneti ya kufuatilia kunyonyesha, chupa, nepi, usingizi, kukamua maziwa, ukuaji, chanjo, ziara za daktari na vikumbusho.`,
+    metaDescription: `Mamio ni programu tulivu isiyohitaji intaneti ya kufuatilia kunyonyesha, chupa, nepi, usingizi, kukamua maziwa, ukuaji, rekodi za afya, chanjo, ziara za daktari na vikumbusho.`,
     nav: {
       features: `Vipengele`,
       screens: `Skrini`,
@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Programu ya malezi ya mtoto bila intaneti`,
       title: `Mamio`,
-      lead: `Njia tulivu ya kufuatilia ulishaji, nepi, usingizi, kukamua maziwa, ukuaji, afya, chanjo, ziara za daktari na vikumbusho bila kubeba kila kitu kichwani.`,
+      lead: `Njia tulivu ya kufuatilia ulishaji, nepi, usingizi, kukamua maziwa, ukuaji, hatua za ukuaji, meno, afya, chanjo na ziara za daktari bila kubeba kila kitu kichwani.`,
       primaryCta: `Pakua kwenye App Store`,
       secondaryCta: `Tazama skrini`,
       imageAlt: `Skrini ya mwanzo ya programu ya Mamio ikionyesha mlisho unaofuata, usawa wa pande za matiti na matukio ya hivi karibuni ya malezi.`,
@@ -24,7 +24,7 @@ export default {
     proof: [
       {
         value: `Saa 9:00 usiku`,
-        label: `imeundwa kwa mlisho wa usingizini`
+        label: `imeundwa kwa milisho ukiwa na usingizi`
       },
       {
         value: `Ratiba 1`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Rekodi za afya karibu nawe`,
-        body: `Weka ukuaji, dalili, joto la mwili, dawa, chanjo, ziara za daktari na maelezo mafupi vikiwa vimepangwa mahali pamoja.`
+        body: `Weka ukuaji, hatua za ukuaji, maneno ya kwanza, meno, dalili, joto la mwili, dawa, chanjo na ziara za daktari vikiwa vimepangwa mahali pamoja.`
       },
       {
         title: `Vikumbusho vya kusaidia`,
@@ -89,7 +89,7 @@ export default {
       },
       {
         title: `Picha za nepi`,
-        body: `Ongeza picha za faragha kwenye mabadiliko ya nepi yanayokutia wasiwasi, kisha uzipitie unapozungumza na daktari.`
+        body: `Ongeza picha za faragha za nepi zinazokutia wasiwasi, kisha uzipitie unapozungumza na daktari.`
       },
       {
         title: `Maendeleo ya kulala kifudifudi`,
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `Data ya mtoto wako ni yako`,
-      title: `Bila intaneti kwanza. Bila akaunti. Bila kutegemea seva.`,
+      title: `Imeundwa kufanya kazi bila intaneti. Bila akaunti. Bila kutegemea seva.`,
       body: `Mamio imetengenezwa kwa wazazi wanaotaka ufuatiliaji wa vitendo bila kugeuza malezi ya mtoto kuwa mradi wa data. Rekodi zinabaki kwenye kifaa chako, na unaweza kutoa ripoti unapohitaji kushiriki taarifa na daktari, mshauri au mwenzi wako.`,
       points: [
         `Ufuatiliaji bila intaneti kabisa`,
@@ -107,7 +107,7 @@ export default {
       ]
     },
     plans: {
-      eyebrow: `Bure kuanza`,
+      eyebrow: `Anza bure`,
       title: `Ufuatiliaji wa msingi ni bure. Pro huongeza historia pana na ripoti.`,
       freeTitle: `Bure`,
       proTitle: `Mamio Pro`,
