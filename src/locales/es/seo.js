@@ -544,7 +544,7 @@ export default {
       },
       {
         title: `Una guía, no un veredicto`,
-        body: `Cada niño se desarrolla a su ritmo. Los rangos de edad de Mamio son una guía, no un diagnóstico ni un sustituto de la evaluación del desarrollo. Las guías por edad están adaptadas del programa de los CDC "Learn the Signs. Act Early.", y si algo te preocupa, la persona adecuada para consultar es tu pediatra.`,
+        body: `Cada niño se desarrolla a su ritmo. Los rangos de edad de Mamio son una guía, no un diagnóstico ni un sustituto de la evaluación del desarrollo. Las guías por edad están adaptadas del programa de los CDC «Learn the Signs. Act Early.», y si algo te preocupa, la persona adecuada para consultar es tu pediatra.`,
       },
     ],
     faq: [
@@ -621,7 +621,7 @@ export default {
     slug: `denticion-bebe-dientes`,
     shortTitle: `Registro de dentición`,
     metaTitle: `Dentición del bebé: app y tabla de dientes | Mamio`,
-    metaDescription: `Toca cada diente nuevo en una tabla interactiva de los 20 dientes de leche y guarda la fecha. Periodos de erupción habituales, sin alarmas de "diente tardío".`,
+    metaDescription: `Toca cada diente nuevo en una tabla interactiva de los 20 dientes de leche y guarda la fecha. Periodos de erupción habituales, sin alarmas de «diente tardío».`,
     eyebrow: `Dientes y dentición`,
     title: `Una tabla dental que recuerda cada primer diente.`,
     lead: `Mamio muestra los 20 dientes de leche en una tabla interactiva. Toca un diente cuando salga, añade la fecha y una nota, y consulta el periodo de erupción habitual de cada uno.`,
@@ -637,7 +637,7 @@ export default {
         body: `Cuando aparezca un diente nuevo, tócalo en la tabla y guarda la fecha con una nota opcional. Cada diente tiene un único registro, así la tabla se va completando a la par que la sonrisa de tu bebé.`,
       },
       {
-        title: `Periodos habituales, nunca "con retraso"`,
+        title: `Periodos habituales, nunca «con retraso»`,
         body: `Cada diente muestra el periodo de erupción habitual según la tabla de erupción dental que usa la American Academy of Pediatric Dentistry. Los dientes salen en momentos muy distintos, así que Mamio nunca marca un diente como tardío.`,
       },
       {
@@ -672,11 +672,11 @@ export default {
     slug: `control-esfinteres-orinal`,
     shortTitle: `Registro de dejar el pañal`,
     metaTitle: `App para dejar el pañal: registro del orinal | Mamio`,
-    metaDescription: `Registra pis, caca, escapes y comprobaciones en seco en segundos y descubre los patrones de tu peque al dejar el pañal. Un módulo opcional y tranquilo en Mamio.`,
+    metaDescription: `Registra pis, caca, escapes y controles de pañal seco en segundos y descubre los patrones de tu peque al dejar el pañal. Un módulo opcional y tranquilo en Mamio.`,
     eyebrow: `Dejar el pañal`,
     title: `Dejar el pañal con patrones, no con presión.`,
-    lead: `Activa el módulo de orinal en Mamio y registra pis, caca, ambos, escapes o comprobaciones en seco con la hora y una nota. El registro muestra lo que funciona sin llevar la cuenta.`,
-    imageAlt: `Registro de dejar el pañal de Mamio con pis, caca, comprobación en seco y escapes.`,
+    lead: `Activa el módulo de orinal en Mamio y registra pis, caca, ambos, escapes o controles de pañal seco con la hora y una nota. El registro muestra lo que funciona sin llevar la cuenta.`,
+    imageAlt: `Registro de dejar el pañal de Mamio con pis, caca, control de pañal seco y escapes.`,
     bullets: [
       `Pis, caca, escape, seco`,
       `Añadido rápido desde la pantalla de inicio`,
@@ -707,7 +707,7 @@ export default {
       },
       {
         question: `¿Qué puedo registrar?`,
-        answer: `Pis, caca, ambos, escapes y comprobaciones en seco, cada uno con la hora y una nota opcional.`,
+        answer: `Pis, caca, ambos, escapes y controles de pañal seco, cada uno con la hora y una nota opcional.`,
       },
       {
         question: `¿El registro del orinal es gratis?`,
@@ -846,7 +846,7 @@ export default {
       },
       {
         title: `Menos confusiones con las medicinas`,
-        body: `Los registros de temperatura, síntomas y medicinas están dentro del perfil de cada bebé, lo que ayuda a evitar la pregunta de padres agotados: ¿a quién le tocaba ya la dosis?`,
+        body: `Los registros de temperatura, síntomas y medicinas están dentro del perfil de cada bebé, lo que ayuda a evitar la duda de padres agotados: ¿quién ha tomado ya su dosis?`,
       },
       {
         title: `Gratis para uno, Pro para más`,

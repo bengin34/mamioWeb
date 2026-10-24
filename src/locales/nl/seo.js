@@ -620,7 +620,7 @@ export default {
   teething: {
     slug: `tandjes-doorkomen-tracker`,
     shortTitle: `Tandjes tracker`,
-    metaTitle: `Tandjes Doorkomen: tandenschema App voor je baby | Mamio`,
+    metaTitle: `Tandjes doorkomen: tandenschema-app voor je baby | Mamio`,
     metaDescription: `Tik elk nieuw tandje aan op een interactief schema van alle 20 melktanden en bewaar de datum. Gebruikelijke doorbraakperiodes, zonder 'te laat'-alarmen.`,
     eyebrow: `Tandjes en doorkomen`,
     title: `Een tandenschema dat elk eerste tandje onthoudt.`,

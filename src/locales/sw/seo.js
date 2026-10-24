@@ -562,7 +562,7 @@ export default {
       },
       {
         question: `Mamio Pro inaongeza nini kwa maendeleo?`,
-        answer: `Pro hufungua ratiba ya maendeleo, inayolinganisha usingizi na ulishaji karibu na vipindi vya takriban vya kusumbua, pamoja na historia kamili zaidi ya rekodi za hivi karibuni.`
+        answer: `Pro hufungua ratiba ya maendeleo, inayolinganisha usingizi na ulishaji karibu na vipindi vinavyokadiriwa vya mtoto kusumbua, pamoja na historia kamili, si rekodi za hivi karibuni pekee.`
       }
     ]
   },
@@ -621,13 +621,13 @@ export default {
     slug: `kufuatilia-kuota-meno`,
     shortTitle: `Kifuatiliaji cha kuota meno`,
     metaTitle: `Kifuatiliaji cha Kuota Meno na Chati ya Meno ya Mtoto | Mamio`,
-    metaDescription: `Gusa kila jino jipya kwenye chati shirikishi ya meno yote 20 ya utotoni na uhifadhi tarehe. Vipindi vya kawaida vya kuota, bila tahadhari za "jino limechelewa".`,
+    metaDescription: `Gusa kila jino jipya kwenye chati shirikishi ya meno yote 20 ya maziwa na uhifadhi tarehe. Vipindi vya kawaida vya kuota, bila tahadhari za "jino limechelewa".`,
     eyebrow: `Meno na kuota meno`,
     title: `Chati ya meno inayokumbuka kila jino la kwanza.`,
-    lead: `Mamio huonyesha meno yote 20 ya utotoni kwenye chati shirikishi. Gusa jino linapotoka, ongeza tarehe na dokezo, na uone kipindi cha kawaida cha kuota kwa kila moja.`,
+    lead: `Mamio huonyesha meno yote 20 ya maziwa kwenye chati shirikishi. Gusa jino linapotoka, ongeza tarehe na dokezo, na uone kipindi cha kawaida cha kuota kwa kila moja.`,
     imageAlt: `Orodha ya hatua za ukuaji ya Mamio ikiwemo rekodi ya jino la kwanza.`,
     bullets: [
-      `Chati shirikishi ya meno 20 ya utotoni`,
+      `Chati shirikishi ya meno 20 ya maziwa`,
       `Tarehe na dokezo kwa kila jino`,
       `Vipindi vya kawaida vya kuota`
     ],
@@ -651,7 +651,7 @@ export default {
     ],
     faq: [
       {
-        question: `Meno ya utotoni hutoka kwa mpangilio gani?`,
+        question: `Meno ya maziwa hutoka kwa mpangilio gani?`,
         answer: `Kwa kawaida meno ya mbele ya chini hutoka kwanza, yakifuatiwa na meno ya mbele ya juu, lakini mpangilio na wakati hutofautiana sana. Mamio huonyesha kipindi cha kawaida kwa kila jino.`
       },
       {
@@ -744,7 +744,7 @@ export default {
       },
       {
         title: `Usalama kwanza, kwa kila mtu`,
-        body: `Kila zoezi huonyesha tahadhari na sheria zake za usalama kwa watumiaji wote, hata yale yaliyofungwa: kaa na mtoto wako, acha akichoka au akikasirika, na fanya vipindi viwe vifupi na vya kucheza.`
+        body: `Kila zoezi huonyesha tahadhari na sheria zake za usalama kwa watumiaji wote, hata yale yaliyofungwa: kaa na mtoto wako, acha akichoka au akisumbuka, na fanya vipindi viwe vifupi na vya kucheza.`
       },
       {
         title: `Imeunganishwa na kulala kifudifudi`,
@@ -816,7 +816,7 @@ export default {
         answer: `Si kwa sasa. Apple Watch, complications na wijeti za skrini ya mwanzo ni za iOS pekee.`
       },
       {
-        question: `Je, wijeti zinaingiliana?`,
+        question: `Je, wijeti ni shirikishi?`,
         answer: `Wijeti za iPhone ni za kuona rekodi za leo kwa mtazamo mmoja. Kurekodi hufanyika ndani ya programu au kwenye Apple Watch.`
       }
     ]
@@ -845,7 +845,7 @@ export default {
         body: `Ukiwa na zaidi ya wasifu mmoja, mtoto anayetumika huonekana juu ya skrini. Mguse ili kubadilisha kabla ya kurekodi, ili mlisho au nepi inayofuata iende kwa mtoto sahihi.`
       },
       {
-        title: `Michanganyiko michache ya dawa`,
+        title: `Mkanganyiko mdogo wa dawa`,
         body: `Joto la mwili, dalili na rekodi za dawa zimo ndani ya wasifu wa kila mtoto, jambo linalosaidia kuepuka swali la mzazi aliyechoka: nani tayari amepata dozi yake?`
       },
       {

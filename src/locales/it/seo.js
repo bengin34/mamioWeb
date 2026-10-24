@@ -562,7 +562,7 @@ export default {
       },
       {
         question: `Cosa aggiunge Mamio Pro per lo sviluppo?`,
-        answer: `Pro sblocca la timeline dello sviluppo, che confronta sonno e alimentazione intorno ai periodi approssimativi di maggiore irritabilità, oltre allo storico completo oltre le registrazioni più recenti.`,
+        answer: `Pro sblocca la timeline dello sviluppo, che confronta sonno e alimentazione intorno ai periodi approssimativi di maggiore irritabilità, oltre allo storico completo, non solo le registrazioni più recenti.`,
       },
     ],
   },
@@ -674,7 +674,7 @@ export default {
     metaTitle: `App per togliere il pannolino: diario del vasino | Mamio`,
     metaDescription: `Registra pipì, cacca, incidenti e controlli asciutto in pochi secondi e scopri le abitudini del tuo bimbo sul vasino. Un modulo tranquillo e facoltativo.`,
     eyebrow: `Togliere il pannolino`,
-    title: `Togliere il pannolino seguendo i ritmi, non la pressione.`,
+    title: `Togliere il pannolino con i suoi ritmi, senza pressioni.`,
     lead: `Attiva il modulo vasino in Mamio e registra pipì, cacca, entrambe, incidenti o controlli asciutto con l'ora e una nota. Il diario mostra cosa funziona senza tenere il punteggio.`,
     imageAlt: `Diario del vasino di Mamio con registrazioni di pipì, cacca, controllo asciutto e incidente.`,
     bullets: [
@@ -825,9 +825,9 @@ export default {
     slug: `app-gemelli-neonati`,
     shortTitle: `Gemelli e fratelli`,
     metaTitle: `App per neonati gemelli e fratelli | Mamio`,
-    metaDescription: `Un profilo separato per ogni bebè, da cambiare con un tocco. Poppate, pannolini, sonno, crescita e farmaci non si confondono mai tra gemelli.`,
+    metaDescription: `Un profilo separato per ogni bebè, da cambiare con un tocco. Poppate, pannolini, sonno, crescita e farmaci non si confondono mai tra gemelli o fratelli.`,
     eyebrow: `Gemelli e fratelli`,
-    title: `Un'app, una registrazione separata per ogni bebè.`,
+    title: `Un'app, un diario separato per ogni bebè.`,
     lead: `Mamio tiene un profilo per ogni bebè, con le sue poppate, i suoi pannolini, il sonno, la crescita e i dati sulla salute. Cambia il bebè attivo dall'intestazione e registra per il bambino giusto.`,
     imageAlt: `Schermata Home di Mamio con un riepilogo rapido dell'ultima poppata, del prossimo lato e della giornata.`,
     bullets: [
@@ -837,7 +837,7 @@ export default {
     ],
     sections: [
       {
-        title: `Registrazioni separate, per scelta`,
+        title: `Dati separati, per scelta`,
         body: `Ogni bebè ha la propria timeline, le proprie statistiche, i grafici di crescita, i vaccini e il diario dei farmaci. I gemelli raramente mangiano, dormono o crescono allo stesso modo, e registrazioni separate rendono visibile il ritmo di ciascuno.`,
       },
       {

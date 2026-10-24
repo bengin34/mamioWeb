@@ -553,7 +553,7 @@ export default {
         answer: `Mamio podpowiada 54 kamienie milowe z obszarów motoryki, mowy, rozwoju społecznego, rozwoju poznawczego i „pierwszych razów”, każdy z typowym przedziałem wieku. Możesz też zapisywać własne chwile.`,
       },
       {
-        question: `Czy Mamio powie mi, że moje dziecko ma opóźnienia?`,
+        question: `Czy Mamio powie mi, czy moje dziecko ma opóźnienia?`,
         answer: `Nie. Mamio zapisuje to, co obserwujesz, i pokazuje typowe przedziały wieku. Nie ocenia dziecka punktami i nie diagnozuje opóźnień. Jeśli masz wątpliwości, porozmawiaj z pediatrą.`,
       },
       {
@@ -715,7 +715,7 @@ export default {
       },
       {
         question: `Kiedy zacząć odpieluchowanie?`,
-        answer: `Gotowość bardzo różni się u poszczególnych dzieci. Obserwuj oznaki gotowości i zapytaj pediatrę lub położną środowiskową, jeśli masz wątpliwości.`,
+        answer: `Gotowość bardzo różni się u poszczególnych dzieci. Obserwuj oznaki gotowości i zapytaj pediatrę, jeśli masz wątpliwości.`,
       },
     ],
   },
@@ -827,7 +827,7 @@ export default {
     metaTitle: `Aplikacja dla rodziców bliźniąt i rodzeństwa | Mamio`,
     metaDescription: `Osobny profil dla każdego dziecka i przełączanie jednym stuknięciem. Karmienia, pieluszki, sen, wzrost i leki nie pomylą się między bliźniętami ani rodzeństwem.`,
     eyebrow: `Bliźnięta i rodzeństwo`,
-    title: `Jedna aplikacja, osobny zapis dla każdego dziecka.`,
+    title: `Jedna aplikacja, osobny dziennik dla każdego dziecka.`,
     lead: `Mamio prowadzi profil dla każdego dziecka, z jego własnymi karmieniami, pieluszkami, snem, wzrostem i dokumentacją zdrowia. Przełącz aktywne dziecko w nagłówku i zapisuj dla właściwego malucha.`,
     imageAlt: `Ekran główny Mamio z szybkim podsumowaniem ostatniego karmienia, następnej strony i dzisiejszego dnia.`,
     bullets: [
