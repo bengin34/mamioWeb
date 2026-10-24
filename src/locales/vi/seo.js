@@ -5,7 +5,7 @@ export default {
     metaTitle: `Ứng dụng theo dõi cho con bú | Mamio`,
     metaDescription: `Theo dõi cữ bú theo từng bên ngực, thêm cữ bị quên, xem cân bằng hai bên và lưu lịch sử cho bú offline với Mamio.`,
     eyebrow: `Theo dõi cho con bú`,
-    title: `Theo dõi cho con bú cho những cữ bú buồn ngủ ngoài đời thật.`,
+    title: `Theo dõi cho con bú, kể cả những cữ bú đêm ngái ngủ.`,
     lead: `Mamio giúp bạn bật đồng hồ bấm giờ khi cho bú, chọn bên trái hoặc bên phải, thêm cữ bú sau và xem lịch sử cho con bú gần đây mà không biến những đêm thức giấc thành bảng tính.`,
     imageAlt: `Màn hình theo dõi cho con bú của Mamio với các cữ bú gần đây và cân bằng hai bên ngực.`,
     bullets: [
@@ -19,7 +19,7 @@ export default {
         body: `Mở Mamio, bật đồng hồ và ghi lại bạn cho bú bên nào. Nếu cữ bú đã diễn ra rồi, hãy thêm thủ công với giờ và thời lượng.`,
       },
       {
-        title: `Luôn thấy bên ngực đã bú`,
+        title: `Luôn thấy cân bằng hai bên ngực`,
         body: `Các lần ghi gần đây giúp bạn nhớ bên ngực cuối cùng, không phải dựa vào trí nhớ mệt mỏi trong những cữ bú đêm.`,
       },
       {
@@ -62,7 +62,7 @@ export default {
         body: `Theo dõi cữ bú mẹ, lượng sữa bú bình, nguồn sữa, ăn dặm và các lần hút sữa trong cùng một luồng chăm sóc bé.`,
       },
       {
-        title: `Nhìn cả ngày trong một cái liếc`,
+        title: `Nắm nhanh ngày hôm nay chỉ trong nháy mắt`,
         body: `Lịch sử gần đây và tổng kết theo ngày giúp bạn hiểu nhịp ăn uống mà không phải đếm hết trong đầu.`,
       },
       {
@@ -396,7 +396,7 @@ export default {
     lead: `Mamio giữ các giấc ngủ gần cữ bú, tã và ghi chú để bạn hiểu cả ngày như một tổng thể, thay vì theo dõi giấc ngủ tách biệt.`,
     imageAlt: `Màn hình theo dõi giấc ngủ của bé trong Mamio với dòng thời gian giấc ngủ và chăm sóc.`,
     bullets: [
-      `Nhật ký giấc ngủ ngày và giấc ngủ`,
+      `Nhật ký giấc ngủ ngày và giấc ngủ đêm`,
       `Lịch sử giấc ngủ hằng ngày`,
       `Giấc ngủ cạnh cữ bú, tã và ghi chú`,
     ],

@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Suivi bébé hors ligne`,
       title: `Mamio`,
-      lead: `Une façon sereine de suivre les repas, les couches, le sommeil, le tire-lait, la croissance, la santé, les vaccins, les rendez-vous médicaux et les rappels, sans tout garder en tête.`,
+      lead: `Une façon sereine de suivre les repas, les couches, le sommeil, le tire-lait, la croissance, les étapes du développement, les dents, la santé, les vaccins et les rendez-vous médicaux, sans tout garder en tête.`,
       primaryCta: `Télécharger sur l'App Store`,
       secondaryCta: `Découvrir les écrans`,
       imageAlt: `Écran d'accueil de l'application Mamio avec la prochaine tétée, l'équilibre des seins et les derniers soins.`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `La santé à portée de main`,
-        body: `Garde au même endroit la croissance, les symptômes, la température, les médicaments, les vaccins, les rendez-vous médicaux et tes notes rapides.`,
+        body: `Garde au même endroit la croissance, les étapes du développement, les premiers mots, les dents, les symptômes, la température, les médicaments, les vaccins et les rendez-vous médicaux.`,
       },
       {
         title: `Des rappels utiles`,
@@ -66,7 +66,7 @@ export default {
         body: `Consulte d'un coup d'œil l'historique récent, les résumés quotidiens, l'équilibre des seins, les couches, le sommeil, le tire-lait et la croissance.`,
       },
       {
-        title: `Confidentiel par conception`,
+        title: `Confidentiel par nature`,
         body: `Mamio fonctionne entièrement hors ligne, ne demande aucun compte et conserve les données en local sur ton appareil.`,
       },
     ],
@@ -98,8 +98,8 @@ export default {
     ],
     privacy: {
       eyebrow: `Les données de ton bébé t'appartiennent`,
-      title: `Hors ligne d'abord. Sans compte. Sans dépendre d'un serveur.`,
-      body: `Mamio s'adresse aux parents qui veulent un suivi pratique sans transformer les soins de bébé en projet de données. Les données restent sur ton appareil, et tu peux exporter des rapports pour partager le contexte avec un médecin, une consultante ou ton partenaire.`,
+      title: `Pensé pour le hors-ligne. Sans compte. Sans dépendre d'un serveur.`,
+      body: `Mamio s'adresse aux parents qui veulent un suivi pratique sans transformer les soins de bébé en projet de données. Les données restent sur ton appareil, et tu peux exporter des rapports pour partager le contexte avec un médecin, une consultante en lactation ou ton partenaire.`,
       points: [
         `Suivi entièrement hors ligne`,
         `Données conservées sur ton appareil`,

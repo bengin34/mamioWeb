@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Ứng dụng theo dõi chăm sóc bé offline`,
       title: `Mamio`,
-      lead: `Cách nhẹ nhàng để theo dõi cữ bú, tã, giấc ngủ, hút sữa, tăng trưởng, sức khỏe, tiêm chủng, lịch khám và nhắc giờ mà bạn không phải nhớ hết trong đầu.`,
+      lead: `Cách nhẹ nhàng để theo dõi cữ bú, tã, giấc ngủ, hút sữa, tăng trưởng, mốc phát triển, răng, sức khỏe, tiêm chủng và lịch khám mà bạn không phải nhớ hết trong đầu.`,
       primaryCta: `Tải trên App Store`,
       secondaryCta: `Xem các màn hình`,
       imageAlt: `Màn hình chính của ứng dụng Mamio hiển thị cữ bú tiếp theo, cân bằng hai bên ngực và các hoạt động chăm sóc gần đây.`,
@@ -24,7 +24,7 @@ export default {
     proof: [
       {
         value: `3:00 sáng`,
-        label: `dành cho những cữ bú mệt lả`,
+        label: `dành cho những cữ bú lúc ngái ngủ`,
       },
       {
         value: `1 dòng thời gian`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Hồ sơ sức khỏe trong tầm tay`,
-        body: `Sắp xếp tăng trưởng, triệu chứng, nhiệt độ, thuốc, tiêm chủng, lịch khám bác sĩ và ghi chú nhanh ở cùng một nơi.`,
+        body: `Sắp xếp tăng trưởng, mốc phát triển, những từ đầu tiên, răng, triệu chứng, nhiệt độ, thuốc, tiêm chủng và lịch khám bác sĩ ở cùng một nơi.`,
       },
       {
         title: `Nhắc giờ hữu ích`,

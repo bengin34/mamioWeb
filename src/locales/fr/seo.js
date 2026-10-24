@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `Mamio fonctionne-t-il sans compte ?`,
-        answer: `Oui. Mamio fonctionne d'abord hors ligne, ne demande aucun compte et garde les données de bébé sur ton appareil.`,
+        answer: `Oui. Mamio est pensé pour fonctionner hors ligne, ne demande aucun compte et garde les données de bébé sur ton appareil.`,
       },
       {
         question: `Puis-je aussi suivre les biberons ?`,
@@ -67,7 +67,7 @@ export default {
       },
       {
         title: `Partage un contexte plus clair`,
-        body: `Quand tu dois en parler avec ton partenaire, une consultante ou un médecin, tes notes récentes sur les repas sont plus faciles à relire.`,
+        body: `Quand tu dois en parler avec ton partenaire, une consultante en lactation ou un médecin, tes notes récentes sur les repas sont plus faciles à relire.`,
       },
     ],
     faq: [
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `Les données de repas sont-elles stockées en ligne ?`,
-        answer: `Non. Mamio fonctionne d'abord hors ligne et conserve les données en local sur ton appareil.`,
+        answer: `Non. Mamio est pensé pour fonctionner hors ligne et conserve les données en local sur ton appareil.`,
       },
     ],
   },
@@ -196,7 +196,7 @@ export default {
       },
       {
         title: `Partage une image plus claire`,
-        body: `Un historique d'alimentation mixte peut aider ton partenaire, les consultantes et les soignants à comprendre la routine sans se fier à la mémoire.`,
+        body: `Un historique d'alimentation mixte peut aider ton partenaire, une consultante en lactation ou les soignants à comprendre la routine sans se fier à la mémoire.`,
       },
     ],
     faq: [
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `Les données d'alimentation mixte sont-elles stockées en ligne ?`,
-        answer: `Non. Mamio fonctionne d'abord hors ligne et conserve les données en local sur ton appareil.`,
+        answer: `Non. Mamio est pensé pour fonctionner hors ligne et conserve les données en local sur ton appareil.`,
       },
     ],
   },
@@ -231,7 +231,7 @@ export default {
     sections: [
       {
         title: `Note même les petites séances`,
-        body: `Le temps sur le ventre se fait souvent par petites touches. Enregistre la séance rapidement, puis construis peu à peu une image douce des progrès du jour.`,
+        body: `Le temps sur le ventre se fait souvent par petites touches. Enregistre la séance rapidement, puis vois peu à peu se dessiner les progrès au fil des jours.`,
       },
       {
         title: `Garde des notes sur les positions`,
@@ -425,7 +425,7 @@ export default {
       },
       {
         question: `Mamio a-t-il besoin d'internet pour suivre le sommeil ?`,
-        answer: `Non. Les données de sommeil fonctionnent hors ligne et restent sur ton appareil.`,
+        answer: `Non. Le suivi du sommeil fonctionne hors ligne et les données restent sur ton appareil.`,
       },
     ],
   },
@@ -511,7 +511,7 @@ export default {
       },
       {
         question: `La chronologie fonctionne-t-elle sans internet ?`,
-        answer: `Oui. Toutes les données sont stockées en local sur ton appareil et fonctionnent hors ligne.`,
+        answer: `Oui. Toutes les données sont stockées en local sur ton appareil et la chronologie fonctionne hors ligne.`,
       },
     ],
   },

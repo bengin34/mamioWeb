@@ -3,9 +3,9 @@ export default {
     slug: `kufuatilia-kunyonyesha`,
     shortTitle: `Kifuatiliaji cha kunyonyesha`,
     metaTitle: `Programu ya Kufuatilia Kunyonyesha | Mamio`,
-    metaDescription: `Fuatilia vipindi vya kunyonyesha kwa upande wa titi, ongeza milisho uliyosahau, na uhifadhi historia ya kunyonyesha bila intaneti ukitumia Mamio.`,
+    metaDescription: `Fuatilia vipindi vya kunyonyesha kwa upande wa titi, ongeza milisho uliyosahau, kagua usawa wa pande, na uhifadhi historia ya kunyonyesha bila intaneti ukitumia Mamio.`,
     eyebrow: `Kifuatiliaji cha kunyonyesha`,
-    title: `Kufuatilia kunyonyesha kwa milisho halisi ya usingizini.`,
+    title: `Kufuatilia kunyonyesha kwa milisho halisi, hata ukiwa na usingizi.`,
     lead: `Mamio hukusaidia kuanzisha kipima muda cha kunyonyesha, kuchagua titi la kushoto au kulia, kuongeza mlisho baadaye, na kuona historia ya hivi karibuni bila kugeuza usiku kuwa jedwali la hesabu.`,
     imageAlt: `Skrini ya kifuatiliaji cha kunyonyesha cha Mamio ikionyesha milisho ya hivi karibuni na usawa wa pande za matiti.`,
     bullets: [
@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `Je, Mamio inafanya kazi bila akaunti?`,
-        answer: `Ndiyo. Mamio hufanya kazi bila intaneti kwanza, haihitaji akaunti, na huhifadhi rekodi za malezi ya mtoto kwenye kifaa chako.`
+        answer: `Ndiyo. Mamio imeundwa kufanya kazi bila intaneti, haihitaji akaunti, na huhifadhi rekodi za malezi ya mtoto kwenye kifaa chako.`
       },
       {
         question: `Naweza kufuatilia chupa pia?`,
@@ -49,7 +49,7 @@ export default {
     metaDescription: `Fuatilia kunyonyesha, chupa, chakula cha kijiko, kukamua maziwa na historia ya ulishaji bila intaneti ukitumia kifuatiliaji cha ulishaji cha Mamio.`,
     eyebrow: `Kifuatiliaji cha ulishaji wa mtoto`,
     title: `Mahali pamoja tulivu pa kunyonyesha, chupa, chakula cha kijiko na kukamua maziwa.`,
-    lead: `Mamio huweka rekodi za ulishaji pamoja ili uone kilichotokea leo, kilichofuata, na kinachoweza kufuata, bila kuhangaika na madokezo mengi.`,
+    lead: `Mamio huweka rekodi za ulishaji pamoja ili uone kilichotokea leo, kilichokuwa cha mwisho, na kinachoweza kufuata, bila kuhangaika na madokezo mengi.`,
     imageAlt: `Skrini ya kifuatiliaji cha ulishaji wa mtoto cha Mamio ikionyesha rekodi za ulishaji na malezi ya kila siku.`,
     bullets: [
       `Kumbukumbu za kunyonyesha na chupa`,
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `Je, rekodi za ulishaji zinahifadhiwa mtandaoni?`,
-        answer: `Hapana. Mamio hufanya kazi bila intaneti kwanza na huhifadhi rekodi kwenye kifaa chako.`
+        answer: `Hapana. Mamio imeundwa kufanya kazi bila intaneti na huhifadhi rekodi kwenye kifaa chako.`
       }
     ]
   },
@@ -149,7 +149,7 @@ export default {
       },
       {
         title: `Unganisha kukamua na milisho`,
-        body: `Kukamua maziwa kuna maana zaidi likiwa kando ya chupa, kunyonyesha na matukio ya kila siku, hasa wakati walezi tofauti wanahusika.`
+        body: `Kukamua maziwa kuna maana zaidi kukiwa kando ya chupa, kunyonyesha na matukio ya kila siku, hasa wakati walezi tofauti wanahusika.`
       },
       {
         title: `Tumia vikumbusho kwa upole`,
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `Je, data ya ulishaji mchanganyiko inahifadhiwa mtandaoni?`,
-        answer: `Hapana. Mamio hufanya kazi bila intaneti kwanza na huhifadhi rekodi kwenye kifaa chako.`
+        answer: `Hapana. Mamio imeundwa kufanya kazi bila intaneti na huhifadhi rekodi kwenye kifaa chako.`
       }
     ]
   },
@@ -239,7 +239,7 @@ export default {
       },
       {
         title: `Ona kipindi pamoja na siku nzima`,
-        body: `Kulala kifudifudi kunaonekana kando ya milisho, nepi, usingizi na madokezo, hivyo unaweza kuelewa mahali kinapoingia kwa kawaida kwenye ratiba.`
+        body: `Kulala kifudifudi kunaonekana kando ya milisho, nepi, usingizi na madokezo, hivyo unaweza kuelewa mahali kunapoingia kwa kawaida kwenye ratiba.`
       }
     ],
     faq: [
@@ -349,7 +349,7 @@ export default {
     metaTitle: `Programu ya Kufuatilia Nepi za Mtoto | Mamio`,
     metaDescription: `Fuatilia nepi zilizolowa na chafu, madokezo ya nepi, picha za faragha na mifumo ya kila siku bila intaneti ukitumia Mamio.`,
     eyebrow: `Kifuatiliaji cha nepi`,
-    title: `Kufuatilia nepi kwa haraka vya kutosha hata wakati wa kubadilisha kwa pupa.`,
+    title: `Kufuatilia nepi kwa haraka, hata wakati wa kubadilisha nepi kwa pilikapilika.`,
     lead: `Mamio hurahisisha kurekodi nepi zilizolowa na chafu, kuongeza madokezo pale kitu kinapoonekana si cha kawaida, na kupitia historia ya hivi karibuni kando ya malezi mengine ya mtoto.`,
     imageAlt: `Skrini ya kifuatiliaji cha nepi cha Mamio ikionyesha rekodi za nepi na ratiba ya kila siku.`,
     bullets: [
@@ -359,7 +359,7 @@ export default {
     ],
     sections: [
       {
-        title: `Rekodi mabadiliko ndani ya sekunde`,
+        title: `Rekodi nepi ndani ya sekunde chache`,
         body: `Rekodi aina ya nepi kwa haraka na uiweke kwenye ratiba ileile ya kila siku pamoja na ulishaji, usingizi na madokezo ya afya.`
       },
       {
@@ -463,7 +463,7 @@ export default {
         answer: `Ndiyo. Mamio ina rekodi za afya za chanjo, ziara za daktari, dalili, joto la mwili, dawa, ukuaji na madokezo.`
       },
       {
-        question: `Naweza kutoa rekodi?`,
+        question: `Naweza kutoa rekodi kutoka Mamio?`,
         answer: `Mamio inasaidia kutoa ripoti kwa vipindi vya tarehe ulivyochagua, jambo linalofaa unapotaka kushiriki muktadha.`
       },
       {
@@ -479,7 +479,7 @@ export default {
     metaDescription: `Fuatilia milisho, nepi, usingizi, kukamua maziwa, chakula cha kijiko na matukio ya malezi pamoja kwenye ratiba moja tulivu ukitumia Mamio.`,
     eyebrow: `Ratiba ya malezi ya mtoto`,
     title: `Ratiba moja tulivu ya kila mlisho, nepi, usingizi na tukio la malezi.`,
-    lead: `Mamio huweka kunyonyesha, chupa, nepi, chakula cha kijiko, usingizi, kukamua maziwa na madokezo ya afya kwenye mwonekano mmoja wa siku ili hakuna kitu kinachopotea.`,
+    lead: `Mamio huweka kunyonyesha, chupa, nepi, chakula cha kijiko, usingizi, kukamua maziwa na madokezo ya afya kwenye mwonekano mmoja wa siku ili usipitwe na chochote.`,
     imageAlt: `Ratiba ya malezi ya mtoto ya Mamio ikionyesha milisho, nepi, usingizi na rekodi za kila siku za malezi.`,
     bullets: [
       `Milisho, nepi na usingizi pamoja`,

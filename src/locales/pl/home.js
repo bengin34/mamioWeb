@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - aplikacja do karmienia i opieki nad dzieckiem`,
-    metaDescription: `Mamio to spokojna aplikacja offline do śledzenia karmienia piersią, butelki, pieluszek, snu, odciągania mleka, wzrostu, zdrowia, szczepień i wizyt u lekarza.`,
+    metaDescription: `Mamio to spokojna aplikacja offline do śledzenia karmienia piersią, butelki, pieluszek, snu, odciągania mleka, wzrostu, zdrowia, szczepień, wizyt u lekarza i przypomnień.`,
     nav: {
       features: `Funkcje`,
       screens: `Ekrany`,
@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Dzienniczek opieki nad dzieckiem offline`,
       title: `Mamio`,
-      lead: `Spokojny sposób na śledzenie karmienia, pieluszek, snu, odciągania mleka, wzrostu, zdrowia, szczepień, wizyt u lekarza i przypomnień, bez trzymania tego wszystkiego w głowie.`,
+      lead: `Spokojny sposób na śledzenie karmienia, pieluszek, snu, odciągania mleka, wzrostu, kamieni milowych, ząbków, zdrowia, szczepień i wizyt u lekarza, bez trzymania tego wszystkiego w głowie.`,
       primaryCta: `Pobierz z App Store`,
       secondaryCta: `Zobacz ekrany`,
       imageAlt: `Ekran główny aplikacji Mamio z następnym karmieniem, bilansem piersi i ostatnimi zdarzeniami opieki.`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Zdrowie pod ręką`,
-        body: `Wzrost, objawy, temperatura, leki, szczepienia, wizyty u lekarza i szybkie notatki są uporządkowane w jednym miejscu.`
+        body: `Wzrost, kamienie milowe, pierwsze słowa, ząbki, objawy, temperatura, leki, szczepienia i wizyty u lekarza są uporządkowane w jednym miejscu.`
       },
       {
         title: `Pomocne przypomnienia`,
@@ -63,7 +63,7 @@ export default {
       },
       {
         title: `Wzorce bez przytłoczenia`,
-        body: `Szybko przejrzysz ostatnią historię, podsumowania dnia, bilans piersi, pieluszki, sen, odciąganie i wskazówki dotyczące wzrostu.`
+        body: `Szybko przejrzysz ostatnią historię, podsumowania dnia, bilans piersi, pieluszki, sen, odciąganie i dane o wzroście.`
       },
       {
         title: `Prywatność od początku`,
@@ -169,7 +169,7 @@ export default {
       support: `Pomoc`
     },
     footer: {
-      tagline: `Prosto. Cicho. Rzetelnie.`,
+      tagline: `Prosto. Spokojnie. Rzetelnie.`,
       eula: `Standardowa umowa licencyjna Apple (EULA)`
     }
   }

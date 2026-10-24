@@ -5,7 +5,7 @@ export default {
     metaTitle: `Aplikasi Pencatat Menyusui ASI | Mamio`,
     metaDescription: `Catat sesi menyusui per sisi payudara, tambahkan sesi yang terlewat, lihat keseimbangan sisi, dan simpan riwayat menyusui secara offline dengan Mamio.`,
     eyebrow: `Pencatat menyusui`,
-    title: `Mencatat menyusui untuk sesi yang nyata dan serba mengantuk.`,
+    title: `Catat menyusui di dunia nyata, bahkan saat sedang mengantuk.`,
     lead: `Mamio membantumu menyalakan timer menyusui, memilih sisi kiri atau kanan, menambahkan sesi menyusu belakangan, dan melihat riwayat menyusui terbaru tanpa mengubah malammu menjadi tabel hitungan.`,
     imageAlt: `Layar pencatat menyusui Mamio dengan sesi menyusu terbaru dan keseimbangan sisi payudara.`,
     bullets: [
@@ -38,7 +38,7 @@ export default {
       },
       {
         question: `Bisakah saya mencatat susu botol juga?`,
-        answer: `Bisa. Menyusui, susu botol, pompa ASI, popok, tidur, makanan padat, dan catatan kesehatan dapat tampil di linimasa yang sama.`
+        answer: `Bisa. Menyusui, susu botol, pompa ASI, popok, tidur, MPASI, dan catatan kesehatan dapat tampil di linimasa yang sama.`
       }
     ]
   },
@@ -230,7 +230,7 @@ export default {
     ],
     sections: [
       {
-        title: `Tangkap sesi-sesi kecil`,
+        title: `Catat sesi-sesi singkat`,
         body: `Tummy time sering terjadi dalam waktu singkat. Catat sesinya dengan cepat, lalu bangun gambaran lembut tentang kemajuan harian dari waktu ke waktu.`
       },
       {
@@ -292,7 +292,7 @@ export default {
       },
       {
         question: `Bisakah saya mencatat vaksin juga?`,
-        answer: `Bisa. Mamio menyediakan catatan kesehatan untuk vaksin, kunjungan dokter, obat, gejala, suhu badan, dan tumbuh kembang.`
+        answer: `Bisa. Mamio menyediakan catatan kesehatan untuk vaksin, kunjungan dokter, obat, gejala, suhu badan, dan pertumbuhan.`
       },
       {
         question: `Apakah ini pengganti petunjuk medis?`,
@@ -302,22 +302,22 @@ export default {
   },
   reports: {
     slug: `laporan-tumbuh-kembang-dokter`,
-    shortTitle: `Laporan tumbuh kembang dan kunjungan dokter`,
-    metaTitle: `Laporan Tumbuh Kembang dan Kunjungan Dokter Bayi | Mamio`,
-    metaDescription: `Siapkan laporan tumbuh kembang, kesehatan, menyusu, obat, vaksin, dan kunjungan dokter bayi dari catatan offline Mamio.`,
-    eyebrow: `Laporan tumbuh kembang dan kunjungan dokter`,
+    shortTitle: `Laporan pertumbuhan dan kunjungan dokter`,
+    metaTitle: `Laporan Pertumbuhan dan Kunjungan Dokter Bayi | Mamio`,
+    metaDescription: `Siapkan laporan pertumbuhan, kesehatan, menyusu, obat, vaksin, dan kunjungan dokter bayi dari catatan offline Mamio.`,
+    eyebrow: `Laporan pertumbuhan dan kunjungan dokter`,
     title: `Ubah catatan harian menjadi gambaran yang lebih jelas untuk dokter.`,
-    lead: `Mamio membantumu merapikan catatan tumbuh kembang, kesehatan, riwayat menyusu, obat, vaksin, dan kunjungan dokter untuk laporan dan percakapan.`,
-    imageAlt: `Layar catatan kesehatan Mamio dengan tumbuh kembang, laporan, dan konteks kunjungan dokter.`,
+    lead: `Mamio membantumu merapikan catatan pertumbuhan, kesehatan, riwayat menyusu, obat, vaksin, dan kunjungan dokter untuk laporan dan percakapan.`,
+    imageAlt: `Layar catatan kesehatan Mamio dengan pertumbuhan, laporan, dan konteks kunjungan dokter.`,
     bullets: [
-      `Catatan tumbuh kembang dan kesehatan`,
+      `Catatan pertumbuhan dan kesehatan`,
       `Laporan PDF untuk rentang tanggal`,
       `Konteks kunjungan dokter`
     ],
     sections: [
       {
         title: `Satukan riwayat terbaru`,
-        body: `Tumbuh kembang, menyusu, tidur, gejala, obat, vaksin, dan catatan lebih mudah ditinjau jika berasal dari satu linimasa.`
+        body: `Pertumbuhan, menyusu, tidur, gejala, obat, vaksin, dan catatan lebih mudah ditinjau jika berasal dari satu linimasa.`
       },
       {
         title: `Siapkan laporan lebih cepat`,
@@ -335,7 +335,7 @@ export default {
       },
       {
         question: `Apa saja yang bisa masuk ke konteks kesehatan?`,
-        answer: `Tumbuh kembang, menyusu, tidur, obat, vaksin, gejala, suhu badan, kunjungan dokter, dan catatan dapat disimpan bersama.`
+        answer: `Pertumbuhan, menyusu, tidur, obat, vaksin, gejala, suhu badan, kunjungan dokter, dan catatan dapat disimpan bersama.`
       },
       {
         question: `Bisakah saya memakai laporan saat kunjungan ke dokter?`,
@@ -349,7 +349,7 @@ export default {
     metaTitle: `Aplikasi Pencatat Popok Bayi | Mamio`,
     metaDescription: `Catat popok basah dan kotor, catatan popok, foto pribadi, dan pola popok harian secara offline dengan Mamio.`,
     eyebrow: `Pencatat popok`,
-    title: `Pencatatan popok yang cukup cepat untuk ganti popok yang sibuk.`,
+    title: `Pencatatan popok yang cukup cepat, bahkan saat ganti popok sedang repot.`,
     lead: `Mamio memudahkanmu mencatat popok basah dan kotor, menambahkan catatan saat ada yang tampak tidak biasa, dan meninjau riwayat popok terbaru di samping perawatan bayi lainnya.`,
     imageAlt: `Layar pencatat popok Mamio dengan catatan popok dan linimasa harian.`,
     bullets: [
@@ -393,7 +393,7 @@ export default {
     metaDescription: `Catat sesi tidur bayi, tidur siang terbaru, konteks menyusu, dan riwayat perawatan harian secara offline dengan pencatat tidur bayi Mamio.`,
     eyebrow: `Pencatat tidur bayi`,
     title: `Catat tidur siang dan malam tanpa kehilangan gambaran sisa harinya.`,
-    lead: `Mamio menyimpan sesi tidur di dekat catatan menyusu, popok, dan catatan lain, sehingga kamu memahami hari secara utuh, bukan mencatat tidur sendirian.`,
+    lead: `Mamio menyimpan sesi tidur di dekat catatan menyusu, popok, dan catatan lain, sehingga kamu memahami hari secara utuh, bukan mencatat tidur secara terpisah.`,
     imageAlt: `Layar pencatat tidur bayi Mamio dengan linimasa tidur dan perawatan.`,
     bullets: [
       `Catatan tidur siang dan sesi tidur`,
@@ -433,20 +433,20 @@ export default {
     slug: `catatan-kesehatan-bayi`,
     shortTitle: `Catatan kesehatan bayi`,
     metaTitle: `Aplikasi Catatan Kesehatan Bayi | Mamio`,
-    metaDescription: `Rapikan catatan tumbuh kembang, gejala, suhu badan, obat, vaksin, kunjungan dokter, dan catatan bayi secara offline dengan Mamio.`,
+    metaDescription: `Rapikan catatan pertumbuhan, gejala, suhu badan, obat, vaksin, kunjungan dokter, dan catatan bayi secara offline dengan Mamio.`,
     eyebrow: `Catatan kesehatan bayi`,
     title: `Simpan catatan kesehatan di dekatmu saat jadwal dokter tiba.`,
-    lead: `Mamio membantumu merapikan tumbuh kembang, gejala, suhu badan, obat, vaksin, kunjungan dokter, dan catatan agar konteks penting lebih mudah ditemukan.`,
-    imageAlt: `Layar catatan kesehatan bayi Mamio dengan tumbuh kembang dan catatan kesehatan.`,
+    lead: `Mamio membantumu merapikan pertumbuhan, gejala, suhu badan, obat, vaksin, kunjungan dokter, dan catatan agar konteks penting lebih mudah ditemukan.`,
+    imageAlt: `Layar catatan kesehatan bayi Mamio dengan pertumbuhan dan catatan kesehatan.`,
     bullets: [
-      `Tumbuh kembang, gejala, dan suhu badan`,
+      `Pertumbuhan, gejala, dan suhu badan`,
       `Catatan obat dan vaksin`,
       `Konteks kunjungan dokter dan ekspor`
     ],
     sections: [
       {
         title: `Satukan catatan praktis`,
-        body: `Catatan tumbuh kembang, catatan kesehatan, pengingat, dan riwayat perawatan tetap dekat dengan rutinitas harian, tidak tercecer di banyak aplikasi.`
+        body: `Catatan pertumbuhan, catatan kesehatan, pengingat, dan riwayat perawatan tetap dekat dengan rutinitas harian, tidak tercecer di banyak aplikasi.`
       },
       {
         title: `Bersiap untuk percakapan`,
@@ -460,7 +460,7 @@ export default {
     faq: [
       {
         question: `Bisakah saya mencatat vaksin dan kunjungan dokter?`,
-        answer: `Bisa. Mamio menyediakan catatan kesehatan untuk vaksin, kunjungan dokter, gejala, suhu badan, obat, tumbuh kembang, dan catatan.`
+        answer: `Bisa. Mamio menyediakan catatan kesehatan untuk vaksin, kunjungan dokter, gejala, suhu badan, obat, pertumbuhan, dan catatan.`
       },
       {
         question: `Bisakah saya mengekspor catatan?`,
@@ -503,7 +503,7 @@ export default {
     faq: [
       {
         question: `Kejadian apa saja yang bisa saya catat di linimasa?`,
-        answer: `Menyusui, susu botol, MPASI, pompa ASI, popok, tidur, tummy time, tumbuh kembang, catatan kesehatan, vaksin, dan kunjungan dokter semuanya tampil di linimasa.`
+        answer: `Menyusui, susu botol, MPASI, pompa ASI, popok, tidur, tummy time, pertumbuhan, catatan kesehatan, vaksin, dan kunjungan dokter semuanya tampil di linimasa.`
       },
       {
         question: `Bisakah saya menambahkan catatan yang terlewat belakangan?`,

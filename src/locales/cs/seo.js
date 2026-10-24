@@ -5,7 +5,7 @@ export default {
     metaTitle: `Aplikace pro sledování kojení | Mamio`,
     metaDescription: `Sleduj kojení podle prsu, doplň zapomenutá krmení, hlídej vyváženost stran a měj historii kojení offline v aplikaci Mamio.`,
     eyebrow: `Sledování kojení`,
-    title: `Sledování kojení pro ospalá a skutečná krmení.`,
+    title: `Sledování kojení pro rozespalá krmení v reálném životě.`,
     lead: `Mamio ti pomůže spustit časovač kojení, vybrat levý nebo pravý prs, doplnit krmení dodatečně a vidět nedávnou historii kojení, aniž by se z nocí stala tabulka.`,
     imageAlt: `Obrazovka sledování kojení v Mamio s nedávnými krmeními a vyvážeností stran.`,
     bullets: [
@@ -306,7 +306,7 @@ export default {
     metaTitle: `Přehled růstu miminka a návštěvy u lékaře | Mamio`,
     metaDescription: `Připrav přehled růstu, zdraví, krmení, léků, očkování a návštěv u lékaře z offline záznamů v aplikaci Mamio.`,
     eyebrow: `Přehledy růstu a návštěv u lékaře`,
-    title: `Změň denní záznamy v jasnější podklad pro návštěvu lékaře.`,
+    title: `Proměň denní záznamy v jasnější podklad pro návštěvu lékaře.`,
     lead: `Mamio ti pomůže mít záznamy o růstu, zdravotní poznámky, historii krmení, léky, očkování i návštěvy u lékaře uspořádané pro přehledy a rozhovory.`,
     imageAlt: `Obrazovka zdravotních záznamů v Mamio s růstem, přehledy a souvislostmi k návštěvě u lékaře.`,
     bullets: [
@@ -454,7 +454,7 @@ export default {
       },
       {
         title: `Používej záznamy jako oporu, ne jako diagnózu`,
-        body: `Mamio ti pomáhá uspořádat pozorování. Neposkytuje lékařskou diagnózu a neměl by nahradit odbornou péči.`,
+        body: `Mamio ti pomáhá uspořádat pozorování. Neposkytuje lékařskou diagnózu a nemělo by nahrazovat odbornou péči.`,
       },
     ],
     faq: [

@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Registo de amamentação e cuidados do bebé`,
-    metaDescription: `Mamio é uma aplicação calma e offline para registar amamentação, biberões, fraldas, sono, extração de leite, crescimento, vacinas, consultas e lembretes.`,
+    metaDescription: `Mamio é uma aplicação calma e offline para registar amamentação, biberões, fraldas, sono, extração de leite, crescimento, registos de saúde, vacinas, consultas e lembretes.`,
     nav: {
       features: `Funcionalidades`,
       screens: `Ecrãs`,
@@ -11,8 +11,8 @@ export default {
     hero: {
       eyebrow: `Registo de cuidados do bebé offline`,
       title: `Mamio`,
-      lead: `Uma forma calma de registar refeições, fraldas, sono, extração de leite, crescimento, saúde, vacinas, consultas e lembretes, sem ter tudo de cabeça.`,
-      primaryCta: `Transferir na App Store`,
+      lead: `Uma forma calma de registar refeições, fraldas, sono, extração de leite, crescimento, marcos, dentes, saúde, vacinas e consultas, sem ter tudo de cabeça.`,
+      primaryCta: `Descarregar na App Store`,
       secondaryCta: `Ver os ecrãs`,
       imageAlt: `Ecrã inicial da aplicação Mamio com a próxima mamada, o equilíbrio entre lados e os últimos cuidados registados.`,
       badges: [
@@ -23,8 +23,8 @@ export default {
     },
     proof: [
       {
-        value: `3:00 AM`,
-        label: `pensado para mamadas de sono pesado`
+        value: `3:00`,
+        label: `pensado para as mamadas da madrugada`
       },
       {
         value: `1 cronologia`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Registos de saúde à mão`,
-        body: `Mantém crescimento, sintomas, temperatura, medicação, vacinas, consultas e notas rápidas organizados num só lugar.`
+        body: `Mantém crescimento, marcos, primeiras palavras, dentes, sintomas, temperatura, medicação, vacinas e consultas organizados num só lugar.`
       },
       {
         title: `Lembretes úteis`,
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `Os dados do teu bebé pertencem-te`,
-      title: `Primeiro offline. Sem conta. Sem depender de servidores.`,
+      title: `Pensado para funcionar offline. Sem conta. Sem depender de servidores.`,
       body: `O Mamio foi feito para pais que querem um registo prático, sem transformar os cuidados do bebé num projeto de dados. Os registos ficam no teu dispositivo e podes exportar relatórios quando precisares de partilhar informação com um médico, uma consultora ou o teu par.`,
       points: [
         `Registo totalmente offline`,
@@ -121,7 +121,7 @@ export default {
         `Experiência sem anúncios e registos guardados editáveis`,
         `Estatísticas detalhadas com intervalos alargados`,
         `Relatórios PDF de saúde e de resumo`,
-        `Histórico completo, percentis de crescimento da WHO e análise de tendências`
+        `Histórico completo, percentis de crescimento da OMS e análise de tendências`
       ]
     },
     languages: {
@@ -146,7 +146,7 @@ export default {
       eyebrow: `Obtém o Mamio`,
       title: `Começa hoje a registar os cuidados do bebé com o Mamio.`,
       body: `Transfere o Mamio no iOS ou Android e tem sempre à mão as refeições, fraldas, sono, extração de leite, crescimento, registos de saúde e lembretes.`,
-      cta: `Transferir na App Store`
+      cta: `Descarregar na App Store`
     },
     ui: {
       blogLabel: `Guias`,

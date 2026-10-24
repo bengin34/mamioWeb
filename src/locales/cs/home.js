@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Offline aplikace pro péči o miminko`,
       title: `Mamio`,
-      lead: `Klidný způsob, jak sledovat krmení, plenky, spánek, odsávání, růst, zdraví, očkování, návštěvy u lékaře a připomínky, aniž bys to všechno musela držet v hlavě.`,
+      lead: `Klidný způsob, jak sledovat krmení, plenky, spánek, odsávání, růst, milníky, zuby, zdraví, očkování a návštěvy u lékaře, aniž bys to všechno musela držet v hlavě.`,
       primaryCta: `Stáhnout v App Store`,
       secondaryCta: `Prohlédnout obrazovky`,
       imageAlt: `Domovská obrazovka aplikace Mamio s dalším krmením, vyvážeností stran a nedávnými záznamy péče.`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Zdravotní záznamy po ruce`,
-        body: `Růst, příznaky, teplotu, léky, očkování, návštěvy u lékaře i rychlé poznámky máš uspořádané na jednom místě.`,
+        body: `Růst, milníky, první slova, zuby, příznaky, teplotu, léky, očkování i návštěvy u lékaře máš uspořádané na jednom místě.`,
       },
       {
         title: `Užitečné připomínky`,

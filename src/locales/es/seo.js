@@ -5,7 +5,7 @@ export default {
     metaTitle: `App para registrar la lactancia materna | Mamio`,
     metaDescription: `Registra las tomas de pecho por lado, añade tomas olvidadas, revisa el equilibrio entre pechos y guarda tu historial de lactancia sin conexión con Mamio.`,
     eyebrow: `Registro de lactancia materna`,
-    title: `Registro de lactancia para tomas reales y noches de sueño.`,
+    title: `Registro de lactancia para las tomas reales, también las de madrugada.`,
     lead: `Mamio te ayuda a iniciar el cronómetro de la toma, elegir pecho izquierdo o derecho, añadir una toma más tarde y ver el historial reciente de lactancia sin convertir las noches en una hoja de cálculo.`,
     imageAlt: `Pantalla de registro de lactancia de Mamio con las últimas tomas y el equilibrio entre pechos.`,
     bullets: [
@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `¿Mamio funciona sin cuenta?`,
-        answer: `Sí. Mamio funciona primero sin conexión, no requiere cuenta y guarda los registros del bebé en tu dispositivo.`,
+        answer: `Sí. Mamio está pensada para funcionar sin conexión, no requiere cuenta y guarda los registros del bebé en tu dispositivo.`,
       },
       {
         question: `¿Puedo registrar también los biberones?`,
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `¿Los registros de alimentación se guardan en línea?`,
-        answer: `No. Mamio funciona primero sin conexión y guarda los registros en tu dispositivo.`,
+        answer: `No. Mamio está pensada para funcionar sin conexión y guarda los registros en tu dispositivo.`,
       },
     ],
   },
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `¿Los datos de la lactancia mixta se guardan en línea?`,
-        answer: `No. Mamio funciona primero sin conexión y guarda los registros en tu dispositivo.`,
+        answer: `No. Mamio está pensada para funcionar sin conexión y guarda los registros en tu dispositivo.`,
       },
     ],
   },
