@@ -517,7 +517,7 @@ function BlogGuideCards({ content, links }) {
 function BlogGuideLinks({ content, currentLang }) {
   const ref = useRef(null);
   useReveal(ref);
-  const links = getBlogLinks(currentLang, blogPostIdsByDate.slice(0, HOME_GUIDE_COUNT));
+  const links = getBlogLinks(currentLang, blogPostIdsByDate).slice(0, HOME_GUIDE_COUNT);
 
   if (!content.guides || !links.length) return null;
 

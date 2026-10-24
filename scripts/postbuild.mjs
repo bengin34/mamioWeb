@@ -26,6 +26,7 @@ import {
   getRelatedPostIds,
   blogPostIdsByDate,
 } from '../src/blog-content.js';
+import { sourceLabels } from '../src/articles/index.js';
 
 const distDir = 'dist';
 const baseHtml = await readFile(join(distDir, 'index.html'), 'utf8');
@@ -303,7 +304,7 @@ function createBreadcrumbLd(lang, title, canonical) {
 }
 
 function renderRelatedPosts(postId, lang) {
-  const items = getRelatedPostIds(postId, 3)
+  const items = getRelatedPostIds(postId, 3, lang)
     .map((id) => ({ path: getBlogPostPath(id, lang), post: blogPosts[id].locales[lang] }))
     .filter((item) => item.path && item.post)
     .map((item) => `        <li><a href="${escapeAttribute(item.path)}">${escapeHtml(item.post.title)}</a></li>`)
@@ -370,7 +371,15 @@ ${jsonLdTags}
     .article-intro { font-size: 1.1rem; color: rgba(244,248,255,0.8); margin-bottom: 40px; border-inline-start: 3px solid var(--accent); padding-inline-start: 20px; }
     .article-section { margin-bottom: 36px; }
     .article-section h2 { font-size: 1.25rem; font-weight: 700; margin: 0 0 10px; color: var(--text); }
-    .article-section p { margin: 0; color: rgba(244,248,255,0.85); }
+    .article-section p { margin: 0 0 12px; color: rgba(244,248,255,0.85); }
+    .article-section p:last-child { margin-bottom: 0; }
+    .article-section ul { margin: 12px 0 0; padding-inline-start: 22px; color: rgba(244,248,255,0.85); }
+    .article-section li { margin-bottom: 6px; }
+    .sources { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--border); font-size: 0.875rem; color: var(--muted); }
+    .sources h2 { font-size: 1.05rem; margin: 0 0 8px; color: var(--text); }
+    .sources .reviewed { margin: 0 0 12px; }
+    .sources ol { margin: 0; padding-inline-start: 22px; }
+    .sources li { margin-bottom: 6px; }
     .faq-block { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--border); }
     .faq-block h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
     .faq-item { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-bottom: 12px; background: var(--surface); }
@@ -504,10 +513,18 @@ function renderBlogHtml(postId, lang) {
     description: locale.metaDescription,
     url: canonical,
     datePublished: locale.date,
-    dateModified: locale.date,
+    dateModified: locale.reviewed ?? locale.date,
     image: `${DOMAIN}/assets/og-mamio.png`,
     mainEntityOfPage: canonical,
-    author: { '@type': 'Organization', name: 'Mamio', url: DOMAIN },
+    author: { '@type': 'Organization', name: sourceLabels[lang]?.author ?? 'Mamio', url: DOMAIN },
+    ...(locale.sources ? {
+      citation: locale.sources.map((source) => ({
+        '@type': 'CreativeWork',
+        name: source.title,
+        url: source.url,
+        publisher: { '@type': 'Organization', name: source.publisher },
+      })),
+    } : {}),
     inLanguage: getLocaleMeta(lang).hreflang,
     publisher: {
       '@type': 'Organization',
@@ -534,11 +551,31 @@ function renderBlogHtml(postId, lang) {
   }, null, 2);
 
   const sectionsHtml = locale.sections
-    .map((s) => `    <section class="article-section">
+    .map((s) => {
+      const paragraphs = s.body
+        .split(/\n\s*\n/)
+        .map((paragraph) => `      <p>${escapeHtml(paragraph.trim())}</p>`)
+        .join('\n');
+      const list = s.list?.length
+        ? `\n      <ul>\n${s.list.map((item) => `        <li>${escapeHtml(item)}</li>`).join('\n')}\n      </ul>`
+        : '';
+      return `    <section class="article-section">
       <h2>${escapeHtml(s.title)}</h2>
-      <p>${escapeHtml(s.body)}</p>
-    </section>`)
+${paragraphs}${list}
+    </section>`;
+    })
     .join('\n');
+
+  const labels = sourceLabels[lang];
+  const sourcesHtml = locale.sources?.length && labels
+    ? `    <aside class="sources">
+      <h2>${escapeHtml(labels.sources)}</h2>
+      <p class="reviewed">${escapeHtml(labels.author)} · ${escapeHtml(labels.reviewed)}: <time datetime="${escapeAttribute(locale.reviewed ?? locale.date)}">${escapeHtml(locale.reviewed ?? locale.date)}</time></p>
+      <ol>
+${locale.sources.map((source) => `        <li>${escapeHtml(source.publisher)}: <a href="${escapeAttribute(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a></li>`).join('\n')}
+      </ol>
+    </aside>`
+    : '';
 
   const faqHtml = locale.faq
     .map((item) => `      <details class="faq-item">
@@ -587,6 +624,7 @@ ${renderRelatedPosts(postId, lang)}
       <h2>${escapeHtml(faqHeading)}</h2>
 ${faqHtml}
     </div>
+${sourcesHtml}
     <p class="disclaimer">${escapeHtml(disclaimer)}</p>
     <div class="cta-block">
       <p>${escapeHtml(locale.ctaText)}</p>
@@ -599,7 +637,9 @@ ${faqHtml}
 }
 
 const blogRoutes = blogPostIds.flatMap((postId) =>
-  blogLangs.map((lang) => ({ postId, lang, loc: `${DOMAIN}${getBlogPostPath(postId, lang)}` })),
+  blogLangs
+    .filter((lang) => getBlogPostPath(postId, lang))
+    .map((lang) => ({ postId, lang, loc: `${DOMAIN}${getBlogPostPath(postId, lang)}` })),
 );
 
 await Promise.all(

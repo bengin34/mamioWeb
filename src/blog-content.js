@@ -1,4 +1,5 @@
 import { extraBlogPosts } from './blog-content-extra.js';
+import { articles } from './articles/index.js';
 import { extraLocales } from './locales/index.js';
 import { getLocaleMeta, localeCodes } from './locale-registry.js';
 
@@ -18,6 +19,13 @@ export const featureBlogPostIds = {
   health: ['health-report-doctor', 'vaccine-medication-reminders', 'growth-doctor-report', 'diaper-color', 'doctor-visit-checklist'],
   reminders: ['vaccine-medication-reminders', 'health-report-doctor'],
   reports: ['growth-doctor-report', 'health-report-doctor', 'doctor-visit-checklist'],
+  development: ['tummy-time-progress', 'growth-doctor-report', 'doctor-visit-checklist'],
+  growthPercentiles: ['growth-doctor-report', 'doctor-visit-checklist', 'health-report-doctor'],
+  teething: ['doctor-visit-checklist', 'health-report-doctor'],
+  potty: ['wet-dirty-diapers', 'diaper-color'],
+  babyExercises: ['tummy-time-progress', 'baby-sleep-first-months'],
+  watchWidget: ['newborn-feeds', 'breastfeeding-side-balance', 'pumping-output-log'],
+  multipleBabies: ['newborn-feeds', 'mixed-feeding-routine', 'vaccine-medication-reminders'],
   careTimeline: ['newborn-feeds', 'bottle-feeding-log', 'tummy-time-progress', 'baby-sleep-first-months', 'diaper-color', 'health-report-doctor'],
 };
 
@@ -1525,7 +1533,7 @@ const baseBlogPosts = {
   },
 };
 
-export const blogPosts = { ...baseBlogPosts, ...extraBlogPosts };
+export const blogPosts = { ...baseBlogPosts, ...extraBlogPosts, ...articles };
 
 for (const [code, data] of Object.entries(extraLocales)) {
   for (const [postId, entry] of Object.entries(data.blog)) {
@@ -1557,10 +1565,11 @@ export function getBlogIndexAlternates() {
 }
 
 // Same-cluster siblings first (shared tracker page), then newest, never the post itself.
-export function getRelatedPostIds(postId, limit = 3) {
+// With `lang`, only posts published in that language are considered.
+export function getRelatedPostIds(postId, limit = 3, lang = null) {
   const related = blogPosts[postId]?.relatedPageId;
   const scored = blogPostIdsByDate
-    .filter((id) => id !== postId)
+    .filter((id) => id !== postId && (!lang || blogPosts[id].slugs[lang]))
     .map((id) => {
       const clusterHit = Object.values(featureBlogPostIds).some(
         (ids) => ids.includes(id) && ids.includes(postId),

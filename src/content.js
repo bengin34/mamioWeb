@@ -1,5 +1,6 @@
 import { extraLocales } from './locales/index.js';
 import { getLocaleMeta, localeCodes, localeLabelList } from './locale-registry.js';
+import { newSeoFeaturePages } from './seo-pages-new.js';
 
 export const DOMAIN = 'https://mamio-baby-tracker.com';
 export const APP_STORE_URL = 'https://apps.apple.com/us/app/mamio-breastfeeding-tracker/id6757083259';
@@ -34,7 +35,7 @@ export const locales = {
     hero: {
       eyebrow: 'Offline baby care tracker',
       title: 'Mamio',
-      lead: 'A calm way to track feeding, diapers, sleep, pumping, growth, health, vaccines, doctor visits, and reminders without keeping it all in your head.',
+      lead: 'A calm way to track feeding, diapers, sleep, pumping, growth, milestones, teeth, health, vaccines, and doctor visits without keeping it all in your head.',
       primaryCta: 'Download on the App Store',
       secondaryCta: 'Explore the screens',
       imageAlt: 'Mamio app home screen showing the next feed, side balance, and recent care events.',
@@ -62,7 +63,7 @@ export const locales = {
       },
       {
         title: 'Health records in reach',
-        body: 'Keep growth, symptoms, temperature, medication, vaccines, doctor visits, and quick notes organized in one place.',
+        body: 'Keep growth, milestones, first words, teeth, symptoms, temperature, medication, vaccines, and doctor visits organized in one place.',
       },
       {
         title: 'Helpful reminders',
@@ -177,7 +178,7 @@ export const locales = {
     hero: {
       eyebrow: 'Offline Baby-Care-Tracker',
       title: 'Mamio',
-      lead: 'Eine ruhige Art, Stillen, Fläschchen, Windeln, Schlaf, Abpumpen, Wachstum, Gesundheit, Impfungen, Arztbesuche und Erinnerungen festzuhalten.',
+      lead: 'Eine ruhige Art, Stillen, Fläschchen, Windeln, Schlaf, Abpumpen, Wachstum, Meilensteine, Zähne, Gesundheit, Impfungen und Arztbesuche festzuhalten.',
       primaryCta: 'Im App Store laden',
       secondaryCta: 'Screens ansehen',
       imageAlt: 'Mamio App-Startbildschirm mit nächster Stillseite, letzter Mahlzeit und heutigen Einträgen.',
@@ -205,7 +206,7 @@ export const locales = {
       },
       {
         title: 'Gesundheit griffbereit',
-        body: 'Wachstum, Symptome, Temperatur, Medikamente, Impfungen, Arztbesuche und Notizen bleiben organisiert an einem Ort.',
+        body: 'Wachstum, Meilensteine, erste Wörter, Zähne, Symptome, Temperatur, Medikamente, Impfungen und Arztbesuche bleiben organisiert an einem Ort.',
       },
       {
         title: 'Sanfte Erinnerungen',
@@ -320,7 +321,7 @@ export const locales = {
     hero: {
       eyebrow: 'Çevrimdışı bebek bakım takipçisi',
       title: 'Mamio',
-      lead: 'Emzirme, biberon, bez, uyku, sağım, büyüme, sağlık, aşılar, doktor ziyaretleri ve hatırlatmaları kafanda tutmadan takip etmenin sakin yolu.',
+      lead: 'Emzirme, biberon, bez, uyku, sağım, büyüme, gelişim, dişler, sağlık, aşılar ve doktor ziyaretlerini kafanda tutmadan takip etmenin sakin yolu.',
       primaryCta: "App Store'dan indir",
       secondaryCta: 'Ekranlara bak',
       imageAlt: 'Mamio uygulamasında son beslenme, sıradaki taraf ve gün içi kayıtları gösteren ana ekran.',
@@ -348,7 +349,7 @@ export const locales = {
       },
       {
         title: 'Sağlık kayıtları elinin altında',
-        body: 'Büyüme, semptom, ateş, ilaç, aşı, doktor ziyareti ve kısa notları tek yerde düzenli tut.',
+        body: 'Büyüme, gelişim basamakları, ilk kelimeler, dişler, semptom, ateş, ilaç, aşı ve doktor ziyaretlerini tek yerde düzenli tut.',
       },
       {
         title: 'Yumuşak hatırlatmalar',
@@ -2038,6 +2039,8 @@ export const seoFeaturePages = {
     },
   },
 };
+
+Object.assign(seoFeaturePages, newSeoFeaturePages);
 
 for (const [code, data] of Object.entries(extraLocales)) {
   for (const [pageId, page] of Object.entries(data.seo)) {
