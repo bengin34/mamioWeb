@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `Funcționează Mamio fără cont?`,
-        answer: `Da. Mamio este offline mai întâi, nu cere cont și păstrează înregistrările de îngrijire pe dispozitivul tău.`
+        answer: `Da. Mamio funcționează în primul rând offline, nu cere cont și păstrează înregistrările de îngrijire pe dispozitivul tău.`
       },
       {
         question: `Pot urmări și biberoanele?`,
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `Sunt înregistrările de hrănire stocate online?`,
-        answer: `Nu. Mamio este offline mai întâi și păstrează înregistrările local, pe dispozitivul tău.`
+        answer: `Nu. Mamio funcționează în primul rând offline și păstrează înregistrările local, pe dispozitivul tău.`
       }
     ]
   },
@@ -166,7 +166,7 @@ export default {
         answer: `Da. Pomparea, biberoanele, alăptarea, scutecele și somnul pot fi revăzute împreună.`
       },
       {
-        question: `Mă poate Mamio avertiza când e timpul să pompez?`,
+        question: `Îmi poate aminti Mamio când e timpul să pompez?`,
         answer: `Da. Mamio oferă memento-uri blânde pentru pompare și pentru alte rutine de îngrijire.`
       }
     ]
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `Sunt datele despre alimentația mixtă stocate online?`,
-        answer: `Nu. Mamio este offline mai întâi și păstrează înregistrările local, pe dispozitivul tău.`
+        answer: `Nu. Mamio funcționează în primul rând offline și păstrează înregistrările local, pe dispozitivul tău.`
       }
     ]
   },
@@ -277,7 +277,7 @@ export default {
         body: `Memento-urile pentru medicamente, vaccinuri, mese și pompare funcționează cel mai bine când stau lângă înregistrările la care se referă.`
       },
       {
-        title: `Alină încărcarea memoriei`,
+        title: `Ușurează-ți memoria`,
         body: `Un mic imbold te poate ajuta în zilele aglomerate, mai ales când sunt implicate mai multe persoane care au grijă de bebeluș.`
       },
       {
@@ -287,7 +287,7 @@ export default {
     ],
     faq: [
       {
-        question: `Mă poate Mamio avertiza pentru medicamente?`,
+        question: `Îmi poate aminti Mamio de medicamente?`,
         answer: `Da. Mamio oferă memento-uri pentru medicamente și pentru alte rutine de îngrijire.`
       },
       {

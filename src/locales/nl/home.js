@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Offline babytracker`,
       title: `Mamio`,
-      lead: `Een rustige manier om voeding, luiers, slaap, kolven, groei, gezondheid, vaccinaties, artsbezoeken en herinneringen bij te houden, zonder alles in je hoofd te hoeven onthouden.`,
+      lead: `Een rustige manier om voeding, luiers, slaap, kolven, groei, mijlpalen, tandjes, gezondheid, vaccinaties en artsbezoeken bij te houden, zonder alles in je hoofd te hoeven onthouden.`,
       primaryCta: `Download in de App Store`,
       secondaryCta: `Bekijk de schermen`,
       imageAlt: `Startscherm van de Mamio-app met de volgende voeding, de zijdebalans en recente verzorgmomenten.`,
@@ -23,7 +23,7 @@ export default {
     },
     proof: [
       {
-        value: `3:00 uur 's nachts`,
+        value: `3 uur 's nachts`,
         label: `gemaakt voor slaperige voedingen`,
       },
       {
@@ -55,18 +55,18 @@ export default {
       },
       {
         title: `Gezondheidsgegevens binnen handbereik`,
-        body: `Houd groei, klachten, temperatuur, medicijnen, vaccinaties, artsbezoeken en snelle notities op één plek bij.`,
+        body: `Houd groei, mijlpalen, eerste woordjes, tandjes, klachten, temperatuur, medicijnen, vaccinaties en artsbezoeken op één plek bij.`,
       },
       {
         title: `Handige herinneringen`,
         body: `Stel zachte herinneringen in voor voeding, medicijnen en kolven, zodat je routine niet alleen van je geheugen afhangt.`,
       },
       {
-        title: `Patronen zonder overweldiging`,
+        title: `Patronen, zonder dat het te veel wordt`,
         body: `Bekijk in één oogopslag de recente geschiedenis, dagoverzichten, zijdebalans, luiertrends, slaap, kolven en groei-inzichten.`,
       },
       {
-        title: `Privé door ontwerp`,
+        title: `Ontworpen voor privacy`,
         body: `Mamio werkt volledig offline, vraagt geen account en bewaart je gegevens lokaal op je toestel.`,
       },
     ],
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `De gegevens van je baby zijn van jou`,
-      title: `Eerst offline. Geen account. Geen server nodig.`,
+      title: `Offline voorop. Geen account. Geen server nodig.`,
       body: `Mamio is gemaakt voor ouders die praktisch willen bijhouden zonder van babyzorg een dataproject te maken. Je gegevens blijven op je toestel en je kunt rapporten exporteren wanneer je context wilt delen met een arts, consulent of partner.`,
       points: [
         `Volledig offline bijhouden`,
@@ -143,7 +143,7 @@ export default {
       allGuides: `Alle gidsen bekijken`,
     },
     download: {
-      eyebrow: `Haal Mamio`,
+      eyebrow: `Download Mamio`,
       title: `Begin vandaag met het bijhouden van babyverzorging met Mamio.`,
       body: `Download Mamio op iOS of Android en houd voeding, luiers, slaap, kolven, groei, gezondheidsgegevens en herinneringen binnen handbereik.`,
       cta: `Download in de App Store`,

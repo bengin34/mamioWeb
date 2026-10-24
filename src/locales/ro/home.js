@@ -1,7 +1,7 @@
 export default {
   home: {
-    metaTitle: `Mamio - Aplicație pentru alăptare și îngrijirea bebelușului`,
-    metaDescription: `Mamio este o aplicație calmă, offline, pentru urmărirea hrănirii și îngrijirii bebelușului: alăptare, biberon, scutece, somn, pompare, creștere, vaccinuri și memento-uri.`,
+    metaTitle: `Mamio - Aplicație pentru hrănirea și îngrijirea bebelușului`,
+    metaDescription: `Mamio, aplicație calmă, offline, pentru hrănirea și îngrijirea bebelușului: alăptare, biberon, scutece, somn, pompare, creștere, sănătate, vaccinuri, consultații, memento-uri.`,
     nav: {
       features: `Funcții`,
       screens: `Ecrane`,
@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Aplicație offline pentru îngrijirea bebelușului`,
       title: `Mamio`,
-      lead: `O metodă calmă de a urmări hrănirea, scutecele, somnul, pomparea, creșterea, sănătatea, vaccinurile, consultațiile la medic și memento-urile, fără să ții totul în minte.`,
+      lead: `O metodă calmă de a urmări hrănirea, scutecele, somnul, pomparea, creșterea, etapele de dezvoltare, dinții, sănătatea, vaccinurile și consultațiile la medic, fără să ții totul în minte.`,
       primaryCta: `Descarcă din App Store`,
       secondaryCta: `Vezi ecranele`,
       imageAlt: `Ecranul principal Mamio cu următoarea masă, echilibrul dintre sâni și evenimentele recente de îngrijire.`,
@@ -23,7 +23,7 @@ export default {
     },
     proof: [
       {
-        value: `3:00 AM`,
+        value: `03:00`,
         label: `creată pentru mesele de noapte`
       },
       {
@@ -51,11 +51,11 @@ export default {
       },
       {
         title: `O singură cronologie clară`,
-        body: `Alăptarea, biberoanele, scutecele, diversificarea, somnul, pozițiile pe burtică și pomparea sunt adunate într-o vedere zilnică liniștită.`
+        body: `Alăptarea, biberoanele, scutecele, diversificarea, somnul, poziția pe burtică și pomparea sunt adunate într-o vedere zilnică liniștită.`
       },
       {
         title: `Fișe de sănătate la îndemână`,
-        body: `Ține la un loc creșterea, simptomele, temperatura, medicamentele, vaccinurile, consultațiile și notițele rapide.`
+        body: `Ține la un loc creșterea, etapele de dezvoltare, primele cuvinte, dinții, simptomele, temperatura, medicamentele, vaccinurile și consultațiile.`
       },
       {
         title: `Memento-uri utile`,
@@ -84,8 +84,8 @@ export default {
         body: `Rezumate simple te ajută să înțelegi echilibrul hrănirii, tendințele și schimbările de rutină.`
       },
       {
-        title: `Primele și reperele de dezvoltare`,
-        body: `Reperele, creșterea, vaccinurile și notițele de la medic rămân aproape când ai nevoie de ele.`
+        title: `Primele momente și etapele de dezvoltare`,
+        body: `Etapele de dezvoltare, creșterea, vaccinurile și notițele de la medic rămân aproape când ai nevoie de ele.`
       },
       {
         title: `Fotografii pentru scutece`,
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `Datele bebelușului tău îți aparțin`,
-      title: `Mai întâi offline. Fără cont. Fără dependență de server.`,
+      title: `Offline în primul rând. Fără cont. Fără dependență de server.`,
       body: `Mamio este făcută pentru părinții care vor o urmărire practică, fără să transforme îngrijirea bebelușului într-un proiect de date. Înregistrările rămân pe dispozitivul tău, iar rapoartele le poți exporta când ai nevoie să împărtășești contextul cu un medic, o consultantă sau partenerul.`,
       points: [
         `Urmărire complet offline`,
@@ -107,7 +107,7 @@ export default {
       ]
     },
     plans: {
-      eyebrow: `Gratuită la început`,
+      eyebrow: `Începi gratuit`,
       title: `Urmărirea de bază este gratuită. Pro adaugă istoric mai amplu și rapoarte.`,
       freeTitle: `Gratuit`,
       proTitle: `Mamio Pro`,
@@ -121,7 +121,7 @@ export default {
         `Experiență fără reclame și evenimente salvate editabile`,
         `Statistici detaliate pe perioade extinse`,
         `Rapoarte PDF de sănătate și de sinteză`,
-        `Istoric complet, percentile de creștere WHO și analiza tendințelor`
+        `Istoric complet, percentile de creștere OMS și analiza tendințelor`
       ]
     },
     languages: {

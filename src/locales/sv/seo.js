@@ -5,7 +5,7 @@ export default {
     metaTitle: `Amningsapp och amningstracker | Mamio`,
     metaDescription: `Logga amning per bröst, lägg till glömda mål, se balansen mellan brösten och spara amningshistoriken offline med Mamio.`,
     eyebrow: `Amningsapp`,
-    title: `Amningslogg för sömniga och verkliga matningar.`,
+    title: `Amningslogg för sömniga nätter i verkliga livet.`,
     lead: `Med Mamio startar du en amningstimer, väljer vänster eller höger bröst, lägger till en amning i efterhand och ser den senaste historiken, utan att nätterna blir ett kalkylblad.`,
     imageAlt: `Mamios amningsskärm med senaste amningar och balansen mellan brösten.`,
     bullets: [

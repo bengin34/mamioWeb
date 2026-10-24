@@ -5,7 +5,7 @@ export default {
     metaTitle: `Aplikacja do karmienia piersią | Mamio`,
     metaDescription: `Zapisuj karmienie piersią z podziałem na piersi, dodawaj pominięte karmienia, sprawdzaj bilans piersi i miej historię karmień offline w Mamio.`,
     eyebrow: `Aplikacja do karmienia piersią`,
-    title: `Śledzenie karmienia piersią dla sennych, prawdziwych karmień.`,
+    title: `Śledzenie karmienia piersią na senne noce i prawdziwe życie.`,
     lead: `Mamio pomaga włączyć stoper karmienia, wybrać lewą lub prawą pierś, dodać karmienie później i zobaczyć ostatnią historię, bez zamieniania nocy w arkusz kalkulacyjny.`,
     imageAlt: `Ekran aplikacji Mamio do karmienia piersią z ostatnimi karmieniami i bilansem piersi.`,
     bullets: [
@@ -44,13 +44,13 @@ export default {
   },
   feeding: {
     slug: `monitor-karmienia-dziecka`,
-    shortTitle: `Monitor karmienia dziecka`,
+    shortTitle: `Aplikacja do karmienia dziecka`,
     metaTitle: `Aplikacja do karmienia dziecka i monitor karmień | Mamio`,
     metaDescription: `Śledź karmienie piersią, butelkę, posiłki stałe, odciąganie mleka i ostatnią historię karmień offline w aplikacji Mamio.`,
-    eyebrow: `Monitor karmienia dziecka`,
+    eyebrow: `Aplikacja do karmienia dziecka`,
     title: `Jedno spokojne miejsce na karmienie piersią, butelkę, posiłki stałe i odciąganie.`,
     lead: `Mamio trzyma zapisy karmień razem, więc widzisz, co działo się dziś, co było ostatnio i co może być następne, bez żonglowania notatkami.`,
-    imageAlt: `Ekran monitora karmienia dziecka w Mamio z zapisami karmień i opieki w ciągu dnia.`,
+    imageAlt: `Ekran Mamio do karmienia dziecka z zapisami karmień i opieki w ciągu dnia.`,
     bullets: [
       `Zapisy karmienia piersią i butelką`,
       `Posiłki stałe i odciąganie mleka`,
@@ -59,10 +59,10 @@ export default {
     sections: [
       {
         title: `Zapisuj każdy rodzaj karmienia`,
-        body: `Śledź karmienie piersią, ilości w butelce, źródło mleka, posiłki stałe i odciąganie w jednym przepływie opieki nad dzieckiem.`
+        body: `Śledź karmienie piersią, ilości w butelce, źródło mleka, posiłki stałe i odciąganie w jednym miejscu.`
       },
       {
-        title: `Zobacz cały dzień na raz`,
+        title: `Zobacz cały dzień naraz`,
         body: `Ostatnia historia i podsumowania dnia pomagają zrozumieć rytm karmień bez liczenia wszystkiego w głowie.`
       },
       {
@@ -91,7 +91,7 @@ export default {
     metaTitle: `Aplikacja do karmienia butelką | Mamio`,
     metaDescription: `Zapisuj karmienie butelką, ilości mleka, jego źródło, pominięte wpisy i historię karmień offline w aplikacji Mamio.`,
     eyebrow: `Aplikacja do karmienia butelką`,
-    title: `Śledź karmienie butelką wyraźnie, nawet w pracowite dni.`,
+    title: `Przejrzyście zapisuj karmienie butelką, nawet w zabiegane dni.`,
     lead: `Mamio pomaga zapisać ilość mleka w butelce, godziny karmień, źródło mleka i notatki na tej samej spokojnej osi czasu co karmienie piersią, odciąganie, pieluszki i sen.`,
     imageAlt: `Ekran aplikacji Mamio do karmienia butelką z ilościami mleka i ostatnimi zapisami opieki.`,
     bullets: [
@@ -278,7 +278,7 @@ export default {
       },
       {
         title: `Odciąż pamięć`,
-        body: `Delikatne przypomnienie może pomóc w pracowite dni, zwłaszcza gdy dzieckiem opiekuje się więcej niż jedna osoba.`
+        body: `Delikatne przypomnienie może pomóc w zabiegane dni, zwłaszcza gdy dzieckiem opiekuje się więcej niż jedna osoba.`
       },
       {
         title: `Zapisz, co się wydarzyło`,
@@ -349,7 +349,7 @@ export default {
     metaTitle: `Aplikacja do śledzenia pieluszek dziecka | Mamio`,
     metaDescription: `Zapisuj mokre i brudne pieluszki, notatki, prywatne zdjęcia i dzienne wzorce pieluszek offline w aplikacji Mamio.`,
     eyebrow: `Aplikacja do pieluszek`,
-    title: `Śledzenie pieluszek, które jest wystarczająco szybkie przy każdej zmianie.`,
+    title: `Zapisywanie pieluszek na tyle szybkie, że zdążysz przy każdej zmianie.`,
     lead: `Mamio ułatwia zapisywanie mokrych i brudnych pieluszek, dodawanie notatek, gdy coś wygląda nietypowo, i przeglądanie ostatniej historii pieluszek obok reszty opieki nad dzieckiem.`,
     imageAlt: `Ekran aplikacji Mamio do pieluszek z zapisami zmian i dzienną osią czasu.`,
     bullets: [
@@ -393,7 +393,7 @@ export default {
     metaDescription: `Śledź sen niemowlaka, ostatnie drzemki, kontekst karmienia i historię opieki offline w aplikacji Mamio do snu dziecka.`,
     eyebrow: `Aplikacja do snu niemowlaka`,
     title: `Śledź drzemki i noce, nie tracąc z oczu reszty dnia.`,
-    lead: `Mamio trzyma sesje snu blisko karmień, pieluszek i notatek, żebyś rozumiała dzień jako całość, a nie śledziła snu w oderwaniu od reszty.`,
+    lead: `Mamio trzyma sesje snu blisko karmień, pieluszek i notatek, żeby dzień było widać jako całość, a sen nie był śledzony w oderwaniu od reszty.`,
     imageAlt: `Ekran aplikacji Mamio do snu niemowlaka z osią czasu snu i opieki.`,
     bullets: [
       `Zapisy drzemek i snu`,
@@ -403,7 +403,7 @@ export default {
     sections: [
       {
         title: `Zapisuj sen na bieżąco`,
-        body: `Włączaj i zapisuj sesje snu albo dodawaj je później, gdy dzień robi się pracowity.`
+        body: `Włączaj i zapisuj sesje snu albo dodawaj je później, gdy dzień robi się zabiegany.`
       },
       {
         title: `Przejrzyj cały rytm dnia`,
@@ -497,7 +497,7 @@ export default {
       },
       {
         title: `Dodaj szybko i wróć do dziecka`,
-        body: `Mamio zaprojektowano do szybkiego zapisywania jedną ręką w pracowitych chwilach opieki. Włącz stoper, stuknij wpis albo dodaj go później, gdy chwila minie.`
+        body: `Mamio zaprojektowano do szybkiego zapisywania jedną ręką w zabieganych chwilach opieki. Włącz stoper, stuknij wpis albo dodaj go później, gdy chwila minie.`
       }
     ],
     faq: [
