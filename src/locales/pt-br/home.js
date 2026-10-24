@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `App offline de cuidados do bebê`,
       title: `Mamio`,
-      lead: `Um jeito tranquilo de registrar mamadas, fraldas, sono, ordenha, crescimento, saúde, vacinas, consultas e lembretes, sem precisar guardar tudo na cabeça.`,
+      lead: `Um jeito tranquilo de registrar mamadas, fraldas, sono, ordenha, crescimento, marcos do desenvolvimento, dentes, saúde, vacinas e consultas, sem precisar guardar tudo na cabeça.`,
       primaryCta: `Baixar na App Store`,
       secondaryCta: `Conhecer as telas`,
       imageAlt: `Tela inicial do app Mamio mostrando a próxima mamada, o equilíbrio entre os lados e os últimos cuidados registrados.`,
@@ -24,7 +24,7 @@ export default {
     proof: [
       {
         value: `3h da manhã`,
-        label: `feito para mamadas sonolentas`,
+        label: `feito para as mamadas da madrugada`,
       },
       {
         value: `1 linha do tempo`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Saúde ao seu alcance`,
-        body: `Mantenha crescimento, sintomas, temperatura, medicamentos, vacinas, consultas e anotações rápidas organizados em um só lugar.`,
+        body: `Mantenha crescimento, marcos do desenvolvimento, primeiras palavras, dentes, sintomas, temperatura, medicamentos, vacinas e consultas organizados em um só lugar.`,
       },
       {
         title: `Lembretes úteis`,
@@ -66,7 +66,7 @@ export default {
         body: `Veja de relance o histórico recente, os resumos do dia, o equilíbrio entre os lados, a tendência das fraldas, o sono, a ordenha e o crescimento.`,
       },
       {
-        title: `Privado desde o projeto`,
+        title: `Privado por natureza`,
         body: `O Mamio funciona totalmente offline, não exige cadastro e guarda os registros localmente no seu aparelho.`,
       },
     ],
@@ -98,8 +98,8 @@ export default {
     ],
     privacy: {
       eyebrow: `Os dados do seu bebê são seus`,
-      title: `Offline em primeiro lugar. Sem cadastro. Sem depender de servidor.`,
-      body: `O Mamio é feito para pais e mães que querem um registro prático sem transformar o cuidado do bebê em um projeto de dados. Os registros ficam no seu aparelho, e você pode exportar relatórios quando precisar compartilhar informações com o pediatra, uma consultora ou o parceiro.`,
+      title: `Feito para funcionar offline. Sem cadastro. Sem depender de servidor.`,
+      body: `O Mamio é feito para pais e mães que querem um registro prático sem transformar o cuidado do bebê em um projeto de dados. Os registros ficam no seu aparelho, e você pode exportar relatórios quando precisar compartilhar informações com o pediatra, uma consultora de amamentação ou o parceiro.`,
       points: [
         `Registro totalmente offline`,
         `Dados guardados no seu aparelho`,
@@ -121,7 +121,7 @@ export default {
         `Experiência sem anúncios e eventos salvos editáveis`,
         `Estatísticas detalhadas com períodos maiores`,
         `Relatórios em PDF de saúde e resumo`,
-        `Histórico completo, percentis de crescimento da WHO e análise de tendências`,
+        `Histórico completo, percentis de crescimento da OMS e análise de tendências`,
       ],
     },
     languages: {
