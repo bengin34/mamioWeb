@@ -672,11 +672,11 @@ export default {
     slug: `desfralde-registo-bacio`,
     shortTitle: `Registo do desfralde`,
     metaTitle: `App de desfralde: registo do bacio | Mamio`,
-    metaDescription: `Regista chichi, cocó, acidentes e verificações a seco em segundos e descobre os padrões do desfralde do teu filho. Um módulo calmo e opcional do Mamio.`,
+    metaDescription: `Regista chichi, cocó, acidentes e verificações de cueca seca em segundos e descobre os padrões do desfralde do teu filho. Um módulo calmo e opcional do Mamio.`,
     eyebrow: `Desfralde`,
     title: `Desfralde com padrões, não com pressão.`,
-    lead: `Ativa o módulo do bacio no Mamio e regista chichi, cocó, ambos, acidentes ou verificações a seco com a hora e uma nota. O registo mostra o que está a resultar sem contar pontos.`,
-    imageAlt: `Registo de desfralde do Mamio com entradas de chichi, cocó, verificação a seco e acidente.`,
+    lead: `Ativa o módulo do bacio no Mamio e regista chichi, cocó, ambos, acidentes ou verificações de cueca seca com a hora e uma nota. O registo mostra o que está a resultar sem contar pontos.`,
+    imageAlt: `Registo de desfralde do Mamio com entradas de chichi, cocó, verificação de cueca seca e acidente.`,
     bullets: [
       `Chichi, cocó, acidente, seco`,
       `Adição rápida a partir do ecrã inicial`,
@@ -707,7 +707,7 @@ export default {
       },
       {
         question: `O que posso registar?`,
-        answer: `Chichi, cocó, ambos, acidentes e verificações a seco, cada um com a hora e uma nota opcional.`,
+        answer: `Chichi, cocó, ambos, acidentes e verificações de cueca seca, cada um com a hora e uma nota opcional.`,
       },
       {
         question: `O registo do bacio é gratuito?`,
@@ -723,7 +723,7 @@ export default {
     slug: `exercicios-massagem-bebe`,
     shortTitle: `Exercícios e massagem para bebés`,
     metaTitle: `Exercícios e massagem para bebés: guia na app | Mamio`,
-    metaDescription: `Exercícios e massagens ilustrados por idade: tempo de barriga para baixo, bicicleta, massagem suave e uma progressão passo a passo até gatinhar, com segurança.`,
+    metaDescription: `Exercícios e massagens ilustrados por idade: tempo de barriga para baixo, bicicleta, massagem suave e uma progressão passo a passo até gatinhar, com notas de segurança.`,
     eyebrow: `Movimento e massagem do bebé`,
     title: `Ideias de movimento suave para cada fase, do primeiro dia até gatinhar.`,
     lead: `O Mamio inclui 16 exercícios e passos de massagem ilustrados, cada um com a idade indicada, passos claros e notas de segurança, para que o tempo no chão seja uma brincadeira e não uma dúvida.`,

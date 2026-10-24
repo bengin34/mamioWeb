@@ -621,10 +621,10 @@ export default {
     slug: `prorezavani-zoubku`,
     shortTitle: `Prořezávání zoubků`,
     metaTitle: `Prořezávání zoubků: aplikace a schéma zubů | Mamio`,
-    metaDescription: `Ťukni na každý nový zoubek v interaktivním schématu všech 20 mléčných zubů a ulož datum. Typická období prořezávání, bez upozornění na „opožděný zub“.`,
+    metaDescription: `Klepni na každý nový zoubek v interaktivním schématu všech 20 mléčných zubů a ulož datum. Typická období prořezávání, bez upozornění na „opožděný zub“.`,
     eyebrow: `Zoubky a prořezávání`,
     title: `Schéma zubů, které si pamatuje každý první zoubek.`,
-    lead: `Mamio zobrazuje všech 20 mléčných zubů v interaktivním schématu. Ťukni na zoubek, když se prořeže, přidej datum a poznámku a podívej se na obvyklé období prořezání každého z nich.`,
+    lead: `Mamio zobrazuje všech 20 mléčných zubů v interaktivním schématu. Klepni na zoubek, když se prořeže, přidej datum a poznámku a podívej se na obvyklé období prořezání každého z nich.`,
     imageAlt: `Seznam milníků v Mamio včetně záznamu o prvním zoubku.`,
     bullets: [
       `Interaktivní schéma 20 mléčných zubů`,
@@ -633,8 +633,8 @@ export default {
     ],
     sections: [
       {
-        title: `Ťukni na zoubek, ulož datum`,
-        body: `Když se objeví nový zoubek, ťukni na něj ve schématu a ulož datum s volitelnou poznámkou. Každý zoubek má jeden záznam, takže se schéma plní spolu s úsměvem tvého miminka.`,
+        title: `Klepni na zoubek, ulož datum`,
+        body: `Když se objeví nový zoubek, klepni na něj ve schématu a ulož datum s volitelnou poznámkou. Každý zoubek má jeden záznam, takže se schéma plní spolu s úsměvem tvého miminka.`,
       },
       {
         title: `Typická období, nikdy „opožděný“`,
@@ -672,20 +672,20 @@ export default {
     slug: `odplenkovani-nocnik-aplikace`,
     shortTitle: `Odplenkování`,
     metaTitle: `Odplenkování: aplikace pro nácvik na nočník | Mamio`,
-    metaDescription: `Zapisuj čůrání, kakání, nehody a kontroly sucha během pár vteřin a sleduj vzorce při odplenkování batolete. Klidný, volitelný modul v Mamio.`,
+    metaDescription: `Zapisuj čůrání, kakání, nehody a kontroly suchých kalhotek během pár vteřin a sleduj vzorce při odplenkování batolete. Klidný, volitelný modul v Mamio.`,
     eyebrow: `Odplenkování`,
     title: `Odplenkování podle vzorců, ne pod tlakem.`,
-    lead: `Zapni v Mamio modul nočníku a zapisuj čůrání, kakání, obojí, nehodu nebo kontrolu sucha s časem a poznámkou. Záznam ukáže, co funguje, aniž by se počítalo skóre.`,
-    imageAlt: `Záznam odplenkování v Mamio s čůráním, kakáním, kontrolou sucha a nehodou.`,
+    lead: `Zapni v Mamio modul nočníku a zapisuj čůrání, kakání, obojí, nehodu nebo kontrolu suchých kalhotek s časem a poznámkou. Záznam ukáže, co funguje, aniž by se počítalo skóre.`,
+    imageAlt: `Záznam odplenkování v Mamio s čůráním, kakáním, kontrolou suchých kalhotek a nehodou.`,
     bullets: [
-      `Čůrání, kakání, nehoda, sucho`,
+      `Čůrání, kakání, nehoda, suché kalhotky`,
       `Rychlé přidání z hlavní obrazovky`,
       `Čas a poznámka u každého záznamu`,
     ],
     sections: [
       {
-        title: `Zapsáno jedním ťuknutím`,
-        body: `Když je modul nočníku zapnutý, na hlavní obrazovce se objeví tlačítko pro rychlé přidání. Vyber čůrání, kakání, obojí, nehodu nebo sucho a čas se uloží automaticky. Pokud tě něco zaujalo, přidej poznámku.`,
+        title: `Zapsáno jedním klepnutím`,
+        body: `Když je modul nočníku zapnutý, na hlavní obrazovce se objeví tlačítko pro rychlé přidání. Vyber čůrání, kakání, obojí, nehodu nebo suché kalhotky a čas se uloží automaticky. Pokud tě něco zaujalo, přidej poznámku.`,
       },
       {
         title: `Uvidíš rytmus dne`,
@@ -707,7 +707,7 @@ export default {
       },
       {
         question: `Co můžu zapisovat?`,
-        answer: `Čůrání, kakání, obojí, nehody a kontroly sucha, vše s časem a volitelnou poznámkou.`,
+        answer: `Čůrání, kakání, obojí, nehody a kontroly suchých kalhotek, vše s časem a volitelnou poznámkou.`,
       },
       {
         question: `Je sledování nočníku zdarma?`,
@@ -777,7 +777,7 @@ export default {
     metaDescription: `Spusť časovač kojení, spánku nebo odsávání a zapiš plenku či lahvičku ze zápěstí. Mamio pro Apple Watch s komplikacemi a widgety na plochu iPhonu.`,
     eyebrow: `Apple Watch a widgety`,
     title: `Zapisuj ze zápěstí, když máš plné ruce.`,
-    lead: `Mamio pro Apple Watch spouští a zastavuje časovače a jedním ťuknutím zapíše plenky a lahvičky. Komplikace a widgety na iPhonu ukážou poslední krmení a dnešní součty na první pohled.`,
+    lead: `Mamio pro Apple Watch spouští a zastavuje časovače a jedním klepnutím zapíše plenky a lahvičky. Komplikace a widgety na iPhonu ukážou poslední krmení a dnešní součty na první pohled.`,
     imageAlt: `Živý časovač kojení v Mamio s levou a pravou stranou a probíhajícím sezením.`,
     bullets: [
       `Časovače na Apple Watch`,
@@ -787,11 +787,11 @@ export default {
     sections: [
       {
         title: `Časovače na zápěstí`,
-        body: `Spouštěj a zastavuj kojení se stranou, spánek, odsávání a ležení na bříšku přímo z Apple Watch. Plenku nebo lahvičku zapíšeš s předvolbami na pár ťuknutí.`,
+        body: `Spouštěj a zastavuj kojení se stranou, spánek, odsávání a ležení na bříšku přímo z Apple Watch. Plenku nebo lahvičku zapíšeš s předvolbami na pár klepnutí.`,
       },
       {
         title: `Funguje, i když je telefon mimo dosah`,
-        body: `Ťuknutí na hodinkách se zařadí do fronty a synchronizují se s aplikací Mamio v iPhonu, jakmile bude zase dostupný, takže se záznam ve 3 ráno nikdy neztratí jen proto, že telefon zůstal v jiném pokoji.`,
+        body: `Klepnutí na hodinkách se zařadí do fronty a synchronizují se s aplikací Mamio v iPhonu, jakmile bude zase dostupný, takže se záznam ve 3 ráno nikdy neztratí jen proto, že telefon zůstal v jiném pokoji.`,
       },
       {
         title: `Komplikace a widgety`,
@@ -825,7 +825,7 @@ export default {
     slug: `aplikace-pro-dvojcata-a-sourozence`,
     shortTitle: `Dvojčata a sourozenci`,
     metaTitle: `Aplikace pro dvojčata a sourozence | Mamio`,
-    metaDescription: `Vlastní profil pro každé miminko a přepnutí jedním ťuknutím. Krmení, plenky, spánek, růst a léky se u dvojčat ani sourozenců nikdy nepomíchají.`,
+    metaDescription: `Vlastní profil pro každé miminko a přepnutí jedním klepnutím. Krmení, plenky, spánek, růst a léky se u dvojčat ani sourozenců nikdy nepomíchají.`,
     eyebrow: `Dvojčata a sourozenci`,
     title: `Jedna aplikace, samostatné záznamy pro každé miminko.`,
     lead: `Mamio vede profil pro každé miminko s vlastním krmením, plenkami, spánkem, růstem a zdravotními záznamy. Aktivní miminko přepneš v záhlaví a zapisuješ vždy ke správnému dítěti.`,
@@ -841,8 +841,8 @@ export default {
         body: `Každé miminko má vlastní časovou osu, statistiky, růstové grafy, očkování a záznam léků. Dvojčata málokdy jedí, spí a rostou stejně a samostatné záznamy zviditelní vzorce každého z nich.`,
       },
       {
-        title: `Přepnutí jedním ťuknutím`,
-        body: `Když máš víc než jeden profil, aktivní miminko se zobrazí v záhlaví. Ťukni na něj a před zápisem přepni, aby další krmení nebo plenka patřily správnému dítěti.`,
+        title: `Přepnutí jedním klepnutím`,
+        body: `Když máš víc než jeden profil, aktivní miminko se zobrazí v záhlaví. Klepni na něj a před zápisem přepni, aby další krmení nebo plenka patřily správnému dítěti.`,
       },
       {
         title: `Méně záměn u léků`,

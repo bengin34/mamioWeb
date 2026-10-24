@@ -583,7 +583,7 @@ export default {
     sections: [
       {
         title: `Mọi số đo ở một nơi`,
-        body: `Nhập số liệu từ mỗi lần khám hoặc lần cân ở nhà vào Mamio. Cân nặng, chiều dài và vòng đầu đều có biểu đồ riêng, nên bạn không còn phải lục sổ khám bệnh hay ảnh chụp màn hình cân nữa.`,
+        body: `Nhập số liệu từ mỗi lần khám hoặc lần cân ở nhà vào Mamio. Cân nặng, chiều dài và vòng đầu đều có biểu đồ riêng, nên bạn không còn phải lục sổ khám bệnh hay ảnh chụp cân nữa.`,
       },
       {
         title: `Dựa trên Chuẩn tăng trưởng trẻ em của WHO`,
@@ -669,7 +669,7 @@ export default {
     ],
   },
   potty: {
-    slug: `theo-doi-tap-bo-bim-cho-be`,
+    slug: `theo-doi-tap-di-ve-sinh-cho-be`,
     shortTitle: `Theo dõi tập đi bô`,
     metaTitle: `Ứng dụng theo dõi tập cho bé đi bô | Mamio`,
     metaDescription: `Ghi tè, ị, tè dầm và lần kiểm tra khô ráo chỉ trong vài giây, và xem nhịp đi vệ sinh của bé khi tập bỏ bỉm. Một mô-đun tùy chọn, nhẹ nhàng trong Mamio.`,
@@ -774,14 +774,14 @@ export default {
     slug: `apple-watch-theo-doi-be`,
     shortTitle: `Apple Watch & widget`,
     metaTitle: `Ứng dụng chăm bé cho Apple Watch & widget iPhone | Mamio`,
-    metaDescription: `Bật đồng hồ cho bú, ngủ hoặc hút sữa và ghi tã hay bú bình ngay trên cổ tay. Mamio cho Apple Watch, kèm complication và widget trên Màn hình chính.`,
+    metaDescription: `Bật đồng hồ bấm giờ cho bú, ngủ hoặc hút sữa và ghi tã hay bú bình ngay trên cổ tay. Mamio cho Apple Watch, kèm tổ hợp và widget trên Màn hình chính.`,
     eyebrow: `Apple Watch và widget`,
     title: `Ghi lại từ cổ tay khi tay bạn đang bận.`,
-    lead: `Mamio cho Apple Watch bật và dừng đồng hồ, ghi tã và bú bình chỉ với một chạm. Complication và widget iPhone cho bạn thấy cữ bú gần nhất và tổng số hôm nay trong nháy mắt.`,
-    imageAlt: `Đồng hồ cho con bú trực tiếp của Mamio với bên trái, bên phải và một cữ bú đang chạy.`,
+    lead: `Mamio cho Apple Watch bật và dừng đồng hồ bấm giờ, ghi tã và bú bình chỉ với một chạm. Tổ hợp và widget iPhone cho bạn thấy cữ bú gần nhất và tổng số hôm nay trong nháy mắt.`,
+    imageAlt: `Đồng hồ bấm giờ cho con bú đang chạy của Mamio với bên trái, bên phải và một cữ bú đang chạy.`,
     bullets: [
       `Đồng hồ bấm giờ trên Apple Watch`,
-      `Complication trên mặt đồng hồ`,
+      `Tổ hợp trên mặt đồng hồ`,
       `Widget trên Màn hình chính`,
     ],
     sections: [
@@ -794,8 +794,8 @@ export default {
         body: `Các thao tác trên đồng hồ được xếp hàng chờ và đồng bộ với ứng dụng Mamio trên iPhone khi kết nối lại, nên một lần ghi lúc 3 giờ sáng không bao giờ mất chỉ vì điện thoại để ở phòng khác.`,
       },
       {
-        title: `Complication và widget`,
-        body: `Thêm complication Mamio lên mặt đồng hồ với kiểu tròn, chữ nhật, nội dòng hoặc góc. Trên iPhone, widget Màn hình chính cỡ nhỏ, vừa và lớn hiển thị cữ bú mẹ, bú bình, tã, giấc ngủ, hút sữa và tập nằm sấp của hôm nay.`,
+        title: `Tổ hợp và widget`,
+        body: `Thêm tổ hợp Mamio lên mặt đồng hồ với kiểu tròn, chữ nhật, nội dòng hoặc góc. Trên iPhone, widget Màn hình chính cỡ nhỏ, vừa và lớn hiển thị cữ bú mẹ, bú bình, tã, giấc ngủ, hút sữa và tập nằm sấp của hôm nay.`,
       },
       {
         title: `Bạn cần gì`,
@@ -805,7 +805,7 @@ export default {
     faq: [
       {
         question: `Tôi có thể làm gì trên Apple Watch?`,
-        answer: `Bật và dừng đồng hồ cho bú mẹ, ngủ, hút sữa và tập nằm sấp, ghi tã và bú bình, đồng thời xem đồng hồ đang chạy, cữ bú, lần thay tã và giấc ngủ gần nhất, cùng tổng số hôm nay.`,
+        answer: `Bật và dừng đồng hồ bấm giờ cho bú mẹ, ngủ, hút sữa và tập nằm sấp, ghi tã và bú bình, đồng thời xem đồng hồ bấm giờ đang chạy, cữ bú, lần thay tã và giấc ngủ gần nhất, cùng tổng số hôm nay.`,
       },
       {
         question: `Ứng dụng đồng hồ có chạy được khi không có iPhone không?`,
@@ -813,7 +813,7 @@ export default {
       },
       {
         question: `Có widget cho Android không?`,
-        answer: `Hiện tại thì chưa. Apple Watch, complication và widget Màn hình chính chỉ có trên iOS.`,
+        answer: `Hiện tại thì chưa. Apple Watch, tổ hợp và widget Màn hình chính chỉ có trên iOS.`,
       },
       {
         question: `Widget có tương tác được không?`,
