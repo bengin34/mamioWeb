@@ -544,7 +544,7 @@ export default {
       },
       {
         title: `Un repère, pas un verdict`,
-        body: `Chaque enfant se développe à son rythme. Les tranches d'âge de Mamio sont un repère : ce n'est ni un diagnostic ni un substitut au dépistage du développement. Les repères d'âge sont adaptés du programme des CDC "Learn the Signs. Act Early.", et si quelque chose t'inquiète, c'est à ton pédiatre qu'il faut en parler.`,
+        body: `Chaque enfant se développe à son rythme. Les tranches d'âge de Mamio sont un repère : ce n'est ni un diagnostic ni un substitut au dépistage du développement. Les repères d'âge sont adaptés du programme des CDC « Learn the Signs. Act Early. », et si quelque chose t'inquiète, c'est à ton pédiatre qu'il faut en parler.`,
       },
     ],
     faq: [
@@ -637,7 +637,7 @@ export default {
         body: `Quand une nouvelle dent apparaît, touche-la sur le schéma et enregistre la date avec une note facultative. Chaque dent a un seul enregistrement, ainsi le schéma se remplit au rythme du sourire de ton bébé.`,
       },
       {
-        title: `Des périodes habituelles, jamais "en retard"`,
+        title: `Des périodes habituelles, jamais « en retard »`,
         body: `Chaque dent affiche sa période d'éruption habituelle d'après le tableau d'éruption dentaire utilisé par l'American Academy of Pediatric Dentistry. Les dents arrivent à des moments très différents, alors Mamio ne marque jamais une dent comme en retard.`,
       },
       {
@@ -723,7 +723,7 @@ export default {
     slug: `exercices-massage-bebe`,
     shortTitle: `Exercices et massage bébé`,
     metaTitle: `Exercices et massage pour bébé : guide en appli | Mamio`,
-    metaDescription: `Exercices et massages illustrés selon l'âge : temps sur le ventre, pédalage, massage doux et progression étape par étape vers le quatre pattes, avec sécurité.`,
+    metaDescription: `Exercices et massages illustrés selon l'âge : temps sur le ventre, pédalage, massage doux et progression étape par étape vers le quatre pattes, avec consignes de sécurité.`,
     eyebrow: `Mouvement et massage de bébé`,
     title: `Des idées de mouvements doux pour chaque étape, du premier jour au quatre pattes.`,
     lead: `Mamio propose 16 exercices et étapes de massage illustrés, chacun avec l'âge adapté, des étapes claires et des consignes de sécurité, pour que le temps au sol soit un jeu plutôt qu'une incertitude.`,
@@ -736,11 +736,11 @@ export default {
     sections: [
       {
         title: `Dès les premières semaines`,
-        body: `Commence dès la naissance avec le temps sur le ventre peau contre poitrine, l'ouverture et le croisement des bras, le pédalage et les genoux vers le ventre. Le massage des pieds, des jambes, du ventre et du dos suit à partir d'un mois, et le temps sur le ventre appuyé sur les avant-bras vers six semaines.`,
+        body: `Commence dès la naissance avec le temps sur le ventre sur ta poitrine, l'ouverture et le croisement des bras, le pédalage et les genoux vers le ventre. Le massage des pieds, des jambes, du ventre et du dos suit à partir d'un mois, et le temps sur le ventre appuyé sur les avant-bras vers six semaines.`,
       },
       {
         title: `Une progression vers le quatre pattes`,
-        body: `Vers quatre mois, une progression étape par étape prépare le quatre pattes : pompes de bébé et attraper des objets sur le ventre, pivots, se mettre à quatre pattes, se balancer et ramper par-dessus un obstacle moelleux. Elle fait partie de Mamio Pro et peut aussi être débloquée avec une publicité récompensée.`,
+        body: `Vers quatre mois, une progression étape par étape prépare le quatre pattes : pompes de bébé et attraper des objets sur le ventre, pivots, se mettre à quatre pattes, se balancer et passer à quatre pattes par-dessus un obstacle moelleux. Elle fait partie de Mamio Pro et peut aussi être débloquée avec une publicité récompensée.`,
       },
       {
         title: `La sécurité d'abord, pour tout le monde`,
@@ -787,7 +787,7 @@ export default {
     sections: [
       {
         title: `Des minuteurs à ton poignet`,
-        body: `Démarre et arrête l'allaitement avec le sein, le sommeil, le tire-lait et le temps sur le ventre directement depuis l'Apple Watch. Note une couche ou un biberon avec des préréglages en quelques gestes.`,
+        body: `Démarre et arrête l'allaitement en indiquant le sein, le sommeil, le tire-lait et le temps sur le ventre directement depuis l'Apple Watch. Note une couche ou un biberon avec des préréglages en quelques gestes.`,
       },
       {
         title: `Fonctionne même quand le téléphone est loin`,
@@ -837,7 +837,7 @@ export default {
     ],
     sections: [
       {
-        title: `Des suivis séparés, par conception`,
+        title: `Des suivis séparés, c'est voulu`,
         body: `Chaque bébé a sa propre chronologie, ses statistiques, ses courbes de croissance, ses vaccins et son journal de médicaments. Les jumeaux mangent, dorment et grandissent rarement de la même façon, et des suivis séparés rendent chaque rythme visible.`,
       },
       {

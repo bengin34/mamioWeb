@@ -544,7 +544,7 @@ export default {
       },
       {
         title: `En vägledning, inte ett utlåtande`,
-        body: `Varje barn utvecklas i sin egen takt. Åldersspannen i Mamio är en vägledning och varken en diagnos eller en ersättning för en utvecklingsbedömning. Åldersguiderna är anpassade från CDC:s program "Learn the Signs. Act Early." och om något oroar dig är barnläkaren rätt person att fråga.`,
+        body: `Varje barn utvecklas i sin egen takt. Åldersspannen i Mamio är en vägledning och varken en diagnos eller en ersättning för en utvecklingsbedömning. Åldersguiderna är anpassade från CDC:s program ”Learn the Signs. Act Early.” och om något oroar dig är barnläkaren rätt person att fråga.`,
       },
     ],
     faq: [
@@ -621,7 +621,7 @@ export default {
     slug: `tandsprickning-bebis-tandschema`,
     shortTitle: `Tandsprickning`,
     metaTitle: `Tandsprickning hos bebis: app och tandschema | Mamio`,
-    metaDescription: `Tryck på varje ny tand i ett interaktivt schema över alla 20 mjölktänder och spara datumet. Typiska tidsfönster, utan larm om "sena tänder".`,
+    metaDescription: `Tryck på varje ny tand i ett interaktivt schema över alla 20 mjölktänder och spara datumet. Typiska tidsfönster, utan larm om ”sena tänder”.`,
     eyebrow: `Tänder och tandsprickning`,
     title: `Ett tandschema som minns varje första tand.`,
     lead: `Mamio visar alla 20 mjölktänder i ett interaktivt schema. Tryck på en tand när den kommer fram, lägg till datum och en anteckning och se det vanliga tidsfönstret för varje tand.`,
@@ -637,7 +637,7 @@ export default {
         body: `När en ny tand tittar fram trycker du på den i schemat och sparar datumet med en valfri anteckning. Varje tand har en post, så schemat fylls i i takt med din bebis leende.`,
       },
       {
-        title: `Typiska tidsfönster, aldrig "försenad"`,
+        title: `Typiska tidsfönster, aldrig ”försenad”`,
         body: `Varje tand visar det vanliga tidsfönstret enligt det tandsprickningsschema som American Academy of Pediatric Dentistry använder. Tänder kommer vid väldigt olika tidpunkter, så Mamio markerar aldrig en tand som sen.`,
       },
       {
@@ -754,7 +754,7 @@ export default {
     faq: [
       {
         question: `Vilka övningar ingår?`,
-        answer: `Sexton totalt: varianter av magläge, arm- och benrörelser, massage av fötter, ben, mage och rygg, assisterad rullning och en krypprogression i sex steg.`,
+        answer: `Sexton totalt: varianter av magläge, arm- och benrörelser, massage av fötter, ben, mage och rygg, rullning med stöd och en krypprogression i sex steg.`,
       },
       {
         question: `Är övningarna gratis?`,
@@ -791,7 +791,7 @@ export default {
       },
       {
         title: `Fungerar när telefonen är utom räckhåll`,
-        body: `Tryck på klockan läggs i kö och synkas till Mamio-appen på din iPhone när den går att nå igen, så en logg klockan tre på natten försvinner aldrig för att telefonen låg i ett annat rum.`,
+        body: `Det du loggar på klockan läggs i kö och synkas till Mamio-appen på din iPhone när den går att nå igen, så en logg klockan tre på natten försvinner aldrig för att telefonen låg i ett annat rum.`,
       },
       {
         title: `Komplikationer och widgetar`,
