@@ -522,7 +522,7 @@ export default {
     metaDescription: `Notează primul zâmbet, primii pași și primele cuvinte cu dată și poze. Mamio îți sugerează etape pe vârstă, de la 0 la 3 ani, fără presiune și fără scoruri.`,
     eyebrow: `Etape de dezvoltare`,
     title: `Păstrează fiecare „prima dată”, fără să o transformi într-un test.`,
-    lead: `Mamio îți sugerează etape potrivite vârstei bebelușului în zonele motorie, limbaj, socială și gândire și te lasă să salvezi data, o notiță și fotografii atunci când se întâmplă.`,
+    lead: `Mamio îți sugerează etape potrivite vârstei bebelușului în zonele motorie, de limbaj, socială și de gândire și te lasă să salvezi data, o notiță și fotografii atunci când se întâmplă.`,
     imageAlt: `Lista de etape din Mamio cu primii pași, primul cuvânt, primul dinte și teama de străini.`,
     bullets: [
       `54 de etape pe vârstă`,
@@ -550,7 +550,7 @@ export default {
     faq: [
       {
         question: `Ce etape de dezvoltare include Mamio?`,
-        answer: `Mamio îți sugerează 54 de etape din zonele motorie, limbaj, socială, cognitivă și „primele dăți”, fiecare cu un interval de vârstă tipic. Poți salva și propriile momente.`,
+        answer: `Mamio îți sugerează 54 de etape din zonele motorie, de limbaj, socială, cognitivă și „primele dăți”, fiecare cu un interval de vârstă tipic. Poți salva și propriile momente.`,
       },
       {
         question: `Îmi spune Mamio dacă bebelușul rămâne în urmă?`,

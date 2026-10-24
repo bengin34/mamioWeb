@@ -675,8 +675,8 @@ export default {
     metaDescription: `Registre xixi, cocô, escapes e checagens de fralda seca em segundos e veja os padrões do desfralde do seu filho. Um módulo tranquilo e opcional do Mamio.`,
     eyebrow: `Desfralde`,
     title: `Desfralde com padrões, não com pressão.`,
-    lead: `Ative o módulo de penico no Mamio e registre xixi, cocô, os dois, escapes ou checagens de seco com horário e uma observação. O registro mostra o que está funcionando sem contar pontos.`,
-    imageAlt: `Registro de desfralde do Mamio com xixi, cocô, checagem de seco e escape.`,
+    lead: `Ative o módulo de penico no Mamio e registre xixi, cocô, os dois, escapes ou checagens de fralda seca com horário e uma observação. O registro mostra o que está funcionando sem contar pontos.`,
+    imageAlt: `Registro de desfralde do Mamio com xixi, cocô, checagem de fralda seca e escape.`,
     bullets: [
       `Xixi, cocô, escape, seco`,
       `Registro rápido na tela inicial`,
@@ -707,7 +707,7 @@ export default {
       },
       {
         question: `O que posso registrar?`,
-        answer: `Xixi, cocô, os dois, escapes e checagens de seco, cada um com horário e uma observação opcional.`,
+        answer: `Xixi, cocô, os dois, escapes e checagens de fralda seca, cada um com horário e uma observação opcional.`,
       },
       {
         question: `O controle do penico é gratuito?`,
