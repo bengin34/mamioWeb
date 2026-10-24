@@ -514,5 +514,362 @@ export default {
         answer: `Da. Toate înregistrările sunt stocate local, pe dispozitivul tău, și funcționează offline.`
       }
     ]
-  }
+  },
+  development: {
+    slug: `etape-dezvoltare-bebelus`,
+    shortTitle: `Etape de dezvoltare`,
+    metaTitle: `Etapele de dezvoltare ale bebelușului – aplicație | Mamio`,
+    metaDescription: `Notează primul zâmbet, primii pași și primele cuvinte cu dată și poze. Mamio îți sugerează etape pe vârstă, de la 0 la 3 ani, fără presiune și fără scoruri.`,
+    eyebrow: `Etape de dezvoltare`,
+    title: `Păstrează fiecare „prima dată”, fără să o transformi într-un test.`,
+    lead: `Mamio îți sugerează etape potrivite vârstei bebelușului în zonele motorie, limbaj, socială și gândire și te lasă să salvezi data, o notiță și fotografii atunci când se întâmplă.`,
+    imageAlt: `Lista de etape din Mamio cu primii pași, primul cuvânt, primul dinte și teama de străini.`,
+    bullets: [
+      `54 de etape pe vârstă`,
+      `Lista primelor cuvinte, cu date`,
+      `Până la 6 fotografii pentru fiecare etapă`,
+    ],
+    sections: [
+      {
+        title: `Etape potrivite vârstei bebelușului tău`,
+        body: `Mamio îți oferă 54 de idei de etape în cinci grupuri: motor, limbaj, social, cognitiv și „primele dăți”. Fiecare are un interval de vârstă tipic, așa că vezi ce urmează în loc de o listă lungă pentru toată copilăria timpurie.`,
+      },
+      {
+        title: `O listă cu primele cuvinte`,
+        body: `Notează fiecare cuvânt nou cu data și o scurtă notiță. În câteva luni, lista devine povestea felului în care s-a dezvoltat limbajul celui mic și e utilă când medicul pediatru întreabă câte cuvinte spune copilul.`,
+      },
+      {
+        title: `Fotografii acolo unde le e locul`,
+        body: `Atașează până la șase fotografii unei etape, ca primul mers de-a bușilea sau primul pas nesigur să stea lângă data lui. Totul rămâne pe telefonul tău.`,
+      },
+      {
+        title: `Un ghid, nu un verdict`,
+        body: `Fiecare copil se dezvoltă în ritmul lui. Intervalele de vârstă din Mamio sunt un ghid, nu un diagnostic și nici un înlocuitor pentru evaluarea dezvoltării. Reperele de vârstă sunt adaptate după programul CDC „Learn the Signs. Act Early.”, iar dacă ceva te îngrijorează, medicul pediatru este persoana potrivită pe care s-o întrebi.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Ce etape de dezvoltare include Mamio?`,
+        answer: `Mamio îți sugerează 54 de etape din zonele motorie, limbaj, socială, cognitivă și „primele dăți”, fiecare cu un interval de vârstă tipic. Poți salva și propriile momente.`,
+      },
+      {
+        question: `Îmi spune Mamio dacă bebelușul rămâne în urmă?`,
+        answer: `Nu. Mamio înregistrează ce observi și arată intervale de vârstă tipice. Nu îi dă copilului un scor și nu diagnostichează întârzieri. Vorbește cu medicul pediatru dacă ai îngrijorări.`,
+      },
+      {
+        question: `Pot ține evidența primelor cuvinte?`,
+        answer: `Da. Mamio are o listă a primelor cuvinte în care fiecare cuvânt primește o dată și o notiță opțională.`,
+      },
+      {
+        question: `Ce adaugă Mamio Pro pentru dezvoltare?`,
+        answer: `Pro deblochează cronologia dezvoltării, care compară somnul și hrănirea în jurul perioadelor aproximative de agitație, plus istoricul complet dincolo de cele mai recente înregistrări.`,
+      },
+    ],
+  },
+  growthPercentiles: {
+    slug: `curbe-crestere-percentile-bebelus`,
+    shortTitle: `Percentile de creștere`,
+    metaTitle: `Curbe de creștere OMS pentru bebeluși – aplicație | Mamio`,
+    metaDescription: `Notează greutatea, lungimea și circumferința capului și vezi-le pe curbele standardelor de creștere OMS pentru 0–24 de luni. Offline, fără cont.`,
+    eyebrow: `Creștere și percentile`,
+    title: `Vezi tendința de creștere, nu doar un număr.`,
+    lead: `Mamio păstrează greutatea, lungimea și circumferința capului într-un singur grafic și le plasează pe standardele de creștere OMS, ca tendința să fie ușor de discutat la următorul control.`,
+    imageAlt: `Graficul de creștere din Mamio cu curba greutății și ultimele valori pentru greutate, înălțime și circumferința capului.`,
+    bullets: [
+      `Greutate, lungime, circumferința capului`,
+      `Standarde OMS, 0–24 de luni`,
+      `Grafic de tendință în timp`,
+    ],
+    sections: [
+      {
+        title: `Toate măsurătorile într-un singur loc`,
+        body: `Copiază în Mamio cifrele de la fiecare control sau cântărire acasă. Greutatea, lungimea și circumferința capului au fiecare graficul lor, așa că nu mai cauți prin carnetul de sănătate și prin pozele cântarului.`,
+      },
+      {
+        title: `Pe baza standardelor de creștere OMS`,
+        body: `Percentilele din Mamio folosesc standardele de creștere a copilului (WHO Child Growth Standards) ale Organizației Mondiale a Sănătății (OMS) pentru bebeluși de la naștere până la 24 de luni. Setează sexul bebelușului în profil ca să fie folosită curba de referință potrivită.`,
+      },
+      {
+        title: `De ce contează linia mai mult decât punctul`,
+        body: `Un singur percentil spune puțin în sine. Bebelușii sănătoși pot fi oriunde, de la percentile mici la mari. Medicii pediatri se uită la felul în care evoluează curba în timp, exact ce arată un grafic cu propriile tale măsurători.`,
+      },
+      {
+        title: `Pregătit pentru medicul pediatru`,
+        body: `Înregistrările de creștere pot face parte din rezumatul pentru vizita la medic, alături de mese, somn și notițe de sănătate. Mamio arată datele; medicul pediatru le interpretează.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Ce curbe de creștere folosește Mamio?`,
+        answer: `Mamio folosește standardele de creștere OMS (WHO Child Growth Standards) pentru greutate, lungime și circumferința capului, de la naștere până la 24 de luni. Nu folosește curbele CDC.`,
+      },
+      {
+        question: `Un percentil mic e un semn rău?`,
+        answer: `Nu în sine. Mulți bebeluși sănătoși urmează o linie de percentil mică sau mare. Schimbările bruște peste mai multe linii sunt cele care merită discutate cu medicul pediatru.`,
+      },
+      {
+        question: `Monitorizarea creșterii este gratuită?`,
+        answer: `Notarea măsurătorilor și vizualizarea graficelor sunt gratuite. Etichetele de percentil, benzile de percentile OMS și comparația cu media OMS fac parte din Mamio Pro.`,
+      },
+      {
+        question: `Funcționează Mamio pentru bebelușii prematuri?`,
+        answer: `Poți nota măsurători pentru orice bebeluș. Percentilele din Mamio folosesc vârsta reală, așa că pentru un bebeluș prematur întreabă medicul pediatru cum să citești curba cu vârsta corectată.`,
+      },
+    ],
+  },
+  teething: {
+    slug: `aparitia-dintilor-bebelus`,
+    shortTitle: `Apariția dinților`,
+    metaTitle: `Apariția dinților la bebeluși: aplicație și schemă | Mamio`,
+    metaDescription: `Atinge fiecare dinte nou pe o schemă interactivă cu toți cei 20 de dinți de lapte și salvează data. Intervale tipice, fără alarme de „dinte întârziat”.`,
+    eyebrow: `Dinți și dentiție`,
+    title: `O schemă a dinților care ține minte fiecare prim dinte.`,
+    lead: `Mamio arată toți cei 20 de dinți de lapte pe o schemă interactivă. Atinge un dinte când iese, adaugă data și o notiță și vezi intervalul obișnuit de erupție pentru fiecare.`,
+    imageAlt: `Lista de etape din Mamio, inclusiv înregistrarea primului dinte.`,
+    bullets: [
+      `Schemă interactivă cu 20 de dinți de lapte`,
+      `Dată și notiță pentru fiecare dinte`,
+      `Intervale tipice de erupție`,
+    ],
+    sections: [
+      {
+        title: `Atinge dintele, salvează data`,
+        body: `Când apare un dinte nou, atinge-l pe schemă și salvează data cu o notiță opțională. Fiecare dinte are o singură înregistrare, așa că schema se completează pe măsură ce crește zâmbetul bebelușului.`,
+      },
+      {
+        title: `Intervale tipice, niciodată „întârziat”`,
+        body: `Fiecare dinte arată intervalul obișnuit de erupție din schema de erupție dentară folosită de American Academy of Pediatric Dentistry. Dinții apar la momente foarte diferite, așa că Mamio nu marchează niciodată un dinte ca întârziat.`,
+      },
+      {
+        title: `Vizitele la dentist în același loc`,
+        body: `Notează controalele și igienizările dentare lângă schema dinților, ca următoarea programare să înceapă cu imaginea completă.`,
+      },
+      {
+        title: `Parte din fișa de sănătate`,
+        body: `Dinții stau în fila de sănătate alături de creștere, vaccinuri și vizite la medic și pot apărea în rezumatul pentru vizita la medic.`,
+      },
+    ],
+    faq: [
+      {
+        question: `În ce ordine apar dinții de lapte?`,
+        answer: `De obicei apar mai întâi dinții din față de jos, urmați de dinții din față de sus, dar ordinea și momentul variază mult. Mamio arată intervalul tipic pentru fiecare dinte.`,
+      },
+      {
+        question: `Mă avertizează Mamio dacă un dinte întârzie?`,
+        answer: `Nu. Dinții care apar mai târziu sunt frecvenți și de obicei normali. Mamio nu arată niciodată un dinte ca întârziat. Dacă ai nelămuriri, întreabă medicul pediatru sau dentistul.`,
+      },
+      {
+        question: `Pot nota vizitele la dentist?`,
+        answer: `Da. Pe lângă apariția dinților, poți salva vizite pentru igienizare sau control dentar.`,
+      },
+      {
+        question: `Schema dinților este gratuită?`,
+        answer: `Da. Schema dinților este gratuită. Lista gratuită arată cele mai recente înregistrări; istoricul complet face parte din Mamio Pro.`,
+      },
+    ],
+  },
+  potty: {
+    slug: `aplicatie-invatare-olita`,
+    shortTitle: `Învățarea la oliță`,
+    metaTitle: `Învățarea la oliță: aplicație și jurnal | Mamio`,
+    metaDescription: `Notează pipi, caca, accidentele și verificările „uscat” în câteva secunde și vezi tiparele învățării la oliță. Un modul calm și opțional în Mamio.`,
+    eyebrow: `Învățarea la oliță`,
+    title: `Învățarea la oliță cu tipare, nu cu presiune.`,
+    lead: `Activează modulul de oliță în Mamio și notează pipi, caca, ambele, un accident sau o verificare „uscat” cu ora și o notiță. Jurnalul arată ce funcționează, fără să țină scorul.`,
+    imageAlt: `Jurnalul de învățare la oliță din Mamio cu înregistrări de pipi, caca, verificare uscat și accident.`,
+    bullets: [
+      `Pipi, caca, accident, uscat`,
+      `Adăugare rapidă din ecranul principal`,
+      `Oră și notițe pentru fiecare înregistrare`,
+    ],
+    sections: [
+      {
+        title: `Notat dintr-o atingere`,
+        body: `Când modulul de oliță e activ, pe ecranul principal apare un buton de adăugare rapidă. Alege pipi, caca, ambele, accident sau uscat, iar ora se salvează automat. Adaugă o notiță dacă ceva ți-a atras atenția.`,
+      },
+      {
+        title: `Vezi ritmul zilei`,
+        body: `După câteva zile, jurnalul arată când are de obicei nevoie cel mic la oliță, cât timp rămâne uscat și când tind să apară accidentele. Astfel, reamintirile vin firesc, nu tot timpul.`,
+      },
+      {
+        title: `Accidentele fac parte din proces`,
+        body: `Accidentele se notează ca orice altă înregistrare, fără semne roșii și fără serii de întrerupt. Regresele sunt frecvente în timpul bolii, al călătoriilor sau la venirea unui frățior, iar jurnalul te ajută să le vezi ca pe o etapă.`,
+      },
+      {
+        title: `Doar când ai nevoie`,
+        body: `Monitorizarea olitei este un modul opțional. Lasă-l dezactivat în lunile de bebeluș și activează-l din setări când familia ta e pregătită.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Cum activez monitorizarea olitei?`,
+        answer: `Deschide setările Mamio și activează modulul de oliță. Apoi apar în aplicație un buton de adăugare rapidă și o secțiune pentru oliță.`,
+      },
+      {
+        question: `Ce pot nota?`,
+        answer: `Pipi, caca, ambele, accidente și verificări „uscat”, fiecare cu ora și o notiță opțională.`,
+      },
+      {
+        question: `Monitorizarea olitei este gratuită?`,
+        answer: `Da. Lista gratuită arată cele mai recente înregistrări; istoricul complet face parte din Mamio Pro.`,
+      },
+      {
+        question: `Când ar trebui să începem învățarea la oliță?`,
+        answer: `Momentul potrivit diferă mult de la un copil la altul. Urmărește semnele că cel mic e pregătit și întreabă medicul pediatru dacă ai nelămuriri.`,
+      },
+    ],
+  },
+  babyExercises: {
+    slug: `exercitii-masaj-bebelusi`,
+    shortTitle: `Exerciții și masaj pentru bebeluși`,
+    metaTitle: `Exerciții și masaj pentru bebeluși – aplicație | Mamio`,
+    metaDescription: `Exerciții și masaj ilustrate pe vârste: poziția pe burtică, bicicleta, masaj blând și pași spre mersul de-a bușilea, cu note de siguranță pentru bebeluși.`,
+    eyebrow: `Mișcare și masaj pentru bebeluși`,
+    title: `Idei blânde de mișcare pentru fiecare etapă, din prima zi până la mersul de-a bușilea.`,
+    lead: `Mamio include 16 exerciții ilustrate și pași de masaj, fiecare cu vârsta potrivită, pași clari și note de siguranță, ca timpul pe saltea să fie joacă, nu nesiguranță.`,
+    imageAlt: `Ecranul principal Mamio cu un rezumat rapid și opțiuni pentru a începe o sesiune sau a adăuga o înregistrare.`,
+    bullets: [
+      `16 exerciții ilustrate`,
+      `Repere de vârstă și note de siguranță`,
+      `Progresie spre mersul de-a bușilea de la 4 luni`,
+    ],
+    sections: [
+      {
+        title: `Din primele săptămâni`,
+        body: `Începe de la naștere cu poziția pe burtică piept la piept, deschiderea și încrucișarea brațelor, bicicleta și genunchii la burtică. Masajul tălpilor, picioarelor, burticii și spatelui urmează de la o lună, iar poziția pe burtică sprijinit pe antebrațe de la aproximativ șase săptămâni.`,
+      },
+      {
+        title: `O progresie spre mersul de-a bușilea`,
+        body: `De la aproximativ patru luni, o progresie pas cu pas pregătește mersul de-a bușilea: flotări de bebeluș și întinderea după obiecte pe burtică, rotirea pe burtică, ridicarea în patru labe, legănatul și mersul de-a bușilea peste un obstacol moale. Face parte din Mamio Pro și poate fi deblocată și cu o reclamă cu recompensă.`,
+      },
+      {
+        title: `Siguranța pe primul loc, pentru toți`,
+        body: `Fiecare exercițiu le arată tuturor utilizatorilor atenționările și regulile de siguranță, inclusiv la cele blocate: rămâi lângă bebeluș, oprește-te dacă e obosit sau supărat și păstrează sesiunile scurte și jucăușe.`,
+      },
+      {
+        title: `Legat de poziția pe burtică`,
+        body: `Când faci o sesiune de poziție pe burtică, Mamio îți sugerează exerciții potrivite, iar un card zilnic pe ecranul principal îți propune o idee potrivită vârstei bebelușului.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Ce exerciții sunt incluse?`,
+        answer: `Șaisprezece în total: variante de poziție pe burtică, mișcări ale brațelor și picioarelor, masaj pentru tălpi, picioare, burtică și spate, rostogolire asistată și o progresie în șase pași spre mersul de-a bușilea.`,
+      },
+      {
+        question: `Exercițiile sunt gratuite?`,
+        answer: `Zece exerciții sunt gratuite. Progresia în șase pași spre mersul de-a bușilea face parte din Mamio Pro sau poate fi deblocată cu o reclamă cu recompensă. Notele de siguranță sunt vizibile pentru toate exercițiile.`,
+      },
+      {
+        question: `Sunt aceste exerciții o terapie medicală?`,
+        answer: `Nu. Sunt idei de mișcare prin joacă pentru bebeluși sănătoși, nu kinetoterapie. Dacă bebelușul are o afecțiune medicală sau observi o asimetrie, întreabă medicul pediatru.`,
+      },
+      {
+        question: `Pot monitoriza și poziția pe burtică?`,
+        answer: `Da. Mamio are un cronometru pentru poziția pe burtică, cu poziția și calitatea sesiunii, și îți sugerează exerciții în timpul sesiunii.`,
+      },
+    ],
+  },
+  watchWidget: {
+    slug: `aplicatie-bebelus-apple-watch-widget`,
+    shortTitle: `Apple Watch și widget`,
+    metaTitle: `Aplicație pentru bebeluși pe Apple Watch și widget | Mamio`,
+    metaDescription: `Pornește un cronometru pentru alăptare, somn sau pompare și notează scutece sau biberoane de la încheietură. Mamio pe Apple Watch, cu complicații și widgeturi.`,
+    eyebrow: `Apple Watch și widgeturi`,
+    title: `Notează de la încheietură când ai mâinile ocupate.`,
+    lead: `Mamio pentru Apple Watch pornește și oprește cronometre și notează scutece și biberoane dintr-o atingere. Complicațiile și widgeturile de iPhone arată dintr-o privire ultima masă și totalurile zilei.`,
+    imageAlt: `Cronometrul de alăptare live din Mamio cu partea stângă și dreaptă și o sesiune în desfășurare.`,
+    bullets: [
+      `Cronometre pe Apple Watch`,
+      `Complicații pe cadranul ceasului`,
+      `Widgeturi pe ecranul principal`,
+    ],
+    sections: [
+      {
+        title: `Cronometre la încheietură`,
+        body: `Pornește și oprește alăptarea cu partea, somnul, pomparea și poziția pe burtică direct de pe Apple Watch. Notează un scutec sau un biberon cu presetări în doar câteva atingeri.`,
+      },
+      {
+        title: `Funcționează când telefonul nu e la îndemână`,
+        body: `Atingerile de pe ceas intră într-o coadă și se sincronizează cu aplicația Mamio de pe iPhone când acesta e din nou accesibil, așa că o înregistrare de la 3 noaptea nu se pierde niciodată doar pentru că telefonul era în altă cameră.`,
+      },
+      {
+        title: `Complicații și widgeturi`,
+        body: `Adaugă o complicație Mamio pe cadranul ceasului în stil circular, dreptunghiular, inline sau de colț. Pe iPhone, widgeturile mici, medii și mari de pe ecranul principal arată mesele, biberoanele, scutecele, somnul, pomparea și poziția pe burtică de azi.`,
+      },
+      {
+        title: `De ce ai nevoie`,
+        body: `Aplicația pentru ceas necesită watchOS 10 sau o versiune ulterioară și aplicația Mamio pe un iPhone asociat. Apple Watch și widgeturile sunt disponibile doar pe iOS; pe Android, notarea rapidă din Mamio se face în aplicație.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Ce pot face pe Apple Watch?`,
+        answer: `Poți porni și opri cronometrele pentru alăptare, somn, pompare și poziția pe burtică, poți nota scutece și biberoane și poți vedea cronometrele active, ultima masă, ultimul scutec și ultimul somn, plus totalurile zilei.`,
+      },
+      {
+        question: `Funcționează aplicația de ceas fără iPhone?`,
+        answer: `Are nevoie de aplicația de pe iPhone pentru sincronizare, dar înregistrările făcute cât telefonul nu e la îndemână intră într-o coadă și se sincronizează mai târziu.`,
+      },
+      {
+        question: `Există un widget pentru Android?`,
+        answer: `Momentan nu. Apple Watch, complicațiile și widgeturile de pe ecranul principal sunt doar pentru iOS.`,
+      },
+      {
+        question: `Widgeturile sunt interactive?`,
+        answer: `Widgeturile de iPhone sunt pentru a vedea dintr-o privire înregistrările de azi. Notarea se face în aplicație sau pe Apple Watch.`,
+      },
+    ],
+  },
+  multipleBabies: {
+    slug: `aplicatie-gemeni-frati`,
+    shortTitle: `Gemeni și frați`,
+    metaTitle: `Aplicație pentru gemeni și frați | Mamio`,
+    metaDescription: `Câte un profil pentru fiecare bebeluș și comutare dintr-o atingere. Mesele, scutecele, somnul, creșterea și medicamentele nu se amestecă între gemeni sau frați.`,
+    eyebrow: `Gemeni și frați`,
+    title: `O singură aplicație, o evidență separată pentru fiecare bebeluș.`,
+    lead: `Mamio păstrează un profil pentru fiecare bebeluș, cu propriile mese, scutece, somn, creștere și înregistrări de sănătate. Schimbă bebelușul activ din antet și notează pentru copilul potrivit.`,
+    imageAlt: `Ecranul principal Mamio cu un rezumat rapid al ultimei mese, al părții următoare și al zilei de azi.`,
+    bullets: [
+      `Un profil pentru fiecare bebeluș`,
+      `Comutare din antet`,
+      `Înregistrări de sănătate separate`,
+    ],
+    sections: [
+      {
+        title: `Evidențe separate, gândite așa`,
+        body: `Fiecare bebeluș are propria cronologie, statistici, grafice de creștere, vaccinuri și jurnal de medicamente. Gemenii rareori mănâncă, dorm sau cresc la fel, iar evidențele separate fac vizibil tiparul fiecăruia.`,
+      },
+      {
+        title: `Comutare dintr-o atingere`,
+        body: `Când ai mai multe profiluri, bebelușul activ apare în antet. Atinge-l ca să schimbi înainte să notezi, ca următoarea masă sau următorul scutec să ajungă la copilul potrivit.`,
+      },
+      {
+        title: `Mai puține confuzii cu medicamentele`,
+        body: `Temperatura, simptomele și medicamentele sunt înregistrate în profilul fiecărui bebeluș, ceea ce te ajută să eviți întrebarea părintelui obosit: cine și-a luat deja doza?`,
+      },
+      {
+        title: `Gratuit pentru unul, Pro pentru mai mulți`,
+        body: `Versiunea gratuită include un profil de bebeluș. Adăugarea unui al doilea bebeluș sau a mai multora face parte din Mamio Pro.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Pot monitoriza gemeni în Mamio?`,
+        answer: `Da. Creează câte un profil pentru fiecare geamăn și schimbă bebelușul activ din antet înainte să notezi.`,
+      },
+      {
+        question: `Există o vizualizare cu gemenii unul lângă altul?`,
+        answer: `Nu. Mamio ține fiecare bebeluș într-un profil separat, cu propria cronologie și propriile statistici.`,
+      },
+      {
+        question: `Câți bebeluși pot adăuga?`,
+        answer: `Un bebeluș este gratuit. Pentru a adăuga mai mulți bebeluși ai nevoie de Mamio Pro.`,
+      },
+      {
+        question: `Pot șterge un profil mai târziu?`,
+        answer: `Da. Profilurile bebelușilor pot fi gestionate și șterse din setări.`,
+      },
+    ],
+  },
 };

@@ -515,4 +515,361 @@ export default {
       },
     ],
   },
+  development: {
+    slug: `baby-mijlpalen-app`,
+    shortTitle: `Mijlpalen bijhouden`,
+    metaTitle: `Baby Mijlpalen App: ontwikkeling bijhouden | Mamio`,
+    metaDescription: `Leg eerste lachjes, stapjes en woordjes vast met datum en foto's. Mamio stelt mijlpalen voor per leeftijd van 0 tot 3 jaar, zonder druk en zonder scores.`,
+    eyebrow: `Mijlpalen en ontwikkeling`,
+    title: `Bewaar elke eerste keer, zonder er een test van te maken.`,
+    lead: `Mamio stelt mijlpalen voor die passen bij de leeftijd van je baby, verdeeld over motoriek, taal, sociaal en denken, en laat je de datum, een notitie en foto's bewaren als het zover is.`,
+    imageAlt: `Mamio mijlpalenlijst met eerste stapjes, eerste woordje, eerste tandje en eenkennigheid.`,
+    bullets: [
+      `54 mijlpaalideeën per leeftijd`,
+      `Lijst met eerste woordjes en data`,
+      `Tot 6 foto's per mijlpaal`,
+    ],
+    sections: [
+      {
+        title: `Mijlpalen die passen bij de leeftijd van je baby`,
+        body: `Mamio biedt 54 mijlpaalideeën in vijf groepen: motoriek, taal, sociaal, cognitief en eerste keren. Elke mijlpaal heeft een gebruikelijke leeftijdsrange, zodat je ziet wat eraan komt in plaats van een lange checklist voor de hele vroege kindertijd.`,
+      },
+      {
+        title: `Een lijst met eerste woordjes`,
+        body: `Schrijf elk nieuw woordje op met de datum en een korte notitie. Na een paar maanden laat de lijst zien hoe de taal van je dreumes groeide, en dat is handig als de jeugdarts vraagt hoeveel woordjes je kind zegt.`,
+      },
+      {
+        title: `Foto's waar ze horen`,
+        body: `Voeg tot zes foto's toe aan een mijlpaal, zodat het eerste kruipen of het eerste wiebelige stapje naast de datum staat. Alles blijft op je telefoon.`,
+      },
+      {
+        title: `Een richtlijn, geen oordeel`,
+        body: `Elk kind ontwikkelt zich in zijn eigen tempo. De leeftijdsranges in Mamio zijn een richtlijn, geen diagnose en geen vervanging van een ontwikkelingsonderzoek. De leeftijdsrichtlijnen zijn gebaseerd op het CDC-programma "Learn the Signs. Act Early." en als je je ergens zorgen over maakt, kun je het best bij je kinderarts of jeugdarts terecht.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Welke mijlpalen zitten in Mamio?`,
+        answer: `Mamio stelt 54 mijlpalen voor op het gebied van motoriek, taal, sociaal, cognitief en eerste keren, elk met een gebruikelijke leeftijdsrange. Je kunt ook je eigen momenten bewaren.`,
+      },
+      {
+        question: `Vertelt Mamio of mijn baby achterloopt?`,
+        answer: `Nee. Mamio legt vast wat jij ziet en toont gebruikelijke leeftijdsranges. Het geeft je kind geen score en stelt geen achterstand vast. Praat met je kinderarts als je je zorgen maakt.`,
+      },
+      {
+        question: `Kan ik eerste woordjes bijhouden?`,
+        answer: `Ja. Mamio heeft een lijst met eerste woordjes waarin elk woord een datum en een optionele notitie krijgt.`,
+      },
+      {
+        question: `Wat voegt Mamio Pro toe voor ontwikkeling?`,
+        answer: `Pro ontgrendelt de ontwikkelingstijdlijn, die slaap en voeding vergelijkt rond de geschatte onrustige periodes, plus de volledige geschiedenis voorbij de meest recente registraties.`,
+      },
+    ],
+  },
+  growthPercentiles: {
+    slug: `baby-groeicurve-percentielen`,
+    shortTitle: `Groeipercentielen`,
+    metaTitle: `Groeicurve Baby App met WHO-percentielen | Mamio`,
+    metaDescription: `Noteer gewicht, lengte en hoofdomtrek en bekijk ze op de groeicurves van de WHO Child Growth Standards voor 0 tot 24 maanden. Offline, zonder account.`,
+    eyebrow: `Groei en percentielen`,
+    title: `Zie de groeilijn, niet alleen één getal.`,
+    lead: `Mamio bewaart gewicht, lengte en hoofdomtrek in één grafiek en zet ze op de WHO Child Growth Standards, zodat je de trend makkelijk bespreekt bij de volgende controle.`,
+    imageAlt: `Mamio groeigrafiek met gewichtscurve en de laatste waarden voor gewicht, lengte en hoofdomtrek.`,
+    bullets: [
+      `Gewicht, lengte, hoofdomtrek`,
+      `WHO-standaarden, 0–24 maanden`,
+      `Trendgrafiek door de tijd`,
+    ],
+    sections: [
+      {
+        title: `Elke meting op één plek`,
+        body: `Neem de getallen van elke controle of elk weegmoment thuis over in Mamio. Gewicht, lengte en hoofdomtrek krijgen elk een eigen grafiek, zodat je niet meer hoeft te zoeken in groeiboekjes en foto's van de weegschaal.`,
+      },
+      {
+        title: `Gebaseerd op de WHO Child Growth Standards`,
+        body: `Percentielen in Mamio gebruiken de Child Growth Standards van de Wereldgezondheidsorganisatie (WHO) voor baby's van de geboorte tot 24 maanden. Stel het geslacht van je baby in het profiel in, zodat de juiste referentiecurve wordt gebruikt.`,
+      },
+      {
+        title: `Waarom de lijn meer zegt dan de stip`,
+        body: `Eén percentiel zegt op zichzelf weinig. Gezonde baby's kunnen overal zitten, van lage tot hoge percentielen. Artsen kijken vooral naar hoe de curve zich in de loop van de tijd ontwikkelt, en dat is precies wat een grafiek van je eigen metingen laat zien.`,
+      },
+      {
+        title: `Klaar voor de kinderarts`,
+        body: `Groeimetingen kunnen deel uitmaken van een samenvatting voor het artsbezoek, samen met voedingen, slaap en gezondheidsnotities. Mamio toont gegevens; je kinderarts interpreteert ze.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Welke groeicurves gebruikt Mamio?`,
+        answer: `Mamio gebruikt de WHO Child Growth Standards voor gewicht, lengte en hoofdomtrek van de geboorte tot 24 maanden. Het gebruikt geen CDC-curves.`,
+      },
+      {
+        question: `Is een laag percentiel een slecht teken?`,
+        answer: `Niet op zichzelf. Veel gezonde baby's volgen een lage of hoge percentiellijn. Vooral plotselinge verschuivingen over de lijnen heen zijn het bespreken waard met je kinderarts.`,
+      },
+      {
+        question: `Is groei bijhouden gratis?`,
+        answer: `Metingen noteren en de grafieken bekijken is gratis. Percentiellabels, WHO-percentielbanden en de vergelijking met het WHO-gemiddelde horen bij Mamio Pro.`,
+      },
+      {
+        question: `Werkt Mamio voor te vroeg geboren baby's?`,
+        answer: `Je kunt metingen noteren voor elke baby. De percentielen in Mamio gebruiken de kalenderleeftijd, dus vraag bij een te vroeg geboren baby aan je kinderarts hoe je de curve leest met de gecorrigeerde leeftijd.`,
+      },
+    ],
+  },
+  teething: {
+    slug: `tandjes-doorkomen-tracker`,
+    shortTitle: `Tandjes tracker`,
+    metaTitle: `Tandjes Doorkomen: tandenschema App voor je baby | Mamio`,
+    metaDescription: `Tik elk nieuw tandje aan op een interactief schema van alle 20 melktanden en bewaar de datum. Gebruikelijke doorbraakperiodes, zonder 'te laat'-alarmen.`,
+    eyebrow: `Tandjes en doorkomen`,
+    title: `Een tandenschema dat elk eerste tandje onthoudt.`,
+    lead: `Mamio toont alle 20 melktanden op een interactief schema. Tik een tandje aan als het doorkomt, voeg de datum en een notitie toe en zie de gebruikelijke doorbraakperiode van elk tandje.`,
+    imageAlt: `Mamio mijlpalenlijst met de registratie van het eerste tandje.`,
+    bullets: [
+      `Interactief schema van 20 melktanden`,
+      `Datum en notitie per tandje`,
+      `Gebruikelijke doorbraakperiodes`,
+    ],
+    sections: [
+      {
+        title: `Tik het tandje aan, bewaar de datum`,
+        body: `Komt er een nieuw tandje door, tik het dan aan op het schema en bewaar de datum met een optionele notitie. Elk tandje heeft één registratie, dus het schema vult zich terwijl de glimlach van je baby groeit.`,
+      },
+      {
+        title: `Gebruikelijke periodes, nooit 'te laat'`,
+        body: `Bij elk tandje zie je de gebruikelijke doorbraakperiode uit het doorbraakschema dat de American Academy of Pediatric Dentistry gebruikt. Tanden komen op heel verschillende momenten door, dus Mamio markeert een tandje nooit als laat.`,
+      },
+      {
+        title: `Tandartsbezoeken op dezelfde plek`,
+        body: `Noteer controles en gebitsreinigingen bij de tandarts naast het tandenschema, zodat de volgende afspraak begint met het volledige beeld.`,
+      },
+      {
+        title: `Onderdeel van het gezondheidsdossier`,
+        body: `Tandjes staan in het gezondheidstabblad bij groei, vaccinaties en artsbezoeken, en kunnen in de samenvatting voor het artsbezoek verschijnen.`,
+      },
+    ],
+    faq: [
+      {
+        question: `In welke volgorde komen melktanden door?`,
+        answer: `Meestal komen eerst de onderste voortandjes, gevolgd door de bovenste voortandjes, maar volgorde en timing verschillen sterk. Mamio toont de gebruikelijke periode voor elk tandje.`,
+      },
+      {
+        question: `Waarschuwt Mamio als een tandje laat is?`,
+        answer: `Nee. Late tandjes komen vaak voor en zijn meestal normaal. Mamio toont een tandje nooit als te laat. Vraag het je kinderarts of tandarts als je twijfelt.`,
+      },
+      {
+        question: `Kan ik tandartsbezoeken noteren?`,
+        answer: `Ja. Naast doorgekomen tandjes kun je ook bezoeken voor een gebitsreiniging of controle bewaren.`,
+      },
+      {
+        question: `Is het tandenschema gratis?`,
+        answer: `Ja. Het tandenschema is gratis. De gratis lijst toont je meest recente registraties; de volledige geschiedenis hoort bij Mamio Pro.`,
+      },
+    ],
+  },
+  potty: {
+    slug: `zindelijkheidstraining-app`,
+    shortTitle: `Zindelijkheid bijhouden`,
+    metaTitle: `Zindelijkheidstraining App: plasjes bijhouden | Mamio`,
+    metaDescription: `Noteer plasjes, poepjes, ongelukjes en droge checks in seconden en zie patronen in de zindelijkheid van je peuter. Een rustige, optionele module in Mamio.`,
+    eyebrow: `Zindelijkheidstraining`,
+    title: `Zindelijk worden met patronen, niet met druk.`,
+    lead: `Zet de potjesmodule aan in Mamio en noteer een plasje, poepje, allebei, ongelukje of droge check met een tijd en een notitie. Het logboek laat zien wat werkt, zonder de score bij te houden.`,
+    imageAlt: `Mamio logboek voor zindelijkheidstraining met plasjes, poepjes, droge checks en ongelukjes.`,
+    bullets: [
+      `Plasje, poepje, ongelukje, droog`,
+      `Snel toevoegen vanaf het startscherm`,
+      `Tijd en notities per registratie`,
+    ],
+    sections: [
+      {
+        title: `In één tik genoteerd`,
+        body: `Staat de potjesmodule aan, dan verschijnt er een snelknop op het startscherm. Kies plasje, poepje, allebei, ongelukje of droog, en de tijd wordt automatisch bewaard. Voeg een notitie toe als iets opviel.`,
+      },
+      {
+        title: `Zie het ritme van de dag`,
+        body: `Na een paar dagen laat het logboek zien wanneer je peuter meestal moet, hoe lang hij of zij droog blijft en wanneer ongelukjes vaak gebeuren. Zo voelen herinneringen natuurlijk in plaats van constant.`,
+      },
+      {
+        title: `Ongelukjes horen erbij`,
+        body: `Ongelukjes noteer je net als elke andere registratie, zonder rode kruisjes en zonder reeksen die je kunt breken. Terugvallen zijn normaal tijdens ziekte, op reis of bij een nieuw broertje of zusje, en het logboek helpt je ze als een fase te zien.`,
+      },
+      {
+        title: `Alleen als je het nodig hebt`,
+        body: `Zindelijkheid bijhouden is een optionele module. Laat hem uit tijdens de babymaanden en zet hem in de instellingen aan als jullie gezin er klaar voor is.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Hoe zet ik zindelijkheid bijhouden aan?`,
+        answer: `Open de instellingen van Mamio en schakel de potjesmodule in. Daarna verschijnen er een snelknop en een potjesonderdeel in de app.`,
+      },
+      {
+        question: `Wat kan ik noteren?`,
+        answer: `Plasjes, poepjes, allebei, ongelukjes en droge checks, elk met een tijd en een optionele notitie.`,
+      },
+      {
+        question: `Is zindelijkheid bijhouden gratis?`,
+        answer: `Ja. De gratis lijst toont je meest recente registraties; de volledige geschiedenis hoort bij Mamio Pro.`,
+      },
+      {
+        question: `Wanneer beginnen we met zindelijkheidstraining?`,
+        answer: `Wanneer een kind er klaar voor is, verschilt sterk per kind. Let op signalen dat je kind eraan toe is en vraag het consultatiebureau of je kinderarts als je twijfelt.`,
+      },
+    ],
+  },
+  babyExercises: {
+    slug: `baby-oefeningen-babymassage`,
+    shortTitle: `Babyoefeningen & massage`,
+    metaTitle: `Babyoefeningen & Babymassage App | Mamio`,
+    metaDescription: `Geïllustreerde babyoefeningen en massage per leeftijd: buikligtijd, fietsende beentjes, zachte massage en stap voor stap naar kruipen, met veiligheidstips.`,
+    eyebrow: `Bewegen en babymassage`,
+    title: `Zachte bewegingsideeën voor elke fase, van dag één tot kruipen.`,
+    lead: `Mamio bevat 16 geïllustreerde oefeningen en massagestappen, elk met de leeftijd waarvoor ze geschikt zijn, duidelijke stappen en veiligheidstips, zodat tijd op de speelmat speels voelt in plaats van onzeker.`,
+    imageAlt: `Mamio startscherm met een kort overzicht en knoppen om een sessie te starten of een registratie toe te voegen.`,
+    bullets: [
+      `16 geïllustreerde oefeningen`,
+      `Leeftijdsadvies en veiligheidstips`,
+      `Opbouw naar kruipen vanaf 4 maanden`,
+    ],
+    sections: [
+      {
+        title: `Vanaf de eerste weken`,
+        body: `Begin vanaf de geboorte met buikligtijd borst-op-borst, armpjes openen en kruisen, fietsende beentjes en knietjes naar het buikje. Massage van voetjes, beentjes, buik en rug volgt vanaf één maand, en buikligtijd op de onderarmen vanaf ongeveer zes weken.`,
+      },
+      {
+        title: `Een opbouw naar kruipen`,
+        body: `Vanaf ongeveer vier maanden werkt een stapsgewijze opbouw toe naar kruipen: babypush-ups en reiken in buikligging, ronddraaien op de buik, op handen en knieën komen, schommelen en over een zacht obstakel kruipen. Dit hoort bij Mamio Pro en kun je ook ontgrendelen met een advertentie met beloning.`,
+      },
+      {
+        title: `Veiligheid voorop, voor iedereen`,
+        body: `Bij elke oefening zien alle gebruikers de aandachtspunten en veiligheidsregels, ook bij de vergrendelde oefeningen: blijf bij je baby, stop als je baby moe of overstuur is en houd sessies kort en speels.`,
+      },
+      {
+        title: `Gekoppeld aan buikligtijd`,
+        body: `Als je een sessie buikligtijd doet, stelt Mamio passende oefeningen voor, en een dagelijkse kaart op het startscherm geeft een idee dat past bij de leeftijd van je baby.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Welke oefeningen zitten erin?`,
+        answer: `Zestien in totaal: varianten van buikligtijd, arm- en beenbewegingen, massage voor voetjes, beentjes, buik en rug, begeleid omrollen en een opbouw naar kruipen in zes stappen.`,
+      },
+      {
+        question: `Zijn de oefeningen gratis?`,
+        answer: `Tien oefeningen zijn gratis. De opbouw naar kruipen in zes stappen hoort bij Mamio Pro of kun je ontgrendelen met een advertentie met beloning. Veiligheidstips zijn bij alle oefeningen zichtbaar.`,
+      },
+      {
+        question: `Zijn deze oefeningen een medische therapie?`,
+        answer: `Nee. Het zijn speelse bewegingsideeën voor gezonde baby's, geen fysiotherapie. Heeft je baby een medische aandoening of zie je asymmetrie, vraag het dan je kinderarts.`,
+      },
+      {
+        question: `Kan ik ook buikligtijd bijhouden?`,
+        answer: `Ja. Mamio heeft een timer voor buikligtijd met houding en kwaliteit van de sessie, en stelt tijdens een sessie oefeningen voor.`,
+      },
+    ],
+  },
+  watchWidget: {
+    slug: `apple-watch-baby-app-widget`,
+    shortTitle: `Apple Watch & widget`,
+    metaTitle: `Baby Tracker voor Apple Watch & iPhone-widget | Mamio`,
+    metaDescription: `Start een timer voor voeding, slaap of kolven en noteer luiers of flessen vanaf je pols. Mamio voor Apple Watch, met complicaties en beginschermwidgets.`,
+    eyebrow: `Apple Watch en widgets`,
+    title: `Registreer vanaf je pols als je handen vol zijn.`,
+    lead: `Met Mamio voor Apple Watch start en stop je timers en noteer je luiers en flessen met één tik. Complicaties en iPhone-widgets tonen in één oogopslag de laatste voeding en de totalen van vandaag.`,
+    imageAlt: `Mamio live borstvoedingstimer met linker- en rechterkant en een lopende sessie.`,
+    bullets: [
+      `Timers op Apple Watch`,
+      `Complicaties op de wijzerplaat`,
+      `Widgets voor het beginscherm`,
+    ],
+    sections: [
+      {
+        title: `Timers op je pols`,
+        body: `Start en stop borstvoeding met de kant, slaap, kolven en buikligtijd direct vanaf de Apple Watch. Noteer een luier of fles met voorinstellingen in een paar tikken.`,
+      },
+      {
+        title: `Werkt als je telefoon buiten bereik is`,
+        body: `Tikken op het horloge worden in een wachtrij gezet en gesynchroniseerd met de Mamio-app op je iPhone zodra die weer bereikbaar is, zodat een registratie om 3 uur 's nachts nooit verloren gaat omdat de telefoon in een andere kamer lag.`,
+      },
+      {
+        title: `Complicaties en widgets`,
+        body: `Voeg een Mamio-complicatie toe aan je wijzerplaat in ronde, rechthoekige, inline- of hoekstijl. Op de iPhone tonen kleine, middelgrote en grote widgets op het beginscherm de voedingen, flessen, luiers, slaap, kolfsessies en buikligtijd van vandaag.`,
+      },
+      {
+        title: `Wat je nodig hebt`,
+        body: `De horloge-app vereist watchOS 10 of hoger en de Mamio-app op een gekoppelde iPhone. Apple Watch en widgets zijn alleen beschikbaar op iOS; op Android registreer je snel in de Mamio-app zelf.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Wat kan ik doen op de Apple Watch?`,
+        answer: `Timers voor borstvoeding, slaap, kolven en buikligtijd starten en stoppen, luiers en flessen noteren, en actieve timers, de laatste voeding, luier en slaap en de totalen van vandaag bekijken.`,
+      },
+      {
+        question: `Werkt de horloge-app zonder mijn iPhone?`,
+        answer: `Voor synchronisatie is de iPhone-app nodig, maar registraties die je maakt terwijl de telefoon buiten bereik is, worden in een wachtrij gezet en later gesynchroniseerd.`,
+      },
+      {
+        question: `Is er een widget voor Android?`,
+        answer: `Op dit moment niet. Apple Watch, complicaties en widgets voor het beginscherm zijn alleen voor iOS.`,
+      },
+      {
+        question: `Zijn de widgets interactief?`,
+        answer: `De iPhone-widgets zijn bedoeld om de registraties van vandaag in één oogopslag te bekijken. Registreren doe je in de app of op de Apple Watch.`,
+      },
+    ],
+  },
+  multipleBabies: {
+    slug: `tweeling-baby-tracker`,
+    shortTitle: `Tweeling & broertjes en zusjes`,
+    metaTitle: `Tweeling App: elke baby apart bijhouden | Mamio`,
+    metaDescription: `Een eigen profiel per baby en wisselen met één tik. Voedingen, luiers, slaap, groei en medicijnen raken nooit door elkaar bij een tweeling of broers en zussen.`,
+    eyebrow: `Tweelingen en broertjes en zusjes`,
+    title: `Eén app, een apart dossier voor elke baby.`,
+    lead: `Mamio houdt een profiel bij voor elke baby, met eigen voedingen, luiers, slaap, groei en gezondheidsgegevens. Wissel de actieve baby bovenaan het scherm en registreer voor het juiste kind.`,
+    imageAlt: `Mamio startscherm met een kort overzicht van de laatste voeding, de volgende kant en vandaag.`,
+    bullets: [
+      `Een profiel per baby`,
+      `Wisselen bovenaan het scherm`,
+      `Aparte gezondheidsgegevens`,
+    ],
+    sections: [
+      {
+        title: `Bewust aparte gegevens`,
+        body: `Elke baby krijgt een eigen tijdlijn, statistieken, groeigrafieken, vaccinaties en medicijnlogboek. Tweelingen eten, slapen en groeien zelden precies hetzelfde, en aparte gegevens maken elk patroon zichtbaar.`,
+      },
+      {
+        title: `Wisselen met één tik`,
+        body: `Heb je meer dan één profiel, dan staat de actieve baby bovenaan het scherm. Tik erop om te wisselen voordat je registreert, zodat de volgende voeding of luier bij het juiste kind terechtkomt.`,
+      },
+      {
+        title: `Minder verwarring bij medicijnen`,
+        body: `Temperatuur, symptomen en medicijnen staan in het profiel van elke baby. Dat helpt bij de vraag die elke vermoeide ouder kent: wie heeft zijn dosis al gehad?`,
+      },
+      {
+        title: `Gratis voor één, Pro voor meer`,
+        body: `De gratis versie bevat één babyprofiel. Een tweede baby of meer toevoegen hoort bij Mamio Pro.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Kan ik een tweeling bijhouden in Mamio?`,
+        answer: `Ja. Maak voor elk kind van de tweeling een profiel aan en wissel de actieve baby bovenaan het scherm voordat je registreert.`,
+      },
+      {
+        question: `Is er een weergave met de tweeling naast elkaar?`,
+        answer: `Nee. Mamio houdt elke baby in een apart profiel met een eigen tijdlijn en statistieken.`,
+      },
+      {
+        question: `Hoeveel baby's kan ik toevoegen?`,
+        answer: `Eén baby is gratis. Voor meer baby's heb je Mamio Pro nodig.`,
+      },
+      {
+        question: `Kan ik een profiel later verwijderen?`,
+        answer: `Ja. Babyprofielen kun je beheren en verwijderen in de instellingen.`,
+      },
+    ],
+  },
 };

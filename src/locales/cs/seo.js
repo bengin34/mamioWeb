@@ -515,4 +515,361 @@ export default {
       },
     ],
   },
+  development: {
+    slug: `vyvoj-miminka-milniky`,
+    shortTitle: `Vývojové milníky`,
+    metaTitle: `Vývoj miminka: aplikace na milníky | Mamio`,
+    metaDescription: `Zapisuj první úsměvy, krůčky a slova s datem a fotkami. Mamio navrhuje milníky podle věku od 0 do 3 let, bez tlaku a bez jakéhokoli hodnocení.`,
+    eyebrow: `Milníky a vývoj`,
+    title: `Uchovej každé „poprvé“, aniž by z toho byl test.`,
+    lead: `Mamio navrhuje milníky podle věku miminka v oblasti motoriky, řeči, sociálních dovedností a myšlení a umožní ti uložit datum, poznámku a fotky, když nastanou.`,
+    imageAlt: `Seznam milníků v Mamio s prvními krůčky, prvním slovem, prvním zoubkem a strachem z cizích lidí.`,
+    bullets: [
+      `54 milníků podle věku`,
+      `Seznam prvních slov s daty`,
+      `Až 6 fotek u každého milníku`,
+    ],
+    sections: [
+      {
+        title: `Milníky pro věk tvého miminka`,
+        body: `Mamio nabízí 54 milníků v pěti skupinách: motorika, řeč, sociální oblast, kognitivní oblast a první zážitky. Každý má typické věkové rozmezí, takže vidíš, co se blíží, místo dlouhého kontrolního seznamu na celé rané dětství.`,
+      },
+      {
+        title: `Seznam prvních slov`,
+        body: `Zapiš každé nové slovo s datem a krátkou poznámkou. Za pár měsíců z něj bude záznam toho, jak rostla řeč tvého batolete, a hodí se, když se pediatr zeptá, kolik slov dítě říká.`,
+      },
+      {
+        title: `Fotky tam, kam patří`,
+        body: `Připoj k milníku až šest fotek, aby první lezení nebo první vratký krůček byly hned u svého data. Všechno zůstává ve tvém telefonu.`,
+      },
+      {
+        title: `Vodítko, ne verdikt`,
+        body: `Každé dítě se vyvíjí svým tempem. Věková rozmezí v Mamio jsou vodítkem, nikoli diagnózou ani náhradou vývojového screeningu. Věková vodítka jsou převzata z programu CDC „Learn the Signs. Act Early.“ a pokud tě něco znepokojuje, nejlepší je zeptat se pediatra.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Jaké milníky Mamio obsahuje?`,
+        answer: `Mamio navrhuje 54 milníků z oblasti motoriky, řeči, sociálních dovedností, kognitivních dovedností a prvních zážitků, každý s typickým věkovým rozmezím. Můžeš si ukládat i vlastní chvíle.`,
+      },
+      {
+        question: `Řekne mi Mamio, jestli miminko zaostává?`,
+        answer: `Ne. Mamio zaznamenává, co pozoruješ, a ukazuje typická věková rozmezí. Dítě nijak nehodnotí a nediagnostikuje opoždění. Pokud máš obavy, promluv si s pediatrem.`,
+      },
+      {
+        question: `Můžu zapisovat první slova?`,
+        answer: `Ano. Mamio má seznam prvních slov, kde každé slovo dostane datum a volitelnou poznámku.`,
+      },
+      {
+        question: `Co přidává Mamio Pro k vývoji?`,
+        answer: `Pro odemyká vývojovou časovou osu, která porovnává spánek a krmení kolem přibližných plačtivých období, a také celou historii nad rámec nejnovějších záznamů.`,
+      },
+    ],
+  },
+  growthPercentiles: {
+    slug: `rustove-grafy-percentily-miminka`,
+    shortTitle: `Růstové percentily`,
+    metaTitle: `Růstové grafy a percentily WHO pro miminka | Mamio`,
+    metaDescription: `Zapisuj váhu, délku a obvod hlavy a sleduj je na růstových křivkách WHO Child Growth Standards pro 0 až 24 měsíců. Offline a bez účtu.`,
+    eyebrow: `Růst a percentily`,
+    title: `Sleduj trend růstu, ne jen jedno číslo.`,
+    lead: `Mamio drží váhu, délku a obvod hlavy v jednom grafu a zakresluje je do WHO Child Growth Standards, takže se trend dá snadno probrat na příští prohlídce.`,
+    imageAlt: `Růstový graf v Mamio s křivkou váhy a posledními hodnotami váhy, výšky a obvodu hlavy.`,
+    bullets: [
+      `Váha, délka, obvod hlavy`,
+      `Standardy WHO, 0–24 měsíců`,
+      `Graf trendu v čase`,
+    ],
+    sections: [
+      {
+        title: `Všechna měření na jednom místě`,
+        body: `Přepiš do Mamio čísla z každé prohlídky nebo domácího vážení. Váha, délka i obvod hlavy mají vlastní graf, takže už nemusíš hledat ve zdravotním průkazu a ve fotkách váhy.`,
+      },
+      {
+        title: `Podle WHO Child Growth Standards`,
+        body: `Percentily v Mamio vycházejí z růstových standardů Světové zdravotnické organizace (WHO) pro děti od narození do 24 měsíců. Nastav v profilu pohlaví miminka, aby se použila správná referenční křivka.`,
+      },
+      {
+        title: `Proč je křivka důležitější než bod`,
+        body: `Jeden percentil sám o sobě mnoho neřekne. Zdravá miminka mohou být kdekoli od nízkých po vysoké percentily. Pediatři sledují, jak se křivka vyvíjí v čase, a přesně to ukazuje graf z tvých vlastních měření.`,
+      },
+      {
+        title: `Připraveno pro pediatra`,
+        body: `Záznamy o růstu mohou být součástí shrnutí pro návštěvu lékaře spolu s krmením, spánkem a zdravotními poznámkami. Mamio ukazuje data; vyhodnocuje je tvůj pediatr.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Jaké růstové grafy Mamio používá?`,
+        answer: `Mamio používá WHO Child Growth Standards pro váhu, délku a obvod hlavy od narození do 24 měsíců. Grafy CDC nepoužívá.`,
+      },
+      {
+        question: `Je nízký percentil špatné znamení?`,
+        answer: `Sám o sobě ne. Mnoho zdravých miminek roste podél nízké nebo vysoké percentilové křivky. S pediatrem stojí za to probrat spíš náhlé přeskoky přes křivky.`,
+      },
+      {
+        question: `Je sledování růstu zdarma?`,
+        answer: `Zapisování měření a prohlížení grafů je zdarma. Označení percentilů, percentilová pásma WHO a srovnání s průměrem WHO jsou součástí Mamio Pro.`,
+      },
+      {
+        question: `Funguje Mamio i pro předčasně narozená miminka?`,
+        answer: `Měření můžeš zapisovat u každého miminka. Percentily v Mamio počítají se skutečným věkem, takže se u předčasně narozeného miminka zeptej pediatra, jak číst křivku s korigovaným věkem.`,
+      },
+    ],
+  },
+  teething: {
+    slug: `prorezavani-zoubku`,
+    shortTitle: `Prořezávání zoubků`,
+    metaTitle: `Prořezávání zoubků: aplikace a schéma zubů | Mamio`,
+    metaDescription: `Ťukni na každý nový zoubek v interaktivním schématu všech 20 mléčných zubů a ulož datum. Typická období prořezávání, bez upozornění na „opožděný zub“.`,
+    eyebrow: `Zoubky a prořezávání`,
+    title: `Schéma zubů, které si pamatuje každý první zoubek.`,
+    lead: `Mamio zobrazuje všech 20 mléčných zubů v interaktivním schématu. Ťukni na zoubek, když se prořeže, přidej datum a poznámku a podívej se na obvyklé období prořezání každého z nich.`,
+    imageAlt: `Seznam milníků v Mamio včetně záznamu o prvním zoubku.`,
+    bullets: [
+      `Interaktivní schéma 20 mléčných zubů`,
+      `Datum a poznámka u každého zoubku`,
+      `Typická období prořezávání`,
+    ],
+    sections: [
+      {
+        title: `Ťukni na zoubek, ulož datum`,
+        body: `Když se objeví nový zoubek, ťukni na něj ve schématu a ulož datum s volitelnou poznámkou. Každý zoubek má jeden záznam, takže se schéma plní spolu s úsměvem tvého miminka.`,
+      },
+      {
+        title: `Typická období, nikdy „opožděný“`,
+        body: `U každého zoubku vidíš obvyklé období prořezání podle schématu, které používá American Academy of Pediatric Dentistry. Zuby se prořezávají ve velmi různou dobu, a proto Mamio nikdy neoznačí zoubek jako opožděný.`,
+      },
+      {
+        title: `Návštěvy zubaře na stejném místě`,
+        body: `Zapisuj zubní prohlídky a čištění vedle schématu zubů, aby další návštěva začínala s úplným přehledem.`,
+      },
+      {
+        title: `Součást zdravotních záznamů`,
+        body: `Zoubky jsou na kartě zdraví spolu s růstem, očkováním a návštěvami lékaře a mohou se objevit ve shrnutí pro návštěvu lékaře.`,
+      },
+    ],
+    faq: [
+      {
+        question: `V jakém pořadí se prořezávají mléčné zuby?`,
+        answer: `Obvykle jako první přicházejí dolní přední zuby a po nich horní přední zuby, ale pořadí i načasování se hodně liší. Mamio ukazuje typické období pro každý zoubek.`,
+      },
+      {
+        question: `Upozorní mě Mamio, když se zoubek opožďuje?`,
+        answer: `Ne. Pozdní zoubky jsou časté a obvykle normální. Mamio nikdy nezobrazí zoubek jako opožděný. Pokud máš pochybnosti, zeptej se pediatra nebo zubaře.`,
+      },
+      {
+        question: `Můžu zapisovat návštěvy zubaře?`,
+        answer: `Ano. Kromě prořezaných zoubků můžeš ukládat i návštěvy kvůli čištění nebo prohlídce.`,
+      },
+      {
+        question: `Je schéma zubů zdarma?`,
+        answer: `Ano. Schéma zubů je zdarma. Bezplatný seznam ukazuje tvé nejnovější záznamy; celá historie je součástí Mamio Pro.`,
+      },
+    ],
+  },
+  potty: {
+    slug: `odplenkovani-nocnik-aplikace`,
+    shortTitle: `Odplenkování`,
+    metaTitle: `Odplenkování: aplikace pro nácvik na nočník | Mamio`,
+    metaDescription: `Zapisuj čůrání, kakání, nehody a kontroly sucha během pár vteřin a sleduj vzorce při odplenkování batolete. Klidný, volitelný modul v Mamio.`,
+    eyebrow: `Odplenkování`,
+    title: `Odplenkování podle vzorců, ne pod tlakem.`,
+    lead: `Zapni v Mamio modul nočníku a zapisuj čůrání, kakání, obojí, nehodu nebo kontrolu sucha s časem a poznámkou. Záznam ukáže, co funguje, aniž by se počítalo skóre.`,
+    imageAlt: `Záznam odplenkování v Mamio s čůráním, kakáním, kontrolou sucha a nehodou.`,
+    bullets: [
+      `Čůrání, kakání, nehoda, sucho`,
+      `Rychlé přidání z hlavní obrazovky`,
+      `Čas a poznámka u každého záznamu`,
+    ],
+    sections: [
+      {
+        title: `Zapsáno jedním ťuknutím`,
+        body: `Když je modul nočníku zapnutý, na hlavní obrazovce se objeví tlačítko pro rychlé přidání. Vyber čůrání, kakání, obojí, nehodu nebo sucho a čas se uloží automaticky. Pokud tě něco zaujalo, přidej poznámku.`,
+      },
+      {
+        title: `Uvidíš rytmus dne`,
+        body: `Po několika dnech záznam ukáže, kdy batole obvykle potřebuje na nočník, jak dlouho vydrží suché a kdy se nehody stávají nejčastěji. Připomínání pak působí přirozeně, ne neustále.`,
+      },
+      {
+        title: `Nehody k tomu patří`,
+        body: `Nehody se zapisují jako každý jiný záznam, bez červených značek a bez sérií, které by se daly přerušit. Nezdary jsou běžné během nemoci, cestování nebo po narození sourozence a záznam ti pomůže vidět je jako fázi.`,
+      },
+      {
+        title: `Jen když ho potřebuješ`,
+        body: `Sledování nočníku je volitelný modul. Během miminkovských měsíců ho nech vypnutý a zapni ho v nastavení, až bude vaše rodina připravená.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Jak zapnu sledování nočníku?`,
+        answer: `Otevři nastavení Mamio a zapni modul nočníku. V aplikaci se pak objeví tlačítko pro rychlé přidání a sekce nočníku.`,
+      },
+      {
+        question: `Co můžu zapisovat?`,
+        answer: `Čůrání, kakání, obojí, nehody a kontroly sucha, vše s časem a volitelnou poznámkou.`,
+      },
+      {
+        question: `Je sledování nočníku zdarma?`,
+        answer: `Ano. Bezplatný seznam ukazuje tvé nejnovější záznamy; celá historie je součástí Mamio Pro.`,
+      },
+      {
+        question: `Kdy začít s odplenkováním?`,
+        answer: `Připravenost se u jednotlivých dětí velmi liší. Všímej si známek připravenosti, a pokud si nevíš rady, zeptej se pediatra.`,
+      },
+    ],
+  },
+  babyExercises: {
+    slug: `cviceni-a-masaz-miminka`,
+    shortTitle: `Cvičení a masáže miminek`,
+    metaTitle: `Cvičení s miminkem a masáž: aplikace | Mamio`,
+    metaDescription: `Ilustrovaná cvičení a masáže podle věku miminka: ležení na bříšku, šlapání na kole, jemná masáž a postup k lezení krok za krokem s bezpečnostními pokyny.`,
+    eyebrow: `Pohyb a masáž miminka`,
+    title: `Jemné nápady na pohyb pro každou fázi, od prvního dne až po lezení.`,
+    lead: `Mamio obsahuje 16 ilustrovaných cvičení a kroků masáže, každé s vhodným věkem, jasnými kroky a bezpečnostními pokyny, aby čas na podložce byl hravý, ne nejistý.`,
+    imageAlt: `Hlavní obrazovka Mamio s rychlým přehledem a možnostmi spustit sezení nebo přidat záznam.`,
+    bullets: [
+      `16 ilustrovaných cvičení`,
+      `Věková doporučení a bezpečnostní pokyny`,
+      `Postup k lezení od 4 měsíců`,
+    ],
+    sections: [
+      {
+        title: `Od prvních týdnů`,
+        body: `Od narození začni ležením na bříšku na hrudi rodiče, otevíráním a křížením ruček, šlapáním na kole a přitahováním kolínek k bříšku. Masáž chodidel, nožiček, bříška a zad přichází od jednoho měsíce a ležení na bříšku s oporou o předloktí zhruba od šesti týdnů.`,
+      },
+      {
+        title: `Postup k lezení`,
+        body: `Zhruba od čtyř měsíců vede k lezení postup krok za krokem: dětské kliky a natahování v poloze na bříšku, otáčení na bříšku, zvedání na ruce a kolena, houpání a lezení přes měkkou překážku. Je součástí Mamio Pro a dá se odemknout i zhlédnutím reklamy s odměnou.`,
+      },
+      {
+        title: `Bezpečnost na prvním místě, pro všechny`,
+        body: `Každé cvičení ukazuje upozornění a bezpečnostní pravidla všem uživatelům, i u zamčených cvičení: zůstaň s miminkem, přestaň, když je unavené nebo rozrušené, a drž cvičení krátká a hravá.`,
+      },
+      {
+        title: `Propojeno s ležením na bříšku`,
+        body: `Když spustíš ležení na bříšku, Mamio navrhne vhodná cvičení a denní karta na hlavní obrazovce nabídne nápad, který odpovídá věku miminka.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Jaká cvičení obsahuje?`,
+        answer: `Celkem šestnáct: varianty ležení na bříšku, pohyby ruček a nožiček, masáž chodidel, nožiček, bříška a zad, asistované přetáčení a šestikrokový postup k lezení.`,
+      },
+      {
+        question: `Jsou cvičení zdarma?`,
+        answer: `Deset cvičení je zdarma. Šestikrokový postup k lezení je součástí Mamio Pro nebo se dá odemknout reklamou s odměnou. Bezpečnostní pokyny jsou viditelné u všech cvičení.`,
+      },
+      {
+        question: `Jsou tato cvičení lékařská terapie?`,
+        answer: `Ne. Jsou to hravé nápady na pohyb pro zdravá miminka, nikoli fyzioterapie. Pokud má miminko zdravotní potíže nebo si všimneš asymetrie, zeptej se pediatra.`,
+      },
+      {
+        question: `Můžu sledovat i ležení na bříšku?`,
+        answer: `Ano. Mamio má časovač ležení na bříšku s polohou a kvalitou sezení a během sezení navrhuje cvičení.`,
+      },
+    ],
+  },
+  watchWidget: {
+    slug: `aplikace-pro-miminko-apple-watch`,
+    shortTitle: `Apple Watch a widget`,
+    metaTitle: `Aplikace pro miminko na Apple Watch a widget | Mamio`,
+    metaDescription: `Spusť časovač kojení, spánku nebo odsávání a zapiš plenku či lahvičku ze zápěstí. Mamio pro Apple Watch s komplikacemi a widgety na plochu iPhonu.`,
+    eyebrow: `Apple Watch a widgety`,
+    title: `Zapisuj ze zápěstí, když máš plné ruce.`,
+    lead: `Mamio pro Apple Watch spouští a zastavuje časovače a jedním ťuknutím zapíše plenky a lahvičky. Komplikace a widgety na iPhonu ukážou poslední krmení a dnešní součty na první pohled.`,
+    imageAlt: `Živý časovač kojení v Mamio s levou a pravou stranou a probíhajícím sezením.`,
+    bullets: [
+      `Časovače na Apple Watch`,
+      `Komplikace na ciferníku`,
+      `Widgety na ploše`,
+    ],
+    sections: [
+      {
+        title: `Časovače na zápěstí`,
+        body: `Spouštěj a zastavuj kojení se stranou, spánek, odsávání a ležení na bříšku přímo z Apple Watch. Plenku nebo lahvičku zapíšeš s předvolbami na pár ťuknutí.`,
+      },
+      {
+        title: `Funguje, i když je telefon mimo dosah`,
+        body: `Ťuknutí na hodinkách se zařadí do fronty a synchronizují se s aplikací Mamio v iPhonu, jakmile bude zase dostupný, takže se záznam ve 3 ráno nikdy neztratí jen proto, že telefon zůstal v jiném pokoji.`,
+      },
+      {
+        title: `Komplikace a widgety`,
+        body: `Přidej komplikaci Mamio na ciferník v kruhovém, obdélníkovém, řádkovém nebo rohovém stylu. Na iPhonu ukážou malé, střední a velké widgety na ploše dnešní krmení, lahvičky, plenky, spánek, odsávání a ležení na bříšku.`,
+      },
+      {
+        title: `Co potřebuješ`,
+        body: `Aplikace pro hodinky vyžaduje watchOS 10 nebo novější a aplikaci Mamio na spárovaném iPhonu. Apple Watch a widgety jsou dostupné jen pro iOS; na Androidu probíhá rychlé zapisování v Mamio přímo v aplikaci.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Co můžu dělat na Apple Watch?`,
+        answer: `Spouštět a zastavovat časovače kojení, spánku, odsávání a ležení na bříšku, zapisovat plenky a lahvičky a vidět aktivní časovače, poslední krmení, plenku a spánek i dnešní součty.`,
+      },
+      {
+        question: `Funguje aplikace pro hodinky bez iPhonu?`,
+        answer: `K synchronizaci potřebuje aplikaci v iPhonu, ale záznamy pořízené, když je telefon mimo dosah, se zařadí do fronty a synchronizují se později.`,
+      },
+      {
+        question: `Existuje widget pro Android?`,
+        answer: `Momentálně ne. Apple Watch, komplikace a widgety na ploše jsou jen pro iOS.`,
+      },
+      {
+        question: `Jsou widgety interaktivní?`,
+        answer: `Widgety na iPhonu slouží k rychlému přehledu dnešních záznamů. Zapisuje se v aplikaci nebo na Apple Watch.`,
+      },
+    ],
+  },
+  multipleBabies: {
+    slug: `aplikace-pro-dvojcata-a-sourozence`,
+    shortTitle: `Dvojčata a sourozenci`,
+    metaTitle: `Aplikace pro dvojčata a sourozence | Mamio`,
+    metaDescription: `Vlastní profil pro každé miminko a přepnutí jedním ťuknutím. Krmení, plenky, spánek, růst a léky se u dvojčat ani sourozenců nikdy nepomíchají.`,
+    eyebrow: `Dvojčata a sourozenci`,
+    title: `Jedna aplikace, samostatné záznamy pro každé miminko.`,
+    lead: `Mamio vede profil pro každé miminko s vlastním krmením, plenkami, spánkem, růstem a zdravotními záznamy. Aktivní miminko přepneš v záhlaví a zapisuješ vždy ke správnému dítěti.`,
+    imageAlt: `Hlavní obrazovka Mamio s rychlým přehledem posledního krmení, další strany a dnešního dne.`,
+    bullets: [
+      `Profil pro každé miminko`,
+      `Přepínání v záhlaví`,
+      `Samostatné zdravotní záznamy`,
+    ],
+    sections: [
+      {
+        title: `Samostatné záznamy, záměrně`,
+        body: `Každé miminko má vlastní časovou osu, statistiky, růstové grafy, očkování a záznam léků. Dvojčata málokdy jedí, spí a rostou stejně a samostatné záznamy zviditelní vzorce každého z nich.`,
+      },
+      {
+        title: `Přepnutí jedním ťuknutím`,
+        body: `Když máš víc než jeden profil, aktivní miminko se zobrazí v záhlaví. Ťukni na něj a před zápisem přepni, aby další krmení nebo plenka patřily správnému dítěti.`,
+      },
+      {
+        title: `Méně záměn u léků`,
+        body: `Teplota, příznaky a léky se ukládají do profilu každého miminka, což pomáhá vyhnout se otázce unaveného rodiče: kdo už dostal svou dávku?`,
+      },
+      {
+        title: `Zdarma pro jedno, Pro pro víc`,
+        body: `Bezplatná verze obsahuje jeden profil miminka. Přidání druhého nebo dalšího miminka je součástí Mamio Pro.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Můžu v Mamio sledovat dvojčata?`,
+        answer: `Ano. Vytvoř profil pro každé z dvojčat a před zápisem přepni aktivní miminko v záhlaví.`,
+      },
+      {
+        question: `Je k dispozici zobrazení dvojčat vedle sebe?`,
+        answer: `Ne. Mamio vede každé miminko v samostatném profilu s vlastní časovou osou a statistikami.`,
+      },
+      {
+        question: `Kolik miminek můžu přidat?`,
+        answer: `Jedno miminko je zdarma. Přidání dalších miminek vyžaduje Mamio Pro.`,
+      },
+      {
+        question: `Můžu profil později smazat?`,
+        answer: `Ano. Profily miminek lze spravovat a mazat v nastavení.`,
+      },
+    ],
+  },
 };
