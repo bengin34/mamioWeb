@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Babyapp som fungerar offline`,
       title: `Mamio`,
-      lead: `Ett lugnt sätt att hålla koll på amning, blöjor, sömn, pumpning, tillväxt, hälsa, vaccin, läkarbesök och påminnelser, utan att behöva komma ihåg allt själv.`,
+      lead: `Ett lugnt sätt att hålla koll på matning, blöjor, sömn, pumpning, tillväxt, milstolpar, tänder, hälsa, vaccin och läkarbesök, utan att behöva komma ihåg allt själv.`,
       primaryCta: `Ladda ner på App Store`,
       secondaryCta: `Se skärmarna`,
       imageAlt: `Mamios startskärm som visar nästa matning, vilket bröst som är på tur och senaste händelserna.`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Hälsouppgifter nära till hands`,
-        body: `Samla tillväxt, symtom, temperatur, medicin, vaccin, läkarbesök och snabba anteckningar på ett ställe.`,
+        body: `Samla tillväxt, milstolpar, första orden, tänder, symtom, temperatur, medicin, vaccin och läkarbesök på ett ställe.`,
       },
       {
         title: `Hjälpsamma påminnelser`,
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `Din bebis uppgifter tillhör dig`,
-      title: `Offline först. Inget konto. Ingen server.`,
+      title: `Offline först. Inget konto. Inget serverberoende.`,
       body: `Mamio är gjord för föräldrar som vill ha praktisk uppföljning utan att bebisvardagen blir ett dataprojekt. Uppgifterna stannar på din enhet, och du kan exportera rapporter när du behöver dela information med en läkare, en rådgivare eller din partner.`,
       points: [
         `Helt offline`,
@@ -169,7 +169,7 @@ export default {
       support: `Support`,
     },
     footer: {
-      tagline: `Enkelt. Tyst. Pålitligt.`,
+      tagline: `Enkelt. Lugnt. Pålitligt.`,
       eula: `Apples standardlicensavtal (EULA)`,
     },
   },

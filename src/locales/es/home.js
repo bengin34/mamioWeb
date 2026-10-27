@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - App para registrar lactancia y cuidados del bebé`,
-    metaDescription: `Mamio es una app tranquila y sin conexión para registrar lactancia, biberones, pañales, sueño, extracción, crecimiento, salud, vacunas y recordatorios.`,
+    metaDescription: `Mamio es una app tranquila y sin conexión para registrar lactancia, biberones, pañales, sueño, extracción, crecimiento, salud, vacunas, citas médicas y recordatorios.`,
     nav: {
       features: `Funciones`,
       screens: `Pantallas`,
@@ -11,8 +11,8 @@ export default {
     hero: {
       eyebrow: `App de cuidado del bebé sin conexión`,
       title: `Mamio`,
-      lead: `Una forma tranquila de registrar tomas, pañales, sueño, extracción de leche, crecimiento, salud, vacunas, citas médicas y recordatorios, sin tenerlo todo en la cabeza.`,
-      primaryCta: `Descargar en App Store`,
+      lead: `Una forma tranquila de registrar tomas, pañales, sueño, extracción de leche, crecimiento, hitos, dientes, salud, vacunas y citas médicas, sin tenerlo todo en la cabeza.`,
+      primaryCta: `Descargar en el App Store`,
       secondaryCta: `Ver las pantallas`,
       imageAlt: `Pantalla de inicio de Mamio con la próxima toma, el equilibrio entre pechos y los últimos cuidados del bebé.`,
       badges: [
@@ -23,7 +23,7 @@ export default {
     },
     proof: [
       {
-        value: `3:00 AM`,
+        value: `3:00`,
         label: `pensada para las tomas de madrugada`,
       },
       {
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Registros de salud a mano`,
-        body: `Mantén ordenados en un solo lugar el crecimiento, los síntomas, la temperatura, la medicación, las vacunas, las citas médicas y las notas rápidas.`,
+        body: `Mantén ordenados en un solo lugar el crecimiento, los hitos, las primeras palabras, los dientes, los síntomas, la temperatura, la medicación, las vacunas y las citas médicas.`,
       },
       {
         title: `Recordatorios útiles`,
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `Los datos de tu bebé son tuyos`,
-      title: `Primero sin conexión. Sin cuenta. Sin depender de un servidor.`,
+      title: `Sin conexión ante todo. Sin cuenta. Sin depender de un servidor.`,
       body: `Mamio está hecha para madres y padres que quieren un registro práctico sin convertir el cuidado del bebé en un proyecto de datos. Los registros se quedan en tu dispositivo y puedes exportar informes cuando necesites compartir información con el médico, una asesora de lactancia o tu pareja.`,
       points: [
         `Registro totalmente sin conexión`,
@@ -121,7 +121,7 @@ export default {
         `Experiencia sin anuncios y eventos guardados editables`,
         `Estadísticas detalladas con rangos ampliados`,
         `Informes en PDF de salud y resúmenes`,
-        `Historial completo, percentiles de crecimiento WHO (OMS) y análisis de tendencias`,
+        `Historial completo, percentiles de crecimiento de la OMS y análisis de tendencias`,
       ],
     },
     languages: {
@@ -146,7 +146,7 @@ export default {
       eyebrow: `Consigue Mamio`,
       title: `Empieza hoy a registrar el cuidado de tu bebé con Mamio.`,
       body: `Descarga Mamio en iOS o Android y ten a mano las tomas, los pañales, el sueño, la extracción de leche, el crecimiento, los registros de salud y los recordatorios.`,
-      cta: `Descargar en App Store`,
+      cta: `Descargar en el App Store`,
     },
     ui: {
       blogLabel: `Guías`,

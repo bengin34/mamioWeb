@@ -5,7 +5,7 @@ export default {
     metaTitle: `App para registrar la lactancia materna | Mamio`,
     metaDescription: `Registra las tomas de pecho por lado, añade tomas olvidadas, revisa el equilibrio entre pechos y guarda tu historial de lactancia sin conexión con Mamio.`,
     eyebrow: `Registro de lactancia materna`,
-    title: `Registro de lactancia para tomas reales y noches de sueño.`,
+    title: `Registro de lactancia para las tomas reales, también las de madrugada.`,
     lead: `Mamio te ayuda a iniciar el cronómetro de la toma, elegir pecho izquierdo o derecho, añadir una toma más tarde y ver el historial reciente de lactancia sin convertir las noches en una hoja de cálculo.`,
     imageAlt: `Pantalla de registro de lactancia de Mamio con las últimas tomas y el equilibrio entre pechos.`,
     bullets: [
@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `¿Mamio funciona sin cuenta?`,
-        answer: `Sí. Mamio funciona primero sin conexión, no requiere cuenta y guarda los registros del bebé en tu dispositivo.`,
+        answer: `Sí. Mamio está pensada para funcionar sin conexión, no requiere cuenta y guarda los registros del bebé en tu dispositivo.`,
       },
       {
         question: `¿Puedo registrar también los biberones?`,
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `¿Los registros de alimentación se guardan en línea?`,
-        answer: `No. Mamio funciona primero sin conexión y guarda los registros en tu dispositivo.`,
+        answer: `No. Mamio está pensada para funcionar sin conexión y guarda los registros en tu dispositivo.`,
       },
     ],
   },
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `¿Los datos de la lactancia mixta se guardan en línea?`,
-        answer: `No. Mamio funciona primero sin conexión y guarda los registros en tu dispositivo.`,
+        answer: `No. Mamio está pensada para funcionar sin conexión y guarda los registros en tu dispositivo.`,
       },
     ],
   },
@@ -512,6 +512,363 @@ export default {
       {
         question: `¿La cronología funciona sin internet?`,
         answer: `Sí. Todos los registros se guardan en tu dispositivo y funcionan sin conexión.`,
+      },
+    ],
+  },
+  development: {
+    slug: `hitos-desarrollo-bebe`,
+    shortTitle: `Hitos del desarrollo`,
+    metaTitle: `App de hitos del desarrollo del bebé | Mamio`,
+    metaDescription: `Guarda primeras sonrisas, pasos y palabras con fecha y fotos. Mamio sugiere hitos según la edad de 0 a 3 años, sin presión y sin puntuaciones.`,
+    eyebrow: `Hitos y desarrollo`,
+    title: `Guarda cada primera vez sin convertirla en un examen.`,
+    lead: `Mamio te sugiere hitos para la edad de tu bebé en motricidad, lenguaje, habilidades sociales y pensamiento, y te deja guardar la fecha, una nota y fotos cuando ocurren.`,
+    imageAlt: `Lista de hitos de Mamio con primeros pasos, primera palabra, primer diente y angustia ante extraños.`,
+    bullets: [
+      `54 ideas de hitos según la edad`,
+      `Lista de primeras palabras con fecha`,
+      `Hasta 6 fotos por hito`,
+    ],
+    sections: [
+      {
+        title: `Hitos sugeridos para la edad de tu bebé`,
+        body: `Mamio ofrece 54 ideas de hitos en cinco grupos: motricidad, lenguaje, social, cognitivo y primeras veces. Cada uno tiene un rango de edad habitual, así ves lo que viene en lugar de una lista interminable para toda la primera infancia.`,
+      },
+      {
+        title: `Una lista de primeras palabras`,
+        body: `Anota cada palabra nueva con la fecha y una nota breve. Con los meses, la lista se convierte en un registro de cómo creció el lenguaje de tu peque, y viene muy bien cuando el pediatra pregunta cuántas palabras dice.`,
+      },
+      {
+        title: `Las fotos donde corresponden`,
+        body: `Adjunta hasta seis fotos a un hito para que el primer gateo o el primer paso tambaleante queden junto a su fecha. Todo se queda en tu teléfono.`,
+      },
+      {
+        title: `Una guía, no un veredicto`,
+        body: `Cada niño se desarrolla a su ritmo. Los rangos de edad de Mamio son una guía, no un diagnóstico ni un sustituto de la evaluación del desarrollo. Las guías por edad están adaptadas del programa de los CDC «Learn the Signs. Act Early.», y si algo te preocupa, la persona adecuada para consultar es tu pediatra.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿Qué hitos incluye Mamio?`,
+        answer: `Mamio sugiere 54 hitos de motricidad, lenguaje, social, cognitivo y primeras veces, cada uno con un rango de edad habitual. También puedes guardar tus propios momentos.`,
+      },
+      {
+        question: `¿Mamio me dice si mi bebé va retrasado?`,
+        answer: `No. Mamio registra lo que observas y muestra rangos de edad habituales. No puntúa a tu hijo ni diagnostica retrasos. Si algo te preocupa, habla con tu pediatra.`,
+      },
+      {
+        question: `¿Puedo registrar las primeras palabras?`,
+        answer: `Sí. Mamio tiene una lista de primeras palabras en la que cada palabra lleva una fecha y una nota opcional.`,
+      },
+      {
+        question: `¿Qué añade Mamio Pro para el desarrollo?`,
+        answer: `Pro desbloquea la cronología del desarrollo, que compara el sueño y la alimentación alrededor de los periodos de irritabilidad aproximados, además del historial completo más allá de los registros más recientes.`,
+      },
+    ],
+  },
+  growthPercentiles: {
+    slug: `percentiles-crecimiento-bebe`,
+    shortTitle: `Percentiles de crecimiento`,
+    metaTitle: `Percentiles de crecimiento del bebé (OMS) | Mamio`,
+    metaDescription: `Registra peso, longitud y perímetro cefálico y velos en las curvas de los Patrones de Crecimiento Infantil de la OMS de 0 a 24 meses. Sin conexión y sin cuenta.`,
+    eyebrow: `Crecimiento y percentiles`,
+    title: `Mira la tendencia de crecimiento, no solo un número.`,
+    lead: `Mamio reúne peso, longitud y perímetro cefálico en un gráfico y los sitúa en los Patrones de Crecimiento Infantil de la OMS, para que la tendencia sea fácil de comentar en la próxima revisión.`,
+    imageAlt: `Gráfico de crecimiento de Mamio con la curva de peso y los últimos valores de peso, talla y perímetro cefálico.`,
+    bullets: [
+      `Peso, longitud y perímetro cefálico`,
+      `Patrones de la OMS, 0–24 meses`,
+      `Gráfico de tendencia en el tiempo`,
+    ],
+    sections: [
+      {
+        title: `Todas las medidas en un solo lugar`,
+        body: `Pasa a Mamio los números de cada revisión o de cada pesaje en casa. Peso, longitud y perímetro cefálico tienen cada uno su propio gráfico, así dejas de buscar entre cartillas de papel y fotos de la báscula.`,
+      },
+      {
+        title: `Basado en los Patrones de Crecimiento Infantil de la OMS`,
+        body: `Los percentiles de Mamio usan los Patrones de Crecimiento Infantil de la Organización Mundial de la Salud para bebés desde el nacimiento hasta los 24 meses. Indica el sexo de tu bebé en el perfil para que se use la curva de referencia correcta.`,
+      },
+      {
+        title: `Por qué importa más la línea que el punto`,
+        body: `Un percentil aislado dice poco. Los bebés sanos pueden estar en percentiles bajos, medios o altos. Lo que miran los pediatras es cómo evoluciona la curva con el tiempo, y eso es justo lo que muestra un gráfico con tus propias medidas.`,
+      },
+      {
+        title: `Listo para el pediatra`,
+        body: `Los registros de crecimiento pueden formar parte del resumen para la consulta médica junto con tomas, sueño y notas de salud. Mamio muestra los datos; tu pediatra los interpreta.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿Qué tablas de crecimiento usa Mamio?`,
+        answer: `Mamio usa los Patrones de Crecimiento Infantil de la OMS para peso, longitud y perímetro cefálico desde el nacimiento hasta los 24 meses. No usa las tablas de los CDC.`,
+      },
+      {
+        question: `¿Un percentil bajo es mala señal?`,
+        answer: `No por sí solo. Muchos bebés sanos siguen una línea de percentil baja o alta. Lo que conviene comentar con tu pediatra son los cambios bruscos entre líneas.`,
+      },
+      {
+        question: `¿El registro de crecimiento es gratis?`,
+        answer: `Registrar medidas y ver los gráficos es gratis. Las etiquetas de percentil, las bandas de percentiles de la OMS y la comparación con la media de la OMS forman parte de Mamio Pro.`,
+      },
+      {
+        question: `¿Mamio sirve para bebés prematuros?`,
+        answer: `Puedes registrar medidas de cualquier bebé. Los percentiles de Mamio usan la edad real, así que con un bebé prematuro pregunta a tu pediatra cómo leer la curva con la edad corregida.`,
+      },
+    ],
+  },
+  teething: {
+    slug: `denticion-bebe-dientes`,
+    shortTitle: `Registro de dentición`,
+    metaTitle: `Dentición del bebé: app y tabla de dientes | Mamio`,
+    metaDescription: `Toca cada diente nuevo en una tabla interactiva de los 20 dientes de leche y guarda la fecha. Periodos de erupción habituales, sin alarmas de «diente tardío».`,
+    eyebrow: `Dientes y dentición`,
+    title: `Una tabla dental que recuerda cada primer diente.`,
+    lead: `Mamio muestra los 20 dientes de leche en una tabla interactiva. Toca un diente cuando salga, añade la fecha y una nota, y consulta el periodo de erupción habitual de cada uno.`,
+    imageAlt: `Lista de hitos de Mamio con el registro del primer diente.`,
+    bullets: [
+      `Tabla interactiva de 20 dientes de leche`,
+      `Fecha y nota para cada diente`,
+      `Periodos de erupción habituales`,
+    ],
+    sections: [
+      {
+        title: `Toca el diente, guarda la fecha`,
+        body: `Cuando aparezca un diente nuevo, tócalo en la tabla y guarda la fecha con una nota opcional. Cada diente tiene un único registro, así la tabla se va completando a la par que la sonrisa de tu bebé.`,
+      },
+      {
+        title: `Periodos habituales, nunca «con retraso»`,
+        body: `Cada diente muestra el periodo de erupción habitual según la tabla de erupción dental que usa la American Academy of Pediatric Dentistry. Los dientes salen en momentos muy distintos, así que Mamio nunca marca un diente como tardío.`,
+      },
+      {
+        title: `Las visitas al dentista en el mismo sitio`,
+        body: `Registra revisiones y limpiezas dentales junto a la tabla de dientes, para que la próxima cita empiece con toda la información.`,
+      },
+      {
+        title: `Parte del historial de salud`,
+        body: `Los dientes están en la pestaña de salud junto al crecimiento, las vacunas y las consultas médicas, y pueden aparecer en el resumen para la consulta.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿En qué orden salen los dientes de leche?`,
+        answer: `Normalmente salen primero los incisivos inferiores y después los superiores, pero el orden y el momento varían mucho. Mamio muestra el periodo habitual de cada diente.`,
+      },
+      {
+        question: `¿Mamio me avisará si un diente se retrasa?`,
+        answer: `No. Que un diente tarde es frecuente y suele ser normal. Mamio nunca muestra un diente como retrasado. Si tienes dudas, pregunta a tu pediatra o dentista.`,
+      },
+      {
+        question: `¿Puedo registrar las visitas al dentista?`,
+        answer: `Sí. Además de la salida de los dientes, puedes guardar visitas de limpieza o revisión dental.`,
+      },
+      {
+        question: `¿La tabla de dientes es gratis?`,
+        answer: `Sí. La tabla de dientes es gratis. La lista gratuita muestra tus registros más recientes; el historial completo forma parte de Mamio Pro.`,
+      },
+    ],
+  },
+  potty: {
+    slug: `control-esfinteres-orinal`,
+    shortTitle: `Registro de dejar el pañal`,
+    metaTitle: `App para dejar el pañal: registro del orinal | Mamio`,
+    metaDescription: `Registra pis, caca, escapes y controles de pañal seco en segundos y descubre los patrones de tu peque al dejar el pañal. Un módulo opcional y tranquilo en Mamio.`,
+    eyebrow: `Dejar el pañal`,
+    title: `Dejar el pañal con patrones, no con presión.`,
+    lead: `Activa el módulo de orinal en Mamio y registra pis, caca, ambos, escapes o controles de pañal seco con la hora y una nota. El registro muestra lo que funciona sin llevar la cuenta.`,
+    imageAlt: `Registro de dejar el pañal de Mamio con pis, caca, control de pañal seco y escapes.`,
+    bullets: [
+      `Pis, caca, escape, seco`,
+      `Añadido rápido desde la pantalla de inicio`,
+      `Hora y notas en cada registro`,
+    ],
+    sections: [
+      {
+        title: `Regístralo con un toque`,
+        body: `Con el módulo de orinal activado, aparece un botón de añadido rápido en la pantalla de inicio. Elige pis, caca, ambos, escape o seco, y la hora se guarda automáticamente. Añade una nota si algo te llamó la atención.`,
+      },
+      {
+        title: `Descubre el ritmo del día`,
+        body: `Después de unos días, el registro muestra cuándo suele necesitar ir tu peque, cuánto tiempo aguanta seco y cuándo suelen ocurrir los escapes. Así los recordatorios se sienten naturales en lugar de constantes.`,
+      },
+      {
+        title: `Los escapes son parte del proceso`,
+        body: `Los escapes se registran como cualquier otra entrada, sin marcas rojas ni rachas que romper. Los retrocesos son habituales con una enfermedad, un viaje o la llegada de un hermanito, y el registro te ayuda a verlos como una etapa.`,
+      },
+      {
+        title: `Solo cuando lo necesites`,
+        body: `El registro del orinal es un módulo opcional. Déjalo desactivado durante los meses de bebé y actívalo en los ajustes cuando tu familia esté lista.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿Cómo activo el registro del orinal?`,
+        answer: `Abre los ajustes de Mamio y activa el módulo de orinal. Entonces aparecen en la app un botón de añadido rápido y una sección de orinal.`,
+      },
+      {
+        question: `¿Qué puedo registrar?`,
+        answer: `Pis, caca, ambos, escapes y controles de pañal seco, cada uno con la hora y una nota opcional.`,
+      },
+      {
+        question: `¿El registro del orinal es gratis?`,
+        answer: `Sí. La lista gratuita muestra tus registros más recientes; el historial completo forma parte de Mamio Pro.`,
+      },
+      {
+        question: `¿Cuándo deberíamos empezar a dejar el pañal?`,
+        answer: `El momento en que un niño está preparado varía mucho de uno a otro. Fíjate en las señales de que está listo y pregunta a tu pediatra o enfermera de pediatría si tienes dudas.`,
+      },
+    ],
+  },
+  babyExercises: {
+    slug: `ejercicios-masaje-bebe`,
+    shortTitle: `Ejercicios y masaje para bebés`,
+    metaTitle: `Ejercicios y masaje para bebés: guía en app | Mamio`,
+    metaDescription: `Ejercicios y masajes ilustrados según la edad: tiempo boca abajo, bicicleta con las piernas, masaje suave y una progresión paso a paso hacia el gateo.`,
+    eyebrow: `Movimiento y masaje del bebé`,
+    title: `Ideas de movimiento suave para cada etapa, desde el primer día hasta el gateo.`,
+    lead: `Mamio incluye 16 ejercicios y pasos de masaje ilustrados, cada uno con la edad a la que se adapta, pasos claros y notas de seguridad, para que el rato en el suelo sea un juego y no una duda.`,
+    imageAlt: `Pantalla de inicio de Mamio con un resumen rápido y opciones para iniciar una sesión o añadir un registro.`,
+    bullets: [
+      `16 ejercicios ilustrados`,
+      `Edad recomendada y notas de seguridad`,
+      `Progresión hacia el gateo desde los 4 meses`,
+    ],
+    sections: [
+      {
+        title: `Desde las primeras semanas`,
+        body: `Empieza desde el nacimiento con el tiempo boca abajo pecho con pecho, abrir y cruzar los brazos, la bicicleta con las piernas y las rodillas a la tripa. El masaje de pies, piernas, tripa y espalda llega a partir del mes, y el tiempo boca abajo apoyado en los antebrazos hacia las seis semanas.`,
+      },
+      {
+        title: `Una progresión hacia el gateo`,
+        body: `Desde los cuatro meses aproximadamente, una progresión paso a paso prepara el gateo: flexiones de bebé y alcanzar objetos boca abajo, giros sobre la tripa, ponerse a cuatro patas, balancearse y gatear por encima de un obstáculo blando. Forma parte de Mamio Pro y también se puede desbloquear con un anuncio con recompensa.`,
+      },
+      {
+        title: `La seguridad primero, para todos`,
+        body: `Cada ejercicio muestra sus advertencias y normas de seguridad a todos los usuarios, también en los bloqueados: quédate con tu bebé, para si está cansado o molesto, y haz sesiones cortas y divertidas.`,
+      },
+      {
+        title: `Conectado con el tiempo boca abajo`,
+        body: `Cuando haces una sesión de tiempo boca abajo, Mamio te sugiere ejercicios adecuados, y una tarjeta diaria en la pantalla de inicio te propone una idea acorde a la edad de tu bebé.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿Qué ejercicios incluye?`,
+        answer: `Dieciséis en total: variantes de tiempo boca abajo, movimientos de brazos y piernas, masaje de pies, piernas, tripa y espalda, volteo asistido y una progresión de seis pasos hacia el gateo.`,
+      },
+      {
+        question: `¿Los ejercicios son gratis?`,
+        answer: `Diez ejercicios son gratis. La progresión de seis pasos hacia el gateo forma parte de Mamio Pro o se puede desbloquear con un anuncio con recompensa. Las notas de seguridad se ven en todos los ejercicios.`,
+      },
+      {
+        question: `¿Estos ejercicios son una terapia médica?`,
+        answer: `No. Son ideas de movimiento basadas en el juego para bebés sanos, no fisioterapia. Si tu bebé tiene algún problema de salud o notas asimetrías, consulta a tu pediatra.`,
+      },
+      {
+        question: `¿También puedo registrar el tiempo boca abajo?`,
+        answer: `Sí. Mamio tiene un cronómetro de tiempo boca abajo con posición y calidad de la sesión, y te sugiere ejercicios durante la sesión.`,
+      },
+    ],
+  },
+  watchWidget: {
+    slug: `apple-watch-registro-bebe`,
+    shortTitle: `Apple Watch y widget`,
+    metaTitle: `App de bebé para Apple Watch y widget de iPhone | Mamio`,
+    metaDescription: `Inicia un cronómetro de toma, sueño o extracción y registra pañales o biberones desde la muñeca. Mamio para Apple Watch, con complicaciones y widgets.`,
+    eyebrow: `Apple Watch y widgets`,
+    title: `Registra desde la muñeca cuando tienes las manos ocupadas.`,
+    lead: `Mamio para Apple Watch inicia y detiene cronómetros y registra pañales y biberones con un toque. Las complicaciones y los widgets del iPhone muestran de un vistazo la última toma y los totales de hoy.`,
+    imageAlt: `Cronómetro de lactancia en directo de Mamio con pecho izquierdo y derecho y una sesión en curso.`,
+    bullets: [
+      `Cronómetros en el Apple Watch`,
+      `Complicaciones para la esfera`,
+      `Widgets de pantalla de inicio`,
+    ],
+    sections: [
+      {
+        title: `Cronómetros en tu muñeca`,
+        body: `Inicia y detén la lactancia con el pecho, el sueño, la extracción y el tiempo boca abajo directamente desde el Apple Watch. Registra un pañal o un biberón con valores predefinidos en un par de toques.`,
+      },
+      {
+        title: `Funciona aunque el teléfono esté lejos`,
+        body: `Los toques en el reloj se guardan en cola y se sincronizan con la app de Mamio en tu iPhone cuando vuelve a estar al alcance, así un registro de las 3 de la madrugada nunca se pierde porque el teléfono estaba en otra habitación.`,
+      },
+      {
+        title: `Complicaciones y widgets`,
+        body: `Añade una complicación de Mamio a la esfera de tu reloj en estilo circular, rectangular, en línea o de esquina. En el iPhone, los widgets pequeño, mediano y grande de la pantalla de inicio muestran las tomas, biberones, pañales, sueño, extracciones y tiempo boca abajo de hoy.`,
+      },
+      {
+        title: `Qué necesitas`,
+        body: `La app del reloj necesita watchOS 10 o posterior y la app de Mamio en un iPhone enlazado. El Apple Watch y los widgets solo están disponibles en iOS; en Android, el registro rápido de Mamio está dentro de la app.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿Qué puedo hacer en el Apple Watch?`,
+        answer: `Iniciar y detener cronómetros de lactancia, sueño, extracción y tiempo boca abajo, registrar pañales y biberones, y ver los cronómetros activos, la última toma, el último pañal y sueño, y los totales de hoy.`,
+      },
+      {
+        question: `¿La app del reloj funciona sin mi iPhone?`,
+        answer: `Necesita la app del iPhone para sincronizar, pero los registros hechos mientras el teléfono está lejos se guardan en cola y se sincronizan después.`,
+      },
+      {
+        question: `¿Hay widget para Android?`,
+        answer: `De momento no. El Apple Watch, las complicaciones y los widgets de pantalla de inicio son exclusivos de iOS.`,
+      },
+      {
+        question: `¿Los widgets son interactivos?`,
+        answer: `Los widgets del iPhone sirven para ver de un vistazo los registros de hoy. El registro se hace en la app o en el Apple Watch.`,
+      },
+    ],
+  },
+  multipleBabies: {
+    slug: `app-gemelos-bebes`,
+    shortTitle: `Gemelos y hermanos`,
+    metaTitle: `App para bebés gemelos y hermanos | Mamio`,
+    metaDescription: `Ten un perfil separado para cada bebé y cambia con un toque. Tomas, pañales, sueño, crecimiento y medicinas nunca se mezclan entre gemelos o hermanos.`,
+    eyebrow: `Gemelos y hermanos`,
+    title: `Una app, un registro separado para cada bebé.`,
+    lead: `Mamio mantiene un perfil para cada bebé, con sus propias tomas, pañales, sueño, crecimiento y registros de salud. Cambia el bebé activo desde la cabecera y registra para el niño correcto.`,
+    imageAlt: `Pantalla de inicio de Mamio con un resumen rápido de la última toma, el siguiente pecho y el día de hoy.`,
+    bullets: [
+      `Un perfil por bebé`,
+      `Cambio desde la cabecera`,
+      `Historiales de salud separados`,
+    ],
+    sections: [
+      {
+        title: `Registros separados, por diseño`,
+        body: `Cada bebé tiene su propia cronología, estadísticas, gráficos de crecimiento, vacunas y registro de medicinas. Los gemelos rara vez comen, duermen o crecen igual, y los registros separados hacen visible el patrón de cada uno.`,
+      },
+      {
+        title: `Cambia con un toque`,
+        body: `Cuando tienes más de un perfil, el bebé activo aparece en la cabecera. Tócalo para cambiar antes de registrar, así la siguiente toma o el siguiente pañal quedan en el niño correcto.`,
+      },
+      {
+        title: `Menos confusiones con las medicinas`,
+        body: `Los registros de temperatura, síntomas y medicinas están dentro del perfil de cada bebé, lo que ayuda a evitar la duda de padres agotados: ¿quién ha tomado ya su dosis?`,
+      },
+      {
+        title: `Gratis para uno, Pro para más`,
+        body: `La versión gratuita incluye un perfil de bebé. Añadir un segundo bebé o más forma parte de Mamio Pro.`,
+      },
+    ],
+    faq: [
+      {
+        question: `¿Puedo llevar el registro de gemelos en Mamio?`,
+        answer: `Sí. Crea un perfil para cada gemelo y cambia el bebé activo desde la cabecera antes de registrar.`,
+      },
+      {
+        question: `¿Hay una vista de gemelos lado a lado?`,
+        answer: `No. Mamio mantiene a cada bebé en un perfil separado con su propia cronología y estadísticas.`,
+      },
+      {
+        question: `¿Cuántos bebés puedo añadir?`,
+        answer: `Un bebé es gratis. Para añadir más bebés necesitas Mamio Pro.`,
+      },
+      {
+        question: `¿Puedo eliminar un perfil más adelante?`,
+        answer: `Sí. Los perfiles de bebé se pueden gestionar y eliminar en los ajustes.`,
       },
     ],
   },

@@ -5,7 +5,7 @@ export default {
     metaTitle: `Amningsapp och amningstracker | Mamio`,
     metaDescription: `Logga amning per bröst, lägg till glömda mål, se balansen mellan brösten och spara amningshistoriken offline med Mamio.`,
     eyebrow: `Amningsapp`,
-    title: `Amningslogg för sömniga och verkliga matningar.`,
+    title: `Amningslogg för sömniga nätter i verkliga livet.`,
     lead: `Med Mamio startar du en amningstimer, väljer vänster eller höger bröst, lägger till en amning i efterhand och ser den senaste historiken, utan att nätterna blir ett kalkylblad.`,
     imageAlt: `Mamios amningsskärm med senaste amningar och balansen mellan brösten.`,
     bullets: [
@@ -512,6 +512,363 @@ export default {
       {
         question: `Fungerar tidslinjen utan internet?`,
         answer: `Ja. Alla uppgifter sparas lokalt på din enhet och fungerar offline.`,
+      },
+    ],
+  },
+  development: {
+    slug: `milstolpar-bebis-app`,
+    shortTitle: `Milstolpar`,
+    metaTitle: `Milstolpar för bebis: app för utvecklingen | Mamio`,
+    metaDescription: `Spara första leendet, de första stegen och orden med datum och foton. Mamio föreslår milstolpar efter ålder från 0 till 3 år, utan press och utan poäng.`,
+    eyebrow: `Milstolpar och utveckling`,
+    title: `Spara varje första gång, utan att göra det till ett prov.`,
+    lead: `Mamio föreslår milstolpar för din bebis ålder inom motorik, språk, socialt samspel och tänkande, och låter dig spara datum, en anteckning och foton när det händer.`,
+    imageAlt: `Mamios lista med milstolpar som första stegen, första ordet, första tanden och främlingsrädsla.`,
+    bullets: [
+      `54 åldersbaserade milstolpar`,
+      `Lista med första orden och datum`,
+      `Upp till 6 foton per milstolpe`,
+    ],
+    sections: [
+      {
+        title: `Milstolpar för din bebis ålder`,
+        body: `Mamio erbjuder 54 förslag på milstolpar i fem grupper: motorik, språk, socialt, kognitivt och första gången. Varje milstolpe har ett typiskt åldersspann, så du ser vad som väntar i stället för en lång checklista för hela småbarnstiden.`,
+      },
+      {
+        title: `En lista med första orden`,
+        body: `Skriv upp varje nytt ord med datum och en kort anteckning. Med månaderna blir listan en berättelse om hur ditt barns språk växte, och den är praktisk när BVC eller barnläkaren frågar hur många ord barnet säger.`,
+      },
+      {
+        title: `Foton där de hör hemma`,
+        body: `Lägg till upp till sex foton på en milstolpe så att första krypet eller de första vingliga stegen hamnar bredvid sitt datum. Allt stannar på din telefon.`,
+      },
+      {
+        title: `En vägledning, inte ett utlåtande`,
+        body: `Varje barn utvecklas i sin egen takt. Åldersspannen i Mamio är en vägledning och varken en diagnos eller en ersättning för en utvecklingsbedömning. Åldersguiderna är anpassade från CDC:s program ”Learn the Signs. Act Early.” och om något oroar dig är barnläkaren rätt person att fråga.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Vilka milstolpar finns i Mamio?`,
+        answer: `Mamio föreslår 54 milstolpar inom motorik, språk, socialt, kognitivt och första gången, var och en med ett typiskt åldersspann. Du kan också spara egna stunder.`,
+      },
+      {
+        question: `Säger Mamio om min bebis ligger efter?`,
+        answer: `Nej. Mamio sparar det du ser och visar typiska åldersspann. Appen sätter inga poäng på ditt barn och ställer inga diagnoser om försening. Prata med barnläkaren om du är orolig.`,
+      },
+      {
+        question: `Kan jag logga första orden?`,
+        answer: `Ja. Mamio har en lista med första orden där varje ord får ett datum och en valfri anteckning.`,
+      },
+      {
+        question: `Vad tillför Mamio Pro för utvecklingen?`,
+        answer: `Pro låser upp utvecklingstidslinjen, som jämför sömn och matning runt ungefärliga oroliga perioder, plus hela historiken bortom de senaste posterna.`,
+      },
+    ],
+  },
+  growthPercentiles: {
+    slug: `tillvaxtkurva-percentiler-bebis`,
+    shortTitle: `Tillväxtpercentiler`,
+    metaTitle: `Tillväxtkurva för bebis med WHO-percentiler | Mamio`,
+    metaDescription: `Logga vikt, längd och huvudomfång och se dem på kurvorna i WHO:s Child Growth Standards för 0 till 24 månader. Offline och utan konto.`,
+    eyebrow: `Tillväxt och percentiler`,
+    title: `Se tillväxttrenden, inte bara en siffra.`,
+    lead: `Mamio samlar vikt, längd och huvudomfång i ett diagram och placerar dem på WHO:s Child Growth Standards, så att trenden är lätt att prata om vid nästa kontroll.`,
+    imageAlt: `Mamios tillväxtdiagram med viktkurva och senaste värden för vikt, längd och huvudomfång.`,
+    bullets: [
+      `Vikt, längd, huvudomfång`,
+      `WHO-standarder, 0–24 månader`,
+      `Trenddiagram över tid`,
+    ],
+    sections: [
+      {
+        title: `Alla mätningar på ett ställe`,
+        body: `För över siffrorna från varje kontroll eller vägning hemma till Mamio. Vikt, längd och huvudomfång får varsitt diagram, så du slipper leta i pappershäften och foton av vågen.`,
+      },
+      {
+        title: `Baserat på WHO:s Child Growth Standards`,
+        body: `Percentilerna i Mamio bygger på Världshälsoorganisationens (WHO) Child Growth Standards för barn från födseln till 24 månader. Ange din bebis kön i profilen så att rätt referenskurva används.`,
+      },
+      {
+        title: `Varför linjen säger mer än punkten`,
+        body: `En enskild percentil säger lite i sig. Friska bebisar kan ligga var som helst från låga till höga percentiler. Det barnläkare tittar på är hur kurvan utvecklas över tid, och det är precis vad ett diagram över dina egna mätningar visar.`,
+      },
+      {
+        title: `Redo för läkarbesöket`,
+        body: `Tillväxtposter kan ingå i en sammanfattning inför läkarbesöket tillsammans med matningar, sömn och hälsoanteckningar. Mamio visar data; barnläkaren tolkar dem.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Vilka tillväxtkurvor använder Mamio?`,
+        answer: `Mamio använder WHO:s Child Growth Standards för vikt, längd och huvudomfång från födseln till 24 månader. Appen använder inte CDC:s kurvor.`,
+      },
+      {
+        question: `Är en låg percentil ett dåligt tecken?`,
+        answer: `Inte i sig. Många friska bebisar följer en låg eller hög percentillinje. Det som är värt att ta upp med barnläkaren är plötsliga förändringar över flera linjer.`,
+      },
+      {
+        question: `Är tillväxtloggen gratis?`,
+        answer: `Att logga mätningar och se diagrammen är gratis. Percentiletiketter, WHO:s percentilband och jämförelsen med WHO-genomsnittet ingår i Mamio Pro.`,
+      },
+      {
+        question: `Fungerar Mamio för för tidigt födda bebisar?`,
+        answer: `Du kan logga mätningar för alla bebisar. Percentilerna i Mamio utgår från faktisk ålder, så fråga barnläkaren hur du läser kurvan med korrigerad ålder om din bebis är för tidigt född.`,
+      },
+    ],
+  },
+  teething: {
+    slug: `tandsprickning-bebis-tandschema`,
+    shortTitle: `Tandsprickning`,
+    metaTitle: `Tandsprickning hos bebis: app och tandschema | Mamio`,
+    metaDescription: `Tryck på varje ny tand i ett interaktivt schema över alla 20 mjölktänder och spara datumet. Typiska tidsfönster, utan larm om ”sena tänder”.`,
+    eyebrow: `Tänder och tandsprickning`,
+    title: `Ett tandschema som minns varje första tand.`,
+    lead: `Mamio visar alla 20 mjölktänder i ett interaktivt schema. Tryck på en tand när den kommer fram, lägg till datum och en anteckning och se det vanliga tidsfönstret för varje tand.`,
+    imageAlt: `Mamios lista med milstolpar, inklusive posten för första tanden.`,
+    bullets: [
+      `Interaktivt schema över 20 mjölktänder`,
+      `Datum och anteckning för varje tand`,
+      `Typiska tidsfönster för tandsprickning`,
+    ],
+    sections: [
+      {
+        title: `Tryck på tanden, spara datumet`,
+        body: `När en ny tand tittar fram trycker du på den i schemat och sparar datumet med en valfri anteckning. Varje tand har en post, så schemat fylls i i takt med din bebis leende.`,
+      },
+      {
+        title: `Typiska tidsfönster, aldrig ”försenad”`,
+        body: `Varje tand visar det vanliga tidsfönstret enligt det tandsprickningsschema som American Academy of Pediatric Dentistry använder. Tänder kommer vid väldigt olika tidpunkter, så Mamio markerar aldrig en tand som sen.`,
+      },
+      {
+        title: `Tandvårdsbesök på samma ställe`,
+        body: `Logga tandkontroller och rengöringar bredvid tandschemat, så att nästa besök börjar med hela bilden.`,
+      },
+      {
+        title: `En del av hälsojournalen`,
+        body: `Tänderna finns under hälsofliken tillsammans med tillväxt, vaccinationer och läkarbesök, och kan visas i sammanfattningen inför läkarbesöket.`,
+      },
+    ],
+    faq: [
+      {
+        question: `I vilken ordning kommer mjölktänderna?`,
+        answer: `Oftast kommer de nedre framtänderna först, följda av de övre framtänderna, men ordning och tidpunkt varierar mycket. Mamio visar det typiska tidsfönstret för varje tand.`,
+      },
+      {
+        question: `Varnar Mamio om en tand är sen?`,
+        answer: `Nej. Sena tänder är vanliga och oftast helt normala. Mamio visar aldrig en tand som försenad. Fråga barnläkaren eller tandvården om du är osäker.`,
+      },
+      {
+        question: `Kan jag logga tandläkarbesök?`,
+        answer: `Ja. Utöver tandsprickning kan du spara besök för tandrengöring eller kontroll.`,
+      },
+      {
+        question: `Är tandschemat gratis?`,
+        answer: `Ja. Tandschemat är gratis. Den kostnadsfria listan visar dina senaste poster; hela historiken ingår i Mamio Pro.`,
+      },
+    ],
+  },
+  potty: {
+    slug: `pottraning-app-logg`,
+    shortTitle: `Potträning`,
+    metaTitle: `Potträning: app och logg för småbarn | Mamio`,
+    metaDescription: `Logga kiss, bajs, olyckor och torrkontroller på några sekunder och se mönstren i ditt barns potträning. En lugn, valfri modul i Mamio.`,
+    eyebrow: `Potträning`,
+    title: `Potträning med mönster, inte press.`,
+    lead: `Slå på pottmodulen i Mamio och logga kiss, bajs, båda, olycka eller torrkontroll med tid och anteckning. Loggen visar vad som fungerar utan att hålla räkningen.`,
+    imageAlt: `Mamios logg för potträning med kiss, bajs, torrkontroll och olyckor.`,
+    bullets: [
+      `Kiss, bajs, olycka, torr`,
+      `Snabbknapp på startskärmen`,
+      `Tid och anteckning för varje post`,
+    ],
+    sections: [
+      {
+        title: `Logga med ett tryck`,
+        body: `När pottmodulen är på visas en snabbknapp på startskärmen. Välj kiss, bajs, båda, olycka eller torr, så sparas tiden automatiskt. Lägg till en anteckning om något stack ut.`,
+      },
+      {
+        title: `Se dagens rytm`,
+        body: `Efter några dagar visar loggen när ditt barn brukar behöva gå, hur länge hen håller sig torr och när olyckor brukar hända. Då känns påminnelser naturliga i stället för ständiga.`,
+      },
+      {
+        title: `Olyckor hör till`,
+        body: `Olyckor loggas som vilken post som helst, utan röda markeringar och utan sviter att bryta. Bakslag är vanliga vid sjukdom, resor eller när ett syskon kommer, och loggen hjälper dig se dem som en fas.`,
+      },
+      {
+        title: `Bara när du behöver det`,
+        body: `Potträning är en valfri modul. Låt den vara avstängd under bebismånaderna och slå på den i inställningarna när familjen är redo.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Hur slår jag på potträning?`,
+        answer: `Öppna inställningarna i Mamio och aktivera pottmodulen. Då visas en snabbknapp och en pottsektion i appen.`,
+      },
+      {
+        question: `Vad kan jag logga?`,
+        answer: `Kiss, bajs, båda, olyckor och torrkontroller, var och en med tid och valfri anteckning.`,
+      },
+      {
+        question: `Är potträningsloggen gratis?`,
+        answer: `Ja. Den kostnadsfria listan visar dina senaste poster; hela historiken ingår i Mamio Pro.`,
+      },
+      {
+        question: `När ska vi börja med potträning?`,
+        answer: `När barn är redo varierar mycket. Håll utkik efter tecken på att ditt barn är redo och fråga BVC eller barnläkaren om du är osäker.`,
+      },
+    ],
+  },
+  babyExercises: {
+    slug: `babygympa-babymassage-app`,
+    shortTitle: `Babygympa & massage`,
+    metaTitle: `Babygympa och babymassage: app med övningar | Mamio`,
+    metaDescription: `Illustrerade övningar och massage för bebisar efter ålder: magläge, cykelben, mjuk massage och steg för steg mot krypning, med säkerhetsråd.`,
+    eyebrow: `Rörelse och babymassage`,
+    title: `Mjuka rörelseidéer för varje fas, från första dagen till krypning.`,
+    lead: `Mamio innehåller 16 illustrerade övningar och massagesteg, var och en med lämplig ålder, tydliga steg och säkerhetsråd, så att tiden på golvet känns lekfull i stället för osäker.`,
+    imageAlt: `Mamios startskärm med en snabb sammanfattning och val för att starta ett pass eller lägga till en post.`,
+    bullets: [
+      `16 illustrerade övningar`,
+      `Åldersråd och säkerhetsråd`,
+      `Steg mot krypning från 4 månader`,
+    ],
+    sections: [
+      {
+        title: `Från de första veckorna`,
+        body: `Börja från födseln med magläge bröst mot bröst, öppna och korsa armarna, cykelben och knän mot magen. Massage av fötter, ben, mage och rygg följer från en månads ålder, och magläge på underarmarna från ungefär sex veckor.`,
+      },
+      {
+        title: `Steg för steg mot krypning`,
+        body: `Från ungefär fyra månader bygger en stegvis progression upp mot krypning: armhävningar och att sträcka sig i magläge, snurra runt på magen, komma upp på händer och knän, gunga och krypa över ett mjukt hinder. Den ingår i Mamio Pro och kan också låsas upp med en belöningsannons.`,
+      },
+      {
+        title: `Säkerheten först, för alla`,
+        body: `Varje övning visar sina försiktighetsråd och säkerhetsregler för alla användare, även de låsta: stanna hos din bebis, sluta om hen är trött eller ledsen och håll passen korta och lekfulla.`,
+      },
+      {
+        title: `Kopplat till magläge`,
+        body: `När du kör ett pass med magläge föreslår Mamio passande övningar, och ett dagligt kort på startskärmen ger en idé som passar din bebis ålder.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Vilka övningar ingår?`,
+        answer: `Sexton totalt: varianter av magläge, arm- och benrörelser, massage av fötter, ben, mage och rygg, rullning med stöd och en krypprogression i sex steg.`,
+      },
+      {
+        question: `Är övningarna gratis?`,
+        answer: `Tio övningar är gratis. Krypprogressionen i sex steg ingår i Mamio Pro eller kan låsas upp med en belöningsannons. Säkerhetsråden syns för alla övningar.`,
+      },
+      {
+        question: `Är övningarna medicinsk behandling?`,
+        answer: `Nej. De är lekbaserade rörelseidéer för friska bebisar, inte sjukgymnastik. Om din bebis har ett medicinskt tillstånd eller om du märker asymmetri, fråga barnläkaren.`,
+      },
+      {
+        question: `Kan jag också logga magläge?`,
+        answer: `Ja. Mamio har en timer för magläge med ställning och passets kvalitet, och föreslår övningar under ett pass.`,
+      },
+    ],
+  },
+  watchWidget: {
+    slug: `apple-watch-bebisapp-widget`,
+    shortTitle: `Apple Watch & widget`,
+    metaTitle: `Bebisapp för Apple Watch och iPhone-widget | Mamio`,
+    metaDescription: `Starta en timer för amning, sömn eller pumpning och logga blöjor eller flaskor från handleden. Mamio för Apple Watch, med komplikationer och widgetar.`,
+    eyebrow: `Apple Watch och widgetar`,
+    title: `Logga från handleden när händerna är upptagna.`,
+    lead: `Mamio för Apple Watch startar och stoppar timers och loggar blöjor och flaskor med ett tryck. Komplikationer och iPhone-widgetar visar senaste matningen och dagens summor i en blick.`,
+    imageAlt: `Mamios amningstimer med vänster och höger sida och ett pågående pass.`,
+    bullets: [
+      `Timers på Apple Watch`,
+      `Komplikationer på urtavlan`,
+      `Widgetar på hemskärmen`,
+    ],
+    sections: [
+      {
+        title: `Timers på handleden`,
+        body: `Starta och stoppa amning med sida, sömn, pumpning och magläge direkt från Apple Watch. Logga en blöja eller flaska med förval på ett par tryck.`,
+      },
+      {
+        title: `Fungerar när telefonen är utom räckhåll`,
+        body: `Det du loggar på klockan läggs i kö och synkas till Mamio-appen på din iPhone när den går att nå igen, så en logg klockan tre på natten försvinner aldrig för att telefonen låg i ett annat rum.`,
+      },
+      {
+        title: `Komplikationer och widgetar`,
+        body: `Lägg till en Mamio-komplikation på urtavlan i rund, rektangulär, inline- eller hörnstil. På iPhone visar små, mellanstora och stora widgetar på hemskärmen dagens matningar, flaskor, blöjor, sömn, pumpning och magläge.`,
+      },
+      {
+        title: `Det här behöver du`,
+        body: `Klockappen kräver watchOS 10 eller senare och Mamio-appen på en parkopplad iPhone. Apple Watch och widgetar finns bara för iOS; på Android sker Mamios snabbloggning i appen.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Vad kan jag göra på Apple Watch?`,
+        answer: `Starta och stoppa timers för amning, sömn, pumpning och magläge, logga blöjor och flaskor och se aktiva timers, senaste matning, blöja och sömn samt dagens summor.`,
+      },
+      {
+        question: `Fungerar klockappen utan min iPhone?`,
+        answer: `Den behöver iPhone-appen för att synka, men poster som görs när telefonen är utom räckhåll läggs i kö och synkas senare.`,
+      },
+      {
+        question: `Finns det en widget för Android?`,
+        answer: `Inte just nu. Apple Watch, komplikationer och widgetar på hemskärmen finns bara för iOS.`,
+      },
+      {
+        question: `Är widgetarna interaktiva?`,
+        answer: `iPhone-widgetarna är till för att snabbt se dagens loggar. Loggningen sker i appen eller på Apple Watch.`,
+      },
+    ],
+  },
+  multipleBabies: {
+    slug: `tvillingar-syskon-bebisapp`,
+    shortTitle: `Tvillingar & syskon`,
+    metaTitle: `Bebisapp för tvillingar och syskon | Mamio`,
+    metaDescription: `Ha en egen profil för varje bebis och byt med ett tryck. Matningar, blöjor, sömn, tillväxt och mediciner blandas aldrig ihop mellan tvillingar eller syskon.`,
+    eyebrow: `Tvillingar och syskon`,
+    title: `En app, en egen logg för varje bebis.`,
+    lead: `Mamio har en profil för varje bebis, med egna matningar, blöjor, sömn, tillväxt och hälsoposter. Byt aktiv bebis i sidhuvudet och logga för rätt barn.`,
+    imageAlt: `Mamios startskärm med en snabb sammanfattning av senaste matningen, nästa sida och dagen.`,
+    bullets: [
+      `En profil per bebis`,
+      `Byt i sidhuvudet`,
+      `Separata hälsoposter`,
+    ],
+    sections: [
+      {
+        title: `Separata loggar, med flit`,
+        body: `Varje bebis får en egen tidslinje, statistik, tillväxtkurvor, vaccinationer och medicinlogg. Tvillingar äter, sover och växer sällan likadant, och separata loggar gör varje mönster synligt.`,
+      },
+      {
+        title: `Byt med ett tryck`,
+        body: `När du har fler än en profil visas den aktiva bebisen i sidhuvudet. Tryck på den för att byta innan du loggar, så hamnar nästa matning eller blöja hos rätt barn.`,
+      },
+      {
+        title: `Färre förväxlingar med mediciner`,
+        body: `Temperatur, symtom och mediciner finns i varje bebis profil, vilket hjälper mot den trötta förälderns eviga fråga om vem som redan har fått sin dos.`,
+      },
+      {
+        title: `Gratis för en, Pro för fler`,
+        body: `Gratisversionen har en bebisprofil. Att lägga till en andra bebis eller fler ingår i Mamio Pro.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Kan jag logga tvillingar i Mamio?`,
+        answer: `Ja. Skapa en profil för varje tvilling och byt aktiv bebis i sidhuvudet innan du loggar.`,
+      },
+      {
+        question: `Finns det en vy med tvillingarna sida vid sida?`,
+        answer: `Nej. Mamio har varje bebis i en egen profil med egen tidslinje och statistik.`,
+      },
+      {
+        question: `Hur många bebisar kan jag lägga till?`,
+        answer: `En bebis är gratis. För att lägga till fler bebisar behövs Mamio Pro.`,
+      },
+      {
+        question: `Kan jag ta bort en profil senare?`,
+        answer: `Ja. Bebisprofiler kan hanteras och tas bort i inställningarna.`,
       },
     ],
   },

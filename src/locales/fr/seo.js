@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `Mamio fonctionne-t-il sans compte ?`,
-        answer: `Oui. Mamio fonctionne d'abord hors ligne, ne demande aucun compte et garde les données de bébé sur ton appareil.`,
+        answer: `Oui. Mamio est pensé pour fonctionner hors ligne, ne demande aucun compte et garde les données de bébé sur ton appareil.`,
       },
       {
         question: `Puis-je aussi suivre les biberons ?`,
@@ -67,7 +67,7 @@ export default {
       },
       {
         title: `Partage un contexte plus clair`,
-        body: `Quand tu dois en parler avec ton partenaire, une consultante ou un médecin, tes notes récentes sur les repas sont plus faciles à relire.`,
+        body: `Quand tu dois en parler avec ton partenaire, une consultante en lactation ou un médecin, tes notes récentes sur les repas sont plus faciles à relire.`,
       },
     ],
     faq: [
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `Les données de repas sont-elles stockées en ligne ?`,
-        answer: `Non. Mamio fonctionne d'abord hors ligne et conserve les données en local sur ton appareil.`,
+        answer: `Non. Mamio est pensé pour fonctionner hors ligne et conserve les données en local sur ton appareil.`,
       },
     ],
   },
@@ -196,7 +196,7 @@ export default {
       },
       {
         title: `Partage une image plus claire`,
-        body: `Un historique d'alimentation mixte peut aider ton partenaire, les consultantes et les soignants à comprendre la routine sans se fier à la mémoire.`,
+        body: `Un historique d'alimentation mixte peut aider ton partenaire, une consultante en lactation ou les soignants à comprendre la routine sans se fier à la mémoire.`,
       },
     ],
     faq: [
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `Les données d'alimentation mixte sont-elles stockées en ligne ?`,
-        answer: `Non. Mamio fonctionne d'abord hors ligne et conserve les données en local sur ton appareil.`,
+        answer: `Non. Mamio est pensé pour fonctionner hors ligne et conserve les données en local sur ton appareil.`,
       },
     ],
   },
@@ -231,7 +231,7 @@ export default {
     sections: [
       {
         title: `Note même les petites séances`,
-        body: `Le temps sur le ventre se fait souvent par petites touches. Enregistre la séance rapidement, puis construis peu à peu une image douce des progrès du jour.`,
+        body: `Le temps sur le ventre se fait souvent par petites touches. Enregistre la séance rapidement, puis vois peu à peu se dessiner les progrès au fil des jours.`,
       },
       {
         title: `Garde des notes sur les positions`,
@@ -425,7 +425,7 @@ export default {
       },
       {
         question: `Mamio a-t-il besoin d'internet pour suivre le sommeil ?`,
-        answer: `Non. Les données de sommeil fonctionnent hors ligne et restent sur ton appareil.`,
+        answer: `Non. Le suivi du sommeil fonctionne hors ligne et les données restent sur ton appareil.`,
       },
     ],
   },
@@ -511,7 +511,364 @@ export default {
       },
       {
         question: `La chronologie fonctionne-t-elle sans internet ?`,
-        answer: `Oui. Toutes les données sont stockées en local sur ton appareil et fonctionnent hors ligne.`,
+        answer: `Oui. Toutes les données sont stockées en local sur ton appareil et la chronologie fonctionne hors ligne.`,
+      },
+    ],
+  },
+  development: {
+    slug: `suivi-developpement-bebe`,
+    shortTitle: `Étapes du développement`,
+    metaTitle: `Appli de suivi du développement de bébé | Mamio`,
+    metaDescription: `Note premiers sourires, premiers pas et premiers mots avec dates et photos. Mamio suggère des étapes selon l'âge de 0 à 3 ans, sans pression ni score.`,
+    eyebrow: `Étapes et développement`,
+    title: `Garde chaque première fois, sans en faire un examen.`,
+    lead: `Mamio te propose des étapes adaptées à l'âge de ton bébé en motricité, langage, relations sociales et réflexion, et te permet d'enregistrer la date, une note et des photos quand elles arrivent.`,
+    imageAlt: `Liste des étapes Mamio avec premiers pas, premier mot, première dent et peur de l'étranger.`,
+    bullets: [
+      `54 idées d'étapes selon l'âge`,
+      `Liste des premiers mots avec dates`,
+      `Jusqu'à 6 photos par étape`,
+    ],
+    sections: [
+      {
+        title: `Des étapes suggérées pour l'âge de ton bébé`,
+        body: `Mamio propose 54 idées d'étapes en cinq groupes : motricité, langage, social, cognitif et premières fois. Chacune a une tranche d'âge habituelle, pour que tu voies ce qui arrive bientôt plutôt qu'une longue liste couvrant toute la petite enfance.`,
+      },
+      {
+        title: `Une liste des premiers mots`,
+        body: `Note chaque nouveau mot avec la date et une courte remarque. Au fil des mois, la liste devient une trace de l'évolution du langage de ton tout-petit, bien pratique quand le pédiatre demande combien de mots ton enfant dit.`,
+      },
+      {
+        title: `Les photos à leur place`,
+        body: `Ajoute jusqu'à six photos à une étape pour que le premier quatre pattes ou le premier pas hésitant reste à côté de sa date. Tout reste sur ton téléphone.`,
+      },
+      {
+        title: `Un repère, pas un verdict`,
+        body: `Chaque enfant se développe à son rythme. Les tranches d'âge de Mamio sont un repère : ce n'est ni un diagnostic ni un substitut au dépistage du développement. Les repères d'âge sont adaptés du programme des CDC « Learn the Signs. Act Early. », et si quelque chose t'inquiète, c'est à ton pédiatre qu'il faut en parler.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Quelles étapes Mamio inclut-il ?`,
+        answer: `Mamio suggère 54 étapes en motricité, langage, social, cognitif et premières fois, chacune avec une tranche d'âge habituelle. Tu peux aussi enregistrer tes propres moments.`,
+      },
+      {
+        question: `Mamio me dit-il si mon bébé est en retard ?`,
+        answer: `Non. Mamio enregistre ce que tu observes et affiche des tranches d'âge habituelles. Il ne note pas ton enfant et ne diagnostique pas de retard. Parle à ton pédiatre si tu as des inquiétudes.`,
+      },
+      {
+        question: `Puis-je suivre les premiers mots ?`,
+        answer: `Oui. Mamio a une liste des premiers mots où chaque mot reçoit une date et une note facultative.`,
+      },
+      {
+        question: `Qu'apporte Mamio Pro pour le développement ?`,
+        answer: `Pro débloque la chronologie du développement, qui compare le sommeil et l'alimentation autour des périodes approximatives de pleurs et d'agitation, ainsi que l'historique complet au-delà des entrées les plus récentes.`,
+      },
+    ],
+  },
+  growthPercentiles: {
+    slug: `courbe-croissance-bebe`,
+    shortTitle: `Courbes de croissance`,
+    metaTitle: `Courbe de croissance bébé et percentiles (OMS) | Mamio`,
+    metaDescription: `Note le poids, la taille et le périmètre crânien et vois-les sur les courbes des normes de croissance de l'OMS de 0 à 24 mois. Hors ligne, sans compte.`,
+    eyebrow: `Croissance et percentiles`,
+    title: `Vois la tendance de croissance, pas un seul chiffre.`,
+    lead: `Mamio réunit le poids, la taille et le périmètre crânien dans un graphique et les place sur les normes de croissance de l'enfant de l'OMS, pour que la tendance soit facile à aborder au prochain rendez-vous.`,
+    imageAlt: `Graphique de croissance Mamio avec la courbe de poids et les dernières valeurs de poids, taille et périmètre crânien.`,
+    bullets: [
+      `Poids, taille, périmètre crânien`,
+      `Normes de l'OMS, 0–24 mois`,
+      `Courbe de tendance dans le temps`,
+    ],
+    sections: [
+      {
+        title: `Toutes les mesures au même endroit`,
+        body: `Recopie dans Mamio les chiffres de chaque consultation ou pesée à la maison. Le poids, la taille et le périmètre crânien ont chacun leur graphique, fini de chercher dans le carnet papier et les photos de la balance.`,
+      },
+      {
+        title: `Basé sur les normes de croissance de l'OMS`,
+        body: `Les percentiles de Mamio utilisent les normes de croissance de l'enfant de l'Organisation mondiale de la Santé pour les bébés de la naissance à 24 mois. Indique le sexe de ton bébé dans le profil pour que la bonne courbe de référence soit utilisée.`,
+      },
+      {
+        title: `Pourquoi la courbe compte plus que le point`,
+        body: `Un percentile isolé ne dit pas grand-chose. Les bébés en bonne santé peuvent se situer n'importe où, des percentiles bas aux percentiles hauts. Ce que regardent les pédiatres, c'est l'évolution de la courbe dans le temps, exactement ce que montre un graphique de tes propres mesures.`,
+      },
+      {
+        title: `Prêt pour le pédiatre`,
+        body: `Les mesures de croissance peuvent figurer dans le résumé de consultation avec les repas, le sommeil et les notes de santé. Mamio affiche les données ; ton pédiatre les interprète.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Quelles courbes de croissance Mamio utilise-t-il ?`,
+        answer: `Mamio utilise les normes de croissance de l'enfant de l'OMS pour le poids, la taille et le périmètre crânien de la naissance à 24 mois. Il n'utilise pas les courbes des CDC.`,
+      },
+      {
+        question: `Un percentile bas est-il un mauvais signe ?`,
+        answer: `Pas en soi. Beaucoup de bébés en bonne santé suivent une courbe basse ou haute. Ce sont les changements brusques d'une courbe à l'autre qui valent la peine d'en parler à ton pédiatre.`,
+      },
+      {
+        question: `Le suivi de croissance est-il gratuit ?`,
+        answer: `Enregistrer les mesures et voir les graphiques est gratuit. Les libellés de percentile, les bandes de percentiles OMS et la comparaison avec la moyenne OMS font partie de Mamio Pro.`,
+      },
+      {
+        question: `Mamio fonctionne-t-il pour les bébés prématurés ?`,
+        answer: `Tu peux enregistrer des mesures pour n'importe quel bébé. Les percentiles de Mamio utilisent l'âge réel ; pour un bébé prématuré, demande à ton pédiatre comment lire la courbe avec l'âge corrigé.`,
+      },
+    ],
+  },
+  teething: {
+    slug: `poussee-dentaire-bebe`,
+    shortTitle: `Suivi des dents`,
+    metaTitle: `Poussée dentaire bébé : suivi et schéma des dents | Mamio`,
+    metaDescription: `Touche chaque nouvelle dent sur un schéma interactif des 20 dents de lait et enregistre la date. Périodes d'éruption habituelles, sans alerte de dent en retard.`,
+    eyebrow: `Dents et poussées dentaires`,
+    title: `Un schéma dentaire qui se souvient de chaque première dent.`,
+    lead: `Mamio affiche les 20 dents de lait sur un schéma interactif. Touche une dent quand elle perce, ajoute la date et une note, et consulte la période d'éruption habituelle de chacune.`,
+    imageAlt: `Liste des étapes Mamio avec l'entrée de la première dent.`,
+    bullets: [
+      `Schéma interactif des 20 dents de lait`,
+      `Date et note pour chaque dent`,
+      `Périodes d'éruption habituelles`,
+    ],
+    sections: [
+      {
+        title: `Touche la dent, enregistre la date`,
+        body: `Quand une nouvelle dent apparaît, touche-la sur le schéma et enregistre la date avec une note facultative. Chaque dent a un seul enregistrement, ainsi le schéma se remplit au rythme du sourire de ton bébé.`,
+      },
+      {
+        title: `Des périodes habituelles, jamais « en retard »`,
+        body: `Chaque dent affiche sa période d'éruption habituelle d'après le tableau d'éruption dentaire utilisé par l'American Academy of Pediatric Dentistry. Les dents arrivent à des moments très différents, alors Mamio ne marque jamais une dent comme en retard.`,
+      },
+      {
+        title: `Les visites chez le dentiste au même endroit`,
+        body: `Note les contrôles et détartrages dentaires à côté du schéma des dents, pour que le prochain rendez-vous commence avec une vue complète.`,
+      },
+      {
+        title: `Une partie du carnet de santé`,
+        body: `Les dents se trouvent dans l'onglet santé avec la croissance, les vaccins et les consultations, et peuvent figurer dans le résumé de consultation.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Dans quel ordre poussent les dents de lait ?`,
+        answer: `En général, les incisives du bas arrivent d'abord, puis celles du haut, mais l'ordre et le moment varient beaucoup. Mamio affiche la période habituelle de chaque dent.`,
+      },
+      {
+        question: `Mamio me prévient-il si une dent est en retard ?`,
+        answer: `Non. Une dent tardive est fréquente et généralement normale. Mamio n'affiche jamais une dent comme en retard. Demande à ton pédiatre ou à ton dentiste en cas de doute.`,
+      },
+      {
+        question: `Puis-je noter les visites chez le dentiste ?`,
+        answer: `Oui. En plus des poussées dentaires, tu peux enregistrer les visites de détartrage ou de contrôle.`,
+      },
+      {
+        question: `Le schéma des dents est-il gratuit ?`,
+        answer: `Oui. Le schéma des dents est gratuit. La liste gratuite affiche tes entrées les plus récentes ; l'historique complet fait partie de Mamio Pro.`,
+      },
+    ],
+  },
+  potty: {
+    slug: `apprentissage-proprete-pot`,
+    shortTitle: `Suivi de l'apprentissage de la propreté`,
+    metaTitle: `Appli d'apprentissage de la propreté | Mamio`,
+    metaDescription: `Note pipi, caca, accidents et vérifications au sec en quelques secondes et repère les habitudes de ton enfant sur le pot. Un module calme et facultatif.`,
+    eyebrow: `Apprentissage de la propreté`,
+    title: `L'apprentissage de la propreté avec des repères, pas de la pression.`,
+    lead: `Active le module pot dans Mamio et note pipi, caca, les deux, accidents ou vérifications au sec avec une heure et une note. Le journal montre ce qui marche sans compter les points.`,
+    imageAlt: `Journal de propreté Mamio avec des entrées pipi, caca, vérification au sec et accident.`,
+    bullets: [
+      `Pipi, caca, accident, sec`,
+      `Ajout rapide depuis l'écran d'accueil`,
+      `Heure et notes pour chaque entrée`,
+    ],
+    sections: [
+      {
+        title: `Note-le en un geste`,
+        body: `Une fois le module pot activé, un bouton d'ajout rapide apparaît sur l'écran d'accueil. Choisis pipi, caca, les deux, accident ou sec, et l'heure est enregistrée automatiquement. Ajoute une note si quelque chose t'a marqué.`,
+      },
+      {
+        title: `Vois le rythme de la journée`,
+        body: `Après quelques jours, le journal montre quand ton enfant a généralement besoin d'y aller, combien de temps il reste au sec et quand les accidents ont tendance à arriver. Les rappels deviennent naturels plutôt que permanents.`,
+      },
+      {
+        title: `Les accidents en font partie`,
+        body: `Les accidents s'enregistrent comme n'importe quelle autre entrée, sans marque rouge ni série à casser. Les retours en arrière sont courants pendant une maladie, un voyage ou l'arrivée d'un petit frère ou d'une petite sœur, et le journal t'aide à les voir comme une phase.`,
+      },
+      {
+        title: `Seulement quand tu en as besoin`,
+        body: `Le suivi du pot est un module facultatif. Laisse-le désactivé pendant les mois de bébé et active-le dans les réglages quand ta famille est prête.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Comment activer le suivi du pot ?`,
+        answer: `Ouvre les réglages de Mamio et active le module pot. Un bouton d'ajout rapide et une section pot apparaissent alors dans l'appli.`,
+      },
+      {
+        question: `Que puis-je noter ?`,
+        answer: `Pipi, caca, les deux, accidents et vérifications au sec, chacun avec une heure et une note facultative.`,
+      },
+      {
+        question: `Le suivi du pot est-il gratuit ?`,
+        answer: `Oui. La liste gratuite affiche tes entrées les plus récentes ; l'historique complet fait partie de Mamio Pro.`,
+      },
+      {
+        question: `Quand commencer l'apprentissage de la propreté ?`,
+        answer: `Le bon moment varie beaucoup d'un enfant à l'autre. Repère les signes qu'il est prêt et demande à ton pédiatre ou à la PMI en cas de doute.`,
+      },
+    ],
+  },
+  babyExercises: {
+    slug: `exercices-massage-bebe`,
+    shortTitle: `Exercices et massage bébé`,
+    metaTitle: `Exercices et massage pour bébé : guide en appli | Mamio`,
+    metaDescription: `Exercices et massages illustrés selon l'âge : temps sur le ventre, pédalage, massage doux et progression étape par étape vers le quatre pattes, avec consignes de sécurité.`,
+    eyebrow: `Mouvement et massage de bébé`,
+    title: `Des idées de mouvements doux pour chaque étape, du premier jour au quatre pattes.`,
+    lead: `Mamio propose 16 exercices et étapes de massage illustrés, chacun avec l'âge adapté, des étapes claires et des consignes de sécurité, pour que le temps au sol soit un jeu plutôt qu'une incertitude.`,
+    imageAlt: `Écran d'accueil Mamio avec un résumé rapide et des options pour lancer une séance ou ajouter une entrée.`,
+    bullets: [
+      `16 exercices illustrés`,
+      `Âge conseillé et consignes de sécurité`,
+      `Progression vers le quatre pattes dès 4 mois`,
+    ],
+    sections: [
+      {
+        title: `Dès les premières semaines`,
+        body: `Commence dès la naissance avec le temps sur le ventre sur ta poitrine, l'ouverture et le croisement des bras, le pédalage et les genoux vers le ventre. Le massage des pieds, des jambes, du ventre et du dos suit à partir d'un mois, et le temps sur le ventre appuyé sur les avant-bras vers six semaines.`,
+      },
+      {
+        title: `Une progression vers le quatre pattes`,
+        body: `Vers quatre mois, une progression étape par étape prépare le quatre pattes : pompes de bébé et attraper des objets sur le ventre, pivots, se mettre à quatre pattes, se balancer et passer à quatre pattes par-dessus un obstacle moelleux. Elle fait partie de Mamio Pro et peut aussi être débloquée avec une publicité récompensée.`,
+      },
+      {
+        title: `La sécurité d'abord, pour tout le monde`,
+        body: `Chaque exercice affiche ses précautions et ses règles de sécurité à tous les utilisateurs, y compris pour les exercices verrouillés : reste avec ton bébé, arrête s'il est fatigué ou contrarié, et garde des séances courtes et ludiques.`,
+      },
+      {
+        title: `Relié au temps sur le ventre`,
+        body: `Pendant une séance de temps sur le ventre, Mamio suggère des exercices adaptés, et une carte quotidienne sur l'écran d'accueil propose une idée qui correspond à l'âge de ton bébé.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Quels exercices sont inclus ?`,
+        answer: `Seize au total : variantes de temps sur le ventre, mouvements des bras et des jambes, massage des pieds, des jambes, du ventre et du dos, retournement accompagné et une progression en six étapes vers le quatre pattes.`,
+      },
+      {
+        question: `Les exercices sont-ils gratuits ?`,
+        answer: `Dix exercices sont gratuits. La progression en six étapes vers le quatre pattes fait partie de Mamio Pro ou peut être débloquée avec une publicité récompensée. Les consignes de sécurité sont visibles pour tous les exercices.`,
+      },
+      {
+        question: `Ces exercices sont-ils une thérapie médicale ?`,
+        answer: `Non. Ce sont des idées de mouvement basées sur le jeu pour les bébés en bonne santé, pas de la kinésithérapie. Si ton bébé a un problème de santé ou si tu remarques une asymétrie, demande à ton pédiatre.`,
+      },
+      {
+        question: `Puis-je aussi suivre le temps sur le ventre ?`,
+        answer: `Oui. Mamio a un minuteur de temps sur le ventre avec la position et la qualité de la séance, et suggère des exercices pendant une séance.`,
+      },
+    ],
+  },
+  watchWidget: {
+    slug: `apple-watch-suivi-bebe`,
+    shortTitle: `Apple Watch et widget`,
+    metaTitle: `Suivi bébé sur Apple Watch et widget iPhone | Mamio`,
+    metaDescription: `Lance un minuteur de tétée, de sommeil ou de tire-lait et note couches ou biberons depuis ton poignet. Mamio pour Apple Watch, avec complications et widgets.`,
+    eyebrow: `Apple Watch et widgets`,
+    title: `Note depuis ton poignet quand tu as les mains prises.`,
+    lead: `Mamio pour Apple Watch démarre et arrête les minuteurs et note couches et biberons d'un geste. Les complications et les widgets iPhone affichent d'un coup d'œil le dernier repas et les totaux du jour.`,
+    imageAlt: `Minuteur d'allaitement en direct Mamio avec sein gauche et droit et une séance en cours.`,
+    bullets: [
+      `Minuteurs sur Apple Watch`,
+      `Complications pour le cadran`,
+      `Widgets de l'écran d'accueil`,
+    ],
+    sections: [
+      {
+        title: `Des minuteurs à ton poignet`,
+        body: `Démarre et arrête l'allaitement en indiquant le sein, le sommeil, le tire-lait et le temps sur le ventre directement depuis l'Apple Watch. Note une couche ou un biberon avec des préréglages en quelques gestes.`,
+      },
+      {
+        title: `Fonctionne même quand le téléphone est loin`,
+        body: `Les actions sur la montre sont mises en file d'attente et synchronisées avec l'appli Mamio sur ton iPhone dès qu'il est de nouveau à portée, ainsi une entrée à 3 h du matin n'est jamais perdue parce que le téléphone était dans une autre pièce.`,
+      },
+      {
+        title: `Complications et widgets`,
+        body: `Ajoute une complication Mamio à ton cadran en style circulaire, rectangulaire, en ligne ou en coin. Sur iPhone, les petits, moyens et grands widgets de l'écran d'accueil affichent les tétées, biberons, couches, sommeil, tire-lait et temps sur le ventre du jour.`,
+      },
+      {
+        title: `Ce qu'il te faut`,
+        body: `L'appli pour la montre nécessite watchOS 10 ou plus récent et l'appli Mamio sur un iPhone jumelé. L'Apple Watch et les widgets sont disponibles uniquement sur iOS ; sur Android, la saisie rapide de Mamio se fait dans l'appli.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Que puis-je faire sur l'Apple Watch ?`,
+        answer: `Démarrer et arrêter les minuteurs d'allaitement, de sommeil, de tire-lait et de temps sur le ventre, noter couches et biberons, et voir les minuteurs actifs, le dernier repas, la dernière couche et le dernier sommeil, ainsi que les totaux du jour.`,
+      },
+      {
+        question: `L'appli de la montre fonctionne-t-elle sans mon iPhone ?`,
+        answer: `Elle a besoin de l'appli iPhone pour se synchroniser, mais les entrées faites quand le téléphone est hors de portée sont mises en file d'attente et synchronisées plus tard.`,
+      },
+      {
+        question: `Existe-t-il un widget Android ?`,
+        answer: `Pas pour le moment. L'Apple Watch, les complications et les widgets de l'écran d'accueil sont réservés à iOS.`,
+      },
+      {
+        question: `Les widgets sont-ils interactifs ?`,
+        answer: `Les widgets iPhone servent à voir d'un coup d'œil les entrées du jour. La saisie se fait dans l'appli ou sur l'Apple Watch.`,
+      },
+    ],
+  },
+  multipleBabies: {
+    slug: `suivi-jumeaux-bebe`,
+    shortTitle: `Jumeaux et fratrie`,
+    metaTitle: `Appli de suivi bébé pour jumeaux et fratrie | Mamio`,
+    metaDescription: `Un profil séparé par bébé, et on change en un geste. Repas, couches, sommeil, croissance et médicaments ne se mélangent jamais entre jumeaux ou dans la fratrie.`,
+    eyebrow: `Jumeaux et fratrie`,
+    title: `Une appli, un suivi séparé pour chaque bébé.`,
+    lead: `Mamio garde un profil pour chaque bébé, avec ses propres repas, couches, sommeil, croissance et données de santé. Change de bébé actif depuis l'en-tête et note pour le bon enfant.`,
+    imageAlt: `Écran d'accueil Mamio avec un résumé rapide du dernier repas, du prochain sein et de la journée.`,
+    bullets: [
+      `Un profil par bébé`,
+      `Changement depuis l'en-tête`,
+      `Carnets de santé séparés`,
+    ],
+    sections: [
+      {
+        title: `Des suivis séparés, c'est voulu`,
+        body: `Chaque bébé a sa propre chronologie, ses statistiques, ses courbes de croissance, ses vaccins et son journal de médicaments. Les jumeaux mangent, dorment et grandissent rarement de la même façon, et des suivis séparés rendent chaque rythme visible.`,
+      },
+      {
+        title: `Change en un geste`,
+        body: `Quand tu as plus d'un profil, le bébé actif apparaît dans l'en-tête. Touche-le pour changer avant de noter, et le prochain repas ou la prochaine couche ira au bon enfant.`,
+      },
+      {
+        title: `Moins de confusion avec les médicaments`,
+        body: `Température, symptômes et médicaments sont enregistrés dans le profil de chaque bébé, ce qui aide à éviter la question du parent épuisé : qui a déjà eu sa dose ?`,
+      },
+      {
+        title: `Gratuit pour un, Pro pour plusieurs`,
+        body: `La version gratuite comprend un profil de bébé. Ajouter un deuxième bébé ou plus fait partie de Mamio Pro.`,
+      },
+    ],
+    faq: [
+      {
+        question: `Puis-je suivre des jumeaux dans Mamio ?`,
+        answer: `Oui. Crée un profil pour chaque jumeau et change de bébé actif depuis l'en-tête avant de noter.`,
+      },
+      {
+        question: `Existe-t-il une vue côte à côte pour les jumeaux ?`,
+        answer: `Non. Mamio garde chaque bébé dans un profil séparé avec sa propre chronologie et ses statistiques.`,
+      },
+      {
+        question: `Combien de bébés puis-je ajouter ?`,
+        answer: `Un bébé est gratuit. Pour ajouter d'autres bébés, il faut Mamio Pro.`,
+      },
+      {
+        question: `Puis-je supprimer un profil plus tard ?`,
+        answer: `Oui. Les profils de bébé peuvent être gérés et supprimés dans les réglages.`,
       },
     ],
   },

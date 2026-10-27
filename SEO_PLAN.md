@@ -44,6 +44,12 @@
 - Translations are model-written transcreations. Have a native speaker review at least the top markets before relying on them for rankings.
 - Known gaps: screenshots fall back to the English set for new languages; `/privacy/`, `/terms/`, `/support/` stay English-only.
 
+## Sprint 7 implemented
+
+- Seven landing pages for features added to the app, in all 28 languages (`src/seo-pages-new.js` for en/de/tr, `src/locales/<code>/seo.js` for the rest): milestones and first words, WHO growth percentiles, tooth chart, potty training, baby exercises and massage, Apple Watch and widgets, several babies. Every claim was checked against the app code (Pro-only and iOS-only parts are named). 1068 sitemap URLs.
+- Infrastructure for researched articles (`src/articles/`): one file per article with en, de, fr, pt-br, tr, a `sources` list and a `reviewed` date, rendered as a Sources block and as `citation`/`dateModified` in Article structured data. Posts may now exist in only some languages; sitemap, hreflang, hubs, related posts and the home guide list skip missing languages. `node scripts/check-article.mjs <id>` checks one article; `validate-locales.mjs` checks all of them.
+- The first ten articles are drafted but not published: their sources still need to be opened and checked against the official pages.
+
 ## Next SEO priorities
 
 1. Submit and monitor Search Console

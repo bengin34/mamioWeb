@@ -6,6 +6,7 @@ import { resolve } from 'node:path';
 import { locales, seoFeaturePages } from '../src/content.js';
 import { blogPosts } from '../src/blog-content.js';
 import { extraLocaleCodes } from '../src/locale-registry.js';
+import { articles, articleLangs, sourceLabels } from '../src/articles/index.js';
 
 const root = resolve('src/locales');
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -90,6 +91,7 @@ async function validate(code) {
   for (const id of Object.keys(seo)) if (!seoFeaturePages[id]) err(`seo.${id} is not a known page`);
 
   for (const [id, post] of Object.entries(blogPosts)) {
+    if (articles[id]) continue; // researched articles carry their own languages; checked below
     // Beikost/YMYL guides cite one country's health authorities and are published
     // per country, so they are deliberately not present in every language.
     if (!post.locales.en) continue;
@@ -104,6 +106,53 @@ async function validate(code) {
   }
   for (const id of Object.keys(blog)) if (!blogPosts[id]) err(`blog.${id} is not a known post`);
 }
+
+// Researched articles: every language in articleLangs, same section count, real sources.
+const ARTICLE_FIELDS = ['metaTitle', 'metaDescription', 'title', 'date', 'reviewed', 'intro', 'ctaText'];
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+const allSlugs = new Map();
+for (const post of Object.values(blogPosts)) {
+  for (const [lang, slug] of Object.entries(post.slugs)) allSlugs.set(`${lang}/${slug}`, (allSlugs.get(`${lang}/${slug}`) ?? 0) + 1);
+}
+
+function validateArticle(id, article) {
+  const err = (msg) => errors.push(`[article ${id}] ${msg}`);
+  const warn = (msg) => warnings.push(`[article ${id}] ${msg}`);
+  if (!seoFeaturePages[article.relatedPageId]) err(`relatedPageId "${article.relatedPageId}" is not a known page`);
+  const en = article.locales.en;
+  for (const lang of articleLangs) {
+    const loc = article.locales[lang];
+    const slug = article.slugs[lang];
+    if (!loc) { err(`${lang} missing`); continue; }
+    if (!SLUG.test(slug ?? '')) err(`${lang}.slug "${slug}" must be lowercase ASCII words joined by hyphens`);
+    if (allSlugs.get(`${lang}/${slug}`) > 1) err(`${lang}.slug "${slug}" duplicates another post`);
+    for (const field of ARTICLE_FIELDS) {
+      if (typeof loc[field] !== 'string' || !loc[field].trim()) err(`${lang}.${field} must be a non-empty string`);
+    }
+    if (!ISO_DATE.test(loc.date ?? '') || loc.date !== en?.date) err(`${lang}.date must equal en.date (${en?.date})`);
+    if (!ISO_DATE.test(loc.reviewed ?? '')) err(`${lang}.reviewed must be YYYY-MM-DD`);
+    if (!Array.isArray(loc.sections) || loc.sections.length !== en?.sections?.length) err(`${lang}.sections must have ${en?.sections?.length} items`);
+    loc.sections?.forEach((section, i) => {
+      if (!section.title?.trim() || !section.body?.trim()) err(`${lang}.sections[${i}] needs title and body`);
+      if (section.list && (!Array.isArray(section.list) || section.list.some((item) => !item?.trim()))) err(`${lang}.sections[${i}].list must be non-empty strings`);
+    });
+    if (!Array.isArray(loc.faq) || loc.faq.length < 3) err(`${lang}.faq needs at least 3 items`);
+    loc.faq?.forEach((item, i) => {
+      if (!item.question?.trim() || !item.answer?.trim()) err(`${lang}.faq[${i}] needs question and answer`);
+    });
+    if (!Array.isArray(loc.sources) || loc.sources.length < 3) err(`${lang}.sources needs at least 3 entries`);
+    loc.sources?.forEach((source, i) => {
+      if (!source.publisher?.trim() || !source.title?.trim()) err(`${lang}.sources[${i}] needs publisher and title`);
+      if (!/^https:\/\/[^\s]+$/.test(source.url ?? '')) err(`${lang}.sources[${i}].url must be https`);
+    });
+    if (!sourceLabels[lang]) err(`no sourceLabels for ${lang}`);
+    if (loc.metaTitle?.length > 75) warn(`${lang}.metaTitle is ${loc.metaTitle.length} chars`);
+    if (loc.metaDescription?.length > 175) warn(`${lang}.metaDescription is ${loc.metaDescription.length} chars`);
+  }
+  for (const lang of Object.keys(article.locales)) if (!articleLangs.includes(lang)) err(`unexpected language ${lang}`);
+}
+
+for (const [id, article] of Object.entries(articles)) validateArticle(id, article);
 
 const requested = process.argv.slice(2);
 const codes = requested.length
