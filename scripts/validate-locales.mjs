@@ -92,6 +92,9 @@ async function validate(code) {
 
   for (const [id, post] of Object.entries(blogPosts)) {
     if (articles[id]) continue; // researched articles carry their own languages; checked below
+    // Beikost/YMYL guides cite one country's health authorities and are published
+    // per country, so they are deliberately not present in every language.
+    if (!post.locales.en) continue;
     const expected = { slug: post.slugs.en, ...post.locales.en };
     const actual = blog[id];
     if (!actual) { err(`blog.${id} missing`); continue; }
