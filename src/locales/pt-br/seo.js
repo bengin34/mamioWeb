@@ -5,7 +5,7 @@ export default {
     metaTitle: `App de Controle de Amamentação | Mamio`,
     metaDescription: `Registre mamadas por lado, adicione mamadas esquecidas, veja o equilíbrio entre os seios e guarde o histórico de amamentação offline com o Mamio.`,
     eyebrow: `Controle de amamentação`,
-    title: `Controle de amamentação para mamadas sonolentas e dias reais.`,
+    title: `Controle de amamentação para as mamadas da vida real, mesmo com sono.`,
     lead: `O Mamio ajuda você a iniciar um cronômetro de mamada, escolher o lado esquerdo ou direito, adicionar uma mamada depois e ver o histórico recente de amamentação sem transformar as noites em planilha.`,
     imageAlt: `Tela de controle de amamentação do Mamio com mamadas recentes e equilíbrio entre os lados.`,
     bullets: [
@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `O Mamio funciona sem cadastro?`,
-        answer: `Sim. O Mamio é offline em primeiro lugar, não exige cadastro e guarda os registros do bebê no seu aparelho.`,
+        answer: `Sim. O Mamio foi feito para funcionar offline, não exige cadastro e guarda os registros do bebê no seu aparelho.`,
       },
       {
         question: `Também posso registrar mamadeiras?`,
@@ -67,7 +67,7 @@ export default {
       },
       {
         title: `Compartilhe um contexto mais claro`,
-        body: `Na hora de conversar com o parceiro, uma consultora ou o pediatra, fica mais fácil rever as anotações recentes de alimentação.`,
+        body: `Na hora de conversar com o parceiro, uma consultora de amamentação ou o pediatra, fica mais fácil rever as anotações recentes de alimentação.`,
       },
     ],
     faq: [
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `Os registros de alimentação ficam guardados online?`,
-        answer: `Não. O Mamio é offline em primeiro lugar e guarda os registros localmente no seu aparelho.`,
+        answer: `Não. O Mamio foi feito para funcionar offline e guarda os registros localmente no seu aparelho.`,
       },
     ],
   },
@@ -196,7 +196,7 @@ export default {
       },
       {
         title: `Compartilhe um retrato mais claro`,
-        body: `O histórico de aleitamento misto pode ajudar parceiros, consultoras e profissionais de saúde a entender a rotina sem depender da memória.`,
+        body: `O histórico de aleitamento misto pode ajudar parceiros, consultoras de amamentação e profissionais de saúde a entender a rotina sem depender da memória.`,
       },
     ],
     faq: [
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `Os dados de aleitamento misto ficam guardados online?`,
-        answer: `Não. O Mamio é offline em primeiro lugar e guarda os registros localmente no seu aparelho.`,
+        answer: `Não. O Mamio foi feito para funcionar offline e guarda os registros localmente no seu aparelho.`,
       },
     ],
   },
@@ -277,7 +277,7 @@ export default {
         body: `Os lembretes de medicamentos, vacinas, mamadas e ordenha funcionam melhor quando ficam ao lado dos registros a que se referem.`,
       },
       {
-        title: `Alivie a carga da memória`,
+        title: `Alivie a carga mental`,
         body: `Um lembrete gentil ajuda nos dias corridos, principalmente quando mais de uma pessoa cuida do bebê.`,
       },
       {
@@ -425,7 +425,7 @@ export default {
       },
       {
         question: `O Mamio precisa de internet para registrar o sono?`,
-        answer: `Não. Os registros de sono funcionam offline e ficam no seu aparelho.`,
+        answer: `Não. O registro de sono funciona offline, e os dados ficam no seu aparelho.`,
       },
     ],
   },
@@ -511,7 +511,7 @@ export default {
       },
       {
         question: `A linha do tempo funciona sem internet?`,
-        answer: `Sim. Todos os registros ficam guardados localmente no seu aparelho e funcionam offline.`,
+        answer: `Sim. Todos os registros ficam guardados localmente no seu aparelho, e a linha do tempo funciona offline.`,
       },
     ],
   },

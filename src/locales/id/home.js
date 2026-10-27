@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Aplikasi pencatat menyusui dan perawatan bayi`,
-    metaDescription: `Mamio, aplikasi pencatat bayi yang tenang dan offline untuk menyusui, susu botol, popok, tidur, pompa ASI, tumbuh kembang, vaksin, kunjungan dokter, dan pengingat.`,
+    metaDescription: `Mamio, aplikasi pencatat bayi yang tenang dan offline untuk menyusui, susu botol, popok, tidur, pompa ASI, pertumbuhan, kesehatan, vaksin, kunjungan dokter, dan pengingat.`,
     nav: {
       features: `Fitur`,
       screens: `Tampilan`,
@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Pencatat perawatan bayi offline`,
       title: `Mamio`,
-      lead: `Cara tenang untuk mencatat menyusui, popok, tidur, pompa ASI, tumbuh kembang, kesehatan, vaksin, kunjungan dokter, dan pengingat, tanpa harus mengingat semuanya sendiri.`,
+      lead: `Cara tenang untuk mencatat menyusui, popok, tidur, pompa ASI, pertumbuhan, milestone, gigi, kesehatan, vaksin, dan kunjungan dokter, tanpa harus mengingat semuanya sendiri.`,
       primaryCta: `Unduh di App Store`,
       secondaryCta: `Lihat tampilan aplikasi`,
       imageAlt: `Layar utama aplikasi Mamio yang menampilkan jadwal menyusu berikutnya, keseimbangan sisi payudara, dan catatan perawatan terbaru.`,
@@ -51,11 +51,11 @@ export default {
       },
       {
         title: `Satu linimasa yang jelas`,
-        body: `Menyusui, susu botol, popok, makanan padat, tidur, tummy time, dan catatan pompa ASI tampil bersama dalam satu tampilan harian yang tenang.`
+        body: `Menyusui, susu botol, popok, MPASI, tidur, tummy time, dan catatan pompa ASI tampil bersama dalam satu tampilan harian yang tenang.`
       },
       {
         title: `Catatan kesehatan mudah dijangkau`,
-        body: `Simpan tumbuh kembang, gejala, suhu badan, obat, vaksin, kunjungan dokter, dan catatan singkat dengan rapi di satu tempat.`
+        body: `Simpan pertumbuhan, milestone, kata pertama, gigi, gejala, suhu badan, obat, vaksin, dan kunjungan dokter dengan rapi di satu tempat.`
       },
       {
         title: `Pengingat yang membantu`,
@@ -63,7 +63,7 @@ export default {
       },
       {
         title: `Pola tanpa bikin pusing`,
-        body: `Lihat riwayat terbaru, ringkasan harian, keseimbangan sisi payudara, tren popok, tidur, pompa ASI, dan gambaran tumbuh kembang sekilas.`
+        body: `Lihat riwayat terbaru, ringkasan harian, keseimbangan sisi payudara, tren popok, tidur, pompa ASI, dan gambaran pertumbuhan sekilas.`
       },
       {
         title: `Privat sejak awal`,
@@ -77,15 +77,15 @@ export default {
       },
       {
         title: `Setiap sesi menyusu dan popok`,
-        body: `Pencatatan dengan satu tangan untuk susu botol, popok, tidur, makanan padat, pompa ASI, dan menyusui.`
+        body: `Pencatatan dengan satu tangan untuk susu botol, popok, tidur, MPASI, pompa ASI, dan menyusui.`
       },
       {
         title: `Kenali pola sejak dini`,
         body: `Ringkasan sederhana membantumu memahami keseimbangan menyusui, tren, dan perubahan rutinitas.`
       },
       {
-        title: `Momen pertama dan tonggak perkembangan`,
-        body: `Tonggak perkembangan, tumbuh kembang, vaksin, dan catatan dokter selalu dekat saat kamu membutuhkannya.`
+        title: `Momen pertama dan milestone`,
+        body: `Milestone, pertumbuhan, vaksin, dan catatan dokter selalu dekat saat kamu membutuhkannya.`
       },
       {
         title: `Foto popok bayi`,
@@ -112,8 +112,8 @@ export default {
       freeTitle: `Gratis`,
       proTitle: `Mamio Pro`,
       free: [
-        `Catatan menyusui, susu botol, popok, makanan padat, tidur, dan pompa ASI`,
-        `Catatan dasar tumbuh kembang dan kesehatan`,
+        `Catatan menyusui, susu botol, popok, MPASI, tidur, dan pompa ASI`,
+        `Catatan dasar pertumbuhan dan kesehatan`,
         `Pengingat inti untuk menyusui dan memompa ASI`,
         `Riwayat terbaru dan ringkasan 7 hari`
       ],
@@ -145,7 +145,7 @@ export default {
     download: {
       eyebrow: `Dapatkan Mamio`,
       title: `Mulai catat perawatan bayi dengan Mamio hari ini.`,
-      body: `Unduh Mamio di iOS atau Android dan simpan catatan menyusui, popok, tidur, pompa ASI, tumbuh kembang, kesehatan, dan pengingat dalam jangkauan tanganmu.`,
+      body: `Unduh Mamio di iOS atau Android dan simpan catatan menyusui, popok, tidur, pompa ASI, pertumbuhan, kesehatan, dan pengingat dalam jangkauan tanganmu.`,
       cta: `Unduh di App Store`
     },
     ui: {

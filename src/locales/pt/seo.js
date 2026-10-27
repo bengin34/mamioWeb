@@ -5,7 +5,7 @@ export default {
     metaTitle: `Aplicação de registo de amamentação | Mamio`,
     metaDescription: `Regista as mamadas por lado, adiciona mamadas esquecidas, vê o equilíbrio entre lados e guarda o histórico de amamentação offline com o Mamio.`,
     eyebrow: `Registo de amamentação`,
-    title: `Registo de amamentação para mamadas de sono pesado e do dia a dia.`,
+    title: `Registo de amamentação para as mamadas reais, mesmo as da madrugada.`,
     lead: `O Mamio ajuda-te a iniciar um cronómetro de mamada, escolher o lado esquerdo ou direito, adicionar uma mamada mais tarde e ver o histórico recente de amamentação, sem transformar as noites numa folha de cálculo.`,
     imageAlt: `Ecrã de registo de amamentação do Mamio com as mamadas recentes e o equilíbrio entre lados.`,
     bullets: [
@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `O Mamio funciona sem conta?`,
-        answer: `Sim. O Mamio funciona primeiro offline, não exige conta e guarda os registos dos cuidados do bebé no teu dispositivo.`
+        answer: `Sim. O Mamio foi pensado para funcionar offline, não exige conta e guarda os registos dos cuidados do bebé no teu dispositivo.`
       },
       {
         question: `Também posso registar biberões?`,
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `Os registos de alimentação ficam guardados online?`,
-        answer: `Não. O Mamio funciona primeiro offline e guarda os registos localmente no teu dispositivo.`
+        answer: `Não. O Mamio foi pensado para funcionar offline e guarda os registos localmente no teu dispositivo.`
       }
     ]
   },
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `Os dados da alimentação mista ficam guardados online?`,
-        answer: `Não. O Mamio funciona primeiro offline e guarda os registos localmente no teu dispositivo.`
+        answer: `Não. O Mamio foi pensado para funcionar offline e guarda os registos localmente no teu dispositivo.`
       }
     ]
   },

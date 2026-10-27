@@ -11,7 +11,7 @@ export default {
     hero: {
       eyebrow: `Tracker del neonato offline`,
       title: `Mamio`,
-      lead: `Un modo sereno per segnare poppate, pannolini, sonno, tiralatte, crescita, salute, vaccini, visite e promemoria, senza dover ricordare tutto a memoria.`,
+      lead: `Un modo sereno per segnare poppate, pannolini, sonno, tiralatte, crescita, tappe dello sviluppo, denti, salute, vaccini e visite, senza dover ricordare tutto a memoria.`,
       primaryCta: `Scarica dall'App Store`,
       secondaryCta: `Scopri le schermate`,
       imageAlt: `Schermata iniziale dell'app Mamio con la prossima poppata, il seno da usare e gli ultimi eventi di cura.`,
@@ -24,7 +24,7 @@ export default {
     proof: [
       {
         value: `3:00 di notte`,
-        label: `pensata per le poppate nel sonno`
+        label: `pensata per le poppate notturne`
       },
       {
         value: `1 timeline`,
@@ -55,7 +55,7 @@ export default {
       },
       {
         title: `Dati di salute a portata di mano`,
-        body: `Tieni in ordine crescita, sintomi, temperatura, farmaci, vaccini, visite dal pediatra e appunti veloci, tutto in un solo posto.`
+        body: `Tieni in ordine crescita, tappe dello sviluppo, prime parole, denti, sintomi, temperatura, farmaci, vaccini e visite dal pediatra, tutto in un solo posto.`
       },
       {
         title: `Promemoria utili`,
@@ -84,8 +84,8 @@ export default {
         body: `Riepiloghi semplici ti aiutano a capire l'equilibrio delle poppate, gli andamenti e i cambi di routine.`
       },
       {
-        title: `Prime volte e traguardi`,
-        body: `Traguardi, crescita, vaccini e appunti del pediatra restano a portata di mano quando ti servono.`
+        title: `Prime volte e tappe`,
+        body: `Tappe dello sviluppo, crescita, vaccini e appunti del pediatra restano a portata di mano quando ti servono.`
       },
       {
         title: `Foto del pannolino`,
@@ -98,7 +98,7 @@ export default {
     ],
     privacy: {
       eyebrow: `I dati del tuo bambino sono tuoi`,
-      title: `Prima di tutto offline. Nessun account. Nessun server.`,
+      title: `Pensata per l'offline. Nessun account. Nessuna dipendenza da server.`,
       body: `Mamio è pensata per i genitori che vogliono un monitoraggio pratico, senza trasformare la cura del bambino in un progetto di dati. I dati restano sul tuo dispositivo e puoi esportare i report quando devi condividere il quadro con il pediatra, una consulente o il tuo partner.`,
       points: [
         `Tracciamento completamente offline`,
@@ -121,7 +121,7 @@ export default {
         `Esperienza senza pubblicità ed eventi salvati modificabili`,
         `Statistiche dettagliate con periodi più lunghi`,
         `Report PDF di salute e riepilogo`,
-        `Storico completo, percentili di crescita WHO e analisi degli andamenti`
+        `Storico completo, percentili di crescita OMS e analisi degli andamenti`
       ]
     },
     languages: {

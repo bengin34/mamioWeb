@@ -5,7 +5,7 @@ export default {
     metaTitle: `App per tracciare l'allattamento al seno | Mamio`,
     metaDescription: `Segna le poppate al seno per lato, aggiungi quelle dimenticate, controlla l'equilibrio tra i seni e tieni lo storico offline con Mamio.`,
     eyebrow: `Tracker allattamento al seno`,
-    title: `Tracciare l'allattamento anche nelle poppate nel sonno.`,
+    title: `Tracciare l'allattamento nelle poppate vere, anche a notte fonda.`,
     lead: `Mamio ti aiuta ad avviare il timer della poppata, scegliere seno sinistro o destro, aggiungere una poppata in un secondo momento e vedere lo storico recente, senza trasformare le notti in un foglio di calcolo.`,
     imageAlt: `Schermata del tracker allattamento di Mamio con le ultime poppate e l'equilibrio tra i seni.`,
     bullets: [
@@ -19,7 +19,7 @@ export default {
         body: `Apri Mamio, avvia il timer e segna quale seno hai usato. Se la poppata è già avvenuta, aggiungila a mano con l'orario e la durata.`
       },
       {
-        title: `Tieni sott'occhio i seni`,
+        title: `L'alternanza dei seni sempre in vista`,
         body: `Le ultime registrazioni ti aiutano a ricordare l'ultimo seno usato, senza affidarti alla memoria stanca delle poppate notturne.`
       },
       {
@@ -34,7 +34,7 @@ export default {
       },
       {
         question: `Mamio funziona senza un account?`,
-        answer: `Sì. Mamio funziona prima di tutto offline, non richiede un account e tiene i dati di cura del bambino sul tuo dispositivo.`
+        answer: `Sì. Mamio è pensata per funzionare offline, non richiede un account e tiene i dati di cura del bambino sul tuo dispositivo.`
       },
       {
         question: `Posso segnare anche i biberon?`,
@@ -49,7 +49,7 @@ export default {
     metaDescription: `Segna allattamento, biberon, svezzamento, tiralatte e storico recente delle poppate, offline, con il tracker poppate di Mamio.`,
     eyebrow: `Tracker poppate del neonato`,
     title: `Un posto sereno per poppate, biberon, svezzamento e tiralatte.`,
-    lead: `Mamio tiene insieme tutte le poppate, così vedi cosa è successo oggi, cosa è venuto per ultimo e cosa potrebbe essere il prossimo, senza rincorrere appunti sparsi.`,
+    lead: `Mamio tiene insieme tutte le poppate, così vedi cosa è successo oggi, qual è stata l'ultima poppata e cosa potrebbe venire dopo, senza rincorrere appunti sparsi.`,
     imageAlt: `Schermata del tracker poppate di Mamio con i dati di alimentazione e di cura quotidiana.`,
     bullets: [
       `Registro di allattamento e biberon`,
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: `I dati delle poppate sono salvati online?`,
-        answer: `No. Mamio funziona prima di tutto offline e conserva i dati in locale sul tuo dispositivo.`
+        answer: `No. Mamio è pensata per funzionare offline e conserva i dati in locale sul tuo dispositivo.`
       }
     ]
   },
@@ -115,7 +115,7 @@ export default {
     ],
     faq: [
       {
-        question: `Posso segnare i biberon di latte artificiale e di latte materno spremuto?`,
+        question: `Posso segnare i biberon di latte artificiale e di latte materno tirato?`,
         answer: `Sì. Mamio ti permette di tenere insieme i biberon e gli appunti sul tipo di latte, con il resto della cura del bambino.`
       },
       {
@@ -210,7 +210,7 @@ export default {
       },
       {
         question: `I dati dell'allattamento misto sono salvati online?`,
-        answer: `No. Mamio funziona prima di tutto offline e conserva i dati in locale sul tuo dispositivo.`
+        answer: `No. Mamio è pensata per funzionare offline e conserva i dati in locale sul tuo dispositivo.`
       }
     ]
   },
@@ -393,7 +393,7 @@ export default {
     metaDescription: `Segna le sessioni di sonno del bebè, i riposini recenti, il contesto delle poppate e lo storico delle cure, offline, con Mamio.`,
     eyebrow: `Tracker sonno del neonato`,
     title: `Segna riposini e notti senza perdere il resto della giornata.`,
-    lead: `Mamio tiene il sonno vicino a poppate, pannolini e appunti, così capisci la giornata nel suo insieme invece di tracciare il sonno da solo.`,
+    lead: `Mamio tiene il sonno vicino a poppate, pannolini e appunti, così capisci la giornata nel suo insieme invece di tracciare il sonno separatamente.`,
     imageAlt: `Schermata del tracker sonno di Mamio con sonno e timeline delle cure.`,
     bullets: [
       `Registro di riposini e sonno`,
@@ -424,7 +424,7 @@ export default {
         answer: `Sì. Sonno, poppate, pannolini, tiralatte e appunti sono mostrati insieme nella timeline giornaliera.`
       },
       {
-        question: `Mamio ha bisogno di internet per il sonno?`,
+        question: `Mamio ha bisogno di internet per tracciare il sonno?`,
         answer: `No. I dati del sonno funzionano offline e restano sul tuo dispositivo.`
       }
     ]
@@ -475,7 +475,7 @@ export default {
   careTimeline: {
     slug: `timeline-cure-neonato`,
     shortTitle: `Timeline delle cure del neonato`,
-    metaTitle: `Timeline delle cure del neonato: app | Mamio`,
+    metaTitle: `App timeline delle cure del neonato | Mamio`,
     metaDescription: `Segna poppate, pannolini, sonno, tiralatte, svezzamento e cure in un'unica timeline serena del tuo bebè con Mamio.`,
     eyebrow: `Timeline delle cure del neonato`,
     title: `Una timeline serena per ogni poppata, pannolino, sonno e momento di cura.`,
