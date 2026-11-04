@@ -1,3 +1,10 @@
+import babyMassageGuide from './baby-massage-guide.js';
+import babyMilestonesByAge from './baby-milestones-by-age.js';
+import firstWordsLanguageDevelopment from './first-words-language-development.js';
+import growthPercentilesExplained from './growth-percentiles-explained.js';
+import teethingTimeline from './teething-timeline.js';
+import twinsFeedingSleepRoutine from './twins-feeding-sleep-routine.js';
+
 // Researched long-form guides. Each article lives in its own file and carries
 // every language it is published in (en, de, fr, pt-br, tr) plus its sources.
 // They are merged into blogPosts; languages without a translation simply have
@@ -28,4 +35,11 @@ export const sourceLabels = {
   tr: { sources: 'Kaynaklar', reviewed: 'Son inceleme', author: 'Mamio Editör Ekibi' },
 };
 
-export const articles = {};
+export const articles = {
+  'baby-massage-guide': babyMassageGuide,
+  'baby-milestones-by-age': babyMilestonesByAge,
+  'first-words-language-development': firstWordsLanguageDevelopment,
+  'growth-percentiles-explained': growthPercentilesExplained,
+  'teething-timeline': teethingTimeline,
+  'twins-feeding-sleep-routine': twinsFeedingSleepRoutine,
+};

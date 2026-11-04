@@ -121,3 +121,9 @@ References:
 - Google SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 - Google localized versions / hreflang: https://developers.google.com/search/docs/specialty/international/localized-versions
 - Google structured data introduction: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+## MEN-130 (2026-11-04)
+
+- Fact-checked the parked article drafts with the health-article-factcheck skill (one fresh agent each, every source opened). Published in en, de, fr, pt-br, tr: baby massage, milestones by age, first words, growth percentiles, teething, twins. Review notes: `docs/article-reviews/`.
+- Not published: `crawling-development` (no openable fr/tr local official source), `night-waking-sleep-regression` (pt-br/tr claims unverified, SBP and Turkish ministry hosts returned 403). Original drafts remain on `origin/drafts/unverified-articles`.
+- Still open: `baby-fever-when-to-worry`, `potty-training-readiness`; translating the verified articles to the other 23 languages (needs `articleLangs`/`sourceLabels` extension and local official sources per language).
