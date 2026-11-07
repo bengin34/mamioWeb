@@ -1,7 +1,11 @@
+import babyFirstDentistVisit from './baby-first-dentist-visit.js';
 import babyMassageGuide from './baby-massage-guide.js';
 import babyMilestonesByAge from './baby-milestones-by-age.js';
+import brushingBabyTeethFluorideByAge from './brushing-baby-teeth-fluoride-by-age.js';
 import firstWordsLanguageDevelopment from './first-words-language-development.js';
 import growthPercentilesExplained from './growth-percentiles-explained.js';
+import teethingFeverOrIllness from './teething-fever-or-illness.js';
+import teethingRemediesWhatToAvoid from './teething-remedies-what-to-avoid.js';
 import teethingTimeline from './teething-timeline.js';
 import twinsFeedingSleepRoutine from './twins-feeding-sleep-routine.js';
 
@@ -36,10 +40,14 @@ export const sourceLabels = {
 };
 
 export const articles = {
+  'baby-first-dentist-visit': babyFirstDentistVisit,
   'baby-massage-guide': babyMassageGuide,
   'baby-milestones-by-age': babyMilestonesByAge,
+  'brushing-baby-teeth-fluoride-by-age': brushingBabyTeethFluorideByAge,
   'first-words-language-development': firstWordsLanguageDevelopment,
   'growth-percentiles-explained': growthPercentilesExplained,
+  'teething-fever-or-illness': teethingFeverOrIllness,
+  'teething-remedies-what-to-avoid': teethingRemediesWhatToAvoid,
   'teething-timeline': teethingTimeline,
   'twins-feeding-sleep-routine': twinsFeedingSleepRoutine,
 };
