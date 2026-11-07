@@ -34,7 +34,7 @@ export default {
         },
         {
           title: `Which temperatures matter`,
-          body: `Teething can raise the temperature a little, but the NHS puts that at less than 38C. The NHS fever page for children asks you to call NHS 111 for urgent advice in the situations below. Follow the NHS rule for your baby's age, and call even if you only think your baby feels hot.\n\nA thermometer is useful, but how your baby looks and behaves matters just as much. A baby who is feeding poorly or is not their usual self needs advice at any temperature.`,
+          body: `Teething can raise the temperature a little, but the NHS puts that at less than 38C. The NHS fever page for children asks you to call NHS 111 for urgent advice in the situations below. Follow the NHS rule for your baby's age. Under 6 months, call even if you only think your baby has a high temperature.\n\nA thermometer is useful, but how your baby looks and behaves matters just as much. A baby who is feeding poorly or is not their usual self needs advice at any temperature.`,
           list: [
             `Under 3 months old with a temperature of 38C or higher, or you think they have a high temperature`,
             `3 to 6 months old with a temperature of 39C or higher, or you think they have a high temperature`,
@@ -50,7 +50,7 @@ export default {
         },
         {
           title: `Emergency signs: call your local emergency number`,
-          body: `The NHS says to call 999 (the emergency number in the UK; in the US it is 911, in Germany 112, in France 15 or 112, in Brazil SAMU 192, in Turkey 112) if your child with a high temperature has any of the signs below. Do not wait to see if teething is the cause.\n\nSay clearly that your baby is unwell and has a high temperature. If you are not sure whether it is an emergency, ask for advice.`,
+          body: `The NHS says to call 999 if your child with a high temperature has any of the signs below. 999 is the UK emergency number; elsewhere use your local one (911 in the US, 112 in Germany, 15 or 112 in France, SAMU 192 in Brazil, 112 in Turkey). Do not wait to see if teething is the cause.\n\nSay clearly that your baby is unwell and has a high temperature. If you are not sure whether it is an emergency, ask for advice.`,
           list: [
             `Has a stiff neck`,
             `Has a rash that does not fade when you press a glass against it`,
@@ -70,7 +70,7 @@ export default {
         },
         {
           title: `Where national guidance differs`,
-          body: `The core message is the same everywhere: a fever is not caused by teething. Details differ, and in this guide each language follows its own country's official pages where they exist.\n\nGermany: kindergesundheit-info.de says teething can slightly raise the temperature, while high fever or diarrhoea have other causes and should be checked by a paediatrician. Its fever page counts fever from 38.5C, but already from 38C in the first three months, and says to see a paediatrician if a baby aged 0 to 3 months has 38C or more, or if fever lasts more than a day in a child up to about two years old.\n\nFrance: Santé.fr says there is no proof that fever and diarrhoea are linked to teeth coming through. Ameli says to consult urgently if the fever is in a baby under 3 months, and the same day if fever lasts more than two days in a child under two.\n\nBrazil: the Ministry of Health says fever, irritability, more saliva and diarrhoea are common while teeth come in, but may or may not be related to eruption. The AAP and NHS are firmer. We recommend you do not assume the link.\n\nTurkey: a health ministry page says fever below 38C can accompany teething and to tell your doctor if it does not go down in two days. The ministry's fever page says fever in babies under 3 months can be a sign of serious infection and to go to the nearest health facility.`,
+          body: `The core message is the same everywhere: a fever is not caused by teething. Details differ, and in this guide each language follows its own country's official pages where they exist.\n\nGermany: kindergesundheit-info.de says teething can slightly raise the temperature, while high fever or diarrhoea have other causes and should be checked by a paediatrician. Its fever page counts fever from 38.5C, but already from 38C in the first weeks of life, and says to see a paediatrician promptly if a baby aged 0 to 3 months has 38C or more, if fever lasts more than a day in a child up to about two years old, if the child refuses to drink or passes no urine for over 12 hours, or after a febrile seizure. It says that in doubt you should always call the emergency doctor on 112, and call as soon as possible during a seizure. That is stricter than the NHS for fever lasting one to four days in a child over 6 months.\n\nFrance: Santé.fr says there is no proof that fever and diarrhoea are linked to teeth coming through. Ameli says to consult urgently if the fever is in a baby under 3 months, or in any child over 40C or getting worse, and the same day if fever lasts more than two days in a child under two or comes back after 24 hours.\n\nBrazil: the Ministry of Health says fever, irritability, more saliva and diarrhoea are common while teeth come in, but may or may not be related to eruption. The AAP and NHS are firmer. We recommend you do not assume the link.\n\nTurkey: a health ministry page says fever below 38C can accompany teething and to tell your doctor if it does not go down in two days, and to report diarrhoea lasting longer than two stools. A ministry hospital's fever page says to see a doctor without delay when fever occurs in a baby under 2 years, and that in babies under 3 months fever can be a sign of very serious infection.`,
         },
         {
           title: `Keeping track of teeth without guessing`,
@@ -80,7 +80,7 @@ export default {
       faq: [
         {
           question: `Can teething cause a fever?`,
-          answer: `The NHS says teething can come with a temperature that is slightly raised but less than 38C. The AAP says fever is a false symptom of teething. A temperature of 38C or more is a fever and needs another explanation. For a baby under 3 months, the NHS says to call NHS 111 at 38C or higher.`,
+          answer: `The NHS says teething can come with a temperature that is slightly raised but less than 38C. The AAP says fever is a false symptom of teething. A temperature of 38C or more is above what the NHS describes for teething and needs another explanation. For a baby under 3 months, the NHS says to call NHS 111 at 38C or higher.`,
         },
         {
           question: `Does teething cause diarrhoea?`,
@@ -155,7 +155,7 @@ export default {
         },
         {
           title: `Notfallzeichen: sofort den Notruf 112 wählen`,
-          body: `Der NHS nennt die folgenden Zeichen bei einem Kind mit hoher Temperatur als Anlass für den Notruf (in Großbritannien 999, in Deutschland 112). Warte dann nicht ab, ob es am Zahnen liegt. Kindergesundheit-info.de rät außerdem: Im Zweifelsfall immer den Notarzt unter 112 verständigen.\n\nSag klar, dass dein Baby krank ist und hohe Temperatur hat. Außerhalb der Sprechzeiten und wenn es kein Notfall ist, erreichst du den ärztlichen Bereitschaftsdienst unter 116 117.`,
+          body: `Der NHS nennt die folgenden Zeichen bei einem Kind mit hoher Temperatur als Anlass für den Notruf (in Großbritannien 999, in Deutschland 112). Warte dann nicht ab, ob es am Zahnen liegt. kindergesundheit-info.de rät außerdem: Im Zweifelsfall immer den Notarzt unter 112 verständigen, bei einem Fieberkrampf so schnell wie möglich. Als Warnzeichen nennt die Seite zusätzlich ein berührungsempfindliches Kind, das schrill schreit oder schwer krank wirkt, Teilnahmslosigkeit auch nach dem Fiebersenken sowie Kopfschmerzen, Atemnot oder einen steifen Nacken.\n\nSag klar, dass dein Baby krank ist und hohe Temperatur hat. Außerhalb der Sprechzeiten und wenn es kein Notfall ist, erreichst du den ärztlichen Bereitschaftsdienst unter 116 117.`,
           list: [
             `Steifer Nacken`,
             `Ausschlag, der beim Draufdrücken mit einem Glas nicht verblasst`,
@@ -175,7 +175,7 @@ export default {
         },
         {
           title: `Wo sich die Empfehlungen unterscheiden`,
-          body: `Die Kernbotschaft ist überall gleich: Fieber kommt nicht vom Zahnen. Die Einzelheiten unterscheiden sich, und in dieser Sprachversion gilt für Deutschland, was kindergesundheit-info.de schreibt.\n\nDeutschland: Die Fieberseite von kindergesundheit-info.de zählt Fieber ab 38,5 Grad, in den ersten drei Lebensmonaten aber schon ab 38 Grad, und hohes Fieber ab 39 Grad. Bei einem Baby im Alter von 0 bis 3 Monaten mit 38 Grad oder mehr, bei Fieber über mehr als einen Tag bei Kindern bis etwa zwei Jahren, bei Trinkverweigerung oder Urinieren seit über 12 Stunden soll man unverzüglich zur Kinderarztpraxis. Das ist strenger als die NHS-Regel bei Fieber von 3 bis 6 Monaten (39 Grad), aber ähnlich bei unter 3 Monaten.\n\nGroßbritannien: Der NHS ruft bei Fieber ab 5 Tagen an, bei 3 bis 6 Monaten ab 39 Grad. Frankreich: ameli.fr nennt dringende Konsultation bei Säuglingen unter 3 Monaten und am selben Tag bei Fieber über zwei Tage unter zwei Jahren. Brasilien: Das Gesundheitsministerium nennt Fieber und Durchfall häufig beim Zahnen, aber nicht zwingend damit verbunden. Türkei: Ein Gesundheitsministerium nennt Temperaturen unter 38 Grad beim Zahnen und rät, den Arzt zu informieren, wenn das Fieber nicht innerhalb von zwei Tagen sinkt.\n\nWenn sich Quellen unterscheiden, gilt: im Zweifel früher nachfragen.`,
+          body: `Die Kernbotschaft ist überall gleich: Fieber kommt nicht vom Zahnen. Die Einzelheiten unterscheiden sich, und in dieser Sprachversion gilt für Deutschland, was kindergesundheit-info.de schreibt.\n\nDeutschland: Die Fieberseite von kindergesundheit-info.de zählt Fieber ab 38,5 Grad, in den ersten Lebenswochen aber schon ab 38 Grad, und hohes Fieber ab 39 Grad. Bei einem Baby im Alter von 0 bis 3 Monaten mit 38 Grad oder mehr, bei Fieber über mehr als einen Tag bei Kindern bis etwa zwei Jahren, bei Fieber mit weiteren Zeichen wie Teilnahmslosigkeit, Erbrechen, Durchfall oder Hautausschlag, bei Trinkverweigerung, wenn das Kind über 12 Stunden keinen Urin ausscheidet, oder nach einem Fieberkrampf soll man zur Kinderarztpraxis. Beim Fieberkrampf soll der Notruf so schnell wie möglich erfolgen, und im Zweifelsfall immer der Notarzt unter 112. Das ist strenger als der NHS bei Fieber über 6 Monaten, das 1 bis 4 Tage dauert, und ähnlich bei unter 3 Monaten.\n\nGroßbritannien: Der NHS rät bei Fieber ab 5 Tagen zum Anruf bei 111, bei 3 bis 6 Monaten ab 39 Grad. Frankreich: ameli.fr nennt dringende Konsultation bei Säuglingen unter 3 Monaten, bei Kindern über 40 Grad oder mit sich verschlechterndem Zustand, und am selben Tag bei Fieber über zwei Tage unter zwei Jahren oder wenn es nach über 24 Stunden wiederkommt. Brasilien: Das Gesundheitsministerium nennt Fieber und Durchfall häufig beim Zahnen, aber nicht zwingend damit verbunden. Türkei: Eine Seite des Gesundheitsministeriums nennt Temperaturen unter 38 Grad beim Zahnen und rät, den Arzt zu informieren, wenn das Fieber nicht innerhalb von zwei Tagen sinkt. Die Fieberseite eines Kinderkrankenhauses rät bei Fieber unter 2 Jahren, ohne Zeitverlust zum Arzt zu gehen.\n\nWenn sich Quellen unterscheiden, gilt: im Zweifel früher nachfragen.`,
         },
         {
           title: `Zähne im Blick behalten, ohne zu raten`,
@@ -185,7 +185,7 @@ export default {
       faq: [
         {
           question: `Kann Zahnen Fieber auslösen?`,
-          answer: `Nach dem NHS kann die Temperatur beim Zahnen leicht erhöht sein, bleibt aber unter 38 Grad. Die AAP nennt Fieber ein falsches Zahnungssymptom. Ab 38 Grad ist es Fieber und braucht eine andere Erklärung. kindergesundheit-info.de zählt in den ersten drei Lebensmonaten schon 38 Grad als Fieber.`,
+          answer: `Nach dem NHS kann die Temperatur beim Zahnen leicht erhöht sein, bleibt aber unter 38 Grad. Die AAP nennt Fieber ein falsches Zahnungssymptom. Ab 38 Grad liegt die Temperatur über dem, was der NHS fürs Zahnen beschreibt, und braucht eine andere Erklärung. kindergesundheit-info.de zählt in den ersten Lebenswochen schon 38 Grad als Fieber, und bei Babys von 0 bis 3 Monaten mit 38 Grad oder mehr soll man zur Kinderarztpraxis.`,
         },
         {
           question: `Macht Zahnen Durchfall?`,
@@ -277,7 +277,7 @@ export default {
         },
         {
           title: `Où les recommandations diffèrent`,
-          body: `Le message de fond est partout le même : la fièvre ne vient pas des dents. Les détails diffèrent, et dans la version française nous suivons les pages officielles françaises.\n\nFrance : sur sa page « Votre enfant a de la fièvre : que faire et quand consulter ? », ameli.fr dit de consulter en urgence si la fièvre concerne un nourrisson de moins de trois mois, et pour tout enfant en cas de température supérieure à 40 °C ou d'état général qui se dégrade (il ne mange plus, refuse de boire, est somnolent, a des cris faibles ou la peau marbrée), de maux de tête importants, de raideur de la nuque ou de vomissements, de déshydratation, de maux de ventre avec diarrhée abondante, ou de respiration difficile. Elle recommande de consulter dans la journée si la fièvre persiste plus de deux jours chez un enfant de moins de deux ans, si elle réapparaît après plus de 24 heures, si elle s'accompagne d'un autre symptôme inquiétant ou en cas de convulsions fébriles.\n\nRoyaume-Uni : le NHS fixe 38 °C avant 3 mois, 39 °C de 3 à 6 mois et 5 jours de fièvre. Allemagne : kindergesundheit-info.de compte la fièvre à partir de 38,5 °C, dès 38 °C pendant les trois premiers mois. Brésil : le ministère de la Santé juge fièvre et diarrhée fréquentes pendant la poussée, sans lien certain. Turquie : une page ministérielle juge qu'une température inférieure à 38 °C peut accompagner la poussée.\n\nQuand les sources divergent, mieux vaut demander un avis plus tôt que trop tard. Nous n'avons pas pu ouvrir la page de mpedia.fr sur le sujet et ne l'utilisons donc pas.`,
+          body: `Le message de fond est partout le même : la fièvre ne vient pas des dents. Les détails diffèrent, et dans la version française nous suivons les pages officielles françaises.\n\nFrance : sur sa page « Votre enfant a de la fièvre : que faire et quand consulter ? », ameli.fr dit de consulter en urgence si la fièvre concerne un nourrisson de moins de trois mois, et pour tout enfant en cas de température supérieure à 40 °C ou d'état général qui se dégrade (il ne mange plus, refuse de boire, est somnolent), de maux de tête importants, de raideur de la nuque ou de vomissements, de déshydratation, de maux de ventre avec diarrhée abondante, ou de respiration difficile. Elle recommande de consulter dans la journée si la fièvre persiste plus de deux jours chez un enfant de moins de deux ans (plus de trois jours au-delà), si elle réapparaît après plus de 24 heures sans fièvre, si elle s'accompagne d'un autre symptôme qui vous inquiète, en cas de convulsions fébriles, d'épisodes de fièvre fréquents ou si l'enfant est suivi pour une maladie chronique.\n\nRoyaume-Uni : le NHS fixe 38 °C avant 3 mois, 39 °C de 3 à 6 mois et 5 jours de fièvre. Allemagne : kindergesundheit-info.de compte la fièvre à partir de 38,5 °C, dès 38 °C pendant les premières semaines de vie, avec un avis pédiatrique rapide pour un bébé de 0 à 3 mois à 38 °C ou plus, ou si la fièvre dure plus d'un jour jusqu'à environ deux ans. Brésil : le ministère de la Santé juge fièvre et diarrhée fréquentes pendant la poussée, sans lien certain. Turquie : une page ministérielle juge qu'une température inférieure à 38 °C peut accompagner la poussée, et la page fièvre d'un hôpital pour enfants du ministère conseille de voir un médecin sans délai en cas de fièvre avant deux ans.\n\nQuand les sources divergent, mieux vaut demander un avis plus tôt que trop tard.`,
         },
         {
           title: `Suivre les dents sans deviner`,
@@ -287,7 +287,7 @@ export default {
       faq: [
         {
           question: `La poussée dentaire donne-t-elle de la fièvre ?`,
-          answer: `Selon le NHS, elle peut faire monter légèrement la température, en dessous de 38 °C. L'AAP parle d'un faux symptôme. À partir de 38 °C, c'est de la fièvre, qui demande une autre explication. Chez un bébé de moins de 3 mois, ameli.fr dit de consulter en urgence en cas de fièvre.`,
+          answer: `Selon le NHS, elle peut faire monter légèrement la température, en dessous de 38 °C. L'AAP parle d'un faux symptôme. À partir de 38 °C, on dépasse ce que le NHS décrit pour les dents : il faut une autre explication. Chez un bébé de moins de 3 mois, ameli.fr dit de consulter en urgence en cas de fièvre.`,
         },
         {
           question: `Les dents donnent-elles la diarrhée ?`,
@@ -320,7 +320,7 @@ export default {
     },
     'pt-br': {
       metaTitle: `Dente nascendo ou doença? Febre, diarreia e sinais de alerta | Mamio`,
-      metaDescription: `A erupção dos dentes pode elevar um pouco a temperatura, mas febre e diarreia merecem outra explicação. O que NHS, AAP e Ministério da Saúde dizem e quando chamar ajuda.`,
+      metaDescription: `A erupção dos dentes pode elevar um pouco a temperatura, mas febre e diarreia merecem atenção e avaliação. O que NHS, AAP e Ministério da Saúde dizem e quando chamar ajuda.`,
       title: `Dente nascendo ou doença? Febre, diarreia, manchas na pele e sinais que pedem atendimento`,
       date: `2026-11-07`,
       reviewed: `2026-11-07`,
@@ -343,7 +343,7 @@ export default {
         },
         {
           title: `Quais temperaturas importam`,
-          body: `Os dentes podem elevar um pouco a temperatura, mas o NHS fala em abaixo de 38 °C. A página do NHS sobre febre em crianças manda procurar orientação urgente (o serviço 111 no Reino Unido; no Brasil, procure o pediatra, a UBS ou uma unidade de pronto atendimento) nas situações abaixo. Os limites por idade são do NHS, não do Ministério da Saúde.\n\nO termômetro ajuda, mas o jeito do bebê importa tanto quanto. Um bebê que mama mal ou não está como de costume precisa de orientação em qualquer temperatura.`,
+          body: `Os dentes podem elevar um pouco a temperatura, mas o NHS fala em abaixo de 38 °C. A página do NHS sobre febre em crianças manda procurar orientação urgente (o serviço 111 no Reino Unido; no Brasil, procure o pediatra, a UBS ou uma unidade de pronto atendimento) nas situações abaixo. Os limites por idade são do NHS, não do Ministério da Saúde. Com menos de 6 meses, ligue mesmo que só ache que ele está com febre alta.\n\nO termômetro ajuda, mas o jeito do bebê importa tanto quanto. Um bebê que mama mal ou não está como de costume precisa de orientação em qualquer temperatura.`,
           list: [
             `Menos de 3 meses com 38 °C ou mais, ou você acha que ele está com febre`,
             `De 3 a 6 meses com 39 °C ou mais, ou você acha que ele está com febre`,
@@ -379,7 +379,7 @@ export default {
         },
         {
           title: `Onde as orientações diferem`,
-          body: `A mensagem central é a mesma em toda parte: febre não vem dos dentes. Os detalhes diferem, e nesta versão seguimos as páginas oficiais do Brasil quando existem.\n\nBrasil: a página do Ministério da Saúde sobre a dentição do bebê não traz limites de temperatura nem lista de sinais de alerta, e diz que febre e diarreia podem ou não estar ligadas à erupção. A página sobre saúde bucal lista sono alterado, mais salivação, coceira nas gengivas e irritabilidade. Como não encontramos uma página brasileira com limites de febre para bebês, os limites e sinais de emergência acima vêm do NHS.\n\nReino Unido: o NHS fixa 38 °C antes de 3 meses, 39 °C de 3 a 6 meses e 5 dias de febre. Alemanha: kindergesundheit-info.de conta febre a partir de 38,5 °C, e de 38 °C nos três primeiros meses. França: ameli.fr manda consultar com urgência se a febre ocorre em bebê com menos de 3 meses. Turquia: uma página do ministério diz que temperatura abaixo de 38 °C pode acompanhar a dentição.\n\nQuando as fontes divergem, é melhor perguntar cedo do que tarde.`,
+          body: `A mensagem central é a mesma em toda parte: febre não vem dos dentes. Os detalhes diferem, e nesta versão seguimos as páginas oficiais do Brasil quando existem.\n\nBrasil: a página do Ministério da Saúde sobre a dentição do bebê não traz limites de temperatura nem lista de sinais de alerta, e diz que febre e diarreia podem ou não estar ligadas à erupção. A página sobre saúde bucal lista sono alterado, mais salivação, coceira nas gengivas e irritabilidade. Como não encontramos uma página brasileira com limites de febre para bebês, os limites e sinais de emergência acima vêm do NHS.\n\nReino Unido: o NHS fixa 38 °C antes de 3 meses, 39 °C de 3 a 6 meses e 5 dias de febre. Alemanha: kindergesundheit-info.de conta febre a partir de 38,5 °C, e de 38 °C nas primeiras semanas de vida, com consulta pediátrica rápida para bebê de 0 a 3 meses com 38 °C ou mais, ou febre por mais de um dia até cerca de 2 anos. França: ameli.fr manda consultar com urgência se a febre ocorre em bebê com menos de 3 meses, ou em criança com mais de 40 °C ou estado geral piorando. Turquia: uma página do ministério diz que temperatura abaixo de 38 °C pode acompanhar a dentição, e a página de febre de um hospital infantil do ministério manda procurar um médico sem demora se a febre ocorre antes dos 2 anos.\n\nQuando as fontes divergem, é melhor perguntar cedo do que tarde.`,
         },
         {
           title: `Acompanhar os dentes sem adivinhar`,
@@ -389,7 +389,7 @@ export default {
       faq: [
         {
           question: `Dente nascendo causa febre?`,
-          answer: `O NHS diz que a temperatura pode ficar um pouco elevada, abaixo de 38 °C. A AAP fala em falso sintoma. A partir de 38 °C é febre e pede outra explicação. O Ministério da Saúde diz que a febre pode ou não estar relacionada à erupção; por isso, na dúvida, procure orientação.`,
+          answer: `O NHS diz que a temperatura pode ficar um pouco elevada, abaixo de 38 °C. A AAP fala em falso sintoma. A partir de 38 °C passa do que o NHS descreve para a dentição e pede outra explicação. O Ministério da Saúde diz que a febre pode ou não estar relacionada à erupção; por isso, na dúvida, procure orientação.`,
         },
         {
           question: `Dente nascendo causa diarreia?`,
@@ -482,7 +482,7 @@ export default {
         },
         {
           title: `Yönergelerin ayrıştığı yerler`,
-          body: `Ana mesaj her yerde aynı: ateş diş çıkarmadan olmaz. Ayrıntılar değişir ve bu dil sürümünde Türkiye'deki resmi sayfaları öne alıyoruz.\n\nTürkiye: Sağlık Bakanlığına bağlı Tunceli sayfasına göre 38 °C'nin altındaki ateş diş çıkarmaya eşlik edebilir; ateş iki günde azalmazsa doktora haber vermek gerekir ve iki dışkılamadan daha uzun süren ishalin doktora bildirilmesi önerilir. Behçet Uz Çocuk Hastanesi'nin Ateş sayfası ateşi 37 °C üzeri olarak tanımlar, 3 aydan küçük bebeklerde ateşin çok ciddi enfeksiyon belirtisi olabileceğini söyler ve en yakın sağlık kuruluşuna başvurmayı önerir. Ayrıca 40 °C üzeri düşürülemeyen ateş, ağlama, inleme, uyku eğilimi, zor nefes, ciltte mor döküntü, boyunda sertlik, bıngıldakta kabarıklık ve devamlı kusma ya da ishali bekletmeden doktora gitme nedenleri sayar.\n\nİngiltere: NHS 3 aydan küçüklerde 38 °C, 3-6 ayda 39 °C ve 5 günlük ateşi sınır alır. Almanya: kindergesundheit-info.de ateşi 38,5 °C'den, ilk üç ayda 38 °C'den başlatır. Fransa: ameli.fr 3 aydan küçük bebekte ateşte acil muayene önerir. Brezilya: Sağlık Bakanlığı ateş ve ishalin diş çıkarırken sık görüldüğünü ama bağlantının kesin olmadığını söyler.\n\nKaynaklar ayrıştığında erken sormak geç kalmaktan iyidir. Bu sürümde yaşa göre kesin sınırlar için NHS değerlerini, 112 ve belirti listeleri için Türk ve NHS sayfalarını birlikte kullandık.`,
+          body: `Ana mesaj her yerde aynı: ateş diş çıkarmadan olmaz. Ayrıntılar değişir ve bu dil sürümünde Türkiye'deki resmi sayfaları öne alıyoruz.\n\nTürkiye: Sağlık Bakanlığına bağlı Tunceli sayfasına göre 38 °C'nin altındaki ateş diş çıkarmaya eşlik edebilir; ateş iki günde azalmazsa doktora haber vermek gerekir ve iki dışkılamadan daha uzun süren ishalin doktora bildirilmesi önerilir. Behçet Uz Çocuk Hastanesi'nin Ateş sayfası ateşi 37 °C üzeri olarak tanımlar, 3 aydan küçük bebeklerde ateşin çok ciddi enfeksiyon belirtisi olabileceğini söyler ve en yakın sağlık kuruluşuna başvurmayı önerir. Ayrıca ateş özellikle 2 yaş altındaki bebeklerde görülüyorsa ve ateşin yanında şunlar varsa zaman kaybetmeden doktora gitmeyi söyler: 40 °C üzeri düşürülemeyen ateş, ağlama, inleme ve dokununca huzursuzlanma, uyku eğilimi ve zor uyanma, ciltte mor döküntü, dalgınlık veya sayıklama, zor nefes alıp verme, yutkunma güçlüğü, daha önce havale geçirmiş olma, genel görünümde kötülük, boyunda sertleşme, bıngıldakta kabarıklık ve devamlı kusma ya da ishal.\n\nİngiltere: NHS 3 aydan küçüklerde 38 °C, 3-6 ayda 39 °C ve 5 günlük ateşi sınır alır. Almanya: kindergesundheit-info.de ateşi 38,5 °C'den, ilk haftalarda 38 °C'den başlatır; 0-3 aylık bebekte 38 °C ve üzerinde, ya da 2 yaşa kadar bir günden uzun süren ateşte hızlı çocuk doktoru görüşü önerir. Fransa: ameli.fr 3 aydan küçük bebekte ya da 40 °C üzerinde veya genel durumu kötüleşen çocukta ateşte acil muayene önerir. Brezilya: Sağlık Bakanlığı ateş ve ishalin diş çıkarırken sık görüldüğünü ama bağlantının kesin olmadığını söyler.\n\nKaynaklar ayrıştığında erken sormak geç kalmaktan iyidir. Bu sürümde yaşa göre kesin sınırlar için NHS değerlerini, 112 ve belirti listeleri için Türk ve NHS sayfalarını birlikte kullandık.`,
         },
         {
           title: `Dişleri tahmin etmeden takip et`,
@@ -492,7 +492,7 @@ export default {
       faq: [
         {
           question: `Diş çıkarma ateşe yol açar mı?`,
-          answer: `NHS ve Tunceli sayfasına göre diş çıkarma ateşi hafif yükseltebilir, ama 38 °C'nin altında kalır. AAP ateşi yanlış belirti sayar. 38 °C veya üzeri ateş başka bir açıklama gerektirir. 3 aydan küçük bebekte NHS, 38 °C ve üzerinde hemen danışmayı söyler.`,
+          answer: `NHS ve Tunceli sayfasına göre diş çıkarma ateşi hafif yükseltebilir, ama 38 °C'nin altında kalır. AAP ateşi yanlış belirti sayar. 38 °C veya üzeri ateş, diş çıkarma için anlatılanı aşar ve başka bir açıklama gerektirir. 3 aydan küçük bebekte NHS, 38 °C ve üzerinde hemen danışmayı söyler.`,
         },
         {
           question: `Diş çıkarma ishale yol açar mı?`,

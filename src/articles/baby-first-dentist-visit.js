@@ -23,11 +23,11 @@ export default {
         },
         {
           title: `Why so early?`,
-          body: `A baby with a few teeth and no problems may seem too young for a dentist, but the first visit is mostly about prevention and guidance, not treatment. The AAPD describes the dental home as the place to carry out a caries-risk assessment (checking how likely your child is to get tooth decay) and to educate parents, with advice at each visit on home brushing with fluoride toothpaste, feeding and drinking habits, and fluoride varnish for children at risk.\n\nThe AAP adds that it can be difficult to spot warning signs in baby teeth, and that some children benefit from going to the dentist more often than every 6 months. The ADA notes that tooth decay can affect eating, sleeping and speaking, which is why catching problems early matters.\n\nFrench guidance makes a similar point from a different angle: the French health authority HAS says a health professional should assess a child's caries risk factors between 6 months and 1 year, when the first teeth come through, and again between 1 and 2 years. That page is dated 2010 and says an update is in progress.`,
+          body: `A baby with a few teeth and no problems may seem too young for a dentist, but the first visit is mostly about prevention and guidance, not treatment. The AAPD describes the dental home as the place to carry out a caries-risk assessment (checking how likely your child is to get tooth decay) and to educate parents, with advice at each visit on home brushing with fluoride toothpaste, feeding and drinking habits, and fluoride varnish for children at risk.\n\nThe AAP adds that it can be difficult to spot warning signs in baby teeth, and that some children benefit from going to the dentist more often than every 6 months. The ADA notes that tooth decay can affect a child's ability to eat, sleep, speak clearly and learn at school, which is why catching problems early matters.\n\nFrench guidance makes a similar point from a different angle: the French health authority HAS says a health professional should assess a child's caries risk factors between 6 months and 1 year, when the first teeth come through, and again between 1 and 2 years. That page is dated 2010 and says an update is in progress.`,
         },
         {
           title: `What happens at the first dental visit`,
-          body: `Expect a short, gentle appointment. According to the ADA, the dentist checks whether the teeth, jaw, bite and gums are developing properly, and looks for mouth injuries, cavities or other problems. Depending on your child's age and how many teeth there are, the dentist may do a gentle cleaning. You will most likely sit in the chair with your child on your lap, and the dentist can give you tips for home care.\n\nThe AAP describes the same thing in simple terms: a pediatric dentist checks that teeth are developing normally, looks for dental problems and gives advice on hygiene. In Germany, the dentist also checks the gums and mucous membranes, and may apply fluoride varnish if it is needed (kindergesundheit-info.de). Do not worry if your baby cries or will not open wide. The first visit is also about getting used to the place.`,
+          body: `Expect a short, gentle appointment. According to the ADA, the dentist checks whether the teeth, jaw, bite and gums are developing properly, and looks for mouth injuries, cavities or other problems. Depending on your child's age and how many teeth there are, the dentist may do a gentle cleaning. You will most likely sit in the chair with your child on your lap, and the dentist can give you tips for home care.\n\nThe AAP describes the same thing in simple terms: a pediatric dentist checks that teeth are developing normally, looks for dental problems and gives advice on hygiene. In Germany, the check-up looks at the teeth, mucous membranes and jaw growth, and children are entitled to fluoride varnish twice per half-year between 6 and 33 months (kindergesundheit-info.de). Do not worry if your baby cries or will not open wide. The first visit is also about getting used to the place.`,
           list: [
             `A look at the teeth, gums, jaw and bite`,
             `A check for cavities, mouth injuries and other problems (ADA)`,
@@ -38,7 +38,7 @@ export default {
         },
         {
           title: `How to prepare`,
-          body: `You do not need much. The ADA suggests a few simple steps, and the NHS adds one more that costs nothing.\n\nThe NHS says to take your child with you when you go for your own dental appointments, so that they become familiar with the setting. German guidance says the same, and also suggests preparing a child playfully, for example with a picture book about a visit to the dentist, and bringing the child along to your own check-ups from the first tooth on.`,
+          body: `You do not need much. The ADA suggests a few simple steps, and the NHS adds one more that costs nothing.\n\nThe NHS says to take your child with you when you go for your own dental appointments, so that they become familiar with the setting. German guidance says the same, and also suggests preparing a child playfully, for example with a book that shows how a dental practice works, and bringing the child along to your own check-ups from the first tooth on.`,
           list: [
             `Ask the dental office for patient and health history forms ahead of time, and fill them in at home (ADA)`,
             `Help your baby practice opening their mouth for the exam (ADA)`,
@@ -46,7 +46,7 @@ export default {
             `Book a time when your child is usually well rested, alert and cooperative, and avoid naptime (ADA)`,
             `Give a light meal beforehand, then brush and clean between the teeth, and save snacks for after the visit (ADA)`,
             `Take your baby along to your own dental appointments (NHS)`,
-            `A picture book about the dentist can help (kindergesundheit-info.de)`,
+            `A book about visiting the dentist can help (kindergesundheit-info.de)`,
           ],
         },
         {
@@ -57,12 +57,12 @@ export default {
             `Teeth that darken soon after they come through, especially with a bottle (ameli.fr)`,
             `Signs of toothache, or gums that are painful, swollen or bleeding (NHS)`,
             `A mouth injury (ADA lists injuries among what the dentist checks)`,
-            `Children who sip sweet drinks or milk from a bottle or cup all day need a check sooner (kindergesundheit-info.de)`,
+            `Constant sipping from a bottle or cup, which can cause bottle-related decay (kindergesundheit-info.de)`,
           ],
         },
         {
           title: `How it works where you live`,
-          body: `The core message is the same in every country: start early. The details differ, and local guidance wins.\n\nUS: the ADA, AAP and AAPD advise a first visit after the first tooth appears and by the first birthday. UK: the NHS pages we opened give no set age for a first visit. They say NHS dental treatment is free for children under 18 (or under 19 and in full-time education), that children should see a dentist for yearly check-ups, that not all dentists take on new NHS patients, and that you should take your child along to your own appointments.\n\nGermany: children have free dental check-ups from early on. The first (Z1) is between the 6th and 9th month, the second (Z2) between the 10th and 20th, and the third (Z3) between the 21st and 33rd, with at least four months between them. The Gelbes Heft (yellow child health booklet) records the results. France: ameli.fr says a first visit to a dentist is recommended between 6 and 12 months. The free M'T dents check-up starts later, from age 3 up to 24, once a year.\n\nBrazil: the Brazilian Society of Pediatrics (SBP) says to see a pediatric dentist as soon as the first baby tooth erupts or at the latest before the first birthday, and the Ministry of Health says the dental teams in public health units (UBS) are qualified to see children, including babies. Turkey: Ministry of Health pages say a child's first meeting with a dentist should generally begin at the first birthday or when the first tooth comes through, while another Ministry page says check-ups should start within 6 months of the first tooth. Both point the same way, so the earlier of the two is a safe plan.`,
+          body: `The core message is the same in every country: start early. The details differ, and local guidance wins.\n\nUS: the ADA, AAP and AAPD advise a first visit after the first tooth appears and by the first birthday. UK: the NHS pages we opened give no set age for a first visit. They say NHS dental treatment is free for children under 18 (or under 19 and in full-time education), that anyone under 18 who has not had a check-up in the past year should see a dentist, that not all dentists take on new NHS patients, and that you should take your child along to your own appointments.\n\nGermany: children have free dental check-ups from early on. The first (Z1) is between the 6th and 9th month, the second (Z2) between the 10th and 20th, and the third (Z3) between the 21st and 33rd, with at least four months between each of these first three (at least twelve months between the later ones, Z4 to Z6, up to 72 months). The Gelbes Heft (yellow child health booklet) records the results. France: ameli.fr says a first visit to a dentist is recommended between 6 and 12 months. The free M'T dents check-up starts later, from age 3 up to 24, once a year.\n\nBrazil: the Brazilian Society of Pediatrics (SBP) says to see a pediatric dentist as soon as the first baby tooth erupts or at the latest before the first birthday, and the Ministry of Health says the dental teams in public health units (UBS) are qualified to see children, including babies. Turkey: Ministry of Health pages say a child's first meeting with a dentist should generally begin at the first birthday or when the first tooth comes through, while another Ministry page says check-ups should start within 6 months of the first tooth. Both point the same way, so the earlier of the two is a safe plan.`,
         },
         {
           title: `Keeping track of dental visits`,
@@ -92,7 +92,7 @@ export default {
         },
         {
           question: `How often should a child go to the dentist after the first visit?`,
-          answer: `It depends on your child. The NHS says children should have a yearly check-up, and the AAP says some children benefit from going more often than every 6 months. Your dentist will tell you how often is right for your child.`,
+          answer: `It depends on your child. The NHS says to see a dentist if a child under 18 has not had a check-up in the past year, and the AAP says some children benefit from going more often than every 6 months. Your dentist will tell you how often is right for your child.`,
         },
       ],
       ctaText: `See every baby tooth and log dental visits in Mamio`,
@@ -122,30 +122,30 @@ export default {
       intro: `In Deutschland haben Kinder Anspruch auf kostenlose zahnärztliche Früherkennungsuntersuchungen. Die erste (Z1) ist laut kindergesundheit-info.de zwischen dem 6. und 9. Lebensmonat vorgesehen, und das Netzwerk Gesund ins Leben schreibt, dass der erste Zahnarztbesuch geplant werden kann, sobald sich der erste Zahn zeigt. In den USA gilt dagegen: nach dem ersten Zahn, spätestens zum ersten Geburtstag (ADA, AAP). Frankreich nennt 6 bis 12 Monate, und der britische NHS rät vor allem, das Kind zu den eigenen Zahnarztterminen mitzunehmen. Hier erfährst du, was die einzelnen Stellen sagen, was beim ersten Besuch passiert, wie du dich vorbereitest und bei welchen Anzeichen du früher zur Zahnarztpraxis gehen solltest.`,
       sections: [
         {
-          title: `Die kurze Antwort: ab dem ersten Zahn, spätestens zwischen 6. und 9. Monat`,
-          body: `In Deutschland ist der Fahrplan klar. Laut Netzwerk Gesund ins Leben beobachtet die Kinderarztpraxis die Mundentwicklung bei den U-Untersuchungen, und sobald der erste Zahn da ist, kann der erste Zahnarztbesuch geplant werden. kindergesundheit-info.de rät, mit dem Kind schon ab dem ersten Zahn in die Zahnarztpraxis zu gehen, damit es sich früh an die Besuche gewöhnt.\n\nDie kostenlosen Früherkennungsuntersuchungen für Kinder heißen Z1 bis Z6. Z1 liegt zwischen dem 6. und 9. Lebensmonat. Damit ist Deutschland bei den Zeitfenstern ähnlich früh wie die USA, wo ADA, AAP und AAPD den ersten Besuch nach dem ersten Zahn und spätestens zum ersten Geburtstag empfehlen. Hat dein Baby mit 9 Monaten noch keinen Zahn, ist ein Besuch rund um den ersten Geburtstag trotzdem sinnvoll. Mehr zu Alter und Reihenfolge der Zähne findest du in unserem Ratgeber zum Zahnen.`,
+          title: `Die kurze Antwort: ab dem ersten Zahn, Z1 zwischen 6. und 9. Monat`,
+          body: `In Deutschland ist der Fahrplan klar. Laut Netzwerk Gesund ins Leben beobachtet die Kinderarztpraxis die Mundentwicklung bei den U-Untersuchungen, und sobald der erste Zahn da ist, kann der erste Zahnarztbesuch geplant werden. kindergesundheit-info.de rät, das Kind ab dem ersten Zähnchen regelmäßig zu den eigenen Kontrollterminen mitzunehmen, damit es sich früh an die Besuche gewöhnt.\n\nDie kostenlosen Früherkennungsuntersuchungen für Kinder heißen Z1 bis Z6. Z1 liegt zwischen dem 6. und 9. Lebensmonat. Damit ist Deutschland bei den Zeitfenstern ähnlich früh wie die USA, wo ADA, AAP und AAPD den ersten Besuch nach dem ersten Zahn und spätestens zum ersten Geburtstag empfehlen. Hat dein Baby mit 9 Monaten noch keinen Zahn, ist ein Besuch rund um den ersten Geburtstag trotzdem sinnvoll. Mehr zu Alter und Reihenfolge der Zähne findest du in unserem Ratgeber zum Zahnen.`,
         },
         {
           title: `Warum so früh?`,
-          body: `Ein Baby mit zwei, drei Zähnen scheint zu jung für die Zahnarztpraxis, aber beim ersten Termin geht es vor allem um Vorbeugung und Beratung, nicht um Behandlung. Laut gesund-ins-leben.de erklären Zahnärztinnen und Zahnärzte, wie du Mund und Zähne pflegst, und geben gezielte Tipps. Die amerikanische Fachgesellschaft für Kinderzahnheilkunde (AAPD) beschreibt den Zahnarzt-Termin als Ort, an dem das Kariesrisiko eingeschätzt wird und Eltern beraten werden, etwa zu Zähneputzen mit Fluorid, zu Ess- und Trinkgewohnheiten und zu Fluoridlack für Kinder mit Risiko.\n\nAuch die Kinder-Zahnpflege ist früh wichtig, denn laut kindergesundheit-info.de sind Milchzähne anfälliger für Karies als bleibende Zähne. Frühe Kontrollen sorgen dafür, dass Probleme schnell auffallen.`,
+          body: `Ein Baby mit zwei, drei Zähnen scheint zu jung für die Zahnarztpraxis, aber beim ersten Termin geht es vor allem um Vorbeugung und Beratung, nicht um Behandlung. Laut gesund-ins-leben.de erklären Zahnärztinnen und Zahnärzte, wie du Mund und Zähne pflegst, und geben gezielte Tipps. Die amerikanische Fachgesellschaft für Kinderzahnheilkunde (AAPD) beschreibt den Zahnarzt-Termin als Ort, an dem das Kariesrisiko eingeschätzt wird und Eltern beraten werden, etwa zu Zähneputzen mit Fluorid, zu Ess- und Trinkgewohnheiten und zu Fluoridlack für Kinder mit Risiko.\n\nAuch die Pflege der Milchzähne ist früh wichtig, denn laut kindergesundheit-info.de sind Milchzähne deutlich empfindlicher als die bleibenden Zähne. Frühe Kontrollen sorgen dafür, dass Probleme schnell auffallen.`,
         },
         {
           title: `Was passiert beim ersten Zahnarztbesuch?`,
-          body: `Rechne mit einem kurzen, ruhigen Termin. Laut kindergesundheit-info.de prüft die Zahnärztin oder der Zahnarzt Zähne, Zahnfleisch und Mundschleimhaut sowie das Kieferwachstum auf Auffälligkeiten, zum Beispiel Karies oder Zahnfehlstellungen. Du bekommst Tipps zur Mundhygiene, zur zahngesunden Ernährung, zur Putztechnik und zur Fluoridanwendung. Bei Bedarf kann Fluoridlack aufgetragen werden.\n\nDie amerikanische Zahnärztevereinigung ADA beschreibt zusätzlich, dass Eltern ihr Kind meist auf dem Schoß halten und dass je nach Alter und Zahl der Zähne eine sanfte Reinigung dazukommen kann. Die Ergebnisse trägt die Praxis ins Gelbe Heft ein. In manchen Bundesländern gibt es außerdem einen zahnärztlichen Kinderpass. Weint dein Baby oder macht es den Mund nicht auf, ist das normal: Beim ersten Termin geht es auch ums Kennenlernen.`,
+          body: `Rechne mit einem kurzen, ruhigen Termin. Laut kindergesundheit-info.de prüft die Zahnärztin oder der Zahnarzt Zähne, Mundschleimhaut und Kieferwachstum auf Auffälligkeiten, zum Beispiel Karies oder Kiefer- und Zahnstellungsfehler. Du bekommst Informationen zu zahnschonender Ernährung und richtiger Zahnpflege, und zwischen dem 6. und 33. Lebensmonat besteht Anspruch auf Fluoridlack zur Zahnschmelzhärtung, zweimal je Kalenderhalbjahr.\n\nDie amerikanische Zahnärztevereinigung ADA beschreibt zusätzlich, dass Eltern ihr Kind meist auf dem Schoß halten und dass je nach Alter und Zahl der Zähne eine sanfte Reinigung dazukommen kann. Die Ergebnisse trägt die Praxis ins Gelbe Heft ein. In vielen Bundesländern gibt es außerdem einen zahnärztlichen Kinderpass. Weint dein Baby oder macht es den Mund nicht auf, ist das normal: Beim ersten Termin geht es auch ums Kennenlernen.`,
           list: [
-            `Blick auf Zähne, Zahnfleisch, Mundschleimhaut und Kieferentwicklung`,
+            `Blick auf Zähne, Mundschleimhaut und Kieferwachstum`,
             `Suche nach Karies und anderen Auffälligkeiten`,
-            `Beratung zu Mundhygiene, Ernährung, Putztechnik und Fluorid`,
-            `Fluoridlack, wenn es nötig ist`,
-            `Eintrag im Gelben Heft, in manchen Bundesländern auch im zahnärztlichen Kinderpass`,
+            `Beratung zu zahnschonender Ernährung und richtiger Zahnpflege`,
+            `Fluoridlack zur Zahnschmelzhärtung (Anspruch zwischen 6. und 33. Monat)`,
+            `Eintrag im Gelben Heft, in vielen Bundesländern auch im zahnärztlichen Kinderpass`,
           ],
         },
         {
           title: `So bereitest du dich und dein Kind vor`,
-          body: `Du brauchst nicht viel. kindergesundheit-info.de schlägt vor, das Kind spielerisch vorzubereiten, zum Beispiel mit einem Bilderbuch über den Besuch in der Zahnarztpraxis, und es schon ab dem ersten Zahn zu deinen eigenen Kontrollterminen mitzunehmen, damit es Umgebung und Geräusche kennenlernt. Der britische NHS gibt denselben Rat.\n\nDie ADA ergänzt einige praktische Schritte, die auch für deutsche Praxen sinnvoll sind.`,
+          body: `Du brauchst nicht viel. kindergesundheit-info.de schlägt vor, das Kind spielerisch vorzubereiten, zum Beispiel mit einem Buch, das zeigt, wie eine Zahnarztpraxis aussieht und wie Mund und Zähne untersucht werden, und es schon ab dem ersten Zähnchen zu deinen eigenen Kontrollterminen mitzunehmen, damit es Umgebung und Geräusche kennenlernt. Der britische NHS gibt denselben Rat.\n\nDie ADA ergänzt einige praktische Schritte, die auch für deutsche Praxen sinnvoll sind.`,
           list: [
             `Dein Kind zu deinen eigenen Zahnarztterminen mitnehmen (kindergesundheit-info.de, NHS)`,
-            `Ein Bilderbuch über die Zahnarztpraxis ansehen (kindergesundheit-info.de)`,
+            `Ein Buch über die Zahnarztpraxis ansehen (kindergesundheit-info.de)`,
             `Fragen und Sorgen vorher aufschreiben (ADA)`,
             `Einen Termin wählen, zu dem dein Kind meist ausgeruht und gut gelaunt ist, nicht zur Schlafenszeit (ADA)`,
             `Davor eine leichte Mahlzeit geben, dann Zähne putzen, Snacks erst nach dem Termin (ADA)`,
@@ -165,7 +165,7 @@ export default {
         },
         {
           title: `Was in Deutschland anders ist als anderswo`,
-          body: `Die Kernbotschaft ist überall gleich: früh anfangen. Die Details unterscheiden sich, und für dich zählt die deutsche Empfehlung.\n\nDeutschland: Die kostenlosen Früherkennungsuntersuchungen Z1 bis Z6 beginnen früh. Z1 liegt zwischen dem 6. und 9. Monat, Z2 zwischen dem 10. und 20., Z3 zwischen dem 21. und 33., Z4 zwischen dem 34. und 48., Z5 zwischen dem 49. und 60. und Z6 zwischen dem 61. und 72. Monat. Zwischen Z1 und Z3 sollten mindestens vier Monate liegen. Wichtig: Eine andere Seite von kindergesundheit-info.de nennt allgemein mindestens 12 Monate Abstand zwischen den Terminen. Wir folgen hier den Angaben der Seite zur zahnmedizinischen Früherkennung und dem Netzwerk Gesund ins Leben, die für die ersten drei Termine vier Monate nennen.\n\nUSA: ADA, AAP und AAPD empfehlen den ersten Besuch nach dem ersten Zahn und spätestens zum ersten Geburtstag. Großbritannien: Die NHS-Seiten, die wir geöffnet haben, nennen kein festes Alter. NHS-Zahnbehandlung ist für Kinder unter 18 kostenlos, und nicht jede Praxis nimmt neue NHS-Patienten auf. Frankreich: ameli.fr empfiehlt den ersten Besuch zwischen 6 und 12 Monaten, das kostenlose Programm M'T dents beginnt erst mit 3 Jahren. Brasilien: Die Kinderärztegesellschaft SBP empfiehlt den Besuch, sobald der erste Zahn kommt, spätestens vor dem ersten Geburtstag. Türkei: Seiten des Gesundheitsministeriums nennen den ersten Geburtstag oder den ersten Zahn.`,
+          body: `Die Kernbotschaft ist überall gleich: früh anfangen. Die Details unterscheiden sich, und für dich zählt die deutsche Empfehlung.\n\nDeutschland: Die kostenlosen Früherkennungsuntersuchungen Z1 bis Z6 beginnen früh. Z1 liegt zwischen dem 6. und 9. Monat, Z2 zwischen dem 10. und 20., Z3 zwischen dem 21. und 33., Z4 zwischen dem 34. und 48., Z5 zwischen dem 49. und 60. und Z6 zwischen dem 61. und 72. Monat. Zwischen Z1, Z2 und Z3 sollten mindestens vier Monate liegen, zwischen den späteren Terminen Z4 bis Z6 mindestens zwölf Monate. Eine andere Seite von kindergesundheit-info.de nennt nur allgemein einen Abstand von mindestens zwölf Monaten bis zum sechsten Lebensjahr; die Seite zur zahnmedizinischen Früherkennung ordnet die zwölf Monate den Terminen Z4 bis Z6 zu.\n\nUSA: ADA, AAP und AAPD empfehlen den ersten Besuch nach dem ersten Zahn und spätestens zum ersten Geburtstag. Großbritannien: Die NHS-Seiten, die wir geöffnet haben, nennen kein festes Alter. NHS-Zahnbehandlung ist für Kinder unter 18 kostenlos, und nicht jede Praxis nimmt neue NHS-Patienten auf. Frankreich: ameli.fr empfiehlt den ersten Besuch zwischen 6 und 12 Monaten, das kostenlose Programm M'T dents beginnt erst mit 3 Jahren. Brasilien: Die Kinderärztegesellschaft SBP empfiehlt den Besuch, sobald der erste Zahn kommt, spätestens vor dem ersten Geburtstag. Türkei: Seiten des Gesundheitsministeriums nennen den ersten Geburtstag oder den ersten Zahn.`,
         },
         {
           title: `Zahnarztbesuche festhalten`,
@@ -183,11 +183,11 @@ export default {
         },
         {
           question: `Was kostet die zahnärztliche Früherkennung?`,
-          answer: `Laut kindergesundheit-info.de sind die Früherkennungsuntersuchungen Z1 bis Z6 kostenlos. Bei der Untersuchung kann bei Bedarf Fluoridlack aufgetragen werden.`,
+          answer: `Laut kindergesundheit-info.de sind die Früherkennungsuntersuchungen Z1 bis Z6 kostenlos. Zwischen dem 6. und 33. Lebensmonat besteht Anspruch auf Fluoridlack, zweimal je Kalenderhalbjahr.`,
         },
         {
           question: `Was, wenn mein Baby weint und den Mund nicht aufmacht?`,
-          answer: `Das ist normal. Beim ersten Besuch geht es um Kennenlernen und Beratung. Du hältst dein Baby meist auf dem Schoß (ADA). Hilfreich ist, das Kind schon ab dem ersten Zahn zu deinen Terminen mitzunehmen und ein Bilderbuch über die Zahnarztpraxis anzuschauen (kindergesundheit-info.de).`,
+          answer: `Das ist normal. Beim ersten Besuch geht es um Kennenlernen und Beratung. Du hältst dein Baby meist auf dem Schoß (ADA). Hilfreich ist, das Kind schon ab dem ersten Zahn zu deinen Terminen mitzunehmen und ein Buch über die Zahnarztpraxis anzuschauen (kindergesundheit-info.de).`,
         },
         {
           question: `Woran erkenne ich, dass etwas mit den Zähnen nicht stimmt?`,
@@ -195,7 +195,7 @@ export default {
         },
         {
           question: `Wie oft muss mein Kind danach zur Zahnärztin oder zum Zahnarzt?`,
-          answer: `Die Früherkennungstermine Z1 bis Z6 liegen in festen Zeitfenstern bis zum 72. Lebensmonat. Zwischen Z1 und Z3 sollen mindestens vier Monate liegen. Ab 7 Jahren empfiehlt kindergesundheit-info.de eine Kontrolle alle sechs Monate.`,
+          answer: `Die Früherkennungstermine Z1 bis Z6 liegen in festen Zeitfenstern bis zum 72. Lebensmonat. Zwischen Z1, Z2 und Z3 sollen mindestens vier Monate liegen, danach (Z4 bis Z6) mindestens zwölf. Ab dem 7. Lebensjahr gibt es laut kindergesundheit-info.de halbjährliche, ebenfalls kostenlose Kontrolluntersuchungen.`,
         },
       ],
       ctaText: `Alle Milchzähne ansehen und Zahnarztbesuche in Mamio eintragen`,
@@ -232,7 +232,7 @@ export default {
         },
         {
           title: `Comment se passe la première visite ?`,
-          body: `Attendez-vous à un rendez-vous court et doux. Selon l'American Dental Association (ADA), le dentiste vérifie que les dents, la mâchoire, l'occlusion et les gencives se développent bien, et recherche des blessures dans la bouche, des caries ou d'autres problèmes. Selon l'âge et le nombre de dents, il peut faire un nettoyage en douceur. Vous serez le plus souvent assis avec votre enfant sur les genoux, et le dentiste peut vous donner des conseils pour les soins à la maison.\n\nL'Assurance Maladie précise que, lors d'une consultation de prévention, le dentiste examine chaque dent de près, avec un éclairage adapté, pour repérer les caries débutantes. Si votre bébé pleure ou n'ouvre pas la bouche, c'est fréquent : la première visite sert aussi à faire connaissance.`,
+          body: `Attendez-vous à un rendez-vous court et doux. Selon l'American Dental Association (ADA), le dentiste vérifie que les dents, la mâchoire, l'occlusion et les gencives se développent bien, et recherche des blessures dans la bouche, des caries ou d'autres problèmes. Selon l'âge et le nombre de dents, il peut faire un nettoyage en douceur. Vous serez le plus souvent assis avec votre enfant sur les genoux, et le dentiste peut vous donner des conseils pour les soins à la maison.\n\nL'Assurance Maladie précise que, lors d'une consultation de prévention, le dentiste réalise un examen visuel minutieux, dent par dent, avec une lumière adaptée. Si votre bébé pleure ou n'ouvre pas la bouche, c'est fréquent : la première visite sert aussi à faire connaissance.`,
           list: [
             `Un regard sur les dents, les gencives, la mâchoire et l'occlusion (ADA)`,
             `La recherche de caries, de blessures dans la bouche et d'autres problèmes (ADA)`,
@@ -243,7 +243,7 @@ export default {
         },
         {
           title: `Comment préparer la visite`,
-          body: `Vous n'avez pas besoin de grand-chose. L'ADA propose quelques gestes simples, et le NHS recommande d'emmener l'enfant avec vous à vos propres rendez-vous chez le dentiste pour qu'il se familiarise avec les lieux. Les recommandations allemandes disent la même chose et suggèrent de préparer l'enfant en jouant, par exemple avec un livre d'images sur le cabinet dentaire.`,
+          body: `Vous n'avez pas besoin de grand-chose. L'ADA propose quelques gestes simples, et le NHS recommande d'emmener l'enfant avec vous à vos propres rendez-vous chez le dentiste pour qu'il se familiarise avec les lieux. Les recommandations allemandes disent la même chose et suggèrent de préparer l'enfant en jouant, par exemple avec un livre sur le cabinet dentaire.`,
           list: [
             `Demander les formulaires d'antécédents au cabinet pour les remplir à la maison (ADA)`,
             `Aider bébé à s'entraîner à ouvrir la bouche (ADA)`,
@@ -251,7 +251,7 @@ export default {
             `Choisir un moment où votre enfant est en général reposé et coopératif, en évitant l'heure de la sieste (ADA)`,
             `Donner un repas léger avant, puis brosser les dents, et garder les collations pour après (ADA)`,
             `Emmener bébé à vos propres rendez-vous chez le dentiste (NHS)`,
-            `Un livre d'images sur le dentiste peut aider (kindergesundheit-info.de)`,
+            `Un livre sur le dentiste peut aider (kindergesundheit-info.de)`,
           ],
         },
         {
@@ -267,7 +267,7 @@ export default {
         },
         {
           title: `Ce qui change selon les pays`,
-          body: `Le message est le même partout : commencer tôt. Les détails diffèrent, et pour vous ce sont les recommandations françaises qui comptent.\n\nFrance : l'Assurance Maladie recommande une première consultation entre 6 et 12 mois et un contrôle chez le dentiste au moins une fois par an. Les rendez-vous M'T dents, offerts par l'Assurance Maladie et les complémentaires, concernent les enfants et jeunes de 3 à 24 ans, une fois par an ; ils ne commencent donc pas avant 3 ans, alors que la première consultation recommandée se situe entre 6 et 12 mois.\n\nÉtats-Unis : l'ADA, l'AAP et l'AAPD recommandent une première visite après la première dent et au plus tard au premier anniversaire. Royaume-Uni : les pages du NHS que nous avons ouvertes ne donnent pas d'âge fixe ; les soins dentaires NHS sont gratuits pour les enfants de moins de 18 ans. Allemagne : le premier dépistage gratuit se situe entre le 6e et le 9e mois, puis entre le 10e et le 20e mois et entre le 21e et le 33e mois. Brésil : la Société brésilienne de pédiatrie recommande la visite dès la première dent, et au plus tard avant le premier anniversaire. Turquie : des pages du ministère de la Santé citent le premier anniversaire ou la première dent.`,
+          body: `Le message est le même partout : commencer tôt. Les détails diffèrent, et pour vous ce sont les recommandations françaises qui comptent.\n\nFrance : l'Assurance Maladie recommande une première consultation entre 6 et 12 mois et un contrôle chez le dentiste une fois par an, sans attendre d'avoir mal. Les rendez-vous M'T dents, offerts par l'Assurance Maladie et les complémentaires, concernent les enfants et jeunes de 3 à 24 ans, une fois par an ; ils ne commencent donc pas avant 3 ans, alors que la première consultation recommandée se situe entre 6 et 12 mois.\n\nÉtats-Unis : l'ADA, l'AAP et l'AAPD recommandent une première visite après la première dent et au plus tard au premier anniversaire. Royaume-Uni : les pages du NHS que nous avons ouvertes ne donnent pas d'âge fixe ; les soins dentaires NHS sont gratuits pour les enfants de moins de 18 ans. Allemagne : le premier dépistage gratuit se situe entre le 6e et le 9e mois, puis entre le 10e et le 20e mois et entre le 21e et le 33e mois. Brésil : la Société brésilienne de pédiatrie recommande la visite dès la première dent, et au plus tard avant le premier anniversaire. Turquie : des pages du ministère de la Santé citent le premier anniversaire ou la première dent.`,
         },
         {
           title: `Noter les visites chez le dentiste`,
@@ -297,7 +297,7 @@ export default {
         },
         {
           question: `À quelle fréquence retourner chez le dentiste ensuite ?`,
-          answer: `Cela dépend de votre enfant. L'Assurance Maladie recommande un contrôle chez le dentiste au moins une fois par an, et l'AAP précise que certains enfants gagnent à y aller plus souvent que tous les 6 mois. Votre dentiste vous dira le rythme adapté.`,
+          answer: `Cela dépend de votre enfant. L'Assurance Maladie recommande un contrôle chez le dentiste une fois par an, sans attendre d'avoir mal, et l'AAP précise que certains enfants gagnent à y aller plus souvent que tous les 6 mois. Votre dentiste vous dira le rythme adapté.`,
         },
       ],
       ctaText: `Découvrez les 20 dents de lait et notez les visites dans Mamio`,
@@ -331,22 +331,22 @@ export default {
         },
         {
           title: `Por que tão cedo?`,
-          body: `Um bebê com poucos dentes pode parecer novo demais para o dentista, mas a primeira consulta serve principalmente para prevenir e orientar, não para tratar. A SBP descreve que, depois do exame, os pais recebem orientação sobre alimentação, hábitos como o uso de chupeta, higiene bucal, prevenção de acidentes e a importância de consultas preventivas na primeira infância. A SBP também diz que essas consultas criam um vínculo de confiança entre a família, o dentista e a criança.\n\nA Academia Americana de Odontopediatria (AAPD) acrescenta que o acompanhamento serve para avaliar o risco de cárie e orientar os pais sobre escovação com pasta fluoretada, hábitos de alimentação e bebida, e verniz de flúor para crianças em risco. A AAP lembra que pode ser difícil perceber sinais de problema em dentes de leite.`,
+          body: `Um bebê com poucos dentes pode parecer novo demais para o dentista, mas a primeira consulta serve principalmente para prevenir e orientar, não para tratar. Ao descrever o exame odontológico do recém-nascido, a SBP diz que os pais devem receber orientação sobre alimentação, hábitos como o uso de chupeta, higiene bucal, prevenção de acidentes e a importância de consultas preventivas na primeira infância. A SBP também diz que as visitas regulares criam um vínculo de confiança entre a família, o dentista e a criança.\n\nA Academia Americana de Odontopediatria (AAPD) acrescenta que o acompanhamento serve para avaliar o risco de cárie e orientar os pais sobre escovação com pasta fluoretada, hábitos de alimentação e bebida, e verniz de flúor para crianças em risco. A AAP lembra que pode ser difícil perceber sinais de problema em dentes de leite.`,
         },
         {
           title: `Como é a primeira consulta`,
-          body: `Espere uma consulta curta e tranquila. Segundo a ADA, o dentista verifica se dentes, mandíbula, mordida e gengivas estão se desenvolvendo bem e procura lesões na boca, cáries ou outros problemas. Dependendo da idade e do número de dentes, pode fazer uma limpeza suave. Você provavelmente ficará sentado com o bebê no colo, e o dentista pode dar dicas para os cuidados em casa.\n\nA SBP descreve a avaliação odontológica do bebê como uma conversa com os pais sobre a história da família e do bebê, seguida de um exame da cabeça, do pescoço, do rosto e das estruturas da boca, e de orientações. Se o bebê chorar ou não abrir a boca, é comum: a primeira consulta também serve para conhecer o ambiente.`,
+          body: `Espere uma consulta curta e tranquila. Segundo a ADA, o dentista verifica se dentes, mandíbula, mordida e gengivas estão se desenvolvendo bem e procura lesões na boca, cáries ou outros problemas. Dependendo da idade e do número de dentes, pode fazer uma limpeza suave. Você provavelmente ficará sentado com o bebê no colo, e o dentista pode dar dicas para os cuidados em casa.\n\nA página da SBP descreve em detalhe o exame odontológico do recém-nascido, não a consulta depois do primeiro dente; por isso a descrição acima vem da ADA. Se o bebê chorar ou não abrir a boca, é comum: a primeira consulta também serve para conhecer o ambiente.`,
           list: [
-            `Conversa sobre a história da família e do bebê (SBP)`,
+            `Dicas de cuidados com os dentes e as gengivas em casa (ADA)`,
             `Exame de dentes, gengivas, mandíbula e mordida (ADA)`,
             `Busca por cáries, lesões na boca e outros problemas (ADA)`,
             `Às vezes, uma limpeza suave, conforme a idade e os dentes (ADA)`,
-            `Bebê no seu colo e orientações para os cuidados em casa (ADA, SBP)`,
+            `Bebê no seu colo (ADA)`,
           ],
         },
         {
           title: `Como se preparar`,
-          body: `Você não precisa de muito. A ADA sugere alguns passos simples, e o NHS recomenda levar a criança junto quando você for às suas próprias consultas, para que ela se familiarize com o ambiente. A orientação alemã é parecida e sugere preparar a criança de forma lúdica, por exemplo com um livro ilustrado sobre o consultório.\n\nO Ministério da Saúde informa que as equipes de saúde bucal das Unidades Básicas de Saúde (UBS) são qualificadas para atender crianças, inclusive bebês. Pergunte na sua UBS como agendar.`,
+          body: `Você não precisa de muito. A ADA sugere alguns passos simples, e o NHS recomenda levar a criança junto quando você for às suas próprias consultas, para que ela se familiarize com o ambiente. A orientação alemã é parecida e sugere preparar a criança de forma lúdica, por exemplo com um livro que mostra como é um consultório.\n\nO Ministério da Saúde informa que as equipes de saúde bucal das Unidades Básicas de Saúde (UBS) são qualificadas para atender crianças, inclusive bebês. Pergunte na sua UBS como agendar.`,
           list: [
             `Pedir ao consultório os formulários de histórico de saúde e preencher em casa (ADA)`,
             `Ajudar o bebê a treinar abrir a boca (ADA)`,
@@ -354,7 +354,7 @@ export default {
             `Escolher um horário em que seu filho costuma estar descansado e cooperativo, evitando a hora da soneca (ADA)`,
             `Dar uma refeição leve antes, escovar os dentes e deixar os lanches para depois da consulta (ADA)`,
             `Levar o bebê às suas próprias consultas (NHS)`,
-            `Perguntar na UBS como agendar a consulta (Ministério da Saúde)`,
+            `Perguntar na UBS como agendar a consulta (as equipes de saúde bucal das UBS atendem bebês, segundo o Ministério da Saúde)`,
           ],
         },
         {
@@ -400,14 +400,13 @@ export default {
         },
         {
           question: `Com que frequência voltar ao dentista depois da primeira consulta?`,
-          answer: `Depende da criança. O NHS indica um check-up por ano, e a AAP diz que algumas crianças se beneficiam de ir com mais frequência do que a cada 6 meses. O dentista orienta o intervalo adequado.`,
+          answer: `Depende da criança. O NHS orienta procurar o dentista se alguém com menos de 18 anos não fez check-up no último ano, e a AAP diz que algumas crianças se beneficiam de ir com mais frequência do que a cada 6 meses. O dentista orienta o intervalo adequado.`,
         },
       ],
       ctaText: `Veja todos os dentes de leite e registre consultas no Mamio`,
       sources: [
         { publisher: `Sociedade Brasileira de Pediatria`, title: `Cuidados com a saúde oral nos primeiros mil dias de vida`, url: `https://www.sbp.com.br/pediatria-para-familias/primeira-infancia/cuidados-com-a-saude-oral-nos-primeiros-mil-dias-de-vida/` },
         { publisher: `Ministério da Saúde (Brasil)`, title: `São Paulo: 27,2 mil crianças receberam o primeiro atendimento odontológico em 2023`, url: `https://www.gov.br/saude/pt-br/assuntos/noticias-para-os-estados/sao-paulo/2024/agosto/sao-paulo-27-2-mil-criancas-receberam-o-primeiro-atendimento-odontologico-em-2023` },
-        { publisher: `Ministério da Saúde (Brasil)`, title: `Saúde Bucal`, url: `https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/saude-bucal` },
         { publisher: `American Dental Association (MouthHealthy)`, title: `Your baby's first dental visit`, url: `https://www.mouthhealthy.org/life-stages/babies-and-kids/first-dental-visit-for-baby` },
         { publisher: `AAP / HealthyChildren.org`, title: `Baby's First Tooth: 7 Facts Parents Should Know`, url: `https://www.healthychildren.org/English/ages-stages/baby/teething-tooth-care/Pages/Babys-First-Tooth-Facts-Parents-Should-Know.aspx` },
         { publisher: `AAP / HealthyChildren.org`, title: `Why It's Important to Take Care of Baby Teeth`, url: `https://www.healthychildren.org/English/ages-stages/baby/teething-tooth-care/Pages/How-to-Prevent-Tooth-Decay-in-Your-Baby.aspx` },
@@ -449,7 +448,7 @@ export default {
         },
         {
           title: `Nasıl hazırlanılır?`,
-          body: `Çok şeye ihtiyacın yok. ADA birkaç basit adım öneriyor. NHS ise kendi diş randevularına çocuğu da götürmeni, böylece ortama alışmasını söylüyor. Alman rehberleri de aynı şeyi söylüyor ve çocuğu oyunla hazırlamayı, örneğin diş hekimi muayenehanesini anlatan bir resimli kitap okumayı öneriyor.`,
+          body: `Çok şeye ihtiyacın yok. ADA birkaç basit adım öneriyor. NHS ise kendi diş randevularına çocuğu da götürmeni, böylece ortama alışmasını söylüyor. Alman rehberleri de aynı şeyi söylüyor ve çocuğu oyunla hazırlamayı, örneğin diş hekimi muayenehanesinin nasıl olduğunu gösteren bir kitap okumayı öneriyor.`,
           list: [
             `Muayenehaneden sağlık geçmişi formlarını önceden isteyip evde doldurmak (ADA)`,
             `Bebeğinin ağzını açmayı denemesine yardım etmek (ADA)`,
@@ -457,7 +456,7 @@ export default {
             `Çocuğunun genelde dinlenmiş ve uyumlu olduğu bir saat seçmek, uyku saatinden kaçınmak (ADA)`,
             `Öncesinde hafif bir öğün vermek, dişleri fırçalamak, atıştırmalıkları randevudan sonraya bırakmak (ADA)`,
             `Bebeği kendi diş randevularına götürmek (NHS)`,
-            `Diş hekimiyle ilgili resimli bir kitap okumak (kindergesundheit-info.de)`,
+            `Diş hekimiyle ilgili bir kitap okumak (kindergesundheit-info.de)`,
           ],
         },
         {
@@ -499,7 +498,7 @@ export default {
         },
         {
           question: `İlk muayeneden sonra ne sıklıkla gidilmeli?`,
-          answer: `Çocuğa göre değişir. NHS çocukların yılda bir kontrole gitmesini, AAP ise bazı çocukların 6 ayda birden daha sık gitmekten fayda gördüğünü söylüyor. Aralığı diş hekimin belirler.`,
+          answer: `Çocuğa göre değişir. NHS, 18 yaşından küçük birinin son 1 yılda kontrole gitmemişse diş hekimine görünmesini, AAP ise bazı çocukların 6 ayda birden daha sık gitmekten fayda gördüğünü söylüyor. Aralığı diş hekimin belirler.`,
         },
       ],
       ctaText: `Mamio'da tüm süt dişlerini gör ve diş hekimi ziyaretlerini kaydet`,
