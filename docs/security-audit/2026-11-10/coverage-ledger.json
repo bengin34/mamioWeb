@@ -1,0 +1,632 @@
+[
+  {
+    "coverage_id": ".git%20history%20and%20working%20tree::repository%20contents%20committed%20to%20a%20public%20repo::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Cryptography%20and%20secrets",
+    "canonical_refs": {
+      "surface": ".git history and working tree",
+      "boundary": "repository contents committed to a public repo",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Cryptography and secrets"
+    },
+    "surface": ".git history and working tree",
+    "boundary": "repository contents committed to a public repo",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Cryptography and secrets",
+    "starting_paths": [
+      ".gitignore",
+      "package.json"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Cryptography and secrets",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      ".gitignore",
+      "package.json"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          ".gitignore",
+          "package.json"
+        ],
+        "invariant": "No credential material in tree or git history (89 commits, all refs)",
+        "method": "source",
+        "result": "Pattern scan of git log --all -p and tree (AWS, GitHub, OpenAI/Stripe-style, Slack, Google API, JWT, PEM headers) found 0 hits; no .env/.p8/.p12/.pem/.key/.keystore/.jks/auth.json path ever committed; .env* is gitignored",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": ".github%2Fworkflows%2Fdeploy.yml::CI%20build%20and%20Pages%20deploy::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Chained%20vulnerabilities%20and%20trust%20boundaries",
+    "canonical_refs": {
+      "surface": ".github/workflows/deploy.yml",
+      "boundary": "CI build and Pages deploy",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries"
+    },
+    "surface": ".github/workflows/deploy.yml",
+    "boundary": "CI build and Pages deploy",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "starting_paths": [
+      ".github/workflows/deploy.yml"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      ".github/workflows/deploy.yml"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          ".github/workflows/deploy.yml"
+        ],
+        "invariant": "Workflow token is least-privilege and triggers are trusted",
+        "method": "source",
+        "result": "Trigger push to master + manual only (no pull_request_target); permissions contents:read, pages:write, id-token:write scoped to Pages; npm ci with lockfile; only first-party actions/* pinned by major tag; rejected as low-value hardening",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "mamioweb:ci:actions-pinned-by-tag"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "exposed%20preview%2Fadmin%20routes::route%20table::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Obvious%20things",
+    "canonical_refs": {
+      "surface": "exposed preview/admin routes",
+      "boundary": "route table",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Obvious things"
+    },
+    "surface": "exposed preview/admin routes",
+    "boundary": "route table",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Obvious things",
+    "starting_paths": [
+      "src/content.js"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Obvious things",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "src/content.js"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "src/content.js"
+        ],
+        "invariant": "No admin, preview or debug routes exist",
+        "method": "source",
+        "result": "Router resolves only home and SEO/blog pages; no backend, forms, API or auth in repo",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "hosting%3A%20GitHub%20Pages%20response%20headers::missing%20CSP%2FHSTS%2Fframe%20headers::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Obvious%20things",
+    "canonical_refs": {
+      "surface": "hosting: GitHub Pages response headers",
+      "boundary": "missing CSP/HSTS/frame headers",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Obvious things"
+    },
+    "surface": "hosting: GitHub Pages response headers",
+    "boundary": "missing CSP/HSTS/frame headers",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Obvious things",
+    "starting_paths": [
+      ".github/workflows/deploy.yml",
+      "index.html"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Obvious things",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      ".github/workflows/deploy.yml",
+      "index.html"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          ".github/workflows/deploy.yml",
+          "index.html"
+        ],
+        "invariant": "Headers are decided by hosting, not by repo",
+        "method": "source",
+        "result": "No _headers/config in repo; GitHub Pages cannot set custom headers; custom domain front (e.g. CDN) unknown from source; kept needs_validation",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "mamioweb:headers:no-csp-github-pages"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "index.html%23JSON-LD%20and%20head%20metadata::static%20head%20markup::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Injection",
+    "canonical_refs": {
+      "surface": "index.html#JSON-LD and head metadata",
+      "boundary": "static head markup",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Injection"
+    },
+    "surface": "index.html#JSON-LD and head metadata",
+    "boundary": "static head markup",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Injection",
+    "starting_paths": [
+      "index.html"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "index.html"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "index.html"
+        ],
+        "invariant": "JSON-LD and head tags are static literals, no interpolation",
+        "method": "source",
+        "result": "No user-controlled values; JSON-LD sameAs/installUrl are the real store URLs",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "index.html%23external%20stylesheet%20fonts.googleapis.com::third-party%20resource%20load::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Chained%20vulnerabilities%20and%20trust%20boundaries",
+    "canonical_refs": {
+      "surface": "index.html#external stylesheet fonts.googleapis.com",
+      "boundary": "third-party resource load",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries"
+    },
+    "surface": "index.html#external stylesheet fonts.googleapis.com",
+    "boundary": "third-party resource load",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "starting_paths": [
+      "index.html"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "index.html"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "index.html"
+        ],
+        "invariant": "Third-party loads are limited to non-executing resources",
+        "method": "source",
+        "result": "Only a Google Fonts stylesheet (no scripts); no SRI possible for dynamic font CSS; rejected as security finding",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "mamioweb:third-party:google-fonts-css"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "index.html%23inline%20locale-redirect%20script::window.location%20-%3E%20location.replace::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Injection",
+    "canonical_refs": {
+      "surface": "index.html#inline locale-redirect script",
+      "boundary": "window.location -> location.replace",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Injection"
+    },
+    "surface": "index.html#inline locale-redirect script",
+    "boundary": "window.location -> location.replace",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Injection",
+    "starting_paths": [
+      "index.html"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "index.html"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "index.html"
+        ],
+        "invariant": "Redirect target is attacker-independent origin-relative path",
+        "method": "source",
+        "result": "Target is \"/\" + one of en/de/tr + \"/\" + search + hash; scheme and host cannot be influenced; candidate rejected",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "mamioweb:open-redirect:index-locale-redirect"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "package-lock.json%23npm%20dependency%20tree::npm%20audit%20advisories::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Chained%20vulnerabilities%20and%20trust%20boundaries",
+    "canonical_refs": {
+      "surface": "package-lock.json#npm dependency tree",
+      "boundary": "npm audit advisories",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries"
+    },
+    "surface": "package-lock.json#npm dependency tree",
+    "boundary": "npm audit advisories",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "starting_paths": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "package.json",
+          "package-lock.json"
+        ],
+        "invariant": "Advisory-affected code does not reach the deployed dist/",
+        "method": "source",
+        "result": "npm audit: 7 high, 1 moderate, 0 critical; all in vite/postcss/browserslist/js-yaml/nanoid/brace-expansion/source-map-js build-time or dev-server paths; dist/ is static HTML/JS/CSS built from first-party source; rejected by reachability",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "mamioweb:deps:npm-audit-dev-only"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "public%2F%20static%20files::intended%20public%20files%20%28tt%2F%2C%20privacy%2C%20impressum%2C%20terms%2C%20support%2C%20assets%29::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Resource%20and%20file%20handling",
+    "canonical_refs": {
+      "surface": "public/ static files",
+      "boundary": "intended public files (tt/, privacy, impressum, terms, support, assets)",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Resource and file handling"
+    },
+    "surface": "public/ static files",
+    "boundary": "intended public files (tt/, privacy, impressum, terms, support, assets)",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Resource and file handling",
+    "starting_paths": [
+      "public/robots.txt",
+      "public/site.webmanifest"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Resource and file handling",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "public/robots.txt",
+      "public/site.webmanifest"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "public/robots.txt",
+          "public/site.webmanifest"
+        ],
+        "invariant": "public/ contains no secrets, admin/preview pages or scripts",
+        "method": "source",
+        "result": "No <script> tags in public/ html; no key/secret/token strings except locale prose (src/locales/ro/blog-1.js); robots.txt allows all; tt/ holds intended TikTok post images",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "scripts%2F%2A.mjs::owner-run%20dev%2Fbuild%20scripts::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Injection",
+    "canonical_refs": {
+      "surface": "scripts/*.mjs",
+      "boundary": "owner-run dev/build scripts",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Injection"
+    },
+    "surface": "scripts/*.mjs",
+    "boundary": "owner-run dev/build scripts",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Injection",
+    "starting_paths": [
+      "scripts/postbuild.mjs"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "scripts/postbuild.mjs"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "scripts/postbuild.mjs"
+        ],
+        "invariant": "Build-time HTML generation escapes interpolated content",
+        "method": "source",
+        "result": "postbuild.mjs uses escapeHtml/escapeAttribute for generated head and body strings from first-party content; scripts not executed during audit; other scripts are owner-run local tools",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "src%2FApp.jsx%23external%20store%20links::target%3D_blank%20anchors%20to%20APP_STORE_URL%2FGOOGLE_PLAY_URL::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Chained%20vulnerabilities%20and%20trust%20boundaries",
+    "canonical_refs": {
+      "surface": "src/App.jsx#external store links",
+      "boundary": "target=_blank anchors to APP_STORE_URL/GOOGLE_PLAY_URL",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries"
+    },
+    "surface": "src/App.jsx#external store links",
+    "boundary": "target=_blank anchors to APP_STORE_URL/GOOGLE_PLAY_URL",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "starting_paths": [
+      "src/App.jsx",
+      "src/content.js"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Chained vulnerabilities and trust boundaries",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "src/App.jsx",
+      "src/content.js"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "src/App.jsx",
+          "src/content.js"
+        ],
+        "invariant": "External links cannot reach window.opener",
+        "method": "source",
+        "result": "All 8 target=_blank anchors carry rel=\"noreferrer\" (implies noopener); URLs are constants in src/content.js; rejected",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "mamioweb:reverse-tabnabbing:store-links"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "src%2FApp.jsx%23route%20rendering%20from%20window.location.pathname::URL%20path%20-%3E%20React%20route%20state::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Injection",
+    "canonical_refs": {
+      "surface": "src/App.jsx#route rendering from window.location.pathname",
+      "boundary": "URL path -> React route state",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Injection"
+    },
+    "surface": "src/App.jsx#route rendering from window.location.pathname",
+    "boundary": "URL path -> React route state",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Injection",
+    "starting_paths": [
+      "src/App.jsx",
+      "src/content.js"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [
+      {
+        "block": "AI-AND-LLM.md#Core discipline",
+        "reason": "No AI/LLM code in this static site"
+      },
+      {
+        "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+        "reason": "No tenant data or backend"
+      }
+    ],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "audit-parent",
+    "reviewed_paths": [
+      "src/App.jsx",
+      "src/content.js"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "audit-parent",
+        "reviewed_paths": [
+          "src/App.jsx",
+          "src/content.js"
+        ],
+        "invariant": "URL-derived values only select among static locale/page ids; no HTML sinks",
+        "method": "source",
+        "result": "getRouteFromPath maps pathname to known ids; no dangerouslySetInnerHTML, innerHTML, eval, document.write or storage use in src/",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  }
+]
