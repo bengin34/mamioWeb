@@ -1,0 +1,219 @@
+[
+  {
+    "verdict": "rejected",
+    "fingerprint": "mamioweb:ci:actions-pinned-by-tag",
+    "title": "GitHub Actions pinned by tag rather than commit SHA",
+    "description": "Workflow uses mutable major tags.",
+    "claimed_root_cause": "actions/* referenced as @v4/@v5.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": ".github/workflows/deploy.yml",
+        "line": 24,
+        "scope": "build job",
+        "description": "actions/checkout@v4"
+      },
+      {
+        "kind": "sink",
+        "file": ".github/workflows/deploy.yml",
+        "line": 56,
+        "scope": "deploy",
+        "description": "Artifact deployed to Pages"
+      }
+    ],
+    "evidence": [
+      {
+        "file": ".github/workflows/deploy.yml",
+        "line": 9,
+        "description": "permissions limited to contents:read, pages:write, id-token:write"
+      },
+      {
+        "file": ".github/workflows/deploy.yml",
+        "line": 5,
+        "description": "Triggers are push to master and manual only"
+      }
+    ],
+    "reason": "Only GitHub-owned actions are used, the token is least-privilege, no secrets are exposed to the workflow and no untrusted trigger exists; tag pinning of first-party actions is accepted hardening, not a vulnerability."
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "mamioweb:deps:npm-audit-dev-only",
+    "title": "High-severity npm audit advisories in dependency tree",
+    "description": "npm audit reports 7 high and 1 moderate advisories.",
+    "claimed_root_cause": "Vulnerable vite, postcss, nanoid, js-yaml, brace-expansion, browserslist, source-map-js versions in the lockfile.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "package.json",
+        "line": 14,
+        "scope": "devDependencies and vite",
+        "description": "Build tooling resolved from the lockfile"
+      },
+      {
+        "kind": "sink",
+        "file": "package-lock.json",
+        "line": 1,
+        "scope": "resolved versions",
+        "description": "Advisory-affected versions installed in CI and locally"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "package.json",
+        "line": 8,
+        "description": "Build runs vite build then postbuild.mjs; only dist/ is deployed"
+      },
+      {
+        "file": ".github/workflows/deploy.yml",
+        "line": 56,
+        "description": "Only ./dist is uploaded to Pages"
+      }
+    ],
+    "reason": "Advisories affect the dev server, CSS/source-map parsing of attacker-supplied input, or tooling not shipped in dist/. The build parses only first-party files, so no attacker-controlled input reaches them. Hygiene: npm audit fix is available."
+  },
+  {
+    "verdict": "needs_validation",
+    "fingerprint": "mamioweb:headers:no-csp-github-pages",
+    "title": "No CSP or security headers configured for the deployed site",
+    "description": "The site is deployed to GitHub Pages and the repo carries no header or CSP configuration. Whether a CDN in front of the custom domain adds headers cannot be seen from source.",
+    "claimed_root_cause": "No Content-Security-Policy, frame-ancestors or HSTS policy is defined in the repo (no meta CSP in index.html, no _headers file).",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "index.html",
+        "line": 1,
+        "scope": "document head",
+        "description": "HTML shell served without a repo-defined CSP meta tag"
+      },
+      {
+        "kind": "sink",
+        "file": ".github/workflows/deploy.yml",
+        "line": 56,
+        "scope": "Upload artifact / deploy-pages",
+        "description": "dist/ is published to GitHub Pages, which does not accept custom response headers"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "index.html",
+        "line": 21,
+        "description": "Head has an inline redirect script and a Google Fonts stylesheet but no CSP meta"
+      },
+      {
+        "file": ".github/workflows/deploy.yml",
+        "line": 56,
+        "description": "Deployment is GitHub Pages only"
+      }
+    ],
+    "blockers": [
+      "Live response headers of mamio-baby-tracker.com are not observable without contacting the deployment, which the audit forbids",
+      "Unknown whether a CDN or proxy fronts the custom domain and sets headers"
+    ],
+    "validation_plan": {
+      "deployment": "Owner runs curl -sI https://mamio-baby-tracker.com/en/ once and records content-security-policy, strict-transport-security and x-frame-options. If absent, decide between a meta CSP (needs inline-script hash for the redirect script and fonts.googleapis.com/fonts.gstatic.com allowance) or fronting with a header-setting CDN. Impact is low: the site has no user data, forms or auth."
+    }
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "mamioweb:open-redirect:index-locale-redirect",
+    "title": "Open redirect via locale redirect script",
+    "description": "Claimed open redirect in the inline locale redirect.",
+    "claimed_root_cause": "window.location.replace target derived from URL input.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "index.html",
+        "line": 27,
+        "scope": "inline script",
+        "description": "Runs only when pathname is exactly \"/\""
+      },
+      {
+        "kind": "sink",
+        "file": "index.html",
+        "line": 48,
+        "scope": "window.location.replace",
+        "description": "Navigates to \"/\" + locale + \"/\" + search + hash"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "index.html",
+        "line": 23,
+        "description": "supportedLocales fixed to en, de, tr"
+      },
+      {
+        "file": "index.html",
+        "line": 49,
+        "description": "Target is origin-relative and begins with a single slash followed by a fixed locale"
+      }
+    ],
+    "reason": "The locale is chosen from a fixed allowlist and the URL begins \"/\" + locale + \"/\", so scheme and host are not controllable; query and hash are appended unchanged to the same origin."
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "mamioweb:reverse-tabnabbing:store-links",
+    "title": "Reverse tabnabbing through store links",
+    "description": "Claimed missing rel=noopener on target=_blank links.",
+    "claimed_root_cause": "target=_blank anchors without noopener.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "src/App.jsx",
+        "line": 269,
+        "scope": "hero store links",
+        "description": "target=_blank anchors to store URLs"
+      },
+      {
+        "kind": "sink",
+        "file": "src/App.jsx",
+        "line": 271,
+        "scope": "anchor attributes",
+        "description": "rel attribute present"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "src/App.jsx",
+        "line": 271,
+        "description": "rel=\"noreferrer\" set on the link, which implies noopener"
+      },
+      {
+        "file": "src/content.js",
+        "line": 8,
+        "description": "Link targets are fixed apple/google store constants"
+      }
+    ],
+    "reason": "All eight target=_blank anchors set rel=\"noreferrer\" and point to fixed first-party store URLs, so window.opener is not exposed."
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "mamioweb:third-party:google-fonts-css",
+    "title": "Third-party stylesheet loaded without integrity",
+    "description": "Google Fonts CSS is loaded from fonts.googleapis.com.",
+    "claimed_root_cause": "External stylesheet without SRI.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "index.html",
+        "line": 55,
+        "scope": "link rel=stylesheet",
+        "description": "Loads Inter from Google Fonts"
+      },
+      {
+        "kind": "sink",
+        "file": "index.html",
+        "line": 55,
+        "scope": "stylesheet",
+        "description": "Applies fetched CSS to the page"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "index.html",
+        "line": 55,
+        "description": "Stylesheet only; no third-party script is loaded anywhere in index.html or public/"
+      }
+    ],
+    "reason": "Dynamic Google Fonts CSS cannot carry SRI and a stylesheet cannot execute script; impact is limited to styling. Any EU privacy angle is outside a security finding."
+  }
+]
