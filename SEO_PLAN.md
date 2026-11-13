@@ -133,3 +133,12 @@ References:
 - Four teething/dental guides from the MEN-132 research, fact-checked with health-article-factcheck (fresh agent each, sources opened), published in en, de, fr, pt-br, tr: `teething-remedies-what-to-avoid`, `brushing-baby-teeth-fluoride-by-age`, `baby-first-dentist-visit`, `teething-fever-or-illness`. Reviews: `docs/article-reviews/`.
 - The fifth topic (teething timeline by month) is already owned by `teething-timeline` (MEN-130); not duplicated.
 - Known gaps (see each review's open questions): TR has no national ministry page for most topics (regional ministry hospital pages used); BR has no fever red-flag page (NHS attributed); HAS fluoride doc is 2010.
+
+## MEN-256 (2026-11-13)
+
+- Three age-staged potty-training guides (demand test for the potty-tracker idea, source MEN-254), in en, de, fr, pt-br, tr. Each links to the `potty` landing page and the two siblings. Reviews: `docs/article-reviews/`.
+  - `potty-training-readiness` (18 mo to 3 y): "when to start potty training"
+  - `how-to-potty-train-toddler` (2 to 3 y): "potty training" / "toilet training"
+  - `night-time-potty-training` (3 to 5 y): "night time potty training"
+- `featureBlogPostIds.potty` lists the three first.
+- Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2026-12-04.

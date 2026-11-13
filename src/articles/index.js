@@ -4,6 +4,9 @@ import babyMilestonesByAge from './baby-milestones-by-age.js';
 import brushingBabyTeethFluorideByAge from './brushing-baby-teeth-fluoride-by-age.js';
 import firstWordsLanguageDevelopment from './first-words-language-development.js';
 import growthPercentilesExplained from './growth-percentiles-explained.js';
+import howToPottyTrainToddler from './how-to-potty-train-toddler.js';
+import nightTimePottyTraining from './night-time-potty-training.js';
+import pottyTrainingReadiness from './potty-training-readiness.js';
 import teethingFeverOrIllness from './teething-fever-or-illness.js';
 import teethingRemediesWhatToAvoid from './teething-remedies-what-to-avoid.js';
 import teethingTimeline from './teething-timeline.js';
@@ -46,6 +49,9 @@ export const articles = {
   'brushing-baby-teeth-fluoride-by-age': brushingBabyTeethFluorideByAge,
   'first-words-language-development': firstWordsLanguageDevelopment,
   'growth-percentiles-explained': growthPercentilesExplained,
+  'how-to-potty-train-toddler': howToPottyTrainToddler,
+  'night-time-potty-training': nightTimePottyTraining,
+  'potty-training-readiness': pottyTrainingReadiness,
   'teething-fever-or-illness': teethingFeverOrIllness,
   'teething-remedies-what-to-avoid': teethingRemediesWhatToAvoid,
   'teething-timeline': teethingTimeline,

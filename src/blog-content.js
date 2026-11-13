@@ -23,7 +23,7 @@ export const featureBlogPostIds = {
   development: ['tummy-time-progress', 'growth-doctor-report', 'doctor-visit-checklist'],
   growthPercentiles: ['growth-doctor-report', 'doctor-visit-checklist', 'health-report-doctor'],
   teething: ['doctor-visit-checklist', 'health-report-doctor'],
-  potty: ['wet-dirty-diapers', 'diaper-color'],
+  potty: ['potty-training-readiness', 'how-to-potty-train-toddler', 'night-time-potty-training', 'wet-dirty-diapers', 'diaper-color'],
   babyExercises: ['tummy-time-progress', 'baby-sleep-first-months'],
   watchWidget: ['newborn-feeds', 'breastfeeding-side-balance', 'pumping-output-log'],
   multipleBabies: ['newborn-feeds', 'mixed-feeding-routine', 'vaccine-medication-reminders'],
