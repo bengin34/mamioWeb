@@ -9,10 +9,10 @@ export const blogLangs = localeCodes.filter(
 );
 
 export const featureBlogPostIds = {
-  breastfeeding: ['breastfeeding-side-balance', 'newborn-feeds', 'breastfeeding-schedule', 'cluster-feeding'],
-  feeding: ['newborn-feeds', 'bottle-feeding-log', 'pumping-output-log', 'mixed-feeding-routine', 'breastfeeding-side-balance', 'starting-solids-log'],
-  bottleFeeding: ['bottle-feeding-log', 'newborn-feeds'],
-  pumping: ['pumping-output-log', 'newborn-feeds'],
+  breastfeeding: ['how-long-breastfeeding-session', 'breastfeeding-side-balance', 'newborn-feeds', 'breastfeeding-schedule', 'cluster-feeding'],
+  feeding: ['newborn-feeds', 'bottle-amounts-by-age', 'pumping-schedule', 'how-long-breastfeeding-session', 'bottle-feeding-log', 'pumping-output-log', 'mixed-feeding-routine', 'breastfeeding-side-balance', 'starting-solids-log'],
+  bottleFeeding: ['bottle-amounts-by-age', 'bottle-feeding-log', 'newborn-feeds'],
+  pumping: ['pumping-schedule', 'pumping-output-log', 'newborn-feeds'],
   mixedFeeding: ['mixed-feeding-routine', 'newborn-feeds', 'breastfeeding-side-balance'],
   diaper: ['diaper-color', 'wet-dirty-diapers'],
   sleep: ['baby-sleep-first-months', 'wake-windows'],
