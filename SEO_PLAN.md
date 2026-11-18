@@ -142,3 +142,12 @@ References:
   - `night-time-potty-training` (3 to 5 y): "night time potty training"
 - `featureBlogPostIds.potty` lists the three first.
 - Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2026-12-04.
+
+## MEN-993 (2026-11-18)
+
+- Three feeding long-tail guides in en, de, fr, pt-br, tr. Each links to its tracker landing page. Reviews: `docs/article-reviews/`.
+  - `bottle-amounts-by-age` (`bottleFeeding`): "how much formula by age"
+  - `pumping-schedule` (`pumping`): "pumping schedule"
+  - `how-long-breastfeeding-session` (`breastfeeding`): "how long should a breastfeed last"
+- `featureBlogPostIds` bottleFeeding, pumping, breastfeeding start with them; all three also in `feeding`.
+- Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2026-12-18.
