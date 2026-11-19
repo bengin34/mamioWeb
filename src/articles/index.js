@@ -1,4 +1,5 @@
 import babyFirstDentistVisit from './baby-first-dentist-visit.js';
+import babyLedWeaningVsPurees from './baby-led-weaning-vs-purees.js';
 import babyMassageGuide from './baby-massage-guide.js';
 import babyMilestonesByAge from './baby-milestones-by-age.js';
 import bottleAmountsByAge from './bottle-amounts-by-age.js';
@@ -10,10 +11,12 @@ import howToPottyTrainToddler from './how-to-potty-train-toddler.js';
 import nightTimePottyTraining from './night-time-potty-training.js';
 import pottyTrainingReadiness from './potty-training-readiness.js';
 import pumpingSchedule from './pumping-schedule.js';
+import solidFoodAmountsByAge from './solid-food-amounts-by-age.js';
 import teethingFeverOrIllness from './teething-fever-or-illness.js';
 import teethingRemediesWhatToAvoid from './teething-remedies-what-to-avoid.js';
 import teethingTimeline from './teething-timeline.js';
 import twinsFeedingSleepRoutine from './twins-feeding-sleep-routine.js';
+import whenToStartSolids from './when-to-start-solids.js';
 
 // Researched long-form guides. Each article lives in its own file and carries
 // every language it is published in (en, de, fr, pt-br, tr) plus its sources.
@@ -47,6 +50,7 @@ export const sourceLabels = {
 
 export const articles = {
   'baby-first-dentist-visit': babyFirstDentistVisit,
+  'baby-led-weaning-vs-purees': babyLedWeaningVsPurees,
   'baby-massage-guide': babyMassageGuide,
   'baby-milestones-by-age': babyMilestonesByAge,
   'bottle-amounts-by-age': bottleAmountsByAge,
@@ -58,8 +62,10 @@ export const articles = {
   'night-time-potty-training': nightTimePottyTraining,
   'potty-training-readiness': pottyTrainingReadiness,
   'pumping-schedule': pumpingSchedule,
+  'solid-food-amounts-by-age': solidFoodAmountsByAge,
   'teething-fever-or-illness': teethingFeverOrIllness,
   'teething-remedies-what-to-avoid': teethingRemediesWhatToAvoid,
   'teething-timeline': teethingTimeline,
   'twins-feeding-sleep-routine': twinsFeedingSleepRoutine,
+  'when-to-start-solids': whenToStartSolids,
 };
