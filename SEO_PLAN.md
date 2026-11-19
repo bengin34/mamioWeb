@@ -151,3 +151,12 @@ References:
   - `how-long-breastfeeding-session` (`breastfeeding`): "how long should a breastfeed last"
 - `featureBlogPostIds` bottleFeeding, pumping, breastfeeding start with them; all three also in `feeding`.
 - Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2026-12-18.
+
+## MEN-1024 (2026-11-19)
+
+- Three solid-food guides in en, de, fr, pt-br, tr, all linked from the `feeding` landing page. Reviews: `docs/article-reviews/`.
+  - `when-to-start-solids`: "when to start solid foods"
+  - `solid-food-amounts-by-age`: "how much solid food by age"
+  - `baby-led-weaning-vs-purees`: "baby led weaning vs purees"
+- `featureBlogPostIds.feeding` lists them after `newborn-feeds`. No allergen/honey/choking articles (DE-only guides already exist).
+- Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2026-12-19.
