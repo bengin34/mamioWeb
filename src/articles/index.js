@@ -1,3 +1,6 @@
+import babyFeverWhenToCallDoctor from './baby-fever-when-to-call-doctor.js';
+import babySpitUpVsVomitingReflux from './baby-spit-up-vs-vomiting-reflux.js';
+import howMuchSleepBabyNeedsByAge from './how-much-sleep-baby-needs-by-age.js';
 import babyFirstDentistVisit from './baby-first-dentist-visit.js';
 import babyLedWeaningVsPurees from './baby-led-weaning-vs-purees.js';
 import babyMassageGuide from './baby-massage-guide.js';
@@ -49,6 +52,9 @@ export const sourceLabels = {
 };
 
 export const articles = {
+  'baby-fever-when-to-call-doctor': babyFeverWhenToCallDoctor,
+  'baby-spit-up-vs-vomiting-reflux': babySpitUpVsVomitingReflux,
+  'how-much-sleep-baby-needs-by-age': howMuchSleepBabyNeedsByAge,
   'baby-first-dentist-visit': babyFirstDentistVisit,
   'baby-led-weaning-vs-purees': babyLedWeaningVsPurees,
   'baby-massage-guide': babyMassageGuide,

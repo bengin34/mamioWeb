@@ -10,14 +10,14 @@ export const blogLangs = localeCodes.filter(
 
 export const featureBlogPostIds = {
   breastfeeding: ['how-long-breastfeeding-session', 'breastfeeding-side-balance', 'newborn-feeds', 'breastfeeding-schedule', 'cluster-feeding'],
-  feeding: ['newborn-feeds', 'when-to-start-solids', 'solid-food-amounts-by-age', 'baby-led-weaning-vs-purees', 'bottle-amounts-by-age', 'pumping-schedule', 'how-long-breastfeeding-session', 'bottle-feeding-log', 'pumping-output-log', 'mixed-feeding-routine', 'breastfeeding-side-balance', 'starting-solids-log'],
+  feeding: ['newborn-feeds', 'baby-spit-up-vs-vomiting-reflux', 'when-to-start-solids', 'solid-food-amounts-by-age', 'baby-led-weaning-vs-purees', 'bottle-amounts-by-age', 'pumping-schedule', 'how-long-breastfeeding-session', 'bottle-feeding-log', 'pumping-output-log', 'mixed-feeding-routine', 'breastfeeding-side-balance', 'starting-solids-log'],
   bottleFeeding: ['bottle-amounts-by-age', 'bottle-feeding-log', 'newborn-feeds'],
   pumping: ['pumping-schedule', 'pumping-output-log', 'newborn-feeds'],
   mixedFeeding: ['mixed-feeding-routine', 'newborn-feeds', 'breastfeeding-side-balance'],
   diaper: ['diaper-color', 'wet-dirty-diapers'],
-  sleep: ['baby-sleep-first-months', 'wake-windows'],
+  sleep: ['how-much-sleep-baby-needs-by-age', 'baby-sleep-first-months', 'wake-windows'],
   tummyTime: ['tummy-time-progress', 'baby-sleep-first-months'],
-  health: ['health-report-doctor', 'vaccine-medication-reminders', 'growth-doctor-report', 'diaper-color', 'doctor-visit-checklist'],
+  health: ['baby-fever-when-to-call-doctor', 'health-report-doctor', 'vaccine-medication-reminders', 'growth-doctor-report', 'diaper-color', 'doctor-visit-checklist'],
   reminders: ['vaccine-medication-reminders', 'health-report-doctor'],
   reports: ['growth-doctor-report', 'health-report-doctor', 'doctor-visit-checklist'],
   development: ['tummy-time-progress', 'growth-doctor-report', 'doctor-visit-checklist'],
