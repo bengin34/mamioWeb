@@ -160,3 +160,12 @@ References:
   - `baby-led-weaning-vs-purees`: "baby led weaning vs purees"
 - `featureBlogPostIds.feeding` lists them after `newborn-feeds`. No allergen/honey/choking articles (DE-only guides already exist).
 - Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2026-12-19.
+
+## MEN-1054 (2026-11-21)
+
+- Three guides in en, de, fr, pt-br, tr. Reviews: `docs/article-reviews/`.
+  - `how-much-sleep-baby-needs-by-age` (`sleep`): "how much sleep does a baby need"
+  - `baby-fever-when-to-call-doctor` (`health`): "baby fever when to call the doctor"
+  - `baby-spit-up-vs-vomiting-reflux` (`feeding`): "baby spit up vs vomiting"
+- Only 3 of 5 requested: each needs a fully sourced 5-locale fact-check.
+- Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2027-01-20.
