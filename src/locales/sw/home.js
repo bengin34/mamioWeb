@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Programu ya kufuatilia ulishaji na malezi ya mtoto`,
-    metaDescription: `Mamio ni programu tulivu isiyohitaji intaneti ya kufuatilia kunyonyesha, chupa, nepi, usingizi, kukamua maziwa, ukuaji, rekodi za afya, chanjo, ziara za daktari na vikumbusho.`,
+    metaDescription: `Mamio ni programu tulivu isiyohitaji intaneti ya kufuatilia kunyonyesha, chupa, nepi, usingizi, kukamua maziwa, ukuaji, afya, chanjo, ziara za daktari na vikumbusho.`,
     nav: {
       features: `Vipengele`,
       screens: `Skrini`,

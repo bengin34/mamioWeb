@@ -12,6 +12,7 @@ Skills for every task: see the web rules in the shared AGENTS.md (`ecc:seo` alwa
 - [x] MEN-1054: 3 guides (baby sleep needs by age, fever when to call the doctor, spit-up vs vomiting; en, de, fr, pt-br, tr), linked from the sleep, health and feeding landing pages.
 
 ## Open
+- [ ] MEN-1133 follow-up: THIN prerendered landing HTML (438 URLs, 95-145 words); add real body copy in the postbuild template.
 - [ ] MEN-1054 outcome check by 2027-01-20: Search Console impressions (or PostHog pageviews) for the 15 new article URLs >= 100.
 - [ ] MEN-1024 outcome check by 2026-12-19: Search Console impressions (or PostHog pageviews) for the 15 new solid-food article URLs >= 100.
 - [ ] MEN-993 outcome check by 2026-12-18: Search Console impressions (or PostHog pageviews) for the 15 new feeding article URLs >= 100.
