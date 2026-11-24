@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Registo de amamentação e cuidados do bebé`,
-    metaDescription: `Mamio é uma aplicação calma e offline para registar amamentação, biberões, fraldas, sono, extração de leite, crescimento, registos de saúde, vacinas, consultas e lembretes.`,
+    metaDescription: `Mamio é uma aplicação calma e offline para registar amamentação, biberões, fraldas, sono, extração de leite, crescimento, saúde, vacinas, consultas e lembretes.`,
     nav: {
       features: `Funcionalidades`,
       screens: `Ecrãs`,

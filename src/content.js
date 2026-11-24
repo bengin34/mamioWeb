@@ -27,7 +27,7 @@ export const locales = {
     path: '/en/',
     metaTitle: 'Mamio - Baby feeding and care tracker',
     metaDescription:
-      'Mamio is a calm, offline baby feeding and baby care tracker for breastfeeding, bottles, diapers, sleep, pumping, growth, health records, vaccines, doctor visits, and reminders.',
+      'Mamio is a calm, offline baby tracker for breastfeeding, bottles, diapers, sleep, pumping, growth, health records, vaccines, doctor visits, and reminders.',
     nav: {
       features: 'Features',
       screens: 'Screens',
@@ -313,7 +313,7 @@ export const locales = {
     path: '/tr/',
     metaTitle: 'Mamio - Bebek beslenme ve bakım takip uygulaması',
     metaDescription:
-      'Mamio emzirme, biberon, bez, uyku, sağım, büyüme, sağlık kayıtları, aşılar, doktor ziyaretleri ve hatırlatmalar için sakin, çevrimdışı bir bebek bakım takip uygulamasıdır.',
+      'Mamio; emzirme, biberon, bez, uyku, sağım, büyüme, sağlık kayıtları, aşılar, doktor ziyaretleri ve hatırlatmalar için sakin, çevrimdışı bebek takip uygulamasıdır.',
     nav: {
       features: 'Özellikler',
       screens: 'Ekranlar',

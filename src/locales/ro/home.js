@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Aplicație pentru hrănirea și îngrijirea bebelușului`,
-    metaDescription: `Mamio, aplicație calmă, offline, pentru hrănirea și îngrijirea bebelușului: alăptare, biberon, scutece, somn, pompare, creștere, sănătate, vaccinuri, consultații, memento-uri.`,
+    metaDescription: `Mamio, aplicație calmă, offline pentru bebeluși: alăptare, biberon, scutece, somn, pompare, creștere, sănătate, vaccinuri, consultații, memento-uri.`,
     nav: {
       features: `Funcții`,
       screens: `Ecrane`,

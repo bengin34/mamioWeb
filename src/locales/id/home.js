@@ -1,7 +1,7 @@
 export default {
   home: {
     metaTitle: `Mamio - Aplikasi pencatat menyusui dan perawatan bayi`,
-    metaDescription: `Mamio, aplikasi pencatat bayi yang tenang dan offline untuk menyusui, susu botol, popok, tidur, pompa ASI, pertumbuhan, kesehatan, vaksin, kunjungan dokter, dan pengingat.`,
+    metaDescription: `Mamio, aplikasi pencatat bayi yang tenang dan offline: menyusui, susu botol, popok, tidur, pompa ASI, pertumbuhan, kesehatan, vaksin, kunjungan dokter, pengingat.`,
     nav: {
       features: `Fitur`,
       screens: `Tampilan`,
