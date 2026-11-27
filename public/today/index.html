@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Today – Mamio</title>
+    <!-- Personal summaries: never indexed, never sent anywhere. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" type="image/png" href="/assets/icon-192.png" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      :root {
+        --bg: #071224;
+        --surface: rgba(255,255,255,0.05);
+        --border: rgba(255,255,255,0.09);
+        --text: #f4f8ff;
+        --muted: rgba(255,255,255,0.58);
+        --accent: #45c8f2;
+        --warn-bg: rgba(229,57,53,0.16);
+        --warn: #ff8a80;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--accent); }
+      .page { max-width: 560px; margin: 0 auto; padding: 28px 16px 48px; }
+      .brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.5rem; color: var(--muted); font-weight: 700; font-size: 0.9rem; }
+      .brand img { width: 32px; height: 32px; border-radius: 9px; }
+      h1 { font-size: 1.75rem; font-weight: 800; margin: 0; line-height: 1.2; overflow-wrap: anywhere; }
+      .sub { color: var(--muted); margin: 0.25rem 0 0; }
+      .shared { color: var(--muted); font-size: 0.875rem; margin: 0.75rem 0 0; }
+      .banner { margin: 1rem 0 0; padding: 0.75rem 1rem; border-radius: 12px; background: var(--warn-bg); color: var(--warn); font-weight: 700; font-size: 0.9rem; }
+      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); gap: 0.5rem; margin: 1.25rem 0 0; }
+      .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 0.75rem; text-align: center; }
+      .stat b { display: block; font-size: 1.25rem; font-weight: 800; }
+      .stat span { color: var(--muted); font-size: 0.8rem; }
+      h2 { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 1.75rem 0 0.5rem; }
+      .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 0.25rem 1rem; }
+      .row { display: flex; gap: 0.75rem; padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
+      .row:last-child { border-bottom: none; }
+      .time { flex: 0 0 auto; min-width: 3.4rem; max-width: 6.5rem; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); }
+      .main { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+      .label { font-weight: 700; }
+      .text, .ago { color: var(--muted); font-size: 0.9rem; }
+      .note { white-space: pre-wrap; overflow-wrap: anywhere; padding: 0.85rem 0; }
+      .empty { color: var(--muted); font-style: italic; padding: 0.85rem 0; }
+      .cta { display: block; margin: 2rem 0 0; padding: 0.9rem; border-radius: 14px; background: var(--accent); color: #071224; text-align: center; font-weight: 800; text-decoration: none; }
+      footer { margin-top: 1.25rem; color: var(--muted); font-size: 0.8rem; text-align: center; }
+      [hidden] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="brand"><img src="/assets/icon-192.png" alt="" width="32" height="32" /><span>Mamio</span></div>
+      <div id="app"></div>
+      <a id="cta" class="cta" href="https://mamio-baby-tracker.com/">Mamio</a>
+      <footer id="footer"></footer>
+    </main>
+    <script>
+      // Renders a partner summary made by the Mamio app (src/utils/partner-snapshot.ts).
+      // The data lives in the URL fragment, which browsers never send to this server; nothing here
+      // stores or transmits it. Every value is written with textContent — the link is untrusted.
+      (function () {
+        var APP_STORE = "https://apps.apple.com/us/app/mamio-breastfeeding-tracker/id6757083259";
+        var PLAY = "https://play.google.com/store/apps/details?id=com.mamio.app";
+        var OLD_MS = 12 * 60 * 60 * 1000;
+        // Only shown when there is no readable snapshot, so the app's labels are unavailable.
+        var BROKEN = {
+          en: ["This link is incomplete", "Ask for a new summary from the Mamio app.", "Get Mamio"],
+          tr: ["Bu link eksik", "Mamio uygulamasından yeni bir özet iste.", "Mamio'yu indir"],
+          de: ["Dieser Link ist unvollständig", "Bitte lass dir eine neue Zusammenfassung aus der Mamio-App schicken.", "Mamio holen"]
+        };
+
+        var app = document.getElementById("app");
+        var cta = document.getElementById("cta");
+        var footer = document.getElementById("footer");
+        var ua = navigator.userAgent || "";
+        cta.href = /android/i.test(ua) ? PLAY : /iphone|ipad|ipod|macintosh/i.test(ua) ? APP_STORE : "https://mamio-baby-tracker.com/";
+
+        function el(tag, cls, text) {
+          var node = document.createElement(tag);
+          if (cls) node.className = cls;
+          if (text != null) node.textContent = String(text);
+          return node;
+        }
+        function str(v) { return typeof v === "string" ? v : ""; }
+
+        function decode(hash) {
+          var body = hash.replace(/^#/, "");
+          if (body.indexOf("v1.") !== 0) return null;
+          var b64 = body.slice(3).replace(/-/g, "+").replace(/_/g, "/");
+          while (b64.length % 4) b64 += "=";
+          try {
+            var bin = atob(b64);
+            var bytes = new Uint8Array(bin.length);
+            for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+            var s = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
+            if (!s || s.v !== 1 || typeof s.at !== "number" || !Array.isArray(s.stats) || !Array.isArray(s.latest) ||
+                !Array.isArray(s.plan) || !Array.isArray(s.entries) || !s.l || typeof s.l !== "object") return null;
+            return s;
+          } catch (e) {
+            return null;
+          }
+        }
+
+        function showBroken() {
+          var code = (navigator.language || "en").slice(0, 2);
+          var t = BROKEN[code] || BROKEN.en;
+          document.documentElement.lang = BROKEN[code] ? code : "en";
+          app.appendChild(el("h1", null, t[0]));
+          app.appendChild(el("p", "sub", t[1]));
+          cta.textContent = t[2];
+        }
+
+        function render(s) {
+          var lang = str(s.lang) || "en";
+          try { new Intl.DateTimeFormat(lang); } catch (e) { lang = "en"; }
+          var tz = typeof s.tz === "number" ? s.tz : 0;
+          var l = s.l;
+          document.documentElement.lang = lang;
+          if (/^(ar|he)\b/.test(lang)) document.documentElement.dir = "rtl";
+          document.title = str(s.title) + " – Mamio";
+
+          // Clock times are shown on the sender's clock (UTC shifted by their offset).
+          var clock = new Intl.DateTimeFormat(lang, { hour: "2-digit", minute: "2-digit", timeZone: "UTC" });
+          var dayFmt = new Intl.DateTimeFormat(lang, { day: "numeric", month: "long", timeZone: "UTC" });
+          var shortDay = new Intl.DateTimeFormat(lang, { day: "numeric", month: "short", timeZone: "UTC" });
+          var rel = typeof Intl.RelativeTimeFormat === "function" ? new Intl.RelativeTimeFormat(lang, { numeric: "auto" }) : null;
+          function fmtClock(ms) { return clock.format(new Date(ms + tz * 60000)); }
+          function ago(ms) {
+            if (!rel) return "";
+            var mins = Math.round((ms - Date.now()) / 60000);
+            if (Math.abs(mins) < 60) return rel.format(mins, "minute");
+            return rel.format(Math.round(mins / 60), "hour");
+          }
+          function senderDay(ms) {
+            var d = new Date(ms + tz * 60000);
+            return d.getUTCFullYear() + "-" + String(d.getUTCMonth() + 1).padStart(2, "0") + "-" + String(d.getUTCDate()).padStart(2, "0");
+          }
+
+          var now = Date.now();
+          var isOld = now - s.at > OLD_MS;
+          var isStale = str(s.day) !== "" && str(s.day) !== senderDay(now);
+
+          app.appendChild(el("h1", null, s.title));
+          if (s.subtitle) app.appendChild(el("p", "sub", s.subtitle));
+          app.appendChild(el("p", "shared", str(l.shared) + " " + fmtClock(s.at) + " · " + ago(s.at)));
+          if (isStale) app.appendChild(el("div", "banner", str(l.stale).replace("{date}", dayFmt.format(new Date(s.at + tz * 60000)))));
+          else if (isOld) app.appendChild(el("div", "banner", l.old));
+
+          if (s.stats.length) {
+            var stats = el("div", "stats");
+            s.stats.forEach(function (stat) {
+              var box = el("div", "stat");
+              box.appendChild(el("b", null, str(stat && stat.value)));
+              box.appendChild(el("span", null, str(stat && stat.label)));
+              stats.appendChild(box);
+            });
+            app.appendChild(stats);
+          }
+
+          function row(r, withAgo) {
+            var line = el("div", "row");
+            // A row on another day than the summary (tomorrow's appointment) gets its date too.
+            var when = typeof r.at === "number" ? fmtClock(r.at) : "";
+            if (when && str(s.day) && senderDay(r.at) !== str(s.day)) when = shortDay.format(new Date(r.at + tz * 60000)) + " " + when;
+            line.appendChild(el("div", "time", when));
+            var main = el("div", "main");
+            main.appendChild(el("div", "label", str(r.label)));
+            if (r.text) main.appendChild(el("div", "text", str(r.text)));
+            if (withAgo && typeof r.at === "number") main.appendChild(el("div", "ago", ago(r.at)));
+            line.appendChild(main);
+            return line;
+          }
+          function section(title, rows, withAgo) {
+            rows = rows.filter(function (r) { return r && typeof r === "object"; });
+            if (!rows.length) return;
+            app.appendChild(el("h2", null, title));
+            var card = el("div", "card");
+            rows.forEach(function (r) { card.appendChild(row(r, withAgo)); });
+            app.appendChild(card);
+          }
+
+          if (s.active && typeof s.active === "object") section(l.now, [s.active], true);
+          section(l.latest, s.latest, true);
+          section(l.plan, s.plan.filter(function (r) { return !(isOld && r && r.est); }), false);
+          if (s.note) {
+            app.appendChild(el("h2", null, l.note));
+            var noteCard = el("div", "card");
+            noteCard.appendChild(el("div", "note", s.note));
+            app.appendChild(noteCard);
+          }
+          if (s.entries.length) section(l.entries, s.entries, false);
+          if (!s.active && !s.latest.length && !s.entries.length) {
+            app.appendChild(el("h2", null, l.entries));
+            var emptyCard = el("div", "card");
+            emptyCard.appendChild(el("div", "empty", l.empty));
+            app.appendChild(emptyCard);
+          }
+
+          cta.textContent = str(l.cta) || "Mamio";
+          footer.textContent = str(l.footer);
+        }
+
+        function start() {
+          while (app.firstChild) app.removeChild(app.firstChild);
+          var snapshot = decode(location.hash);
+          if (snapshot) render(snapshot); else showBroken();
+        }
+        window.addEventListener("hashchange", start);
+        start();
+      })();
+    </script>
+  </body>
+</html>
