@@ -13,6 +13,8 @@ Skills for every task: see the web rules in the shared AGENTS.md (`ecc:seo` alwa
 
 ## Open
 - [ ] MEN-1133 follow-up: THIN prerendered landing HTML (438 URLs, 95-145 words); add real body copy in the postbuild template.
+- [x] MEN-1480: 3 articles (constipation, diaper rash, babies and water; en, de, fr, pt-br, tr). Held: breast-milk-storage, baby-room-temperature-sleep (de source down).
+- [ ] MEN-1480 outcome check by 2027-01-27: GSC clicks for the 15 new URLs.
 - [ ] MEN-1054 outcome check by 2027-01-20: Search Console impressions (or PostHog pageviews) for the 15 new article URLs >= 100.
 - [ ] MEN-1024 outcome check by 2026-12-19: Search Console impressions (or PostHog pageviews) for the 15 new solid-food article URLs >= 100.
 - [ ] MEN-993 outcome check by 2026-12-18: Search Console impressions (or PostHog pageviews) for the 15 new feeding article URLs >= 100.
