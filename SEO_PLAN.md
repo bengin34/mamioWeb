@@ -169,3 +169,12 @@ References:
   - `baby-spit-up-vs-vomiting-reflux` (`feeding`): "baby spit up vs vomiting"
 - Only 3 of 5 requested: each needs a fully sourced 5-locale fact-check.
 - Outcome: Search Console impressions (or PostHog pageviews) for the 15 URLs >= 100 by 2027-01-20.
+
+## MEN-1480 (2026-11-28)
+
+- 3 of 5 guides published in en, de, fr, pt-br, tr. Reviews: `docs/article-reviews/`.
+  - `baby-constipation-signs-when-to-call` (`diaper`): "baby constipation when to call doctor"
+  - `diaper-rash-care-when-to-call` (`diaper`): "diaper rash treatment when to see doctor"
+  - `when-can-babies-drink-water` (`feeding`): "when can babies drink water"
+- Held back: `breast-milk-storage`, `baby-room-temperature-sleep` (de claims rest on kindergesundheit-info.de, HTTP 502). Draft + review in `docs/article-reviews/unpublished/`; re-check de when the host is up.
+- Outcome: Search Console clicks for the 15 URLs by 2027-01-27.
