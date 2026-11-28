@@ -1,0 +1,510 @@
+// Researched article: baby room temperature for sleep and how to dress a baby (recommended temperature per country, overheating checks, sleeping bag and clothing, hot nights, safe sleep rules, when to get medical help) (NHS, The Lullaby Trust, AAP / HealthyChildren.org, kindergesundheit-info.de, ameli.fr, Sociedade Brasileira de Pediatria, Ministério da Saúde and state health bodies, T.C. Sağlık Bakanlığı hospitals). Official numbers differ by country and the text says so. Sources opened 2026-11-28.
+export default {
+  relatedPageId: 'sleep',
+  slugs: {
+    en: 'baby-room-temperature-sleep',
+    de: 'raumtemperatur-baby-schlafen',
+    fr: 'temperature-chambre-bebe',
+    'pt-br': 'temperatura-do-quarto-do-bebe',
+    tr: 'bebek-odasi-sicakligi',
+  },
+  locales: {
+    en: {
+      metaTitle: `Baby Room Temperature for Sleep: How to Dress Your Baby`,
+      metaDescription: `Recommended baby room temperature, how to dress your baby for sleep, how to check for overheating, hot nights, safe sleep rules and when to get medical help.`,
+      title: `Baby room temperature for sleep: what to aim for and what your baby should wear`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `The NHS and The Lullaby Trust advise a room of about 16 to 20°C for a sleeping baby. Overheating raises the risk of sudden infant death syndrome (SIDS), so temperature and clothing belong together. Other countries give somewhat different numbers, and the AAP page we opened gives no number at all. Below: how to dress your baby, how to check them, what to do on hot nights, the safe sleep basics and when to get help.`,
+      sections: [
+        {
+          title: `What room temperature to aim for`,
+          body: `The NHS says to keep the room at about 16 to 20°C and to monitor it with a room thermometer. The Lullaby Trust gives the same range and notes that it is hard to judge temperature by guessing.\n\nAvoid local heat sources: the NHS says babies should never sleep with a hot water bottle or electric blanket, next to a radiator, heater or fire, or in direct sunlight.`,
+        },
+        {
+          title: `How to dress your baby for sleep`,
+          body: `The NHS suggests lightweight blankets, sheets or a baby sleeping bag. The Lullaby Trust describes light bedding or a lightweight, well-fitting sleep bag as comfortable at 16 to 20°C, and advises against duvets and quilts. It does not match tog ratings to temperatures, because products and babies differ.\n\nThe AAP rule of thumb is that a baby needs only one more layer than you would wear in the same place. It also says not to use weighted blankets, sleepers or swaddles. Leave hats off indoors, and the NHS says to take off hats and extra layers as soon as you come inside or get into a car, bus or train, even if it wakes your baby.`,
+        },
+        {
+          title: `How to check whether your baby is too hot`,
+          body: `Feel your baby's chest or the back of the neck. Cool hands and feet are normal, so they are not a good guide. If the skin is hot or sweaty, remove one or more layers of clothing or bedding (NHS, The Lullaby Trust).`,
+        },
+        {
+          title: `Hot nights`,
+          body: `If the room is hard to cool, The Lullaby Trust suggests lighter bedding and clothing, and opening the door and a window if it is safe. A fan can help, but do not aim it directly at your baby.\n\nOn hot days the AAP says babies, especially in the first 6 months, should not be given water; instead, babies fed expressed breast milk can have extra breast milk and formula-fed babies extra formula. Ask your doctor or health visitor if you are unsure about feeds in a heatwave.`,
+        },
+        {
+          title: `Safe sleep basics`,
+          body: `These rules matter at any temperature.`,
+          list: [
+            `Put your baby on their back for every sleep (NHS, AAP)`,
+            `Use a firm, flat sleep surface, free from pillows, duvets, cot bumpers, loose blankets and soft toys (NHS, AAP)`,
+            `Share a room, not a bed: the AAP advises room sharing for at least the first 6 months and advises against bed sharing`,
+            `Do not smoke when pregnant or around your baby after birth (NHS); the AAP says not to smoke anywhere near your baby, even outside`,
+            `The NHS says baby sleeping bags are safer than swaddling; if you do swaddle, the AAP says to stop when your baby looks like trying to roll`,
+          ],
+        },
+        {
+          title: `When to get medical help`,
+          body: `In the UK, call 111 (NHS) for the first two items below; elsewhere contact your doctor. For emergencies call your local emergency number (999 in the UK, 911 in the US).`,
+          list: [
+            `Under 3 months with a temperature of 38°C or higher, or 3 to 6 months with 39°C or higher: urgent advice`,
+            `Signs of dehydration such as fewer wet nappies, sunken eyes or no tears: urgent advice`,
+            `Blue, grey, pale or blotchy skin, lips or tongue, difficulty breathing or very fast breathing: emergency`,
+            `Drowsy and hard to wake, not responding as usual or not interested in feeding, extremely agitated or confused: emergency`,
+            `A stiff neck, sensitivity to light, a rash that does not fade under a glass, unusually cold hands and feet, or a first fit (febrile seizure) where they cannot stop shaking: emergency`,
+            `Signs of heatstroke such as a very high temperature, hot skin without sweating, fast breathing and heartbeat, a seizure or loss of consciousness: emergency`,
+          ],
+        },
+      ],
+      faq: [
+        {
+          question: `Is 22°C too warm for a baby to sleep?`,
+          answer: `It is above the 16 to 20°C that the NHS and The Lullaby Trust advise. Use lighter clothing and bedding, cool the room where you can, and check the chest or neck.`,
+        },
+        {
+          question: `My baby's hands are cold. Should I add a layer?`,
+          answer: `Not on that basis. Cool hands and feet are normal. Check the chest or the back of the neck instead. Unusually cold hands and feet together with a fever are on the NHS emergency list.`,
+        },
+        {
+          question: `Should my baby wear a hat to bed?`,
+          answer: `No, not indoors. The Lullaby Trust says babies do not need hats indoors, and the AAP says not to put one on indoors once you are home from hospital. Follow your hospital team if your baby was premature or is still in hospital.`,
+        },
+      ],
+      ctaText: `Mamio can record each sleep session with its start and end, in the same timeline as feeds and diapers, with no account needed and entries stored on your device. Mamio records what happens, and your doctor or nurse advises on what it means.`,
+      sources: [
+        {
+          publisher: `NHS`,
+          title: `Reduce the risk of sudden infant death syndrome (SIDS) - NHS`,
+          url: `https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/`,
+        },
+        {
+          publisher: `The Lullaby Trust`,
+          title: `Room temperature | The Lullaby Trust`,
+          url: `https://www.lullabytrust.org.uk/baby-safety/safer-sleep-information/room-temperature/`,
+        },
+        {
+          publisher: `AAP / HealthyChildren.org`,
+          title: `How to Keep Your Sleeping Baby Safe: AAP Policy Explained`,
+          url: `https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx`,
+        },
+        {
+          publisher: `AAP / HealthyChildren.org`,
+          title: `Extreme Heat: Tips to Keep Kids Safe When Temperatures Soar`,
+          url: `https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Protecting-Children-from-Extreme-Heat-Information-for-Parents.aspx`,
+        },
+        {
+          publisher: `NHS`,
+          title: `High temperature (fever) in children - NHS`,
+          url: `https://www.nhs.uk/symptoms/fever-in-children/`,
+        },
+        {
+          publisher: `NHS`,
+          title: `Heat exhaustion and heatstroke - NHS`,
+          url: `https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/`,
+        },
+      ],
+    },
+    de: {
+      metaTitle: `Raumtemperatur Baby: Wie warm zum Schlafen und was anziehen?`,
+      metaDescription: `Welche Raumtemperatur fürs Baby beim Schlafen ideal ist, Schlafsack und Kleidung, Schwitzen prüfen, heiße Nächte, sicherer Schlaf und wann zum Arzt.`,
+      title: `Raumtemperatur fürs Baby: Wie warm es beim Schlafen sein sollte und was dein Baby trägt`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Das Portal kindergesundheit-info.de nennt 18 Grad Celsius als optimale Raumtemperatur zum Schlafen. In anderen Ländern gelten etwas andere Werte, in Großbritannien zum Beispiel 16 bis 20 Grad. Hier liest du, was dein Baby nachts trägt, wie du Überwärmung bemerkst, was an heißen Tagen hilft und wann du Hilfe holen solltest.`,
+      sections: [
+        {
+          title: `Welche Raumtemperatur ist ideal?`,
+          body: `Die ideale Raumtemperatur beim Schlafen liegt laut kindergesundheit-info.de bei 18 Grad Celsius. Der britische NHS nennt 16 bis 20 Grad und empfiehlt ein Raumthermometer.`,
+        },
+        {
+          title: `Schlafsack und Kleidung`,
+          body: `Nimm besser einen Schlafsack als eine Decke. Der Halsausschnitt sollte nicht größer sein als der Kopf deines Kindes, damit es nicht hineinrutschen kann. Im Bett genügen Windel und Schlafanzug, auch wenn das Baby krank ist.\n\nZieh nicht zu viel oder zu dicke Kleidung an. Zu Hause und vor allem im Bett kommt kein Mützchen auf den Kopf. Auf Felle im Babybett solltest du verzichten, weil sie zu Überwärmung führen können.`,
+        },
+        {
+          title: `So prüfst du, ob deinem Baby zu warm ist`,
+          body: `Fühle zwischen den Schulterblättern. Kühle Hände und Füße sind oft normal. Wenn dein Baby schwitzt, zieh ihm etwas aus, auch wenn es schläft.`,
+        },
+        {
+          title: `Heiße Tage und Nächte`,
+          body: `Im Sommer und besonders an Hitzetagen und in Hitzenächten braucht dein Baby noch weniger Kleidung. Halte die Wohnung und vor allem den Schlafraum möglichst kühl; dein Baby sollte im kühlsten Zimmer schlafen. Direkte Sonne sollte es ganz meiden.\n\nWie viel dein Baby bei Hitze trinken soll, hängt von Alter und Ernährung ab. Frag dazu deine Kinderarztpraxis oder Hebamme.`,
+        },
+        {
+          title: `Regeln für sicheren Schlaf`,
+          body: `Diese Punkte gelten bei jeder Temperatur.`,
+          list: [
+            `Im ersten Lebensjahr zum Schlafen immer auf den Rücken legen, nie auf den Bauch`,
+            `Das Babybett steht im ersten Jahr im Elternschlafzimmer; Bett und Matratze sind eben, nicht schräg`,
+            `Schlafsack statt Decke`,
+            `Das Kind schläft auf keinen Fall in einem Raum, in dem geraucht wird; vermeide Rauchen in der Schwangerschaft und im ersten Jahr`,
+            `Studien deuten darauf hin, dass das Schlafen im Familienbett mit einem erhöhten SIDS-Risiko verbunden ist`,
+          ],
+        },
+        {
+          title: `Wann du ärztliche Hilfe brauchst`,
+          body: `Im Notfall wähle 112. Außerhalb der Praxiszeiten ist für nicht lebensbedrohliche Beschwerden der ärztliche Bereitschaftsdienst unter 116 117 erreichbar. Wenn du unsicher bist, geh rasch zur Ärztin oder zum Arzt oder rufe 112.`,
+          list: [
+            `Dein Baby ist 0 bis 3 Monate alt und hat 38 Grad oder mehr: ärztlich abklären`,
+            `Es wirkt sehr schlapp, will nicht trinken oder seine Hautfarbe verändert sich, auch bei weniger als 38 Grad: ärztlich abklären`,
+            `Es wird um den Mund oder im ganzen Gesicht blau: Notruf 112`,
+            `Du beobachtest im Schlaf Atempausen von mehr als 15 Sekunden: ärztlich abklären, bei Atemnot oder fehlender Reaktion 112`,
+            `Bei einem Fieberkrampf im Zweifel den Notarzt unter 112 rufen`,
+          ],
+        },
+      ],
+      faq: [
+        {
+          question: `Sind 22 Grad zu warm zum Schlafen?`,
+          answer: `Das liegt über den empfohlenen 18 Grad. Zieh deinem Baby weniger an, kühle den Raum, so gut es geht, und fühle zwischen den Schulterblättern.`,
+        },
+        {
+          question: `Mein Baby hat kalte Hände. Braucht es mehr Kleidung?`,
+          answer: `Kühle Hände und Füße sind oft normal. Prüfe zwischen den Schulterblättern.`,
+        },
+        {
+          question: `Braucht mein Baby nachts eine Mütze?`,
+          answer: `Nein. kindergesundheit-info.de rät, zu Hause und vor allem im Bett nie ein Mützchen aufzusetzen.`,
+        },
+      ],
+      ctaText: `Mamio kann jede Schlafphase mit Beginn und Ende festhalten, in derselben Zeitleiste wie Mahlzeiten und Windeln, ohne Konto und mit Einträgen auf dem Gerät. Mamio hält fest, was passiert, und deine Kinderärztin oder dein Kinderarzt berät, was es bedeutet.`,
+      sources: [
+        {
+          publisher: `kindergesundheit-info.de (BIÖG)`,
+          title: `Die Schlafumgebung für das Baby`,
+          url: `https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/`,
+        },
+        {
+          publisher: `kindergesundheit-info.de (BIÖG)`,
+          title: `Dem Plötzlichen Kindstod vorbeugen`,
+          url: `https://www.kindergesundheit-info.de/themen/risiken-vorbeugen/ploetzlicher-kindstod-sids/vorbeugung-kindstod/`,
+        },
+        {
+          publisher: `kindergesundheit-info.de (BIÖG)`,
+          title: `Kinder bei Hitze schützen`,
+          url: `https://www.kindergesundheit-info.de/themen/risiken-vorbeugen/sonnenschutz/hitzeschutz/`,
+        },
+        {
+          publisher: `kindergesundheit-info.de (BIÖG)`,
+          title: `Fieber bei Babys und Kindern`,
+          url: `https://www.kindergesundheit-info.de/themen/krankes-kind/krankheitszeichen/fieber/`,
+        },
+        {
+          publisher: `NHS`,
+          title: `Reduce the risk of sudden infant death syndrome (SIDS) - NHS`,
+          url: `https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/`,
+        },
+        {
+          publisher: `DGKJ`,
+          title: `Sicherer Babyschlaf: Tipps zum Schutz vor plötzlichem Kindstod`,
+          url: `https://www.dgkj.de/eltern/dgkj-elterninformationen/elterninfo-sicherer-schlaf`,
+        },
+      ],
+    },
+    fr: {
+      metaTitle: `Température chambre bébé : combien pour dormir et comment l'habiller`,
+      metaDescription: `Température de la chambre de bébé, gigoteuse et vêtements, vérifier qu'il n'a pas trop chaud, nuits de canicule, couchage sûr et quand appeler le 15.`,
+      title: `Température de la chambre de bébé : quelle valeur viser et comment l'habiller pour dormir`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `L'Assurance Maladie (ameli.fr) indique que la chambre doit garder une température de 18 à 20 °C. D'autres pays donnent des valeurs un peu différentes, par exemple 16 à 20 °C au Royaume-Uni. Voici comment habiller votre bébé, vérifier qu'il n'a pas trop chaud, gérer les nuits de canicule et savoir quand demander de l'aide.`,
+      sections: [
+        {
+          title: `Quelle température dans la chambre ?`,
+          body: `Ameli recommande de garder la chambre entre 18 et 20 °C et de l'aérer tous les jours. Le NHS britannique indique de son côté 16 à 20 °C, avec un thermomètre de pièce pour contrôler.`,
+        },
+        {
+          title: `Gigoteuse et vêtements`,
+          body: `Ameli conseille de privilégier un surpyjama ou une gigoteuse (turbulette) bien adaptée à la taille de votre bébé, et de ne pas le couvrir avec un drap ou une couette. Évitez de multiplier les couches de vêtements pour qu'il n'ait pas trop chaud.`,
+        },
+        {
+          title: `Vérifier que bébé n'a pas trop chaud`,
+          body: `Placez votre main sur sa nuque : vous ne devez pas sentir de sueur sous vos doigts. Si la peau est chaude ou moite, le NHS conseille de retirer une ou plusieurs couches de vêtements ou de literie.`,
+        },
+        {
+          title: `Nuits de canicule`,
+          body: `À l'intérieur, les bébés peuvent rester en simple couche, notamment pendant leur sommeil (ameli). Limitez les sorties, surtout avant 1 an ; dehors, choisissez des vêtements légers, amples et clairs et un chapeau.\n\nAmeli conseille de proposer de l'eau fraîche à l'enfant au moins une fois par heure, un conseil écrit pour les enfants en général. Pour un nourrisson, en particulier avant 6 mois ou allaité, ne vous fiez pas à cette règle : demandez à votre médecin ou à votre sage-femme comment adapter les tétées et les boissons : l'AAP américaine déconseille par exemple de donner de l'eau avant 6 mois.`,
+        },
+        {
+          title: `Les règles d'un couchage sûr`,
+          body: `Elles valent quelle que soit la température.`,
+          list: [
+            `Couchez votre bébé sur le dos, à plat, la nuit et pour tous les sommeils`,
+            `Dès la naissance, couchez-le dans son propre lit`,
+            `Pas de drap ni de couette sur lui : préférez la gigoteuse`,
+            `Ne fumez pas et ne laissez personne fumer en présence de l'enfant`,
+          ],
+        },
+        {
+          title: `Quand demander de l'aide`,
+          body: `En urgence, appelez le 15 (SAMU) ou le 112.`,
+          list: [
+            `Fièvre chez un nourrisson de moins de 3 mois : consultez en urgence`,
+            `État général qui se dégrade, vomissements, respiration difficile ou déshydratation chez un enfant fiévreux : consultez en urgence (ameli)`,
+            `Signes possibles de coup de chaleur, par exemple température de plus de 39 °C avec accélération du pouls et de la respiration : appelez le 15 ou le 112`,
+            `Refus ou impossibilité de boire, couleur anormale de la peau ou trouble de la conscience : appelez le 15 sans attendre`,
+            `Jeune enfant qui a perdu connaissance : appelez le 15 ou le 112`,
+          ],
+        },
+      ],
+      faq: [
+        {
+          question: `22 °C, est-ce trop chaud pour bébé ?`,
+          answer: `C'est au-dessus des 18 à 20 °C conseillés. Habillez-le moins, rafraîchissez la pièce autant que possible et vérifiez sa nuque.`,
+        },
+        {
+          question: `Faut-il une gigoteuse pendant une canicule ?`,
+          answer: `Ameli indique qu'à l'intérieur les bébés peuvent rester en simple couche, notamment pour dormir. Vérifiez aussi sa nuque.`,
+        },
+        {
+          question: `La température conseillée est-elle la même partout ?`,
+          answer: `Non. Ameli donne 18 à 20 °C, le NHS 16 à 20 °C, le portail allemand kindergesundheit-info 18 °C. En France, suivez la recommandation française.`,
+        },
+      ],
+      ctaText: `Mamio peut enregistrer chaque période de sommeil avec son début et sa fin, dans la même chronologie que les repas et les couches, sans compte et avec des données conservées sur l'appareil. Mamio enregistre ce qui se passe, et votre médecin ou pédiatre vous conseille sur ce que cela signifie.`,
+      sources: [
+        {
+          publisher: `ameli.fr (Assurance Maladie)`,
+          title: `Comment bien coucher un bébé ?`,
+          url: `https://www.ameli.fr/assure/sante/bons-gestes/bebe/coucher-bebe`,
+        },
+        {
+          publisher: `ameli.fr (Assurance Maladie)`,
+          title: `Canicule : la protection spécifique des personnes à risque`,
+          url: `https://www.ameli.fr/assure/sante/themes/canicule-chaleur/canicule-chaleur/protection-specifique-personnes-risque`,
+        },
+        {
+          publisher: `ameli.fr (Assurance Maladie)`,
+          title: `Canicule et soins urgents : épuisement, déshydratation et coup de chaleur`,
+          url: `https://www.ameli.fr/assure/sante/themes/canicule-chaleur/canicule-et-soins-urgents-epuisement-deshydratation-et-coup-de-chaleur`,
+        },
+        {
+          publisher: `ameli.fr (Assurance Maladie)`,
+          title: `Votre enfant a de la fièvre : que faire et quand consulter ?`,
+          url: `https://www.ameli.fr/assure/sante/themes/fievre-enfant/bons-reflexes-cas-faut-consulter`,
+        },
+        {
+          publisher: `NHS`,
+          title: `Reduce the risk of sudden infant death syndrome (SIDS) - NHS`,
+          url: `https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/`,
+        },
+        {
+          publisher: `kindergesundheit-info.de (BIÖG)`,
+          title: `Die Schlafumgebung für das Baby`,
+          url: `https://www.kindergesundheit-info.de/themen/schlafen/0-12-monate/schlafumgebung/`,
+        },
+        {
+          publisher: `AAP / HealthyChildren.org`,
+          title: `Extreme Heat: Tips to Keep Kids Safe When Temperatures Soar`,
+          url: `https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Protecting-Children-from-Extreme-Heat-Information-for-Parents.aspx`,
+        },
+      ],
+    },
+    'pt-br': {
+      metaTitle: `Temperatura do quarto do bebê: como vestir para dormir`,
+      metaDescription: `Temperatura do quarto do bebê, quantas camadas de roupa, sinais de superaquecimento, noites quentes, sono seguro e quando procurar atendimento.`,
+      title: `Temperatura do quarto do bebê: como vestir para dormir sem superaquecer`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Nas páginas oficiais brasileiras que consultamos não há um número único para a temperatura do quarto. A Sociedade Brasileira de Pediatria (SBP) orienta vestir o bebê de acordo com a temperatura do ambiente e evitar o excesso de roupa. Serviços de outros países dão faixas próprias, como 16 a 20 °C no Reino Unido, pensadas para outro clima. Veja como vestir, o que observar, o que fazer no calor e quando buscar ajuda.`,
+      sections: [
+        {
+          title: `Qual temperatura no quarto?`,
+          body: `Siga o que a SBP orienta: considere a temperatura ambiente ao vestir o bebê. Como referência estrangeira, o NHS britânico indica cerca de 16 a 20 °C com um termômetro no quarto; é uma orientação feita para o Reino Unido.`,
+        },
+        {
+          title: `Como vestir para dormir`,
+          body: `Segundo a SBP, geralmente basta uma camada de roupa a mais do que a usada pelo adulto. Vestir camadas é preferível a usar cobertas, e sacos de dormir vestíveis podem ser usados, desde que deixem a cabeça e os braços livres. Não cubra o rosto nem a cabeça; o uso de touca é questionável e deve ficar restrito a ambientes externos.`,
+        },
+        {
+          title: `Sinais de superaquecimento`,
+          body: `A SBP orienta observar suor, pele avermelhada ou bebê quente ao toque. Agasalhar demais dificulta os movimentos e pode superaquecer o bebê. Com a pele quente ou suada, o NHS britânico orienta tirar uma ou mais camadas de roupa ou de cama.`,
+        },
+        {
+          title: `Noites quentes`,
+          body: `O Ministério da Saúde recomenda, em ondas de calor, roupas leves, claras e de tecidos que permitem a transpiração, e usar ventilador ou ar-condicionado quando possível. Vale saber: a SBP informa que não há evidência de que o ventilador reduza o risco de morte súbita, então ele serve para refrescar, não para substituir as regras de sono seguro.\n\nO Hospital Infantil do Paraná informa que bebês em aleitamento materno exclusivo não precisam de complemento de água, salvo em casos específicos. Observe o volume do xixi e, se diminuir, fale com o pediatra.`,
+        },
+        {
+          title: `Regras de sono seguro`,
+          body: `Valem em qualquer temperatura.`,
+          list: [
+            `De barriga para cima em todos os sonos, nunca de lado ou de bruços`,
+            `Berço com superfície firme e não inclinada, sem travesseiros, almofadas, protetores, bichos de pelúcia ou cobertas soltas`,
+            `Berço no quarto dos pais, sem dividir a cama, ao menos até os 6 meses e de preferência até 12 meses`,
+            `Evitar exposição ao fumo durante a gravidez e depois do nascimento`,
+          ],
+        },
+        {
+          title: `Quando procurar atendimento`,
+          body: `Em emergências, ligue para o SAMU 192.`,
+          list: [
+            `Bebê com menos de 3 meses com temperatura acima de 38 °C ou abaixo de 35,5 °C: avaliação médica sem demora`,
+            `Menos xixi que o habitual: fale com o pediatra`,
+            `Mal-estar no calor, como transpiração excessiva, fraqueza, náusea ou diarreia: procure uma unidade de saúde`,
+            `Convulsão, problema para respirar ou risco de vida: SAMU 192`,
+          ],
+        },
+      ],
+      faq: [
+        {
+          question: `Existe uma temperatura ideal do quarto no Brasil?`,
+          answer: `Não encontramos um número nas páginas brasileiras consultadas. Vista o bebê conforme o ambiente e observe suor, vermelhidão e calor na pele.`,
+        },
+        {
+          question: `Mãos e pés frios significam frio?`,
+          answer: `Não necessariamente. O NHS britânico diz que mãos e pés frios são normais; verifique o peito ou a nuca e observe suor, vermelhidão e calor na pele (SBP). Mãos e pés frios sozinhos não são motivo para exagerar nos agasalhos.`,
+        },
+        {
+          question: `Meu bebê precisa de touca para dormir?`,
+          answer: `A SBP orienta não cobrir a cabeça e restringir a touca a ambientes externos.`,
+        },
+      ],
+      ctaText: `O Mamio pode registrar cada período de sono com início e fim, na mesma linha do tempo de mamadas e fraldas, sem precisar de conta e com os registros guardados no aparelho. O Mamio registra o que acontece, e o pediatra orienta o que isso significa.`,
+      sources: [
+        {
+          publisher: `Sociedade Brasileira de Pediatria`,
+          title: `Nota de Alerta nº 56: Recomendações da Academia Americana de Pediatria sobre sono seguro em menores de um ano`,
+          url: `https://www.sbp.com.br/fileadmin/user_upload/23990b-NotaAlerta-Recomend_AAP_SonoSeguro_1ano.pdf`,
+        },
+        {
+          publisher: `Sociedade Brasileira de Pediatria`,
+          title: `Bebês devem dormir de barriga para cima`,
+          url: `https://www.sbp.com.br/bebes-devem-dormir-de-barriga-para-cima/`,
+        },
+        {
+          publisher: `Ministério da Saúde`,
+          title: `Ondas de calor`,
+          url: `https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/o/ondas-de-calor/ondas-de-calor`,
+        },
+        {
+          publisher: `Hospital Infantil, Secretaria da Saúde do Paraná`,
+          title: `Hidratação e outros cuidados com as crianças em dias quentes`,
+          url: `https://hospitalinfantil.saude.pr.gov.br/Noticia/Hidratacao-e-outros-cuidados-com-criancas-em-dias-quentes`,
+        },
+        {
+          publisher: `Secretaria de Saúde de Pernambuco`,
+          title: `Febre: quando buscar atendimento médico?`,
+          url: `https://portal.saude.pe.gov.br/febre-quando-buscar-atendimento-medico/`,
+        },
+        {
+          publisher: `Ministério da Saúde`,
+          title: `Quando chamar o SAMU 192?`,
+          url: `https://www.gov.br/saude/pt-br/composicao/saes/samu-192`,
+        },
+        {
+          publisher: `NHS`,
+          title: `Reduce the risk of sudden infant death syndrome (SIDS) - NHS`,
+          url: `https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/`,
+        },
+      ],
+    },
+    tr: {
+      metaTitle: `Bebek Odası Sıcaklığı Kaç Derece Olmalı? Uykuda Giydirme`,
+      metaDescription: `Bebek odası sıcaklığı, uykuda bebeği nasıl giydireceğin, aşırı ısınma belirtileri, sıcak geceler, güvenli uyku kuralları ve ne zaman doktora gidileceği.`,
+      title: `Bebek odası sıcaklığı: uyku için kaç derece, bebeğini nasıl giydirmelisin?`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Sağlık Bakanlığı'na bağlı Sivas Numune Hastanesi bebek odası için ideal sıcaklığı 20-22 derece olarak veriyor. Başka ülkelerde farklı değerler kullanılıyor; örneğin İngiltere'de 16-20 derece öneriliyor. Aşağıda giydirme, kontrol, sıcak geceler, güvenli uyku ve ne zaman yardım alman gerektiği var.`,
+      sections: [
+        {
+          title: `Oda kaç derece olmalı?`,
+          body: `Sivas Numune Hastanesi bebek odasının ideal sıcaklığını 20-22 derece olarak belirtiyor. İngiliz NHS ise 16-20 derece öneriyor ve oda termometresiyle takip edilmesini istiyor. İki öneri farklı; Türkçe metinde Türkiye'deki hastanenin verdiği aralığı esas alıyoruz.`,
+        },
+        {
+          title: `Uykuda nasıl giydirmeli?`,
+          body: `Amerikan Pediatri Akademisi (AAP) aşırı ısınmanın ani bebek ölümü riskini artırabileceğini belirtiyor. AAP pratik bir ölçü veriyor: bebeğin, aynı ortamda senin giydiğinden yalnızca bir kat fazlasına ihtiyacı var. The Lullaby Trust yorgan yerine hafif yatak örtüsü veya bedene uygun hafif bir uyku tulumu öneriyor. Evin içinde bebeğe şapka takma (AAP) ve başını örtme; Sivas Numune Hastanesi'ne göre başın örtülmesi uyku güvenliğini etkiliyor.`,
+        },
+        {
+          title: `Aşırı ısınma nasıl anlaşılır?`,
+          body: `Sivas Numune Hastanesi, aşırı terlemenin ve başın örtülmesinin uyku güvenliğini etkilediğini belirtiyor. The Lullaby Trust'a göre göğsüne veya ensesine dokunarak kontrol edebilirsin; ellerin ve ayakların serin olması normaldir. Cildi sıcak veya terliyse bir kat çıkar.`,
+        },
+        {
+          title: `Sıcak geceler`,
+          body: `Bakanlığa bağlı Esenler hastanesi sıcak havada çocuklara açık renkli, pamuklu, ince, hafif ve sıkı olmayan giysiler öneriyor; naylon veya polyester gibi sentetik kumaşlar cildin havalanmasını engelliyor. Aynı sayfaya göre 1 yaş altındaki bebekler özellikle baş bölgesinden çok terleyebilir. Bebeği kapalı, park etmiş araçta asla bırakma.\n\nAAP özellikle ilk 6 ayda bebeğe su verilmemesini söylüyor. Sıcakta beslenmeyi nasıl ayarlayacağını doktoruna danış.`,
+        },
+        {
+          title: `Güvenli uyku kuralları`,
+          body: `Bu kurallar her sıcaklıkta geçerli.`,
+          list: [
+            `Bebek 1 yaşına gelene kadar sırt üstü uyusun`,
+            `Yatak sert, düz ve çarşafı gergin olsun; yumuşak ve eğimli olmasın`,
+            `Sigara içen anneyle aynı yatakta uyuyan bebekte ani bebek ölümü riski çok daha yüksek`,
+            `AAP ilk 6 ay aynı odada ama ayrı yatakta uyumayı öneriyor ve bebeğin yakınında sigara içilmemesini istiyor`,
+          ],
+        },
+        {
+          title: `Ne zaman doktora başvurmalı?`,
+          body: `Acil durumda 112'yi ara.`,
+          list: [
+            `3 aydan küçük bebekte ateş çok ciddi bir enfeksiyon belirtisi olabilir: en yakın sağlık kuruluşuna başvur (Behçet Uz Çocuk Hastanesi)`,
+            `Uykuya meyil veya zor uyandırılma, nefes almada ya da yutmada güçlük, mor lekeler, ense sertliği veya kabarık bıngıldak: gecikmeden doktora`,
+            `Sürekli kusma veya ishal: gecikmeden doktora`,
+            `Sıcakta hızlı nefes, hızlı nabız veya bilinç kaybı: acil yardım al, 112'yi ara`,
+            `Havale 3-5 dakikada durmazsa 112'yi ara`,
+          ],
+        },
+      ],
+      faq: [
+        {
+          question: `22 derece bebek için sıcak mı?`,
+          answer: `Sivas Numune Hastanesi'nin verdiği 20-22 aralığının üst sınırı; İngiliz önerisinin (16-20) ise üstünde. İnce giydir, ensesini kontrol et.`,
+        },
+        {
+          question: `Bebeğimin elleri soğuk, kat eklemeli miyim?`,
+          answer: `Sadece buna bakarak ekleme. The Lullaby Trust'a göre serin el ve ayak normaldir; göğsü veya enseyi kontrol et.`,
+        },
+        {
+          question: `Bebek uyurken şapka takmalı mı?`,
+          answer: `Evin içinde hayır. The Lullaby Trust ve AAP iç mekânda şapkaya gerek olmadığını belirtiyor. Prematüre veya hastanedeki bebek için ekibin önerisine uy.`,
+        },
+      ],
+      ctaText: `Mamio her uyku dönemini başlangıç ve bitişiyle kaydedebilir; beslenme ve bezlerle aynı zaman çizelgesinde görünür, hesap gerekmez ve kayıtlar cihazında tutulur. Mamio olanı kaydeder, ne anlama geldiğini doktorun veya hemşiren söyler.`,
+      sources: [
+        {
+          publisher: `T.C. Sağlık Bakanlığı, Sivas Numune Hastanesi`,
+          title: `Bebeklerde Güvenli Uyku`,
+          url: `https://sivasnumunedh.saglik.gov.tr/TR-829633/bebeklerde-guvenli-uyku.html`,
+        },
+        {
+          publisher: `T.C. Sağlık Bakanlığı, Esenler Kadın Doğum ve Çocuk Hastalıkları Hastanesi`,
+          title: `Güneş Çarpması Belirtileri Nelerdir ve Sıcak Havalarda Nelere Dikkat Edelim`,
+          url: `https://esenlerkdch.saglik.gov.tr/TR-813265/gunes-carpmasi-belirtileri-nelerdir-ve-sicak-havalarda-nelere-dikkat-edelim.html`,
+        },
+        {
+          publisher: `T.C. Sağlık Bakanlığı, Behçet Uz Çocuk Hastanesi`,
+          title: `Ateş`,
+          url: `https://behcetuzch.saglik.gov.tr/TR-107608/ates.html`,
+        },
+        {
+          publisher: `T.C. Sağlık Bakanlığı, Behçet Uz Çocuk Hastanesi`,
+          title: `Ateşli Havale (Febril Konvulsiyon)`,
+          url: `https://behcetuzch.saglik.gov.tr/TR-107618/atesli-havale-febril-konvulsiyon.html`,
+        },
+        {
+          publisher: `T.C. Sağlık Bakanlığı, Kırklareli Eğitim ve Araştırma Hastanesi`,
+          title: `AŞIRI SICAKLARA DİKKAT!`,
+          url: `https://kirklarelieah.saglik.gov.tr/TR-1140465/asiri-sicaklara-dikkat.html`,
+        },
+        {
+          publisher: `The Lullaby Trust`,
+          title: `Room temperature | The Lullaby Trust`,
+          url: `https://www.lullabytrust.org.uk/baby-safety/safer-sleep-information/room-temperature/`,
+        },
+        {
+          publisher: `AAP / HealthyChildren.org`,
+          title: `How to Keep Your Sleeping Baby Safe: AAP Policy Explained`,
+          url: `https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx`,
+        },
+        {
+          publisher: `AAP / HealthyChildren.org`,
+          title: `Extreme Heat: Tips to Keep Kids Safe When Temperatures Soar`,
+          url: `https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Protecting-Children-from-Extreme-Heat-Information-for-Parents.aspx`,
+        },
+        {
+          publisher: `NHS`,
+          title: `Reduce the risk of sudden infant death syndrome (SIDS) - NHS`,
+          url: `https://www.nhs.uk/baby/caring-for-a-newborn/reduce-the-risk-of-sudden-infant-death-syndrome/`,
+        },
+      ],
+    },
+  },
+};

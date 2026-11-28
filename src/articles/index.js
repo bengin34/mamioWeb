@@ -20,6 +20,9 @@ import teethingRemediesWhatToAvoid from './teething-remedies-what-to-avoid.js';
 import teethingTimeline from './teething-timeline.js';
 import twinsFeedingSleepRoutine from './twins-feeding-sleep-routine.js';
 import whenToStartSolids from './when-to-start-solids.js';
+import babyConstipationSignsWhenToCall from './baby-constipation-signs-when-to-call.js';
+import diaperRashCareWhenToCall from './diaper-rash-care-when-to-call.js';
+import whenCanBabiesDrinkWater from './when-can-babies-drink-water.js';
 
 // Researched long-form guides. Each article lives in its own file and carries
 // every language it is published in (en, de, fr, pt-br, tr) plus its sources.
@@ -74,4 +77,7 @@ export const articles = {
   'teething-timeline': teethingTimeline,
   'twins-feeding-sleep-routine': twinsFeedingSleepRoutine,
   'when-to-start-solids': whenToStartSolids,
+  'baby-constipation-signs-when-to-call': babyConstipationSignsWhenToCall,
+  'diaper-rash-care-when-to-call': diaperRashCareWhenToCall,
+  'when-can-babies-drink-water': whenCanBabiesDrinkWater,
 };

@@ -1,0 +1,323 @@
+// Researched article: breast milk storage guidelines, how long at room temperature / in the fridge / in the freezer, containers, labelling and transport, thawing, warming, leftovers and discard rules, when to ask for advice (CDC, NHS, Netzwerk Gesund ins Leben, kindergesundheit-info.de, 1000-premiers-jours.fr, Santé.fr, Ministério da Saúde, HU-UFSC, SBP, T.C. Sağlık Bakanlığı hospitals). Limits differ by country; each language follows its local pages. No medication advice. Sources opened 2026-11-28.
+export default {
+  relatedPageId: 'pumping',
+  slugs: {
+    en: 'breast-milk-storage-guidelines',
+    de: 'muttermilch-aufbewahren',
+    fr: 'conservation-lait-maternel',
+    'pt-br': 'como-armazenar-leite-materno',
+    tr: 'anne-sutu-saklama-kosullari',
+  },
+  locales: {
+    en: {
+      metaTitle: `Breast Milk Storage Guidelines: Fridge, Freezer and Room Temp`,
+      metaDescription: `Breast milk storage times from the CDC and NHS: room temperature, fridge, freezer, thawing, warming, leftovers, labelling and when to ask for advice.`,
+      title: `Breast milk storage: how long it keeps, thawing, warming and when to throw it away`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `How long expressed milk keeps depends on where you put it and how cold that place really is. The US CDC and the UK NHS do not give identical limits, so this guide shows both. Follow the guidance for the country you live in. If your baby is in hospital, ask the staff there first.`,
+      sections: [
+        {
+          title: `How long does breast milk keep?`,
+          body: `These are the limits for expressed milk. The biggest difference is the fridge: the CDC says up to 4 days, the NHS allows up to 8 days if the fridge is at 4°C or lower. The NHS page we opened gives no room temperature limit.`,
+          list: [
+            `Room temperature, CDC: up to 4 hours at 25°C (77°F) or colder`,
+            `Fridge, CDC: up to 4 days`,
+            `Fridge, NHS: up to 8 days at 4°C or lower, at the back; use within 3 days if you are unsure of the temperature or it runs between 5°C and 10°C`,
+            `Ice compartment of a fridge, NHS: 2 weeks`,
+            `Freezer, CDC: about 6 months is best, up to 12 months is acceptable`,
+            `Freezer, NHS: up to 6 months at -18°C or lower`,
+            `Cool bag with ice packs, CDC and NHS: up to 24 hours`,
+          ],
+        },
+        {
+          title: `Containers, labels and where to put them`,
+          body: `The CDC says to use breast milk storage bags or clean, food-grade containers. The NHS says a sterilised container or special breast milk storage bags, and asks you to make sure the pump and container are clean and sterilised before use.\n\nLabel the milk with the date you expressed it. The NHS asks you to label and date it before freezing, and notes that small quantities help avoid waste. The CDC says not to keep milk in the door of the fridge or freezer. If you are not sure how cold your fridge is, the NHS mentions that you can buy a fridge thermometer.`,
+        },
+        {
+          title: `How to thaw frozen breast milk`,
+          body: `The CDC says to thaw the oldest milk first. The NHS says it is best to defrost it slowly in the fridge. If you need it straight away, the NHS says you can use a jug of warm water or warm running water. The NHS says not to defrost milk in a microwave or on the stove, and the CDC says never to thaw it in a microwave.\n\nOnce thawed, never freeze it again. On how long thawed milk keeps, the two differ:`,
+          list: [
+            `CDC, thawed in the fridge: use within 24 hours`,
+            `CDC, brought to room temperature or warmed: use within 2 hours`,
+            `NHS: use defrosted milk straight away`,
+          ],
+        },
+        {
+          title: `Warming, leftovers and what to throw away`,
+          body: `The NHS says your baby can drink expressed milk straight from the fridge if happy to have it cold. To warm it to body temperature, use a jug of warm water or warm running water. The CDC says never to heat it in a microwave. The NHS says not to use a microwave or the stove, and explains that this can cause hot spots that burn your baby's mouth.\n\nThe CDC says to swirl the milk to mix in fat that has separated and to test a few drops on your wrist. The NHS says to give separated defrosted milk a gentle shake.\n\nLeftovers: the CDC says to use an unfinished bottle within 2 hours and discard it after that. The NHS is stricter: once your baby has drunk from the bottle, use it within 1 hour and throw the rest away.`,
+        },
+        {
+          title: `When to ask for advice`,
+          body: `If your baby is in hospital, ask the staff caring for your baby how to store milk. If expressing is difficult, the NHS suggests asking your midwife, health visitor or a breastfeeding supporter. In the UK, the National Breastfeeding Helpline is open 24 hours a day on 0300 100 0212.`,
+        },
+      ],
+      faq: [
+        {
+          question: `How long can breast milk sit out at room temperature?`,
+          answer: `The CDC says up to 4 hours at 25°C (77°F) or colder.`,
+        },
+        {
+          question: `Can I refreeze thawed breast milk?`,
+          answer: `No. The CDC and NHS both say not to refreeze milk once it has been thawed.`,
+        },
+        {
+          question: `Can I use leftover milk at the next feed?`,
+          answer: `Only for a short time. The CDC says leftover milk should be used within 2 hours, the NHS within 1 hour once your baby has drunk from the bottle. After that, throw it away.`,
+        },
+        {
+          question: `Does breast milk have to be warmed?`,
+          answer: `No. The NHS says you can give it straight from the fridge if your baby is happy to drink it cold.`,
+        },
+      ],
+      ctaText: `Log your pumping sessions in Mamio. Records stay on your device and no account is needed.`,
+      sources: [
+        { publisher: `CDC`, title: `Breast Milk Storage and Preparation`, url: `https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html` },
+        { publisher: `NHS`, title: `Expressing and storing breast milk`, url: `https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/breastfeeding/expressing-breast-milk/` },
+        { publisher: `NHS`, title: `How to express your breast milk`, url: `https://www.nhs.uk/best-start-in-life/baby/feeding-your-baby/mixed-feeding/how-to-express-your-breast-milk/` },
+      ],
+    },
+    de: {
+      metaTitle: `Muttermilch aufbewahren: Kühlschrank, Einfrieren, Auftauen`,
+      metaDescription: `Wie lange hält Muttermilch? Zeiten für Raumtemperatur, Kühlschrank und Tiefkühler, dazu Beschriften, Auftauen, Erwärmen, Reste und wer berät.`,
+      title: `Muttermilch aufbewahren: Haltbarkeit, Auftauen, Erwärmen und Reste`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Wie lange abgepumpte Muttermilch hält, hängt vor allem von der Temperatur ab. Dieser Ratgeber folgt den Angaben des Netzwerks Gesund ins Leben. Andere Länder nennen andere Fristen. Auch Gesund ins Leben weist darauf hin, dass sein Infoblatt „Muttermilch to go“ teils abweichende, ebenfalls als unbedenklich bezeichnete Angaben macht.`,
+      sections: [
+        {
+          title: `Wie lange ist Muttermilch haltbar?`,
+          body: `Laut Gesund ins Leben muss die Milch nach dem Abpumpen sofort gekühlt werden. Brauchst du sie erst nach drei oder mehr Tagen, solltest du sie einfrieren.`,
+          list: [
+            `Raumtemperatur (15 bis 25 °C), falls keine Kühlung möglich ist: 6 bis 8 Stunden, dann umgehend verfüttern`,
+                        `Kühlschrank (4 bis 6 °C): bis zu 4 Tage`,
+            `Tiefkühlgerät oder ****-Fach (-18 °C oder kälter): bis zu 6 Monate, bis 12 Monate gelten als akzeptabel`,
+          ],
+        },
+        {
+          title: `Gefäße, Beschriften und Transport`,
+          body: `Gesund ins Leben nennt Glasflaschen und Kunststoffflaschen in Lebensmittelqualität (BPA-frei) als gut geeignet. Muttermilchbeutel sparen Platz im Tiefkühlschrank, können aber nur einmal verwendet werden. Lass beim Einfrieren etwa 2 bis 3 cm Platz, weil sich die Milch ausdehnt. Portionen in Mahlzeitengröße sind praktisch.\n\nBeschrifte die Behälter am besten mit dem Datum. Stell die Milch in den kältesten Bereich des Kühlschranks, am besten an die Rückwand, nicht in die Kühlschranktür: Die Tür ist laut Gesund ins Leben zur Aufbewahrung ungeeignet. Für den Transport nutzt du zum Beispiel eine Kühlbox mit Akkus.`,
+        },
+        {
+          title: `Muttermilch auftauen`,
+          body: `Am schonendsten taut die Milch langsam über etwa 12 Stunden im Kühlschrank auf. Möglich sind auch 1 bis 4 Stunden bei Raumtemperatur oder, wenn es schneller gehen soll, fließendes Wasser mit höchstens 37 °C. Nach dem Auftauen unter fließendem Wasser verfütterst du sie innerhalb von 2 Stunden.\n\nIm Kühlschrank bei 4 bis 6 °C hält aufgetaute Milch etwa 2 Tage. Bei Raumtemperatur soll sie nicht länger als 2 Stunden stehen. Aufgetaute Milch wird nicht wieder eingefroren.`,
+        },
+        {
+          title: `Erwärmen und Reste`,
+          body: `Wenn dein Baby warme Milch mag, erwärme sie schonend auf etwa 37 °C: unter fließendem lauwarmem Wasser, im Wasserbad oder im Flaschenwärmer. Kalte Milch aus dem Kühlschrank zu füttern ist laut Gesund ins Leben unbedenklich.\n\nDie Mikrowelle ist weder zum Auftauen noch zum Erwärmen geeignet. Reste einer Muttermilchmahlzeit solltest du nicht länger als 2 Stunden bei Raumtemperatur aufbewahren.`,
+        },
+        {
+          title: `Wann du dir Rat holen solltest`,
+          body: `Hebammen und Stillberaterinnen können dir laut Gesund ins Leben das Ausstreichen per Hand zeigen. Auf derselben Seite findest du auch Hinweise zum passenden Trichteraufsatz und dazu, wie du die Milchmenge steigern kannst.\n\nZu Frühgeborenen macht die Seite von Gesund ins Leben keine eigenen Angaben. Übertrage die Fristen hier deshalb nicht ohne Rückfrage in der Klinik auf ein Frühchen.`,
+        },
+      ],
+      faq: [
+        {
+          question: `Wie lange hält Muttermilch im Kühlschrank?`,
+          answer: `Bis zu 4 Tage bei 4 bis 6 °C, am besten hinten im kältesten Bereich und nicht in der Tür.`,
+        },
+        {
+          question: `Darf ich aufgetaute Muttermilch wieder einfrieren?`,
+          answer: `Nein. Aufgetaute Milch wird nicht erneut eingefroren.`,
+        },
+        {
+          question: `Kann ich frische Milch zu gefrorener geben?`,
+          answer: `Laut Gesund ins Leben darf gekühlte flüssige Milch zu bereits gefrorener gegeben werden. Die Flasche kommt danach sofort wieder in den Tiefkühlschrank.`,
+        },
+        {
+          question: `Darf Muttermilch in die Mikrowelle?`,
+          answer: `Nein, weder zum Auftauen noch zum Erwärmen.`,
+        },
+      ],
+      ctaText: `Halte deine Abpumpzeiten in Mamio fest. Die Daten bleiben auf deinem Gerät, ein Konto brauchst du nicht.`,
+      sources: [
+        { publisher: `Netzwerk Gesund ins Leben`, title: `Muttermilch abpumpen, aufbewahren und füttern: Muttermilchvorrat anlegen - So klappt's`, url: `https://www.gesund-ins-leben.de/fuer-familien/alles-fuer-die-stillzeit/muttermilch-abpumpen/` },
+      ],
+    },
+    fr: {
+      metaTitle: `Conservation du lait maternel : frigo, congélateur, durées`,
+      metaDescription: `Combien de temps garder le lait maternel : température ambiante, réfrigérateur, congélateur, étiquetage, décongélation, réchauffage et restes.`,
+      title: `Conservation du lait maternel : durées, décongélation, réchauffage et restes`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Ce guide suit les repères français de 1000-premiers-jours.fr (Santé publique France) et de Santé.fr. Ils sont plus courts que ceux d'autres pays : si vous lisez des durées plus longues en anglais ou en allemand, tenez-vous à celles du pays où vous vivez et demandez en cas de doute.`,
+      sections: [
+        {
+          title: `Combien de temps conserver le lait maternel ?`,
+          body: `Voici les durées indiquées pour le lait tiré. Si vous voulez le congeler, faites-le tout de suite, sans le garder d'abord au réfrigérateur.`,
+          list: [
+            `Température ambiante (20 à 25 °C) : 4 heures`,
+            `Réfrigérateur (+4 °C) : 48 heures`,
+            `Congélateur (-18 °C) : 4 mois`,
+          ],
+        },
+        {
+          title: `Récipients, étiquettes et transport`,
+          body: `Lavez-vous les mains avant de tirer votre lait. Le matériel se lave à l'eau chaude avec du liquide vaisselle, se rince et sèche sans être essuyé ; la stérilisation n'est pas nécessaire selon 1000-premiers-jours.fr.\n\nConservez le lait en petites quantités, de 60 à 100 ml, dans des poches ou des pots, et notez la date et l'heure du recueil. Santé.fr conseille aussi de commencer par de petites portions, par exemple 60 ou 90 ml, et d'attendre environ un mois, le temps que la lactation se stabilise, avant de faire des réserves. Pour le transport, gardez la chaîne du froid avec une glacière ou un sac isotherme et un pack réfrigérant.`,
+        },
+        {
+          title: `Décongeler le lait maternel`,
+          body: `Décongelez-le lentement au réfrigérateur, en prévoyant au moins 6 heures, ou au bain-marie. Un lait décongelé ne se recongèle jamais.\n\nLes pages que nous avons ouvertes ne précisent pas combien de temps le lait décongelé peut rester au réfrigérateur. Posez la question à votre sage-femme, à votre médecin ou à la PMI avant d'en préparer à l'avance.`,
+        },
+        {
+          title: `Réchauffer et jeter les restes`,
+          body: `Réchauffez le lait au bain-marie, au chauffe-biberon ou sous l'eau chaude du robinet, jamais au micro-ondes. Santé.fr indique environ 37 °C, sans dépasser 40 °C avec un chauffe-biberon, et conseille de mélanger doucement en faisant des cercles, sans secouer. Vérifiez la température sur l'intérieur de votre avant-bras.`,
+          list: [
+            `Lait sorti du réfrigérateur et laissé à température ambiante : à consommer dans l'heure`,
+            `Lait réchauffé : à consommer dans la demi-heure selon 1000-premiers-jours.fr ; Santé.fr, pour la nounou ou la crèche, dit de jeter le lait non bu après environ une heure`,
+            `Biberon entamé : à jeter`,
+            `Pot ou poche entamé : ne se conserve pas`,
+          ],
+        },
+        {
+          title: `Quand demander conseil`,
+          body: `Pour un bébé né prématurément, les règles sont particulières : Santé.fr indique de ne pas garder le lait au réfrigérateur au-delà de 2 jours, et les équipes de néonatalogie sont là pour vous accompagner.\n\nUn tire-lait peut se louer en pharmacie ou auprès d'une société de puériculture, avec une prise en charge partielle sur ordonnance d'un médecin, d'une sage-femme ou d'une infirmière puéricultrice de PMI.`,
+        },
+      ],
+      faq: [
+        {
+          question: `Combien de temps le lait maternel se garde-t-il au réfrigérateur ?`,
+          answer: `48 heures à +4 °C selon 1000-premiers-jours.fr.`,
+        },
+        {
+          question: `Peut-on recongeler du lait maternel décongelé ?`,
+          answer: `Non, jamais.`,
+        },
+        {
+          question: `Peut-on garder un biberon entamé ?`,
+          answer: `Non. Tout biberon de lait maternel entamé doit être jeté.`,
+        },
+        {
+          question: `Peut-on réchauffer le lait au micro-ondes ?`,
+          answer: `Non. Utilisez un bain-marie, un chauffe-biberon ou l'eau chaude du robinet.`,
+        },
+      ],
+      ctaText: `Notez vos séances de tire-lait dans Mamio. Les données restent sur votre appareil, sans compte à créer.`,
+      sources: [
+        { publisher: `1000 premiers jours (Santé publique France)`, title: `Recueillir et conserver son lait`, url: `https://admin.1000-premiers-jours.fr/index.php/fr/recueillir-et-conserver-son-lait` },
+        { publisher: `Santé.fr (Service public d'information en santé)`, title: `Allaiter et travailler : quelle organisation ?`, url: `https://www.sante.fr/allaiter-et-travailler-quelle-organisation` },
+        { publisher: `Santé.fr (Service public d'information en santé)`, title: `Allaiter un bébé né prématurément`, url: `https://www.sante.fr/allaiter-un-bebe-ne-prematurement` },
+      ],
+    },
+    'pt-br': {
+      metaTitle: `Como armazenar leite materno: geladeira, freezer e prazos`,
+      metaDescription: `Como armazenar leite materno ordenhado: prazos na geladeira e no freezer, frascos, identificação, descongelamento, aquecimento e sobras.`,
+      title: `Como armazenar leite materno: prazos, descongelamento, aquecimento e sobras`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Este guia segue o Ministério da Saúde, o Hospital Universitário da UFSC e a Sociedade Brasileira de Pediatria (SBP). Os prazos brasileiros são bem mais curtos que os de outros países, então não misture com tabelas estrangeiras.`,
+      sections: [
+        {
+          title: `Quanto tempo o leite materno dura?`,
+          body: `Leve o leite ordenhado logo à geladeira ou ao freezer. O HU-UFSC orienta não deixar o frasco fora por mais de 30 a 40 minutos durante a coleta; se passar disso, guarde o que já foi coletado e continue em outro frasco. Se juntar coletas no mesmo frasco, o prazo conta a partir da primeira.`,
+          list: [
+            `Geladeira: 12 horas`,
+            `Freezer ou congelador: até 15 dias`,
+            `Leite congelado para doação: no máximo 10 dias`,
+          ],
+        },
+        {
+          title: `Frascos e identificação`,
+          body: `O Ministério da Saúde sugere potes de vidro com boca larga e tampa de plástico rosqueável. Antes do uso, lave frascos e tampas e depois ferva por 15 minutos ou esterilize (um material mais antigo da SBP fala em cerca de 20 minutos de fervura). Deixe um espaço de dois dedos entre o leite e a boca do frasco.\n\nIdentifique o frasco com nome, data e horário do início da coleta. Com mais de uma coleta, anote a data e a hora da primeira.`,
+        },
+        {
+          title: `Como descongelar`,
+          body: `Coloque o frasco em banho-maria com o fogo desligado e agite devagar até não restar gelo. Descongele só a quantidade que o bebê vai tomar. A SBP orienta não descongelar em temperatura ambiente e não congelar de novo.\n\nSobre o leite já descongelado mantido na geladeira, o Ministério da Saúde e o HU-UFSC dão até 12 horas. Um documento antigo da SBP cita até 24 horas; na dúvida, fique com o prazo de 12 horas do Ministério.`,
+        },
+        {
+          title: `Aquecimento e sobras`,
+          body: `Não ferva o leite e não use micro-ondas, porque isso pode destruir os fatores de proteção. Aqueça em banho-maria, fora do fogo. A temperatura indicada é de cerca de 40 °C; teste pingando algumas gotas na parte interna do pulso.\n\nSe o bebê não tomar tudo o que foi aquecido, descarte a sobra. Leite descongelado na geladeira que passar do prazo também deve ser jogado fora. A SBP sugere oferecer o leite no copo ou na colher.`,
+        },
+        {
+          title: `Quando pedir orientação`,
+          body: `Em caso de dúvida sobre a ordenha ou o armazenamento, procure o centro de saúde perto de casa ou um serviço de apoio à amamentação; o HU-UFSC lista esses caminhos para a região de Florianópolis. Se quiser doar leite, fale com um banco de leite humano: o prazo do leite congelado para doação é menor.\n\nSe o bebê for prematuro ou estiver internado, pergunte à equipe que cuida dele quais regras valem, antes de usar os prazos daqui.`,
+        },
+      ],
+      faq: [
+        {
+          question: `Quanto tempo o leite materno dura na geladeira?`,
+          answer: `12 horas, segundo o Ministério da Saúde.`,
+        },
+        {
+          question: `Quanto tempo posso deixar congelado?`,
+          answer: `Até 15 dias para o seu bebê. Para doação, no máximo 10 dias.`,
+        },
+        {
+          question: `Posso aquecer no micro-ondas?`,
+          answer: `Não. Use banho-maria fora do fogo e nunca ferva o leite.`,
+        },
+        {
+          question: `O que fazer com a sobra?`,
+          answer: `Descarte o que o bebê não tomou depois de aquecido.`,
+        },
+      ],
+      ctaText: `Registre suas ordenhas no Mamio. Os registros ficam no seu aparelho e não é preciso criar conta.`,
+      sources: [
+        { publisher: `Ministério da Saúde`, title: `Leite materno pode ser congelado; saiba como retirar, armazenar e oferecer`, url: `https://www.gov.br/saude/pt-br/assuntos/noticias/2022/dezembro/leite-materno-pode-ser-congelado-saiba-como-retirar-armazenar-e-oferecer` },
+        { publisher: `HU Brasil, HU-UFSC`, title: `Extração e Armazenamento do Leite Humano`, url: `https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sul/hu-ufsc/governanca/estrutura-administrativa/saude/maternidade/central-de-incentivo-ao-aleitamento-materno/extracao-e-armazenamento-do-leite-humano` },
+        { publisher: `Sociedade Brasileira de Pediatria`, title: `Recomendações úteis para a manutenção do aleitamento materno em mães que trabalham fora do lar ou estudam`, url: `https://www.sbp.com.br/fileadmin/user_upload/2012/12/Recomendaes-teis-para-a-manuteno-do-aleitamento-materno-em-mes-que-trabalham-fora-do-lar-ou-estudam.pdf` },
+      ],
+    },
+    tr: {
+      metaTitle: `Anne Sütü Saklama Koşulları: Buzdolabı, Buzluk ve Süreler`,
+      metaDescription: `Sağılmış anne sütü oda sıcaklığında, buzdolabında ve derin dondurucuda ne kadar saklanır? Etiketleme, çözdürme, ısıtma ve artan süt.`,
+      title: `Anne sütü saklama koşulları: süreler, çözdürme, ısıtma ve artan süt`,
+      date: `2026-11-28`,
+      reviewed: `2026-11-28`,
+      intro: `Bu rehber T.C. Sağlık Bakanlığı'na bağlı hastanelerin sayfalarına dayanıyor. Sayfalar her ayrıntıda aynı değil; farklı oldukları yerleri belirttik. Başka ülkelerin süreleri de farklı olabilir.`,
+      sections: [
+        {
+          title: `Anne sütü ne kadar saklanır?`,
+          body: `Aşağıdaki süreler taze sağılmış süt için ve Şiran, Şarkışla ve Erbaa devlet hastanelerinin sayfalarındaki değerlerle uyumlu. İslahiye Devlet Hastanesi sayfasında ise iki bölümde birbirinden farklı süreler var (örneğin buzdolabında 3 gün ve 5-8 gün); emin değilsen kısa olanı seç ve sağlık çalışanına sor. Erbaa sayfası ayrıca buzdolabına konmadan 15 °C'de 24 saat gibi daha uzun bir süre veriyor.`,
+          list: [
+            `Oda sıcaklığı (serin ve loş ortam; sayfalara göre yaklaşık 16-29 °C aralığı içinde veya 25 °C): 4 saat`,
+            `Buzdolabı (+4 °C): 4 gün`,
+            `Derin dondurucu (-18 °C ve altı): 6 aya kadar`,
+            `Buz aküsü olan soğutucu kutu: 24 saat`,
+          ],
+        },
+        {
+          title: `Kaplar ve etiketleme`,
+          body: `Sütü uygun saklama kaplarında veya süt saklama poşetlerinde sakla. Kaplar temiz olmalı: Şarkışla Devlet Hastanesi kapları sabunlu suyla yıkayıp kaynar suda bekletmeyi anlatıyor, İslahiye sayfası ise steril kap istiyor.\n\nHer kabın üzerine tarihi ve sağım saatini yaz. Şiran Devlet Hastanesi'ne göre sütü her sağımda bebeğe verilecek miktarda ayırarak saklamalısın. Kullanırken en eski tarihli sütten başla.`,
+        },
+        {
+          title: `Donmuş süt nasıl çözdürülür?`,
+          body: `Dondurulmuş sütü önce oda sıcaklığında değil, buzdolabında çözdür; İslahiye Devlet Hastanesi sütün bir gece önceden buzdolabına alınmasını anlatıyor. Mikrodalga kullanma. İslahiye sayfasına göre çözülen süt tekrar dondurulmamalıdır.\n\nŞiran Devlet Hastanesi'ne göre çözülen süt oda sıcaklığında en fazla 1 saat, buzdolabında en fazla 24 saat bekletilebilir. İslahiye sayfası, ısıtılmamış çözülmüş süt için evde buzdolabında 24 saat veriyor.`,
+        },
+        {
+          title: `Isıtma ve artan süt`,
+          body: `Sütü, kabını sıcak su dolu başka bir kabın içine koyarak ılıt. Şiran Devlet Hastanesi'ne göre doğrudan ocak üzerinde veya mikrodalgada ısıtma; İslahiye sayfasına göre mikrodalga sütün enfeksiyonlara karşı koruyucu özelliklerini azaltabilir.\n\nIsıtılan süt kullanılmazsa tekrar buzdolabına koyma; kalanı at.`,
+        },
+        {
+          title: `Ne zaman danışmalı?`,
+          body: `Sağma veya saklama konusunda sorun varsa doktoruna danış. Şarkışla Devlet Hastanesi kendi hastaları için bebek bakım odasını, gebe okulunu ve doktor ekibini adres gösteriyor.\n\nBebeğin erken doğduysa ya da hastanede yatıyorsa, burada yazan süreleri uygulamadan önce bebeğine bakan ekibe sor. Erbaa Devlet Hastanesi sayfasında prematüre bebekler için ek bir dondurma uyarısı bulunuyor.`,
+        },
+      ],
+      faq: [
+        {
+          question: `Anne sütü oda sıcaklığında kaç saat dayanır?`,
+          answer: `Hastane sayfalarının çoğu serin ortamda 4 saat diyor. İslahiye sayfasının bir bölümünde 3 saat geçiyor.`,
+        },
+        {
+          question: `Çözülen anne sütü tekrar dondurulur mu?`,
+          answer: `Hayır. İslahiye Devlet Hastanesi çözülen sütün tekrar dondurulmamasını söylüyor.`,
+        },
+        {
+          question: `Anne sütü mikrodalgada ısıtılır mı?`,
+          answer: `Hayır. Kabı sıcak su dolu başka bir kabın içinde ılıt.`,
+        },
+        {
+          question: `Isıtılıp içilmeyen süt saklanır mı?`,
+          answer: `Hayır. Isıtılan süt kullanılmazsa tekrar buzdolabına konmaz, atılır.`,
+        },
+      ],
+      ctaText: `Süt sağma kayıtlarını Mamio'da tut. Kayıtlar cihazında kalır, hesap açman gerekmez.`,
+      sources: [
+        { publisher: `T.C. Sağlık Bakanlığı, Şiran Devlet Hastanesi`, title: `Emzirme ve Anne Sütü İle İlgili Sık Sorulan Sorular`, url: `https://sirandh.saglik.gov.tr/TR-319250/emzirme-ve-anne-sutu-ile-ilgili-sik-sorulan-sorular.html` },
+        { publisher: `T.C. Sağlık Bakanlığı, Şarkışla Devlet Hastanesi`, title: `Anne Sütü İle İlgili Sıkça Sorulan Sorular`, url: `https://sarkisladh.saglik.gov.tr/TR-1101809/anne-sutu-ile-ilgili-sikca-sorulan-sorular.html` },
+        { publisher: `T.C. Sağlık Bakanlığı, Erbaa Devlet Hastanesi`, title: `Anne Sütünü Güvenle Saklama Koşulları`, url: `https://erbaadh.saglik.gov.tr/TR-1206380/anne-sutunu-guvenle-saklama-kosullari.html` },
+        { publisher: `T.C. Sağlık Bakanlığı, İslahiye Devlet Hastanesi`, title: `SÜT SAĞMA YÖNTEMLERİ`, url: `https://islahiyedh.saglik.gov.tr/TR-888274/sut-sagma-yontemleri.html` },
+      ],
+    },
+  },
+};
